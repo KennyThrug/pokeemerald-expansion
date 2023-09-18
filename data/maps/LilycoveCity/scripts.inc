@@ -247,6 +247,7 @@ LilycoveCity_EventScript_May::
 	case 0, LilycoveCity_EventScript_BattleMayTreecko
 	case 1, LilycoveCity_EventScript_BattleMayTorchic
 	case 2, LilycoveCity_EventScript_BattleMayMudkip
+	goto LilycoveCity_EventScript_Rival_Item
 	end
 
 LilycoveCity_EventScript_MayAskToBattleAgain::

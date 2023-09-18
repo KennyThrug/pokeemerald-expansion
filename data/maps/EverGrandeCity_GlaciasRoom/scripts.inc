@@ -49,6 +49,7 @@ EverGrandeCity_GlaciasRoom_EventScript_Glacia::
 EverGrandeCity_GlaciasRoom_EventScript_PostBattleSpeech::
 	msgbox EverGrandeCity_GlaciasRoom_Text_PostBattleSpeech, MSGBOX_DEFAULT
 	release
+	goto Glacia_Item
 	end
 
 EverGrandeCity_GlaciasRoom_EventScript_Defeated::

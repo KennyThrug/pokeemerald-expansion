@@ -42,6 +42,7 @@ AbandonedShip_Rooms2_1F_EventScript_KiraRematch::
 AbandonedShip_Rooms2_1F_EventScript_Jani::
 	trainerbattle_single TRAINER_JANI, AbandonedShip_Rooms2_1F_Text_JaniIntro, AbandonedShip_Rooms2_1F_Text_JaniDefeat
 	msgbox AbandonedShip_Rooms2_1F_Text_JaniPostBattle, MSGBOX_AUTOCLOSE
+	goto AbandonedShip_Rooms2_1F_EventScript_Jani_Item
 	end
 
 AbandonedShip_Rooms2_1F_EventScript_Garrison::
