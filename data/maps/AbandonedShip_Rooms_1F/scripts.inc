@@ -8,6 +8,7 @@ AbandonedShip_Rooms_1F_EventScript_Gentleman::
 AbandonedShip_Rooms_1F_EventScript_Demetrius::
 	trainerbattle_single TRAINER_DEMETRIUS, AbandonedShip_Rooms_1F_Text_DemetriusIntro, AbandonedShip_Rooms_1F_Text_DemetriusDefeat
 	msgbox AbandonedShip_Rooms_1F_Text_DemetriusPostBattle, MSGBOX_AUTOCLOSE
+	goto AbandonedShip_Rooms_1F_EventScript_Demetrius_Item
 	end
 
 AbandonedShip_Rooms_1F_EventScript_Thalia::
@@ -16,6 +17,7 @@ AbandonedShip_Rooms_1F_EventScript_Thalia::
 	goto_if_eq VAR_RESULT, TRUE, AbandonedShip_Rooms_1F_EventScript_ThaliaRematch
 	msgbox AbandonedShip_Rooms_1F_Text_ThaliaPostBattle, MSGBOX_DEFAULT
 	release
+	goto AbandonedShip_Rooms_1F_Eventscript_Thalia_Item
 	end
 
 AbandonedShip_Rooms_1F_EventScript_RegisterThalia::

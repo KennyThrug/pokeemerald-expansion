@@ -92,8 +92,16 @@ DewfordTown_EventScript_OldRodFisherman::
 
 DewfordTown_EventScript_GiveOldRod::
 	msgbox DewfordTown_Text_GiveYouOneOfMyRods, MSGBOX_DEFAULT
+<<<<<<< HEAD
 	giveitem ITEM_OLD_ROD
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+||||||| parent of 11a076066 (A-LittleRoot Scripts)
+	giveitem ITEM_OLD_ROD
+=======
+	goto DewfordTown_EventScript_GiveOldRod_Item
+	end
+DewfordTown_EventScript_GiveOldRod_After::
+>>>>>>> 11a076066 (A-LittleRoot Scripts)
 	setflag FLAG_RECEIVED_OLD_ROD
 	msgbox DewfordTown_Text_ThrowInFishingAdvice, MSGBOX_DEFAULT
 	release

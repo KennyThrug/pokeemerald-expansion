@@ -141,6 +141,7 @@ FarawayIsland_Interior_EventScript_Mew::
 	goto_if_eq VAR_RESULT, B_OUTCOME_MON_TELEPORTED, FarawayIsland_Interior_EventScript_PlayerOrMewRan
 	setflag FLAG_CAUGHT_MEW
 	release
+	goto Mew_Item
 	end
 
 FarawayIsland_Interior_EventScript_MewDefeated::

@@ -17,15 +17,31 @@ DesertUnderpass_EventScript_Fossil::
 	end
 
 DesertUnderpass_EventScript_GiveClawFossil::
+<<<<<<< HEAD
 	giveitem ITEM_CLAW_FOSSIL
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+||||||| parent of 11a076066 (A-LittleRoot Scripts)
+	giveitem ITEM_CLAW_FOSSIL
+=======
+	goto DesertUnderpass_EventScript_GiveClawFossil_Item
+	end
+DesertUnderPass_EventScript_GiveClawFossil_Post::
+>>>>>>> 11a076066 (A-LittleRoot Scripts)
 	removeobject LOCALID_FOSSIL
 	release
 	end
 
 DesertUnderpass_EventScript_GiveRootFossil::
+<<<<<<< HEAD
 	giveitem ITEM_ROOT_FOSSIL
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+||||||| parent of 11a076066 (A-LittleRoot Scripts)
+	giveitem ITEM_ROOT_FOSSIL
+=======
+	goto DesertUnderpass_EventScript_GiveRootFossil_Item
+	end
+DesertUnderpass_EventScript_GiveRootFossil_Post::
+>>>>>>> 11a076066 (A-LittleRoot Scripts)
 	removeobject LOCALID_FOSSIL
 	release
 	end

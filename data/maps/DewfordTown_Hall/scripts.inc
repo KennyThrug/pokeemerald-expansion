@@ -248,7 +248,15 @@ DewfordTown_Hall_EventScript_SludgeBombMan::
 	call Common_EventScript_BufferTrendyPhrase
 	goto_if_set FLAG_RECEIVED_TM_SLUDGE_BOMB, DewfordTown_Hall_EventScript_ReceivedSludgeBomb
 	msgbox DewfordTown_Hall_Text_GiveYouSludgeBomb, MSGBOX_DEFAULT
+<<<<<<< HEAD
 	giveitem ITEM_TM_SLUDGE_BOMB
+||||||| parent of 11a076066 (A-LittleRoot Scripts)
+	giveitem ITEM_TM36
+=======
+	goto DewfordTown_Hall_EventScript_SludgeBombMan_Item
+	end
+DewfordTown_Hall_EventScript_SludgeBombMan_Post::
+>>>>>>> 11a076066 (A-LittleRoot Scripts)
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	setflag FLAG_RECEIVED_TM_SLUDGE_BOMB
 	release
