@@ -19,6 +19,7 @@ MeteorFalls_StevensCave_EventScript_Steven::
 	msgbox MeteorFalls_StevensCave_Text_MyPredictionCameTrue, MSGBOX_DEFAULT
 	setflag FLAG_DEFEATED_METEOR_FALLS_STEVEN
 	release
+	call MeteorFalls_StevensCave_EventScript_Steven_Item
 	end
 
 MeteorFalls_StevensCave_EventScript_Defeated::

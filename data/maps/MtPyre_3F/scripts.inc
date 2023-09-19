@@ -4,11 +4,13 @@ MtPyre_3F_MapScripts::
 MtPyre_3F_EventScript_William::
 	trainerbattle_single TRAINER_WILLIAM, MtPyre_3F_Text_WilliamIntro, MtPyre_3F_Text_WilliamDefeat
 	msgbox MtPyre_3F_Text_WilliamPostBattle, MSGBOX_AUTOCLOSE
+	call MtPyre_3F_EventScript_William_Item
 	end
 
 MtPyre_3F_EventScript_Kayla::
 	trainerbattle_single TRAINER_KAYLA, MtPyre_3F_Text_KaylaIntro, MtPyre_3F_Text_KaylaDefeat
 	msgbox MtPyre_3F_Text_KaylaPostBattle, MSGBOX_AUTOCLOSE
+	call MtPyre_3F_EventScript_Kayla_Item
 	end
 
 MtPyre_3F_EventScript_Gabrielle::
@@ -17,6 +19,7 @@ MtPyre_3F_EventScript_Gabrielle::
 	goto_if_eq VAR_RESULT, TRUE, MtPyre_3F_EventScript_RematchGabrielle
 	msgbox MtPyre_3F_Text_GabriellePostBattle, MSGBOX_DEFAULT
 	release
+	call MtPyre_3F_EventScript_Gabrielle_Item
 	end
 
 MtPyre_3F_EventScript_RegisterGabrielle::

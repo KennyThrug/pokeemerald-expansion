@@ -24,9 +24,7 @@ DesertUnderpass_EventScript_GiveClawFossil::
 	giveitem ITEM_CLAW_FOSSIL
 =======
 	goto DesertUnderpass_EventScript_GiveClawFossil_Item
-	end
-DesertUnderPass_EventScript_GiveClawFossil_Post::
->>>>>>> 11a076066 (A-LittleRoot Scripts)
+	giveitem ITEM_CLAW_FOSSIL
 	removeobject LOCALID_FOSSIL
 	release
 	end
@@ -39,9 +37,7 @@ DesertUnderpass_EventScript_GiveRootFossil::
 	giveitem ITEM_ROOT_FOSSIL
 =======
 	goto DesertUnderpass_EventScript_GiveRootFossil_Item
-	end
-DesertUnderpass_EventScript_GiveRootFossil_Post::
->>>>>>> 11a076066 (A-LittleRoot Scripts)
+	giveitem ITEM_ROOT_FOSSIL
 	removeobject LOCALID_FOSSIL
 	release
 	end

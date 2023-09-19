@@ -173,6 +173,7 @@ MauvilleCity_EventScript_DefeatedWally::
 	call_if_eq VAR_FACING, DIR_EAST, MauvilleCity_EventScript_ScottExitEast
 	removeobject LOCALID_SCOTT
 	releaseall
+	call MauvilleCity_EventScript_DefeatedWally_Item
 	end
 
 MauvilleCity_EventScript_ScottApproachPlayerNorth::

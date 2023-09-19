@@ -458,12 +458,14 @@ Route110_EventScript_BrendanBattleMudkip::
 Route110_EventScript_BrendanDefeated::
 	msgbox Route110_Text_BrendanTakeThis, MSGBOX_DEFAULT
 	call Route110_EventScript_GiveItemfinder
+	call 
 	msgbox Route110_Text_BrendanExplainItemfinder, MSGBOX_DEFAULT
 	goto Route110_EventScript_RivalExit
 	end
 
 Route110_EventScript_GiveItemfinder::
-	giveitem ITEM_DOWSING_MACHINE
+	call Route110_EventScript_GiveItemfinder_Item
+	call Route110_EventScript_GiveItemfinder_Item2
 	return
 
 Route110_EventScript_RivalExit::

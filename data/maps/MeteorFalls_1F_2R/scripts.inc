@@ -7,6 +7,7 @@ MeteorFalls_1F_2R_EventScript_Nicolas::
 	goto_if_eq VAR_RESULT, TRUE, MeteorFalls_1F_2R_EventScript_RematchNicolas
 	msgbox MeteorFalls_1F_2R_Text_NicolasPostBattle, MSGBOX_DEFAULT
 	release
+	call MeteorFalls_1F_2R_EventScript_Nicolas_Item
 	end
 
 MeteorFalls_1F_2R_EventScript_RegisterNicolas::
@@ -28,6 +29,7 @@ MeteorFalls_1F_2R_EventScript_John::
 	goto_if_eq VAR_RESULT, TRUE, MeteorFalls_1F_2R_EventScript_RematchJohn
 	msgbox MeteorFalls_1F_2R_Text_JohnPostBattle, MSGBOX_DEFAULT
 	release
+	call MeteorFalls_1F_2R_EventScript_John_Item
 	end
 
 MeteorFalls_1F_2R_EventScript_RegisterJohn::
