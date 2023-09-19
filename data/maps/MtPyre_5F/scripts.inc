@@ -6,6 +6,7 @@ MtPyre_5F_MapScripts::
 MtPyre_4F_EventScript_Tasha::
 	trainerbattle_single TRAINER_TASHA, MtPyre_4F_Text_TashaIntro, MtPyre_4F_Text_TashaDefeat
 	msgbox MtPyre_4F_Text_TashaPostBattle, MSGBOX_AUTOCLOSE
+	call MtPyre_4F_EventScript_Tasha_Item
 	end
 
 MtPyre_4F_Text_TashaIntro:

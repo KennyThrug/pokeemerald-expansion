@@ -79,6 +79,7 @@ MagmaHideout_4F_EventScript_Maxie::
 	setflag FLAG_HIDE_MAGMA_HIDEOUT_GRUNTS
 	fadescreen FADE_FROM_BLACK
 	releaseall
+	call MagmaHideout_4F_EventScript_Maxie_Item
 	end
 
 MagmaHideout_4F_Movement_GroudonApproach:
@@ -116,21 +117,25 @@ MagmaHideout_4F_Movement_MaxieLookAround:
 MagmaHideout_4F_EventScript_Grunt11::
 	trainerbattle_single TRAINER_GRUNT_MAGMA_HIDEOUT_11, MagmaHideout_4F_Text_Grunt11Intro, MagmaHideout_4F_Text_Grunt11Defeat
 	msgbox MagmaHideout_4F_Text_Grunt11PostBattle, MSGBOX_AUTOCLOSE
+	call MagmaHideout_4F_EventScript_Grunt11_Item
 	end
 
 MagmaHideout_4F_EventScript_Grunt12::
 	trainerbattle_single TRAINER_GRUNT_MAGMA_HIDEOUT_12, MagmaHideout_4F_Text_Grunt12Intro, MagmaHideout_4F_Text_Grunt12Defeat
 	msgbox MagmaHideout_4F_Text_Grunt12PostBattle, MSGBOX_AUTOCLOSE
+	call MagmaHideout_4F_EventScript_Grunt12_Item
 	end
 
 MagmaHideout_4F_EventScript_Grunt13::
 	trainerbattle_single TRAINER_GRUNT_MAGMA_HIDEOUT_13, MagmaHideout_4F_Text_Grunt13Intro, MagmaHideout_4F_Text_Grunt13Defeat
 	msgbox MagmaHideout_4F_Text_Grunt13PostBattle, MSGBOX_AUTOCLOSE
+	call MagmaHideout_4F_EventScript_Grunt13_Item
 	end
 
 MagmaHideout_4F_EventScript_Tabitha::
 	trainerbattle_single TRAINER_TABITHA_MAGMA_HIDEOUT, MagmaHideout_4F_Text_TabithaIntro, MagmaHideout_4F_Text_TabithaDefeat
 	msgbox MagmaHideout_4F_Text_TabithaPostBattle, MSGBOX_AUTOCLOSE
+	call MagmaHideout_4F_EventScript_Tabitha_Item
 	end
 
 MagmaHideout_4F_Text_Grunt11Intro:

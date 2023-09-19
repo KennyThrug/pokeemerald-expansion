@@ -18,16 +18,14 @@ DesertUnderpass_EventScript_Fossil::
 
 DesertUnderpass_EventScript_GiveClawFossil::
 	goto DesertUnderpass_EventScript_GiveClawFossil_Item
-	end
-DesertUnderPass_EventScript_GiveClawFossil_Post::
+	giveitem ITEM_CLAW_FOSSIL
 	removeobject LOCALID_FOSSIL
 	release
 	end
 
 DesertUnderpass_EventScript_GiveRootFossil::
 	goto DesertUnderpass_EventScript_GiveRootFossil_Item
-	end
-DesertUnderpass_EventScript_GiveRootFossil_Post::
+	giveitem ITEM_ROOT_FOSSIL
 	removeobject LOCALID_FOSSIL
 	release
 	end

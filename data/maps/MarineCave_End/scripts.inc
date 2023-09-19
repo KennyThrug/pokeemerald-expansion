@@ -48,6 +48,7 @@ MarineCave_End_EventScript_Kyogre::
 	setvar VAR_SHOULD_END_ABNORMAL_WEATHER, 1
 	setflag FLAG_DEFEATED_KYOGRE
 	releaseall
+	call MarineCave_End_EventScript_Kyogre_Item
 	end
 
 MarineCave_End_EventScript_DefeatedKyogre::

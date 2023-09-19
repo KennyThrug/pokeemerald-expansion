@@ -69,6 +69,7 @@ NavelRock_Top_EventScript_HoOh::
 	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, NavelRock_Top_EventScript_RanFromHoOh
 	setflag FLAG_CAUGHT_HO_OH
 	releaseall
+	call NavelRock_Top_EventScript_HoOh_ITEM
 	end
 
 NavelRock_Top_EventScript_DefeatedHoOh::

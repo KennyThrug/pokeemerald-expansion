@@ -7,6 +7,7 @@ MtPyre_6F_EventScript_Valerie::
 	goto_if_eq VAR_RESULT, TRUE, MtPyre_6F_EventScript_RematchValerie
 	msgbox MtPyre_6F_Text_ValeriePostBattle, MSGBOX_DEFAULT
 	release
+	call MtPyre_6F_EventScript_Valerie_Item
 	end
 
 MtPyre_6F_EventScript_RegisterValerie::
@@ -25,6 +26,7 @@ MtPyre_6F_EventScript_RematchValerie::
 MtPyre_6F_EventScript_Cedric::
 	trainerbattle_single TRAINER_CEDRIC, MtPyre_6F_Text_CedricIntro, MtPyre_6F_Text_CedricDefeat
 	msgbox MtPyre_6F_Text_CedricPostBattle, MSGBOX_AUTOCLOSE
+	call MtPyre_6F_EventScript_Cedric_Item
 	end
 
 MtPyre_6F_Text_ValerieIntro:

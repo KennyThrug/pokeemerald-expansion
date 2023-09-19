@@ -26,6 +26,7 @@ Route102_EventScript_Calvin::
 	goto_if_eq VAR_RESULT, FALSE, Route102_EventScript_CalvinTryRegister
 	msgbox Route102_Text_CalvinPostBattle, MSGBOX_DEFAULT
 	release
+	call Route102_EventScript_Calvin_Item
 	end
 
 Route102_EventScript_CalvinRegisterMatchCallAfterBattle::
@@ -61,16 +62,19 @@ Route102_EventScript_CalvinRematch::
 Route102_EventScript_Rick::
 	trainerbattle_single TRAINER_RICK, Route102_Text_RickIntro, Route102_Text_RickDefeated
 	msgbox Route102_Text_RickPostBattle, MSGBOX_AUTOCLOSE
+	call Route102_EventScript_Rick_Item
 	end
 
 Route102_EventScript_Tiana::
 	trainerbattle_single TRAINER_TIANA, Route102_Text_TianaIntro, Route102_Text_TianaDefeated
 	msgbox Route102_Text_TianaPostBattle, MSGBOX_AUTOCLOSE
+	call Route102_EventScript_Tiana_Item
 	end
 
 Route102_EventScript_Allen::
 	trainerbattle_single TRAINER_ALLEN, Route102_Text_AllenIntro, Route102_Text_AllenDefeated
 	msgbox Route102_Text_AllenPostBattle, MSGBOX_AUTOCLOSE
+	call Route102_EventScript_Allen_Item
 	end
 
 Route102_Text_WatchMeCatchPokemon:

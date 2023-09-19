@@ -4,6 +4,7 @@ Route107_MapScripts::
 Route107_EventScript_Darrin::
 	trainerbattle_single TRAINER_DARRIN, Route107_Text_DarrinIntro, Route107_Text_DarrinDefeated
 	msgbox Route107_Text_DarrinPostBattle, MSGBOX_AUTOCLOSE
+	call Route107_EventScript_Darrin_Item
 	end
 
 Route107_EventScript_Tony::
@@ -12,6 +13,7 @@ Route107_EventScript_Tony::
 	goto_if_eq VAR_RESULT, TRUE, Route107_EventScript_TonyRematch
 	msgbox Route107_Text_TonyPostBattle, MSGBOX_DEFAULT
 	release
+	call Route107_EventScript_Tony_Item
 	end
 
 Route107_EventScript_TonyRegisterMatchCallAfterBattle::
@@ -30,16 +32,19 @@ Route107_EventScript_TonyRematch::
 Route107_EventScript_Denise::
 	trainerbattle_single TRAINER_DENISE, Route107_Text_DeniseIntro, Route107_Text_DeniseDefeated
 	msgbox Route107_Text_DenisePostBattle, MSGBOX_AUTOCLOSE
+	call Route107_EventScript_Denise_Item
 	end
 
 Route107_EventScript_Beth::
 	trainerbattle_single TRAINER_BETH, Route107_Text_BethIntro, Route107_Text_BethDefeated
 	msgbox Route107_Text_BethPostBattle, MSGBOX_AUTOCLOSE
+	call Route107_EventScript_Beth_Item
 	end
 
 Route107_EventScript_Lisa::
 	trainerbattle_double TRAINER_LISA_AND_RAY, Route107_Text_LisaIntro, Route107_Text_LisaDefeated, Route107_Text_LisaNotEnoughPokemon
 	msgbox Route107_Text_LisaPostBattle, MSGBOX_AUTOCLOSE
+	call Route107_EventScript_Lisa_Item
 	end
 
 Route107_EventScript_Ray::
@@ -50,5 +55,6 @@ Route107_EventScript_Ray::
 Route107_EventScript_Camron::
 	trainerbattle_single TRAINER_CAMRON, Route107_Text_CamronIntro, Route107_Text_CamronDefeated
 	msgbox Route107_Text_CamronPostBattle, MSGBOX_AUTOCLOSE
+	call Route107_EventScript_Camron_Item
 	end
 

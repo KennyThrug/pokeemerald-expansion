@@ -332,7 +332,9 @@ Route109_EventScript_SoftSandGirl::
 	special GetPlayerBigGuyGirlString
 	goto_if_set FLAG_RECEIVED_SOFT_SAND, Route109_EventScript_AlreadyReceivedSoftSand
 	msgbox Route109_Text_YouCanHaveThis, MSGBOX_DEFAULT
-	giveitem ITEM_SOFT_SAND
+	call Route109_EventScript_SoftSandGirl_ITEM
+	end
+Route109_EventScript_SoftSandGirl_POST::
 	goto_if_eq VAR_RESULT, 0, Common_EventScript_ShowBagIsFull
 	closemessage
 	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
@@ -377,21 +379,25 @@ Route109_EventScript_TrainerTipsSign::
 Route109_EventScript_David::
 	trainerbattle_single TRAINER_DAVID, Route109_Text_DavidIntro, Route109_Text_DavidDefeated
 	msgbox Route109_Text_DavidPostBattle, MSGBOX_AUTOCLOSE
+	call Route109_EventScript_David_Item
 	end
 
 Route109_EventScript_Alice::
 	trainerbattle_single TRAINER_ALICE, Route109_Text_AliceIntro, Route109_Text_AliceDefeated
 	msgbox Route109_Text_AlicePostBattle, MSGBOX_AUTOCLOSE
+	call Route109_EventScript_Alice_Item
 	end
 
 Route109_EventScript_Huey::
 	trainerbattle_single TRAINER_HUEY, Route109_Text_HueyIntro, Route109_Text_HueyDefeated
 	msgbox Route109_Text_HueyPostBattle, MSGBOX_AUTOCLOSE
+	call Route109_EventScript_Huey_Item
 	end
 
 Route109_EventScript_Edmond::
 	trainerbattle_single TRAINER_EDMOND, Route109_Text_EdmondIntro, Route109_Text_EdmondDefeated
 	msgbox Route109_Text_EdmondPostBattle, MSGBOX_AUTOCLOSE
+	call Route109_EventScript_Edmond_Item
 	end
 
 Route109_EventScript_Ricky::
@@ -400,6 +406,7 @@ Route109_EventScript_Ricky::
 	goto_if_eq VAR_RESULT, TRUE, Route109_EventScript_RickyRematch
 	msgbox Route109_Text_RickyPostBattle, MSGBOX_DEFAULT
 	release
+	call Route109_EventScript_Ricky_Item
 	end
 
 Route109_EventScript_RickyRegisterMatchCallAfterBattle::
@@ -421,6 +428,7 @@ Route109_EventScript_Lola::
 	goto_if_eq VAR_RESULT, TRUE, Route109_EventScript_LolaRematch
 	msgbox Route109_Text_LolaPostBattle, MSGBOX_DEFAULT
 	release
+	call Route109_EventScript_Lola_Item
 	end
 
 Route109_EventScript_LolaRegisterMatchCallAfterBattle::
@@ -439,16 +447,19 @@ Route109_EventScript_LolaRematch::
 Route109_EventScript_Austina::
 	trainerbattle_single TRAINER_AUSTINA, Route109_Text_AustinaIntro, Route109_Text_AustinaDefeated
 	msgbox Route109_Text_AustinaPostBattle, MSGBOX_AUTOCLOSE
+	call Route109_EventScript_Austina_Item
 	end
 
 Route109_EventScript_Gwen::
 	trainerbattle_single TRAINER_GWEN, Route109_Text_GwenIntro, Route109_Text_GwenDefeated
 	msgbox Route109_Text_GwenPostBattle, MSGBOX_AUTOCLOSE
+	call Route109_EventScript_Gwen_Item
 	end
 
 Route109_EventScript_Carter::
 	trainerbattle_single TRAINER_CARTER, Route109_Text_CarterIntro, Route109_Text_CarterDefeated
 	msgbox Route109_Text_CarterPostBattle, MSGBOX_AUTOCLOSE
+	call Route109_EventScript_Carter_Item
 	end
 
 Route109_EventScript_Paul::
@@ -459,21 +470,25 @@ Route109_EventScript_Paul::
 Route109_EventScript_Mel::
 	trainerbattle_double TRAINER_MEL_AND_PAUL, Route109_Text_MelIntro, Route109_Text_MelDefeated, Route109_Text_MelNotEnoughPokemon
 	msgbox Route109_Text_MelPostBattle, MSGBOX_AUTOCLOSE
+	call Route109_EventScript_Mel_Item
 	end
 
 Route109_EventScript_Chandler::
 	trainerbattle_single TRAINER_CHANDLER, Route109_Text_ChandlerIntro, Route109_Text_ChandlerDefeated
 	msgbox Route109_Text_ChandlerPostBattle, MSGBOX_AUTOCLOSE
+	call Route109_EventScript_Chandler_Item
 	end
 
 Route109_EventScript_Hailey::
 	trainerbattle_single TRAINER_HAILEY, Route109_Text_HaileyIntro, Route109_Text_HaileyDefeated
 	msgbox Route109_Text_HaileyPostBattle, MSGBOX_AUTOCLOSE
+	call Route109_EventScript_Hailey_Item
 	end
 
 Route109_EventScript_Elijah::
 	trainerbattle_single TRAINER_ELIJAH, Route109_Text_ElijahIntro, Route109_Text_ElijahDefeated
 	msgbox Route109_Text_ElijahPostBattle, MSGBOX_AUTOCLOSE
+	call Route109_EventScript_Elijah_Item
 	end
 
 DewfordTown_Text_BrineyLandedInSlateportDeliverGoods:
