@@ -62,7 +62,7 @@ LavaridgeTown_EventScript_RivalGiveGoGoggles::
 
 LavaridgeTown_EventScript_MayGiveGoGoggles::
 	msgbox LavaridgeTown_Text_MayNiceBadgesTakeThis, MSGBOX_DEFAULT
-	goto LavaridgeTown_EventScript_MayGiveGoGoggles_ITEM
+	call LavaridgeTown_EventScript_MayGiveGoGoggles_ITEM
 	end
 LavaridgeTown_EventScript_MayGiveGoGoggles_Post::
 	setflag FLAG_RECEIVED_GO_GOGGLES
@@ -247,7 +247,7 @@ LavaridgeTown_EventScript_EggWoman::
 	playfanfare MUS_OBTAIN_ITEM
 	message LavaridgeTown_Text_ReceivedTheEgg
 	waitfanfare
-	goto LavaridgeTown_EventScript_EggWoman_Item
+	call LavaridgeTown_EventScript_EggWoman_Item
 	end
 	
 LavaridgeTown_EventScript_EggWoman_Post::

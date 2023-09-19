@@ -138,6 +138,7 @@ DewfordTown_Gym_EventScript_Brawly::
 	goto_if_eq VAR_RESULT, TRUE, DewfordTown_Gym_EventScript_BrawlyRematch
 	goto_if_unset FLAG_RECEIVED_TM_BULK_UP, DewfordTown_Gym_EventScript_GiveBulkUp2
 	msgbox DewfordTown_Gym_Text_BrawlyPostBattle, MSGBOX_DEFAULT
+	call DewfordTown_Gym_EventScript_Brawly_Item
 	release
 	end
 
@@ -200,6 +201,7 @@ DewfordTown_Gym_EventScript_TakaoBrightenRoom::
 DewfordTown_Gym_EventScript_Jocelyn::
 	trainerbattle_single TRAINER_JOCELYN, DewfordTown_Gym_Text_JocelynIntro, DewfordTown_Gym_Text_JocelynDefeat, DewfordTown_Gym_EventScript_JocelynBrightenRoom
 	msgbox DewfordTown_Gym_Text_JocelynPostBattle, MSGBOX_AUTOCLOSE
+	call DewfordTown_Gym_EventScript_Jocelyn_Item
 	end
 
 DewfordTown_Gym_EventScript_JocelynBrightenRoom::
@@ -210,6 +212,7 @@ DewfordTown_Gym_EventScript_JocelynBrightenRoom::
 DewfordTown_Gym_EventScript_Laura::
 	trainerbattle_single TRAINER_LAURA, DewfordTown_Gym_Text_LauraIntro, DewfordTown_Gym_Text_LauraDefeat, DewfordTown_Gym_EventScript_LauraBrightenRoom
 	msgbox DewfordTown_Gym_Text_LauraPostBattle, MSGBOX_AUTOCLOSE
+	call DewfordTown_Gym_EventScript_Laura_Item
 	end
 
 DewfordTown_Gym_EventScript_LauraBrightenRoom::
@@ -220,6 +223,7 @@ DewfordTown_Gym_EventScript_LauraBrightenRoom::
 DewfordTown_Gym_EventScript_Brenden::
 	trainerbattle_single TRAINER_BRENDEN, DewfordTown_Gym_Text_BrendenIntro, DewfordTown_Gym_Text_BrendenDefeat, DewfordTown_Gym_EventScript_BrendenBrightenRoom
 	msgbox DewfordTown_Gym_Text_BrendenPostBattle, MSGBOX_AUTOCLOSE
+	call DewfordTown_Gym_EventScript_Brenden_Item
 	end
 
 DewfordTown_Gym_EventScript_BrendenBrightenRoom::
@@ -240,6 +244,7 @@ DewfordTown_Gym_EventScript_CristianBrightenRoom::
 DewfordTown_Gym_EventScript_Lilith::
 	trainerbattle_single TRAINER_LILITH, DewfordTown_Gym_Text_LilithIntro, DewfordTown_Gym_Text_LilithDefeat, DewfordTown_Gym_EventScript_LilithBrightenRoom
 	msgbox DewfordTown_Gym_Text_LilithPostBattle, MSGBOX_AUTOCLOSE
+	call DewfordTown_Gym_EventScript_Lilith_Item
 	end
 
 DewfordTown_Gym_EventScript_LilithBrightenRoom::

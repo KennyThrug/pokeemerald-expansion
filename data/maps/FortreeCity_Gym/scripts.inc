@@ -24,7 +24,7 @@ FortreeCity_Gym_EventScript_Winona::
 	goto_if_unset FLAG_RECEIVED_TM_AERIAL_ACE, FortreeCity_Gym_EventScript_GiveAerialAce2
 	msgbox FortreeCity_Gym_Text_WinonaPostBattle, MSGBOX_DEFAULT
 	release
-	goto FortreeCity_Gym_EventScript_Winona_Item
+	call FortreeCity_Gym_EventScript_Winona_Item
 	end
 
 FortreeCity_Gym_EventScript_WinonaDefeated::
@@ -73,37 +73,37 @@ FortreeCity_Gym_EventScript_WinonaRematch::
 FortreeCity_Gym_EventScript_Jared::
 	trainerbattle_single TRAINER_JARED, FortreeCity_Gym_Text_JaredIntro, FortreeCity_Gym_Text_JaredDefeat
 	msgbox FortreeCity_Gym_Text_JaredPostBattle, MSGBOX_AUTOCLOSE
-	goto FortreeCity_Gym_EventScript_Jared_Item
+	call FortreeCity_Gym_EventScript_Jared_Item
 	end
 
 FortreeCity_Gym_EventScript_Edwardo::
 	trainerbattle_single TRAINER_EDWARDO, FortreeCity_Gym_Text_EdwardoIntro, FortreeCity_Gym_Text_EdwardoDefeat
 	msgbox FortreeCity_Gym_Text_EdwardoPostBattle, MSGBOX_AUTOCLOSE
-	goto FortreeCity_Gym_EventScript_Edwardo_Item
+	call FortreeCity_Gym_EventScript_Edwardo_Item
 	end
 
 FortreeCity_Gym_EventScript_Flint::
 	trainerbattle_single TRAINER_FLINT, FortreeCity_Gym_Text_FlintIntro, FortreeCity_Gym_Text_FlintDefeat
 	msgbox FortreeCity_Gym_Text_FlintPostBattle, MSGBOX_AUTOCLOSE
-	goto FortreeCity_Gym_EventScript_Flint_Item
+	call FortreeCity_Gym_EventScript_Flint_Item
 	end
 
 FortreeCity_Gym_EventScript_Ashley::
 	trainerbattle_single TRAINER_ASHLEY, FortreeCity_Gym_Text_AshleyIntro, FortreeCity_Gym_Text_AshleyDefeat
 	msgbox FortreeCity_Gym_Text_AshleyPostBattle, MSGBOX_AUTOCLOSE
-	goto FortreeCity_Gym_EventScript_Ashley_Item
+	call FortreeCity_Gym_EventScript_Ashley_Item
 	end
 
 FortreeCity_Gym_EventScript_Humberto::
 	trainerbattle_single TRAINER_HUMBERTO, FortreeCity_Gym_Text_HumbertoIntro, FortreeCity_Gym_Text_HumbertoDefeat
 	msgbox FortreeCity_Gym_Text_HumbertoPostBattle, MSGBOX_AUTOCLOSE
-	goto FortreeCity_Gym_EventScript_Humberto_Item
+	call FortreeCity_Gym_EventScript_Humberto_Item
 	end
 
 FortreeCity_Gym_EventScript_Darius::
 	trainerbattle_single TRAINER_DARIUS, FortreeCity_Gym_Text_DariusIntro, FortreeCity_Gym_Text_DariusDefeat
 	msgbox FortreeCity_Gym_Text_DariusPostBattle, MSGBOX_AUTOCLOSE
-	goto FortreeCity_Gym_EventScript_Darius_Item
+	call FortreeCity_Gym_EventScript_Darius_Item
 	end
 
 FortreeCity_Gym_EventScript_GymGuide::

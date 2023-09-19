@@ -55,7 +55,7 @@ EverGrandeCity_SidneysRoom_EventScript_Sidney::
 EverGrandeCity_SidneysRoom_EventScript_PostBattleSpeech::
 	msgbox EverGrandeCity_SidneysRoom_Text_PostBattleSpeech, MSGBOX_DEFAULT
 	release
-	goto Sydney_Item
+	call Sydney_Item
 	end
 
 EverGrandeCity_SidneysRoom_EventScript_Defeated::

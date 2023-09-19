@@ -25,6 +25,7 @@ AbandonedShip_Rooms2_1F_EventScript_Kira::
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 	goto_if_eq VAR_RESULT, TRUE, AbandonedShip_Rooms2_1F_EventScript_KiraRematch
 	msgbox AbandonedShip_Rooms2_1F_Text_KiraPostBattle, MSGBOX_DEFAULT
+	call AbandonedShip_Rooms2_1F_EventScript_Kira_Item
 	release
 	end
 
@@ -42,12 +43,13 @@ AbandonedShip_Rooms2_1F_EventScript_KiraRematch::
 AbandonedShip_Rooms2_1F_EventScript_Jani::
 	trainerbattle_single TRAINER_JANI, AbandonedShip_Rooms2_1F_Text_JaniIntro, AbandonedShip_Rooms2_1F_Text_JaniDefeat
 	msgbox AbandonedShip_Rooms2_1F_Text_JaniPostBattle, MSGBOX_AUTOCLOSE
-	goto AbandonedShip_Rooms2_1F_EventScript_Jani_Item
+	call AbandonedShip_Rooms2_1F_EventScript_Jani_Item
 	end
 
 AbandonedShip_Rooms2_1F_EventScript_Garrison::
 	trainerbattle_single TRAINER_GARRISON, AbandonedShip_Rooms2_1F_Text_GarrisonIntro, AbandonedShip_Rooms2_1F_Text_GarrisonDefeat
 	msgbox AbandonedShip_Rooms2_1F_Text_GarrisonPostBattle, MSGBOX_AUTOCLOSE
+	call AbandonedShip_Rooms2_1F_EventScript_Garrison_Item
 	end
 
 AbandonedShip_Rooms2_1F_Text_DanIntro:

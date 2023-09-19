@@ -28,6 +28,7 @@ AquaHideout_B2F_EventScript_MattNoticePlayer::
 AquaHideout_B2F_EventScript_Matt::
 	trainerbattle_single TRAINER_MATT, AquaHideout_B2F_Text_MattIntro, AquaHideout_B2F_Text_MattDefeat, AquaHideout_B2F_EventScript_SubmarineEscape
 	msgbox AquaHideout_B2F_Text_MattPostBattle, MSGBOX_DEFAULT
+	call AquaHideout_B2F_EventScript_Matt_Item
 	release
 	end
 
@@ -72,6 +73,7 @@ AquaHideout_B2F_Movement_SumbarineDepartRight:
 AquaHideout_B2F_EventScript_Grunt4::
 	trainerbattle_single TRAINER_GRUNT_AQUA_HIDEOUT_4, AquaHideout_B2F_Text_Grunt4Intro, AquaHideout_B2F_Text_Grunt4Defeat, AquaHideout_B2F_EventScript_Grunt4Defeated
 	msgbox AquaHideout_B2F_Text_Grunt4PostBattle, MSGBOX_AUTOCLOSE
+	call AquaHideout_B2F_EventScript_Grunt4_Item
 	end
 
 AquaHideout_B2F_EventScript_Grunt4Defeated::
@@ -82,11 +84,13 @@ AquaHideout_B2F_EventScript_Grunt4Defeated::
 AquaHideout_B2F_EventScript_Grunt6::
 	trainerbattle_single TRAINER_GRUNT_AQUA_HIDEOUT_6, AquaHideout_B2F_Text_Grunt6Intro, AquaHideout_B2F_Text_Grunt6Defeat
 	msgbox AquaHideout_B2F_Text_Grunt6PostBattle, MSGBOX_AUTOCLOSE
+	call AquaHideout_B2F_EventScript_Grunt6_Item
 	end
 
 AquaHideout_B2F_EventScript_Grunt8::
 	trainerbattle_single TRAINER_GRUNT_AQUA_HIDEOUT_8, AquaHideout_B2F_Text_Grunt8Intro, AquaHideout_B2F_Text_Grunt8Defeat
 	msgbox AquaHideout_B2F_Text_Grunt8PostBattle, MSGBOX_AUTOCLOSE
+	call AquaHideout_B2F_EventScript_Grunt8_Item
 	end
 
 AquaHideout_B2F_Text_MattIntro:
