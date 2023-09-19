@@ -105,7 +105,7 @@ IslandCave_EventScript_Regice::
 	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, IslandCave_EventScript_RanFromRegice
 	setflag FLAG_DEFEATED_REGICE
 	release
-	goto IslandCave_EventScript_Regice_Item
+	call IslandCave_EventScript_Regice_Item
 	end
 
 IslandCave_EventScript_DefeatedRegice::

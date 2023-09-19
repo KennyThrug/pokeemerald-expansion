@@ -19,7 +19,7 @@ FortreeCity_House2_EventScript_HiddenPowerGiver::
 	switch VAR_RESULT
 	case 0, FortreeCity_House2_EventScript_WrongGuess
 	msgbox FortreeCity_House2_Text_YourHiddenPowerHasAwoken, MSGBOX_DEFAULT
-	goto FortreeCity_House2_EventScript_HiddenPowerGiver_Item
+	call FortreeCity_House2_EventScript_HiddenPowerGiver_Item
 	end
 FortreeCity_House2_EventScript_HiddenPowerGiver_Post::
 	goto_if_eq VAR_RESULT, 0, Common_EventScript_ShowBagIsFull

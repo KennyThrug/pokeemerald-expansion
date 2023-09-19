@@ -92,7 +92,7 @@ DewfordTown_EventScript_OldRodFisherman::
 
 DewfordTown_EventScript_GiveOldRod::
 	msgbox DewfordTown_Text_GiveYouOneOfMyRods, MSGBOX_DEFAULT
-	goto DewfordTown_EventScript_GiveOldRod_Item
+	call DewfordTown_EventScript_GiveOldRod_Item
 	end
 DewfordTown_EventScript_GiveOldRod_After::
 	setflag FLAG_RECEIVED_OLD_ROD

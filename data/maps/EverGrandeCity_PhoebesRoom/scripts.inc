@@ -49,7 +49,7 @@ EverGrandeCity_PhoebesRoom_EventScript_Phoebe::
 EverGrandeCity_PhoebesRoom_EventScript_PostBattleSpeech::
 	msgbox EverGrandeCity_PhoebesRoom_Text_PostBattleSpeech, MSGBOX_DEFAULT
 	release
-	goto Phoebe_Item
+	call Phoebe_Item
 	end
 
 EverGrandeCity_PhoebesRoom_EventScript_Defeated::

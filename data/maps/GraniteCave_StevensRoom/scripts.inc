@@ -11,7 +11,7 @@ GraniteCave_StevensRoom_EventScript_Steven::
 	call Common_EventScript_PlayerHandedOverTheItem
 	setflag FLAG_DELIVERED_STEVEN_LETTER
 	msgbox GraniteCave_StevensRoom_Text_ThankYouTakeThis, MSGBOX_DEFAULT
-	goto GraniteCave_StevensRoom_EventScript_Steven_Item
+	call GraniteCave_StevensRoom_EventScript_Steven_Item
 	end
 
 GraniteCave_StevensRoom_EventScript_Steven_Post::

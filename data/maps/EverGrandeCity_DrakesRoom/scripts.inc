@@ -50,7 +50,7 @@ EverGrandeCity_DrakesRoom_EventScript_Drake::
 EverGrandeCity_DrakesRoom_EventScript_PostBattleSpeech::
 	msgbox EverGrandeCity_DrakesRoom_Text_PostBattleSpeech, MSGBOX_DEFAULT
 	release
-	goto Drake_Item
+	call Drake_Item
 	end
 
 EverGrandeCity_DrakesRoom_EventScript_Defeated::

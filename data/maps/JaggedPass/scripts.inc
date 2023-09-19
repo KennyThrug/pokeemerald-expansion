@@ -82,7 +82,7 @@ JaggedPass_EventScript_MagmaHideoutGuard::
 	applymovement LOCALID_HIDEOUT_GUARD, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	releaseall
-	goto JaggedPass_EventScript_MagmaHideoutGuard_Item
+	call JaggedPass_EventScript_MagmaHideoutGuard_Item
 	end
 
 JaggedPass_EventScript_GuardDefeated::
@@ -98,7 +98,7 @@ JaggedPass_EventScript_GuardDefeated::
 JaggedPass_EventScript_Eric::
 	trainerbattle_single TRAINER_ERIC, JaggedPass_Text_EricIntro, JaggedPass_Text_EricDefeat
 	msgbox JaggedPass_Text_EricPostBattle, MSGBOX_AUTOCLOSE
-	goto JaggedPass_EventScript_Eric_Item
+	call JaggedPass_EventScript_Eric_Item
 	end
 
 JaggedPass_EventScript_Diana::
@@ -107,7 +107,7 @@ JaggedPass_EventScript_Diana::
 	goto_if_eq VAR_RESULT, TRUE, JaggedPass_EventScript_DianaRematch
 	msgbox JaggedPass_Text_DianaPostBattle, MSGBOX_DEFAULT
 	release
-	goto JaggedPass_EventScript_Diana_Item
+	call JaggedPass_EventScript_Diana_Item
 	end
 
 JaggedPass_EventScript_RegisterDiana::
@@ -128,7 +128,7 @@ JaggedPass_EventScript_Ethan::
 	goto_if_eq VAR_RESULT, TRUE, JaggedPass_EventScript_EthanRematch
 	msgbox JaggedPass_Text_EthanPostBattle, MSGBOX_DEFAULT
 	release
-	goto JaggedPass_EventScript_Ethan_Item
+	call JaggedPass_EventScript_Ethan_Item
 	end
 
 JaggedPass_EventScript_RegisterEthan::
@@ -146,13 +146,13 @@ JaggedPass_EventScript_EthanRematch::
 JaggedPass_EventScript_Julio::
 	trainerbattle_single TRAINER_JULIO, JaggedPass_Text_JulioIntro, JaggedPass_Text_JulioDefeat
 	msgbox JaggedPass_Text_JulioPostBattle, MSGBOX_AUTOCLOSE
-	goto JaggedPass_EventScript_Julio_Item
+	call JaggedPass_EventScript_Julio_Item
 	end
 
 JaggedPass_EventScript_Autumn::
 	trainerbattle_single TRAINER_AUTUMN, JaggedPass_Text_AutumnIntro, JaggedPass_Text_AutumnDefeat
 	msgbox JaggedPass_Text_AutumnPostBattle, MSGBOX_AUTOCLOSE
-	goto JaggedPass_EventScript_Autumn_Item
+	call JaggedPass_EventScript_Autumn_Item
 	end
 
 JaggedPass_Text_EricIntro:
