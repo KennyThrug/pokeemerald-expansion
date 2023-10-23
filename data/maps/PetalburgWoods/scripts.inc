@@ -293,6 +293,7 @@ PetalburgWoods_EventScript_James::
 	specialvar VAR_RESULT, IsTrainerRegistered
 	goto_if_eq VAR_RESULT, FALSE, PetalburgWoods_EventScript_TryRegisterJames2
 	msgbox PetalburgWoods_Text_PeopleRespectYou, MSGBOX_DEFAULT
+	call PetalburgWoods_EventScript_James_Item
 	release
 	end
 

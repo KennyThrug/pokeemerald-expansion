@@ -66,6 +66,7 @@ Route112_EventScript_Hiker::
 Route112_EventScript_Brice::
 	trainerbattle_single TRAINER_BRICE, Route112_Text_BriceIntro, Route112_Text_BriceDefeat
 	msgbox Route112_Text_BricePostBattle, MSGBOX_AUTOCLOSE
+	call Route112_EventScript_Brice_Item
 	end
 
 Route112_EventScript_Trent::
@@ -73,6 +74,7 @@ Route112_EventScript_Trent::
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 	goto_if_eq VAR_RESULT, TRUE, Route112_EventScript_RematchTrent
 	msgbox Route112_Text_TrentPostBattle, MSGBOX_DEFAULT
+	call Route112_EventScript_Trent_Item
 	release
 	end
 
@@ -92,21 +94,25 @@ Route112_EventScript_RematchTrent::
 Route112_EventScript_Larry::
 	trainerbattle_single TRAINER_LARRY, Route112_Text_LarryIntro, Route112_Text_LarryDefeat
 	msgbox Route112_Text_LarryPostBattle, MSGBOX_AUTOCLOSE
+	call Route112_EventScript_Larry_Item
 	end
 
 Route112_EventScript_Carol::
 	trainerbattle_single TRAINER_CAROL, Route112_Text_CarolIntro, Route112_Text_CarolDefeat
 	msgbox Route112_Text_CarolPostBattle, MSGBOX_AUTOCLOSE
+	call Route112_EventScript_Carol_Item
 	end
 
 Route112_EventScript_Bryant::
 	trainerbattle_single TRAINER_BRYANT, Route112_Text_BryantIntro, Route112_Text_BryantDefeat
 	msgbox Route112_Text_BryantPostBattle, MSGBOX_AUTOCLOSE
+	call Route112_EventScript_Bryant_Item
 	end
 
 Route112_EventScript_Shayla::
 	trainerbattle_single TRAINER_SHAYLA, Route112_Text_ShaylaIntro, Route112_Text_ShaylaDefeat
 	msgbox Route112_Text_ShaylaPostBattle, MSGBOX_AUTOCLOSE
+	call Route112_EventScript_Shayla_Item
 	end
 
 Route112_Text_LeaderGoingToAwakenThing:

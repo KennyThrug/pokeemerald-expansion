@@ -20,9 +20,10 @@ Route111_WinstrateFamilysHouse_EventScript_Victoria::
 	setvar VAR_0x8008, LOCALID_VICTORIA
 	goto_if_set FLAG_RECEIVED_MACHO_BRACE, Route111_WinstrateFamilysHouse_EventScript_ReceivedMachoBrace
 	msgbox Route111_WinstrateFamilysHouse_Text_LikeYouToHaveMachoBrace, MSGBOX_DEFAULT
-	giveitem ITEM_MACHO_BRACE
+	call Route111_WinstrateFamilysHouse_EventScript_Victoria_Item
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	setflag FLAG_RECEIVED_MACHO_BRACE
+	call Route111_WinstrateFamilysHouse_EventScript_Victoria_Item
 	goto Route111_WinstrateFamilysHouse_EventScript_FaceOriginalDirection
 	end
 
@@ -36,6 +37,7 @@ Route111_WinstrateFamilysHouse_EventScript_Vivi::
 	faceplayer
 	setvar VAR_0x8008, LOCALID_VIVI
 	msgbox Route111_WinstrateFamilysHouse_Text_StrongerFamilyMembers, MSGBOX_DEFAULT
+	call Route111_WinstrateFamilysHouse_EventScript_Vivi_Item
 	goto Route111_WinstrateFamilysHouse_EventScript_FaceOriginalDirection
 	end
 
@@ -46,6 +48,7 @@ Route111_WinstrateFamilysHouse_EventScript_Vicky::
 	goto_if_set FLAG_TEMP_4, Route111_WinstrateFamilysHouse_EventScript_AlreadySpokenTo
 	msgbox Route111_WinstrateFamilysHouse_Text_GrandsonStrong, MSGBOX_DEFAULT
 	setflag FLAG_TEMP_4
+	call Route111_WinstrateFamilysHouse_EventScript_Vicky_Item
 	goto Route111_WinstrateFamilysHouse_EventScript_FaceOriginalDirection
 	end
 

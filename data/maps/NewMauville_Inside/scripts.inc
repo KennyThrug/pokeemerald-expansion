@@ -174,15 +174,7 @@ NewMauville_Inside_EventScript_GeneratorOff::
 	end
 
 NewMauville_Inside_EventScript_Voltorb1::
-	lock
-	faceplayer
-	setwildbattle SPECIES_VOLTORB, 25
-	waitse
-	playmoncry SPECIES_VOLTORB, CRY_MODE_ENCOUNTER
-	delay 40
-	waitmoncry
-	setflag FLAG_SYS_CTRL_OBJ_DELETE
-	dowildbattle
+	call NewMauville_Inside_EventScript_Voltorb1_Item
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
 	specialvar VAR_RESULT, GetBattleOutcome
 	goto_if_eq VAR_RESULT, B_OUTCOME_WON, NewMauville_Inside_EventScript_DefeatedVoltorb1
@@ -198,15 +190,7 @@ NewMauville_Inside_EventScript_DefeatedVoltorb1::
 	end
 
 NewMauville_Inside_EventScript_Voltorb2::
-	lock
-	faceplayer
-	setwildbattle SPECIES_VOLTORB, 25
-	waitse
-	playmoncry SPECIES_VOLTORB, CRY_MODE_ENCOUNTER
-	delay 40
-	waitmoncry
-	setflag FLAG_SYS_CTRL_OBJ_DELETE
-	dowildbattle
+	call NewMauville_Inside_EventScript_Voltorb2_Item
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
 	specialvar VAR_RESULT, GetBattleOutcome
 	goto_if_eq VAR_RESULT, B_OUTCOME_WON, NewMauville_Inside_EventScript_DefeatedVoltorb2
@@ -222,15 +206,7 @@ NewMauville_Inside_EventScript_DefeatedVoltorb2::
 	end
 
 NewMauville_Inside_EventScript_Voltorb3::
-	lock
-	faceplayer
-	setwildbattle SPECIES_VOLTORB, 25
-	waitse
-	playmoncry SPECIES_VOLTORB, CRY_MODE_ENCOUNTER
-	delay 40
-	waitmoncry
-	setflag FLAG_SYS_CTRL_OBJ_DELETE
-	dowildbattle
+	call NewMauville_Inside_EventScript_Voltorb3_Item
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
 	specialvar VAR_RESULT, GetBattleOutcome
 	goto_if_eq VAR_RESULT, B_OUTCOME_WON, NewMauville_Inside_EventScript_DefeatedVoltorb3
