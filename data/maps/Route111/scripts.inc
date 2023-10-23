@@ -159,7 +159,7 @@ Route111_EventScript_Girl::
 	dotimebasedevents
 	goto_if_set FLAG_DAILY_ROUTE_111_RECEIVED_BERRY, Route111_EventScript_ReceivedBerry
 	msgbox Route111_Text_WateredPlantsEveryDayTakeBerry, MSGBOX_DEFAULT
-	giveitem ITEM_RAZZ_BERRY
+	call Route111_EventScript_Girl_Item
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	setflag FLAG_DAILY_ROUTE_111_RECEIVED_BERRY
 	special GetPlayerBigGuyGirlString
@@ -272,6 +272,7 @@ Route111_EventScript_Victor::
 	goto_if_eq VAR_RESULT, YES, Route111_EventScript_BattleWinstrates
 	msgbox Route111_Text_IsThatSo, MSGBOX_DEFAULT
 	release
+	call Route111_EventScript_Victor_Item
 	end
 
 Route111_EventScript_BattleWinstrates::
@@ -439,21 +440,25 @@ Route111_EventScript_RockSmashTipFatMan::
 Route111_EventScript_Drew::
 	trainerbattle_single TRAINER_DREW, Route111_Text_DrewIntro, Route111_Text_DrewDefeat
 	msgbox Route111_Text_DrewPostBattle, MSGBOX_AUTOCLOSE
+	call Route111_EventScript_Drew_Item
 	end
 
 Route111_EventScript_Heidi::
 	trainerbattle_single TRAINER_HEIDI, Route111_Text_HeidiIntro, Route111_Text_HeidiDefeat
 	msgbox Route111_Text_HeidiPostBattle, MSGBOX_AUTOCLOSE
+	call Route111_EventScript_Heidi_Item
 	end
 
 Route111_EventScript_Beau::
 	trainerbattle_single TRAINER_BEAU, Route111_Text_BeauIntro, Route111_Text_BeauDefeat
 	msgbox Route111_Text_BeauPostBattle, MSGBOX_AUTOCLOSE
+	call Route111_EventScript_Beau_Item
 	end
 
 Route111_EventScript_Becky::
 	trainerbattle_single TRAINER_BECKY, Route111_Text_BeckyIntro, Route111_Text_BeckyDefeat
 	msgbox Route111_Text_BeckyPostBattle, MSGBOX_AUTOCLOSE
+	call Route111_EventScript_Becky_Item
 	end
 
 Route111_EventScript_Dusty::
@@ -462,6 +467,7 @@ Route111_EventScript_Dusty::
 	goto_if_eq VAR_RESULT, TRUE, Route111_EventScript_RematchDusty
 	msgbox Route111_Text_DustyPostBattle, MSGBOX_DEFAULT
 	release
+	call Route111_EventScript_Dusty_Item
 	end
 
 Route111_EventScript_RegisterDusty::
@@ -480,16 +486,19 @@ Route111_EventScript_RematchDusty::
 Route111_EventScript_Travis::
 	trainerbattle_single TRAINER_TRAVIS, Route111_Text_TravisIntro, Route111_Text_TravisDefeat
 	msgbox Route111_Text_TravisPostBattle, MSGBOX_AUTOCLOSE
+	call Route111_EventScript_Travis_Item
 	end
 
 Route111_EventScript_Irene::
 	trainerbattle_single TRAINER_IRENE, Route111_Text_IreneIntro, Route111_Text_IreneDefeat
 	msgbox Route111_Text_IrenePostBattle, MSGBOX_AUTOCLOSE
+	call Route111_EventScript_Irene_Item
 	end
 
 Route111_EventScript_Daisuke::
 	trainerbattle_single TRAINER_DAISUKE, Route111_Text_DaisukeIntro, Route111_Text_DaisukeDefeat
 	msgbox Route111_Text_DaisukePostBattle, MSGBOX_AUTOCLOSE
+	call Route111_EventScript_Daisuke_Item
 	end
 
 Route111_EventScript_Wilton::
@@ -498,6 +507,7 @@ Route111_EventScript_Wilton::
 	goto_if_eq VAR_RESULT, TRUE, Route111_EventScript_RematchWilton
 	msgbox Route111_Text_WiltonPostBattle, MSGBOX_DEFAULT
 	release
+	call Route111_EventScript_Wilton_Item
 	end
 
 Route111_EventScript_RegisterWilton::
@@ -519,6 +529,7 @@ Route111_EventScript_Brooke::
 	goto_if_eq VAR_RESULT, TRUE, Route111_EventScript_RematchBrooke
 	msgbox Route111_Text_BrookePostBattle, MSGBOX_DEFAULT
 	release
+	call Route111_EventScript_Brooke_Item
 	end
 
 Route111_EventScript_RegisterBrooke::
@@ -537,36 +548,43 @@ Route111_EventScript_RematchBrooke::
 Route111_EventScript_Hayden::
 	trainerbattle_single TRAINER_HAYDEN, Route111_Text_HaydenIntro, Route111_Text_HaydenDefeat
 	msgbox Route111_Text_HaydenPostBattle, MSGBOX_AUTOCLOSE
+	call Route111_EventScript_Hayden_Item
 	end
 
 Route111_EventScript_Bianca::
 	trainerbattle_single TRAINER_BIANCA, Route111_Text_BiancaIntro, Route111_Text_BiancaDefeat
 	msgbox Route111_Text_BiancaPostBattle, MSGBOX_AUTOCLOSE
+	call Route111_EventScript_Bianca_Item
 	end
 
 Route111_EventScript_Tyron::
 	trainerbattle_single TRAINER_TYRON, Route111_Text_TyronIntro, Route111_Text_TyronDefeat
 	msgbox Route111_Text_TyronPostBattle, MSGBOX_AUTOCLOSE
+	call Route111_EventScript_Tyron_Item
 	end
 
 Route111_EventScript_Celina::
 	trainerbattle_single TRAINER_CELINA, Route111_Text_CelinaIntro, Route111_Text_CelinaDefeat
 	msgbox Route111_Text_CelinaPostBattle, MSGBOX_AUTOCLOSE
+	call Route111_EventScript_Celina_Item
 	end
 
 Route111_EventScript_Celia::
 	trainerbattle_single TRAINER_CELIA, Route111_Text_CeliaIntro, Route111_Text_CeliaDefeat
 	msgbox Route111_Text_CeliaPostBattle, MSGBOX_AUTOCLOSE
+	call Route111_EventScript_Celia_Item
 	end
 
 Route111_EventScript_Bryan::
 	trainerbattle_single TRAINER_BRYAN, Route111_Text_BryanIntro, Route111_Text_BryanDefeat
 	msgbox Route111_Text_BryanPostBattle, MSGBOX_AUTOCLOSE
+	call Route111_EventScript_Bryan_Item
 	end
 
 Route111_EventScript_Branden::
 	trainerbattle_single TRAINER_BRANDEN, Route111_Text_BrandenIntro, Route111_Text_BrandenDefeat
 	msgbox Route111_Text_BrandenPostBattle, MSGBOX_AUTOCLOSE
+	call Route111_EventScript_Branden_Item
 	end
 
 Route111_EventScript_TrainerHillSign::

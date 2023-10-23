@@ -234,6 +234,7 @@ DewfordTown_Gym_EventScript_BrendenBrightenRoom::
 DewfordTown_Gym_EventScript_Cristian::
 	trainerbattle_single TRAINER_CRISTIAN, DewfordTown_Gym_Text_CristianIntro, DewfordTown_Gym_Text_CristianDefeat, DewfordTown_Gym_EventScript_CristianBrightenRoom
 	msgbox DewfordTown_Gym_Text_CristianPostBattle, MSGBOX_AUTOCLOSE
+	call DewfordTown_Gym_EventScript_Cristian_Item
 	end
 
 DewfordTown_Gym_EventScript_CristianBrightenRoom::

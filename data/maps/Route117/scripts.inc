@@ -79,6 +79,7 @@ Route117_EventScript_Isaac::
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 	goto_if_eq VAR_RESULT, TRUE, Route117_EventScript_RematchIsaac
 	msgbox Route117_Text_IsaacPostBattle, MSGBOX_DEFAULT
+	call Route117_EventScript_Isaac_Item
 	release
 	end
 
@@ -100,6 +101,7 @@ Route117_EventScript_Lydia::
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 	goto_if_eq VAR_RESULT, TRUE, Route117_EventScript_RematchLydia
 	msgbox Route117_Text_LydiaPostBattle, MSGBOX_DEFAULT
+	call Route117_EventScript_Lydia_Item
 	release
 	end
 
@@ -121,6 +123,7 @@ Route117_EventScript_Dylan::
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 	goto_if_eq VAR_RESULT, TRUE, Route117_EventScript_RematchDylan
 	msgbox Route117_Text_DylanPostBattle, MSGBOX_DEFAULT
+	call Route117_EventScript_Dylan_Item
 	release
 	end
 
@@ -142,6 +145,7 @@ Route117_EventScript_Maria::
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 	goto_if_eq VAR_RESULT, TRUE, Route117_EventScript_RematchMaria
 	msgbox Route117_Text_MariaPostBattle, MSGBOX_DEFAULT
+	call Route117_EventScript_Maria_Item
 	release
 	end
 
@@ -161,6 +165,7 @@ Route117_EventScript_RematchMaria::
 Route117_EventScript_Derek::
 	trainerbattle_single TRAINER_DEREK, Route117_Text_DerekIntro, Route117_Text_DerekDefeat
 	msgbox Route117_Text_DerekPostBattle, MSGBOX_AUTOCLOSE
+	call Route117_EventScript_Derek_Item
 	end
 
 Route117_EventScript_Anna::
@@ -168,6 +173,7 @@ Route117_EventScript_Anna::
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 	goto_if_eq VAR_RESULT, TRUE, Route117_EventScript_RematchAnna
 	msgbox Route117_Text_AnnaPostBattle, MSGBOX_DEFAULT
+	call Route117_EventScript_Anna_Item
 	release
 	end
 
@@ -187,6 +193,7 @@ Route117_EventScript_Meg::
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 	goto_if_eq VAR_RESULT, TRUE, Route117_EventScript_RematchMeg
 	msgbox Route117_Text_MegPostBattle, MSGBOX_DEFAULT
+	call Route117_EventScript_Anna_Item
 	release
 	end
 
@@ -204,16 +211,19 @@ Route117_EventScript_RematchMeg::
 Route117_EventScript_Melina::
 	trainerbattle_single TRAINER_MELINA, Route117_Text_MelinaIntro, Route117_Text_MelinaDefeat
 	msgbox Route117_Text_MelinaPostBattle, MSGBOX_AUTOCLOSE
+	call Route117_EventScript_Melina_Item
 	end
 
 Route117_EventScript_Brandi::
 	trainerbattle_single TRAINER_BRANDI, Route117_Text_BrandiIntro, Route117_Text_BrandiDefeat
 	msgbox Route117_Text_BrandiPostBattle, MSGBOX_AUTOCLOSE
+	call Route117_EventScript_Brandi_Item
 	end
 
 Route117_EventScript_Aisha::
 	trainerbattle_single TRAINER_AISHA, Route117_Text_AishaIntro, Route117_Text_AishaDefeat
 	msgbox Route117_Text_AishaPostBattle, MSGBOX_AUTOCLOSE
+	call Route117_EventScript_Aisha_Item
 	end
 
 Route117_Text_DayCarePokemonHadNewMove:

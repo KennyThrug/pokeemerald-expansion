@@ -56,7 +56,7 @@ Route116_EventScript_DevonEmployee::
 
 Route116_EventScript_GiveRepeatBall::
 	setflag FLAG_MET_DEVON_EMPLOYEE
-	giveitem ITEM_REPEAT_BALL
+	call Route116_EventScript_GiveRepeatBall_Item
 	goto_if_eq VAR_RESULT, FALSE, Route116_EventScript_NoRoomForRepeatBall
 	msgbox Route116_Text_NewBallAvailableAtMart, MSGBOX_DEFAULT
 	closemessage
@@ -232,11 +232,13 @@ Route116_Movement_GlassesManExitEast:
 Route116_EventScript_Joey::
 	trainerbattle_single TRAINER_JOEY, Route116_Text_JoeyIntro, Route116_Text_JoeyDefeat
 	msgbox Route116_Text_JoeyPostBattle, MSGBOX_AUTOCLOSE
+	call Route116_EventScript_Joey_Item
 	end
 
 Route116_EventScript_Jose::
 	trainerbattle_single TRAINER_JOSE, Route116_Text_JoseIntro, Route116_Text_JoseDefeat
 	msgbox Route116_Text_JosePostBattle, MSGBOX_AUTOCLOSE
+	call Route116_EventScript_Jose_Item
 	end
 
 Route116_EventScript_Jerry::
@@ -247,6 +249,7 @@ Route116_EventScript_Jerry::
 	specialvar VAR_RESULT, IsTrainerRegistered
 	goto_if_eq VAR_RESULT, FALSE, Route116_EventScript_TryRegisterJerry
 	msgbox Route116_Text_JerryPostBattle, MSGBOX_DEFAULT
+	call Route116_EventScript_Jerry_Item
 	release
 	end
 
@@ -283,11 +286,13 @@ Route116_EventScript_RematchJerry::
 Route116_EventScript_Clark::
 	trainerbattle_single TRAINER_CLARK, Route116_Text_ClarkIntro, Route116_Text_ClarkDefeat
 	msgbox Route116_Text_ClarkPostBattle, MSGBOX_AUTOCLOSE
+	call Route116_EventScript_Clark_Item
 	end
 
 Route116_EventScript_Janice::
 	trainerbattle_single TRAINER_JANICE, Route116_Text_JaniceIntro, Route116_Text_JaniceDefeat
 	msgbox Route116_Text_JanicePostBattle, MSGBOX_AUTOCLOSE
+	call Route116_EventScript_Janice_Item
 	end
 
 Route116_EventScript_Karen::
@@ -298,6 +303,7 @@ Route116_EventScript_Karen::
 	specialvar VAR_RESULT, IsTrainerRegistered
 	goto_if_eq VAR_RESULT, FALSE, Route116_EventScript_TryRegisterKaren
 	msgbox Route116_Text_KarenPostBattle, MSGBOX_DEFAULT
+	call Route116_EventScript_Karen_Item
 	release
 	end
 
@@ -334,21 +340,25 @@ Route116_EventScript_RematchKaren::
 Route116_EventScript_Sarah::
 	trainerbattle_single TRAINER_SARAH, Route116_Text_SarahIntro, Route116_Text_SarahDefeat
 	msgbox Route116_Text_SarahPostBattle, MSGBOX_AUTOCLOSE
+	call Route116_EventScript_Sarah_Item
 	end
 
 Route116_EventScript_Dawson::
 	trainerbattle_single TRAINER_DAWSON, Route116_Text_DawsonIntro, Route116_Text_DawsonDefeat
 	msgbox Route116_Text_DawsonPostBattle, MSGBOX_AUTOCLOSE
+	call Route116_EventScript_Dawson_Item
 	end
 
 Route116_EventScript_Devan::
 	trainerbattle_single TRAINER_DEVAN, Route116_Text_DevanIntro, Route116_Text_DevanDefeat
 	msgbox Route116_Text_DevanPostBattle, MSGBOX_AUTOCLOSE
+	call Route116_EventScript_Devan_Item
 	end
 
 Route116_EventScript_Johnson::
 	trainerbattle_single TRAINER_JOHNSON, Route116_Text_JohnsonIntro, Route116_Text_JohnsonDefeat
 	msgbox Route116_Text_JohnsonPostBattle, MSGBOX_AUTOCLOSE
+	call Route116_EventScript_Johnson_Item
 	end
 
 Route116_Text_ScoundrelMadeOffWithPeeko:

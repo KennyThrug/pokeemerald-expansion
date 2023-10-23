@@ -49,11 +49,13 @@ Route113_EventScript_TrainerTipsRegisterKeyItems::
 Route113_EventScript_Jaylen::
 	trainerbattle_single TRAINER_JAYLEN, Route113_Text_JaylenIntro, Route113_Text_JaylenDefeat
 	msgbox Route113_Text_JaylenPostBattle, MSGBOX_AUTOCLOSE
+	call Route113_EventScript_Jaylen_Item
 	end
 
 Route113_EventScript_Dillon::
 	trainerbattle_single TRAINER_DILLON, Route113_Text_DillonIntro, Route113_Text_DillonDefeat
 	msgbox Route113_Text_DillonPostBattle, MSGBOX_AUTOCLOSE
+	call Route113_EventScript_Dillon_Item
 	end
 
 Route113_EventScript_Madeline::
@@ -61,6 +63,7 @@ Route113_EventScript_Madeline::
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 	goto_if_eq VAR_RESULT, TRUE, Route113_EventScript_RematchMadeline
 	msgbox Route113_Text_MadelinePostBattle, MSGBOX_DEFAULT
+	call Route113_EventScript_Madeline_Item
 	release
 	end
 
@@ -82,6 +85,7 @@ Route113_EventScript_Lao::
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 	goto_if_eq VAR_RESULT, TRUE, Route113_EventScript_RematchLao
 	msgbox Route113_Text_LaoPostBattle, MSGBOX_DEFAULT
+	call Route113_EventScript_Lao_Item
 	release
 	end
 
@@ -101,36 +105,43 @@ Route113_EventScript_RematchLao::
 Route113_EventScript_Lung::
 	trainerbattle_single TRAINER_LUNG, Route113_Text_LungIntro, Route113_Text_LungDefeat
 	msgbox Route113_Text_LungPostBattle, MSGBOX_AUTOCLOSE
+	call Route113_EventScript_Lung_Item
 	end
 
 Route113_EventScript_Tori::
 	trainerbattle_double TRAINER_TORI_AND_TIA, Route113_Text_ToriIntro, Route113_Text_ToriDefeat, Route113_Text_ToriNotEnoughMons
 	msgbox Route113_Text_ToriPostBattle, MSGBOX_AUTOCLOSE
+	call Route113_EventScript_Tori_Item
 	end
 
 Route113_EventScript_Tia::
 	trainerbattle_double TRAINER_TORI_AND_TIA, Route113_Text_TiaIntro, Route113_Text_TiaDefeat, Route113_Text_TiaNotEnoughMons
 	msgbox Route113_Text_TiaPostBattle, MSGBOX_AUTOCLOSE
+	call Route113_EventScript_Tori_Item
 	end
 
 Route113_EventScript_Sophie::
 	trainerbattle_single TRAINER_SOPHIE, Route113_Text_SophieIntro, Route113_Text_SophieDefeat
 	msgbox Route113_Text_SophiePostBattle, MSGBOX_AUTOCLOSE
+	call Route113_EventScript_Sophie_Item
 	end
 
 Route113_EventScript_Coby::
 	trainerbattle_single TRAINER_COBY, Route113_Text_CobyIntro, Route113_Text_CobyDefeat
 	msgbox Route113_Text_CobyPostBattle, MSGBOX_AUTOCLOSE
+	call Route113_EventScript_Coby_Item
 	end
 
 Route113_EventScript_Lawrence::
 	trainerbattle_single TRAINER_LAWRENCE, Route113_Text_LawrenceIntro, Route113_Text_LawrenceDefeat
 	msgbox Route113_Text_LawrencePostBattle, MSGBOX_AUTOCLOSE
+	call Route113_EventScript_Lawrence_Item
 	end
 
 Route113_EventScript_Wyatt::
 	trainerbattle_single TRAINER_WYATT, Route113_Text_WyattIntro, Route113_Text_WyattDefeat
 	msgbox Route113_Text_WyattPostBattle, MSGBOX_AUTOCLOSE
+	call Route113_EventScript_Wyatt_Item
 	end
 
 Route113_Text_AshCanBeFashionedIntoGlass:
