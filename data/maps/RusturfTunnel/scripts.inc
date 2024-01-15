@@ -62,7 +62,7 @@ RusturfTunnel_EventScript_ClearTunnelScene::
 	msgbox RusturfTunnel_Text_YouShatteredBoulderTakeHM, MSGBOX_DEFAULT
 	call_if_eq VAR_TEMP_1, 2, RusturfTunnel_EventScript_WandasBoyfriendApproachPlayer
 	call_if_eq VAR_TEMP_1, 3, RusturfTunnel_EventScript_WandasBoyfriendApproachPlayer
-	giveitem ITEM_HM04
+	call RusturfTunnel_EventScript_ClearTunnelScene_ITEM
 	setflag FLAG_RECEIVED_HM04
 	msgbox RusturfTunnel_Text_ExplainStrength, MSGBOX_DEFAULT
 	closemessage
@@ -308,7 +308,7 @@ RusturfTunnel_EventScript_Grunt::
 	msgbox RusturfTunnel_Text_GruntIntro, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_GRUNT_RUSTURF_TUNNEL, RusturfTunnel_Text_GruntDefeat
 	msgbox RusturfTunnel_Text_GruntTakePackage, MSGBOX_DEFAULT
-	giveitem ITEM_DEVON_PARTS
+	call RusturfTunnel_EventScript_Grunt_Item
 	closemessage
 	applymovement OBJ_EVENT_ID_PLAYER, RusturfTunnel_Movement_PushPlayerAsideForGrunt
 	applymovement LOCALID_GRUNT, RusturfTunnel_Movement_GruntEscape
@@ -342,6 +342,7 @@ RusturfTunnel_EventScript_Grunt::
 	setvar VAR_RUSTBORO_CITY_STATE, 4
 	setvar VAR_BRINEY_HOUSE_STATE, 1
 	setflag FLAG_HIDE_ROUTE_116_MR_BRINEY
+	call RusturfTunnel_EventScript_Grunt_Item_Two
 	release
 	end
 
@@ -421,6 +422,7 @@ RusturfTunnel_Movement_PeekoExit:
 RusturfTunnel_EventScript_Mike::
 	trainerbattle_single TRAINER_MIKE_2, RusturfTunnel_Text_MikeIntro, RusturfTunnel_Text_MikeDefeat
 	msgbox RusturfTunnel_Text_MikePostBattle, MSGBOX_AUTOCLOSE
+	call RusturfTunnel_EventScript_Mike_Item
 	end
 
 RusturfTunnel_Text_ComeAndGetSome:

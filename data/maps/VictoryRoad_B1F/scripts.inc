@@ -4,26 +4,31 @@ VictoryRoad_B1F_MapScripts::
 VictoryRoad_B1F_EventScript_Samuel::
 	trainerbattle_single TRAINER_SAMUEL, VictoryRoad_B1F_Text_SamuelIntro, VictoryRoad_B1F_Text_SamuelDefeat
 	msgbox VictoryRoad_B1F_Text_SamuelPostBattle, MSGBOX_AUTOCLOSE
+	call VictoryRoad_B1F_EventScript_Samuel_Item
 	end
 
 VictoryRoad_B1F_EventScript_Shannon::
 	trainerbattle_single TRAINER_SHANNON, VictoryRoad_B1F_Text_ShannonIntro, VictoryRoad_B1F_Text_ShannonDefeat
 	msgbox VictoryRoad_B1F_Text_ShannonPostBattle, MSGBOX_AUTOCLOSE
+	call VictoryRoad_B1F_EventScript_Shannon_Item
 	end
 
 VictoryRoad_B1F_EventScript_Michelle::
 	trainerbattle_single TRAINER_MICHELLE, VictoryRoad_B1F_Text_MichelleIntro, VictoryRoad_B1F_Text_MichelleDefeat
 	msgbox VictoryRoad_B1F_Text_MichellePostBattle, MSGBOX_AUTOCLOSE
+	call VictoryRoad_B1F_EventScript_Michelle_Item
 	end
 
 VictoryRoad_B1F_EventScript_Mitchell::
 	trainerbattle_single TRAINER_MITCHELL, VictoryRoad_B1F_Text_MitchellIntro, VictoryRoad_B1F_Text_MitchellDefeat
 	msgbox VictoryRoad_B1F_Text_MitchellPostBattle, MSGBOX_AUTOCLOSE
+	call VictoryRoad_B1F_EventScript_Mitchell_Item
 	end
 
 VictoryRoad_B1F_EventScript_Halle::
 	trainerbattle_single TRAINER_HALLE, VictoryRoad_B1F_Text_HalleIntro, VictoryRoad_B1F_Text_HalleDefeat
 	msgbox VictoryRoad_B1F_Text_HallePostBattle, MSGBOX_AUTOCLOSE
+	call VictoryRoad_B1F_EventScript_Halle_Item
 	end
 
 VictoryRoad_B1F_Text_SamuelIntro:

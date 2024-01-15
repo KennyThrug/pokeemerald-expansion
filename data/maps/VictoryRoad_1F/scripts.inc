@@ -46,6 +46,7 @@ VictoryRoad_1F_EventScript_WallyEntranceBattle::
 	clearflag FLAG_HIDE_VICTORY_ROAD_ENTRANCE_WALLY
 	copyobjectxytoperm LOCALID_WALLY_ENTRANCE
 	setflag FLAG_DEFEATED_WALLY_VICTORY_ROAD
+	call VictoryRoad_1F_EventScript_WallyEntranceBattle_Item
 	copyvar VAR_VICTORY_ROAD_1F_STATE, VAR_0x8008
 	releaseall
 	end
@@ -98,26 +99,31 @@ VictoryRoad_1F_EventScript_RematchWally::
 VictoryRoad_1F_EventScript_Edgar::
 	trainerbattle_single TRAINER_EDGAR, VictoryRoad_1F_Text_EdgarIntro, VictoryRoad_1F_Text_EdgarDefeat
 	msgbox VictoryRoad_1F_Text_EdgarPostBattle, MSGBOX_AUTOCLOSE
+	call VictoryRoad_1F_EventScript_Edgar_Item
 	end
 
 VictoryRoad_1F_EventScript_Albert::
 	trainerbattle_single TRAINER_ALBERT, VictoryRoad_1F_Text_AlbertIntro, VictoryRoad_1F_Text_AlbertDefeat
 	msgbox VictoryRoad_1F_Text_AlbertPostBattle, MSGBOX_AUTOCLOSE
+	call VictoryRoad_1F_EventScript_Albert_Item
 	end
 
 VictoryRoad_1F_EventScript_Hope::
 	trainerbattle_single TRAINER_HOPE, VictoryRoad_1F_Text_HopeIntro, VictoryRoad_1F_Text_HopeDefeat
 	msgbox VictoryRoad_1F_Text_HopePostBattle, MSGBOX_AUTOCLOSE
+	call VictoryRoad_1F_EventScript_Hope_Item
 	end
 
 VictoryRoad_1F_EventScript_Quincy::
 	trainerbattle_single TRAINER_QUINCY, VictoryRoad_1F_Text_QuincyIntro, VictoryRoad_1F_Text_QuincyDefeat
 	msgbox VictoryRoad_1F_Text_QuincyPostBattle, MSGBOX_AUTOCLOSE
+	call VictoryRoad_1F_EventScript_Quincy_Item
 	end
 
 VictoryRoad_1F_EventScript_Katelynn::
 	trainerbattle_single TRAINER_KATELYNN, VictoryRoad_1F_Text_KatelynnIntro, VictoryRoad_1F_Text_KatelynnDefeat
 	msgbox VictoryRoad_1F_Text_KatelynnPostBattle, MSGBOX_AUTOCLOSE
+	call VictoryRoad_1F_EventScript_Katelynn_Item
 	end
 
 VictoryRoad_1F_Text_WallyNotGoingToLoseAnymore:
