@@ -147,6 +147,7 @@ SeafloorCavern_Room9_EventScript_ArchieAwakenKyogre::
 	setflag FLAG_HIDE_MAP_NAME_POPUP
 	warp MAP_ROUTE128, 38, 22
 	waitstate
+	call SeafloorCavern_Room9_EventScript_ArchieAwakenKyogre_Item
 	releaseall
 	end
 

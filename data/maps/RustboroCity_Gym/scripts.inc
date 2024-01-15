@@ -7,6 +7,7 @@ RustboroCity_Gym_EventScript_Roxanne::
 	goto_if_eq VAR_RESULT, TRUE, RustboroCity_Gym_EventScript_RoxanneRematch
 	goto_if_unset FLAG_RECEIVED_TM_ROCK_TOMB, RustboroCity_Gym_EventScript_GiveRockTomb
 	msgbox RustboroCity_Gym_Text_RoxannePostBattle, MSGBOX_DEFAULT
+	call RustboroCity_Gym_EventScript_Roxanne_Item
 	release
 	end
 
@@ -41,16 +42,19 @@ RustboroCity_Gym_EventScript_RoxanneRematch::
 RustboroCity_Gym_EventScript_Josh::
 	trainerbattle_single TRAINER_JOSH, RustboroCity_Gym_Text_JoshIntro, RustboroCity_Gym_Text_JoshDefeat
 	msgbox RustboroCity_Gym_Text_JoshPostBattle, MSGBOX_AUTOCLOSE
+	call RustboroCity_Gym_EventScript_Josh_Item
 	end
 
 RustboroCity_Gym_EventScript_Tommy::
 	trainerbattle_single TRAINER_TOMMY, RustboroCity_Gym_Text_TommyIntro, RustboroCity_Gym_Text_TommyDefeat
 	msgbox RustboroCity_Gym_Text_TommyPostBattle, MSGBOX_AUTOCLOSE
+	call RustboroCity_Gym_EventScript_Tommy_Item
 	end
 
 RustboroCity_Gym_EventScript_Marc::
 	trainerbattle_single TRAINER_MARC, RustboroCity_Gym_Text_MarcIntro, RustboroCity_Gym_Text_MarcDefeat
 	msgbox RustboroCity_Gym_Text_MarcPostBattle, MSGBOX_AUTOCLOSE
+	call RustboroCity_Gym_EventScript_Marc_Item
 	end
 
 RustboroCity_Gym_EventScript_GymGuide::
