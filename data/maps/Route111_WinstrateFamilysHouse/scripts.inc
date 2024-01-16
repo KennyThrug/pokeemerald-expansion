@@ -23,7 +23,7 @@ Route111_WinstrateFamilysHouse_EventScript_Victoria::
 	call Route111_WinstrateFamilysHouse_EventScript_Victoria_Item
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	setflag FLAG_RECEIVED_MACHO_BRACE
-	call Route111_WinstrateFamilysHouse_EventScript_Victoria_Item
+	call Route111_WinstrateFamilysHouse_EventScript_Victoria_Item_Brace
 	goto Route111_WinstrateFamilysHouse_EventScript_FaceOriginalDirection
 	end
 

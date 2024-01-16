@@ -7,9 +7,6 @@ MtPyre_1F_EventScript_CleanseTagWoman::
 	goto_if_set FLAG_RECEIVED_CLEANSE_TAG, MtPyre_1F_EventScript_ReceivedCleanseTag
 	msgbox MtPyre_1F_Text_TakeThisForYourOwnGood, MSGBOX_DEFAULT
 	call MtPyre_1F_EventScript_CleanseTagWoman_Item
-	end
-MtPyre_1F_EventScript_CleanseTagWoman_Post::
-	giveitem ITEM_CLEANSE_TAG
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	setflag FLAG_RECEIVED_CLEANSE_TAG
 	release

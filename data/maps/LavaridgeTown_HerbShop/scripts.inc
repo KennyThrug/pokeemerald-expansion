@@ -31,8 +31,6 @@ LavaridgeTown_HerbShop_EventScript_OldMan::
 	goto_if_set FLAG_RECEIVED_CHARCOAL, LavaridgeTown_HerbShop_EventScript_ExplainCharcoal
 	msgbox LavaridgeTown_HerbShop_Text_YouveComeToLookAtHerbalMedicine, MSGBOX_DEFAULT
 	call LavaridgeTown_HerbShop_EventScript_OldMan_Item
-	end
-LavaridgeTown_HerbShop_EventScript_OldMan_Post::
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	setflag FLAG_RECEIVED_CHARCOAL
 	release

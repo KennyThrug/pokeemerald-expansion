@@ -310,7 +310,7 @@ bool8 MEScrCmd_setrecordmixinggift(struct ScriptContext *ctx)
     return FALSE;
 }
 
-bool8 MEScrCmd_givepokemon(struct ScriptContext *ctx)
+bool8 MEScrCmd_(struct ScriptContext *ctx)
 {
     struct Mail mail;
     struct Pokemon pokemon;

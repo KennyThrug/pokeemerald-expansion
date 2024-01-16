@@ -28,8 +28,6 @@ MauvilleCity_House2_EventScript_AcceptTrade::
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	removeitem ITEM_HARBOR_MAIL
 	call MauvilleCity_House2_EventScript_AcceptTrade_Item
-	end
-MauvilleCity_House2_EventScript_AcceptTrade_POST::
 	setflag FLAG_RECEIVED_COIN_CASE
 	goto MauvilleCity_House2_EventScript_ReceivedCoinCase
 	end
