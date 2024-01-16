@@ -7,8 +7,6 @@ GraniteCave_1F_EventScript_Hiker::
 	goto_if_set FLAG_RECEIVED_HM05, GraniteCave_1F_EventScript_ReceivedFlash
 	msgbox GraniteCave_1F_Text_GetsDarkAheadHereYouGo, MSGBOX_DEFAULT
 	call GraniteCave_1F_EventScript_Hiker_Item
-	end
-GraniteCave_1F_EventScript_Hiker_Post::
 	setflag FLAG_RECEIVED_HM05
 	msgbox GraniteCave_1F_Text_ExplainFlash, MSGBOX_DEFAULT
 	release

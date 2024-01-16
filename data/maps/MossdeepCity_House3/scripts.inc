@@ -9,8 +9,6 @@ MossdeepCity_House3_EventScript_SuperRodFisherman::
 	goto_if_eq VAR_RESULT, NO, MossdeepCity_House3_EventScript_DeclineSuperRod
 	msgbox MossdeepCity_House3_Text_SuperRodIsSuper, MSGBOX_DEFAULT
 	call MossdeepCity_House3_EventScript_SuperRodFisherman_Item
-	end
-MossdeepCity_House3_EventScript_SuperRodFisherman_Post::
 	setflag FLAG_RECEIVED_SUPER_ROD
 	msgbox MossdeepCity_House3_Text_TryDroppingRodInWater, MSGBOX_DEFAULT
 	release

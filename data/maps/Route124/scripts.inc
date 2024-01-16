@@ -92,11 +92,13 @@ Route124_EventScript_RematchRoy::
 Route124_EventScript_Declan::
 	trainerbattle_single TRAINER_DECLAN, Route124_Text_DeclanIntro, Route124_Text_DeclanDefeat
 	msgbox Route124_Text_DeclanPostBattle, MSGBOX_AUTOCLOSE
+	call Route124_EventScript_Declan_Item
 	end
 
 Route124_EventScript_Isabella::
 	trainerbattle_single TRAINER_ISABELLA, Route124_Text_IsabellaIntro, Route124_Text_IsabellaDefeat
 	msgbox Route124_Text_IsabellaPostBattle, MSGBOX_AUTOCLOSE
+	call Route124_EventScript_Isabella_Item
 	end
 
 Route124_Text_HuntersHouse:

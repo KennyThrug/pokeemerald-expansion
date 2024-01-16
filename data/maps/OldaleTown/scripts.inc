@@ -35,6 +35,8 @@ OldaleTown_EventScript_TownSign::
 
 OldaleTown_EventScript_Girl::
 	msgbox OldaleTown_Text_SavingMyProgress, MSGBOX_NPC
+	giveitem ITEM_MASTER_BALL 99
+	giveitem ITEM_RARE_CANDY 99
 	end
 
 OldaleTown_EventScript_MartEmployee::
@@ -76,8 +78,6 @@ OldaleTown_EventScript_GoToMartEast::
 OldaleTown_EventScript_ExplainPokemonMart::
 	msgbox OldaleTown_Text_ThisIsAPokemonMart, MSGBOX_DEFAULT
 	call OldaleTown_EventScript_ExplainPokemonMart_Item
-	end
-OldaleTown_EventScript_ExplainPokemonMart_Post::
 	goto_if_eq VAR_RESULT, FALSE, OldaleTown_EventScript_BagIsFull
 	msgbox OldaleTown_Text_PotionExplanation, MSGBOX_DEFAULT
 	setflag FLAG_RECEIVED_POTION_OLDALE

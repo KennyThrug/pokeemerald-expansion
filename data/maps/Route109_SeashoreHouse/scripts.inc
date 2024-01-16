@@ -25,8 +25,6 @@ Route109_SeashoreHouse_EventScript_AlreadyGaveIntroduction::
 Route109_SeashoreHouse_EventScript_DefeatedTrainers::
 	msgbox Route109_SeashoreHouse_Text_TakeTheseSodaPopBottles, MSGBOX_DEFAULT
 	call Route109_SeashoreHouse_EventScript_DefeatedTrainers_Item
-	end
-Route109_SeashoreHouse_EventScript_DefeatedTrainers_Post::
 	goto_if_eq VAR_RESULT, FALSE, Route109_SeashoreHouse_EventScript_BagFull
 	setflag FLAG_RECEIVED_6_SODA_POP
 	release

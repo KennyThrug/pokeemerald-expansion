@@ -74,9 +74,6 @@ Route104_PrettyPetalFlowerShop_EventScript_WailmerPailGirl::
 Route104_PrettyPetalFlowerShop_EventScript_GiveWailmerPail::
 	msgbox Route104_PrettyPetalFlowerShop_Text_YouCanHaveThis, MSGBOX_DEFAULT
 	call Route104_PrettyPetalFlowerShop_EventScript_GiveWailmerPail_ITEM
-	end
-Route104_PrettyPetalFlowerShop_EventScript_GiveWailmerPail_POST::
-	giveitem ITEM_WAILMER_PAIL
 	msgbox Route104_PrettyPetalFlowerShop_Text_WailmerPailExplanation, MSGBOX_DEFAULT
 	setflag FLAG_RECEIVED_WAILMER_PAIL
 	release

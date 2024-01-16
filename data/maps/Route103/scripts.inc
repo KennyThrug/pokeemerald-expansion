@@ -92,12 +92,14 @@ Route103_EventScript_StartBrendanBattleMudkip::
 
 Route103_EventScript_AfterMayBattle::
 	msgbox Route103_Text_MayTimeToHeadBack, MSGBOX_DEFAULT
-	goto Route103_EventScript_Item_Rival
+	call Route103_EventScript_Item_Rival
+	goto Route103_EventScript_RivalExit
 	end
 
 Route103_EventScript_AfterBrendanBattle::
 	msgbox Route103_Text_BrendanTimeToHeadBack, MSGBOX_DEFAULT
-	goto Route103_EventScript_Item_Rival
+	call Route103_EventScript_Item_Rival
+	goto Route103_EventScript_RivalExit
 	end
 
 Route103_EventScript_RivalExit::

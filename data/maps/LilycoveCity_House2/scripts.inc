@@ -7,8 +7,6 @@ LilycoveCity_House2_EventScript_FatMan::
 	goto_if_set FLAG_RECEIVED_TM44, LilycoveCity_House2_EventScript_ReceivedRest
 	msgbox LilycoveCity_House2_Text_NotAwakeYetHaveThis, MSGBOX_DEFAULT
 	call LilycoveCity_House2_EventScript_FatMan_Item
-	end
-LilycoveCity_House2_EventScript_FatMan_Post::
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	setflag FLAG_RECEIVED_TM44
 	msgbox LilycoveCity_House2_Text_SleepIsEssential, MSGBOX_DEFAULT

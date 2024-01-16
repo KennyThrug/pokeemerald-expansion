@@ -41,8 +41,6 @@ MossdeepCity_StevensHouse_EventScript_StevenGivesDive::
 	waitmovement 0
 	msgbox MossdeepCity_StevensHouse_Text_YouveEarnedHMDive, MSGBOX_DEFAULT
 	call MossdeepCity_StevensHouse_EventScript_StevenGivesDive_Item
-	end
-MossdeepCity_StevensHouse_EventScript_StevenGivesDive_Post::
 	setflag FLAG_RECEIVED_HM08
 	setflag FLAG_OMIT_DIVE_FROM_STEVEN_LETTER
 	msgbox MossdeepCity_StevensHouse_Text_ExplainDive, MSGBOX_DEFAULT

@@ -236,8 +236,6 @@ MossdeepCity_EventScript_KingsRockBoy::
 	goto_if_eq VAR_RESULT, NO, MossdeepCity_EventScript_DeclineKingsRock
 	msgbox MossdeepCity_Text_YouCanKeepIt, MSGBOX_DEFAULT
 	call MossdeepCity_EventScript_KingsRockBoy_Item
-	end
-MossdeepCity_EventScript_KingsRockBoy_Post::
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	setflag FLAG_RECEIVED_KINGS_ROCK
 	release
