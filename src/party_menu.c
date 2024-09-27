@@ -2016,7 +2016,7 @@ static void Task_PartyMenuModifyHP(u8 taskId)
     DisplayPartyPokemonHPBarCheck(&gPlayerParty[tPartyId], &sPartyMenuBoxes[tPartyId]);
     if (tHPToAdd == 0 || tHP == 0 || tHP == tMaxHP)
     {
-        // If HP was recovered, buffer the amount recovered
+        // If HP was recovered, amount recovered
         if (tHP > tStartHP)
             ConvertIntToDecimalStringN(gStringVar2, tHP - tStartHP, STR_CONV_MODE_LEFT_ALIGN, 3);
 
