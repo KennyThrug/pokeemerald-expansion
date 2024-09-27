@@ -2018,3 +2018,10 @@
 	setvar VAR_0x8002, \tryMultiple
 	special TrySpecialOverworldEvo
 	.endm
+
+
+	@CheckTwoStrings
+	@.macro check_two_trainers trainer_name:req check_name:req
+	@setvar STR_VAR_1 \trainer_name
+	@setvar STR_VAR_2 \check_name
+	@specialvar(VAR_RESULT,CheckTwoStrings)
