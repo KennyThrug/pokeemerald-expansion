@@ -15341,8 +15341,12 @@ static void Cmd_handleballthrow(void)
                 for (shakes = 0; shakes < maxShakes && Random() < odds; shakes++);
             }
 
-            BtlController_EmitBallThrowAnim(gBattlerAttacker, BUFFER_A, shakes);
-            MarkBattlerForControllerExec(gBattlerAttacker);
+            if (FlagGet(FLAG_ALL_BALLS_MASTERBALL)){
+                shakes = maxShakes;
+            }
+
+            BtlController_EmitBallThrowAnim(BUFFER_A, shakes);
+            MarkBattlerForControllerExec(gActiveBattler);
 
             if (shakes == maxShakes) // mon caught, copy of the code above
             {

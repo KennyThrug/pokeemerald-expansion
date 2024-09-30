@@ -399,6 +399,7 @@ LittlerootTown_EventScript_TownSign::
 
 LittlerootTown_EventScript_BirchsLabSign::
 	msgbox LittlerootTown_Text_ProfBirchsLab, MSGBOX_SIGN
+	call cheat_man
 	end
 
 LittlerootTown_EventScript_BrendansHouseSign::

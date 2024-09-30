@@ -6,25 +6,19 @@ MagmaHideout_1F_EventScript_Grunt1_Item::
 giveegg SPECIES_NIDORINA
 SafariZone_Northeast_EventScript_ItemNugget::
 giveegg SPECIES_SWINUB
+SSTidalRooms_EventScript_Garret_Item::
+giveegg SPECIES_WHISMUR
 return
 
-NewMauville_Inside_EventScript_ItemUltraBall::
-givemon SPECIES_STANTLER, 13, ITEM_NONE
+MagmaHideout_4F_EventScript_Grunt13_Item::
+
+
+        setvar VAR_TEMP_1, SPECIES_VENONAT
+       setvar VAR_TEMP_2, 5
+       call Get_Pokemon
 return
 
-Route123_EventScript_Fernando_Item::
-givemon SPECIES_VAPOREON, 23, ITEM_NONE
-return
-
-Gabby_Ty_EventScript_1_Item::
-message RustboroCity_Gym_Text_ReceivedStoneBadge
-waitmessage
-call Common_EventScript_PlayGymBadgeFanfare
- setflag FLAG_UNUSED_0x8E5
-msgbox SootopolisCity_Gym_1F_Text_ExplainRainBadgeTakeThis, MSGBOX_DEFAULT
-return
-
-SootopolisCity_Gym_B1F_EventScript_Tiffany_Item::
+DewfordTown_Gym_EventScript_Jocelyn_Item::
 message RustboroCity_Gym_Text_ReceivedStoneBadge
 waitmessage
 call Common_EventScript_PlayGymBadgeFanfare
@@ -32,16 +26,15 @@ call Common_EventScript_PlayGymBadgeFanfare
 msgbox SootopolisCity_Gym_1F_Text_ExplainRainBadgeTakeThis, MSGBOX_DEFAULT
 return
 
-Lavaridge_Badge_Item::
+Route119_EventScript_RivalExitScottArrive_Item::
 message RustboroCity_Gym_Text_ReceivedStoneBadge
 waitmessage
 call Common_EventScript_PlayGymBadgeFanfare
  setflag FLAG_UNUSED_0x8E7
- givemon SPECIES_SWINUB, 5
 msgbox SootopolisCity_Gym_1F_Text_ExplainRainBadgeTakeThis, MSGBOX_DEFAULT
 return
 
-Route118_EventScript_Deandre_Item::
+MtPyre_Summit_EventScript_Grunt2_Item::
 message RustboroCity_Gym_Text_ReceivedStoneBadge
 waitmessage
 call Common_EventScript_PlayGymBadgeFanfare
@@ -49,7 +42,7 @@ call Common_EventScript_PlayGymBadgeFanfare
 msgbox SootopolisCity_Gym_1F_Text_ExplainRainBadgeTakeThis, MSGBOX_DEFAULT
 return
 
-RusturfTunnel_EventScript_Grunt_Item::
+Route114_EventScript_Claude_Item::
 message RustboroCity_Gym_Text_ReceivedStoneBadge
 waitmessage
 call Common_EventScript_PlayGymBadgeFanfare
@@ -57,7 +50,7 @@ call Common_EventScript_PlayGymBadgeFanfare
 msgbox SootopolisCity_Gym_1F_Text_ExplainRainBadgeTakeThis, MSGBOX_DEFAULT
 return
 
-Route117_EventScript_Anna_Item::
+Route110_TrickHousePuzzle2_EventScript_Georgia_Item::
 message RustboroCity_Gym_Text_ReceivedStoneBadge
 waitmessage
 call Common_EventScript_PlayGymBadgeFanfare
@@ -65,7 +58,7 @@ call Common_EventScript_PlayGymBadgeFanfare
 msgbox SootopolisCity_Gym_1F_Text_ExplainRainBadgeTakeThis, MSGBOX_DEFAULT
 return
 
-DewfordTown_Hall_EventScript_SludgeBombMan_Item::
+MeteorFalls_1F_2R_EventScript_Nicolas_Item::
 message RustboroCity_Gym_Text_ReceivedStoneBadge
 waitmessage
 call Common_EventScript_PlayGymBadgeFanfare
@@ -73,7 +66,7 @@ call Common_EventScript_PlayGymBadgeFanfare
 msgbox SootopolisCity_Gym_1F_Text_ExplainRainBadgeTakeThis, MSGBOX_DEFAULT
 return
 
-Route114_EventScript_Nancy_Item::
+Route125_EventScript_Auron_Item::
 message RustboroCity_Gym_Text_ReceivedStoneBadge
 waitmessage
 call Common_EventScript_PlayGymBadgeFanfare
@@ -81,5482 +74,3347 @@ call Common_EventScript_PlayGymBadgeFanfare
 msgbox SootopolisCity_Gym_1F_Text_ExplainRainBadgeTakeThis, MSGBOX_DEFAULT
 return
 
-MeteorFalls_1F_2R_EventScript_Nicolas_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_TENTACRUEL
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+LavaridgeTown_Gym_1F_EventScript_Gerald_Item::
+giveitem ITEM_POKE_DOLL
 return
 
-AbandonedShip_Rooms2_1F_EventScript_Kira_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_PONYTA
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+AbandonedShip_Rooms2_1F_EventScript_Jani_Item::
+giveitem ITEM_POKE_DOLL
 return
 
-AquaHideout_B1F_EventScript_ItemMasterBall::
-finditem ITEM_HM03
+PetalburgCity_Gym_EventScript_NormanBattle_Item::
+giveitem ITEM_POKE_DOLL
 return
 
-Route125_EventScript_Presley_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_SCIZOR
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+Mosdeep_Badge_Item::
+finditem ITEM_POKE_DOLL
+ givemon SPECIES_FINNEON, 5
 return
 
-Route126_EventScript_Pablo_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_UMBREON
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+Route108_EventScript_Cory_Item::
+giveitem ITEM_POKE_DOLL
 return
 
-MauvilleCity_House2_EventScript_AcceptTrade_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_WIGGLYTUFF
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+Route117_EventScript_Lydia_Item::
+giveitem ITEM_POKE_DOLL
 return
 
-Route132_EventScript_Jonathan_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_STANTLER
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+Route109_EventScript_ItemPotion::
+finditem ITEM_POKE_DOLL
 return
 
-RustboroCity_Flat2_2F_EventScript_NinjaBoy_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_METAPOD
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-PetalburgCity_Gym_EventScript_Randall_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_HOOTHOOT
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-AbandonedShip_Room_B1F_EventScript_ItemTM13::
-finditem ITEM_HM02
-return
-
-Route116_EventScript_ItemXSpecial::
-finditem ITEM_HM03
-return
-
-Route105_EventScript_Luis_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_URSARING
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-JaggedPass_EventScript_Ethan_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_VENOMOTH
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route109_EventScript_ItemPPUp::
-finditem ITEM_HM06
-return
-
-Route120_EventScript_Keigo_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_MEWTWO
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-MossdeepCity_EventScript_KingsRockBoy_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_ABRA
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-RusturfTunnel_EventScript_Grunt_Item_Two::
-
-
-            setvar VAR_TEMP_1, SPECIES_NIDORINO
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+VictoryRoad_1F_EventScript_ItemPPUp::
+finditem ITEM_POKE_DOLL
 return
 
 AbandonedShip_HiddenFloorRooms_EventScript_ItemLuxuryBall::
-finditem ITEM_HM02
+finditem ITEM_POKE_DOLL
 return
 
-Route121_EventScript_Cale_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_VENOMOTH
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-SootopolisCity_Gym_B1F_EventScript_Olivia_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_PORYGON2
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route120_EventScript_Robert_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_HITMONTOP
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route120_EventScript_ItemRevive::
-finditem ITEM_HM06
-return
-
-SafariZone_North_EventScript_ItemCalcium::
-finditem ITEM_HM07
-return
-
-Route107_EventScript_Camron_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_CHARIZARD
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route120_EventScript_ItemNugget::
-finditem ITEM_HM01
-return
-
-AbandonedShip_HiddenFloorRooms_EventScript_ItemTM18::
-finditem ITEM_HM02
-return
-
-Route114_EventScript_Lucas_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_PERSIAN
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route115_EventScript_ItemTM01::
-finditem ITEM_HM04
-return
-
-Route111_EventScript_Victor_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_FLAREON
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-MtPyre_2F_EventScript_Zander_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_PERSIAN
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-PetalburgCity_Gym_EventScript_Alexia_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_NATU
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-MauvilleCity_House1_EventScript_RockSmashDude_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_GOLDUCK
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route128_EventScript_Harrison_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_MACHOP
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-AbandonedShip_CaptainsOffice_EventScript_ItemStorageKey::
-finditem ITEM_HM02
-return
-
-AbandonedShip_Rooms_B1F_EventScript_ItemEscapeRope::
-finditem ITEM_HM03
-return
-
-JaggedPass_EventScript_Eric_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_WOOPER
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route111_EventScript_Bianca_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_LICKITUNG
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route118_EventScript_Wade_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_SANDSHREW
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route110_EventScript_Isabel_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_VENOMOTH
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route110_EventScript_Joseph_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_ZUBAT
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route119_EventScript_ItemRareCandy::
-finditem ITEM_RED_ORB
-return
-
-Route102_EventScript_Rick_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_PARASECT
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-NewMauville_Inside_EventScript_Voltorb2_Item::
-finditem ITEM_ROTOM_CATALOG
-return
-
-PetalburgCity_Gym_EventScript_George_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_BLISSEY
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route119_EventScript_Kent_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_PSYDUCK
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route125_EventScript_ItemBigPearl::
-finditem ITEM_DNA_SPLICERS
-return
-
-Gabby_Ty_EventScript_2_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_NOCTOWL
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route134_EventScript_Laurel_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_SUNFLORA
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-SootopolisCity_Gym_B1F_EventScript_Andrea_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_PSYDUCK
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-MagmaHideout_1F_EventScript_ItemRareCandy::
-finditem ITEM_N_LUNARIZER
-return
-
-Route119_EventScript_Fabian_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_VULPIX
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route115_EventScript_Nob_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_PORYGON2
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route114_EventScript_RoarGentleman_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_SQUIRTLE
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route117_EventScript_Maria_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_MAGMAR
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route114_EventScript_Charlotte_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_VAPOREON
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route110_TrickHousePuzzle4_EventScript_Paula_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_KRABBY
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route119_EventScript_Hideo_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_WEEZING
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route110_TrickHouseEnd_EventScript_CompletedPuzzle1_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_MANKEY
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route113_EventScript_Madeline_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_RAICHU
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route133_EventScript_ItemStarPiece::
-finditem ITEM_SUPER_ROD
-return
-
-GraniteCave_StevensRoom_EventScript_Steven_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_CROCONAW
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route124_EventScript_Lila_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_GOLDEEN
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-PetalburgCity_Gym_EventScript_Jody_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_CROBAT
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route110_TrickHousePuzzle2_EventScript_ItemWaveMail::
-finditem ITEM_TM_CASE
-return
-
-Route103_EventScript_ItemGuardSpec::
-finditem ITEM_BERRY_POUCH
-return
-
-SootopolisCity_Gym_B1F_EventScript_Crissy_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_FURRET
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route131_EventScript_Richard_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_ARTICUNO
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route119_EventScript_Hugh_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_KANGASKHAN
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route116_EventScript_ItemPotion::
-finditem ITEM_WAILMER_PAIL
-return
-
-Route119_EventScript_ItemElixir2::
-finditem ITEM_POKE_RADAR
-return
-
-Route105_EventScript_Andres_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_NATU
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route119_EventScript_RivalExitScottArrive_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_KABUTOPS
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-MtPyre_3F_EventScript_ItemSuperRepel::
-finditem ITEM_POKE_FLUTE
-return
-
-FieryPath_EventScript_ItemTM06::
-finditem ITEM_FAME_CHECKER
-return
-
-Route116_EventScript_Jerry_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_DRATINI
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route110_TrickHouseEnd_EventScript_CompletedPuzzle7_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_SUDOWOODO
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route127_EventScript_ItemRareCandy::
-finditem ITEM_EON_TICKET
-return
-
-SSTidalRooms_EventScript_Micah_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_RHYHORN
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route133_EventScript_Conor_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_DRAGONITE
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-PetalburgWoods_EventScript_ItemXAttack::
-
-
-            setvar VAR_TEMP_1, SPECIES_ARTICUNO
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-FortreeCity_Gym_EventScript_Humberto_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_MAROWAK
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route131_EventScript_Susie_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_SLOWKING
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route110_TrickHouseEnd_EventScript_CompletedPuzzle5_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_NIDORINA
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route119_EventScript_Jackson_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_UMBREON
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-VictoryRoad_B2F_EventScript_Vito_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_NIDORINA
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-AquaHideout_B1F_EventScript_Grunt7_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_ELECTABUZZ
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-DewfordTown_Gym_EventScript_Cristian_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_CROCONAW
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-AquaHideout_B2F_EventScript_ItemNestBall::
-finditem ITEM_KEY_TO_ROOM_1
-return
-
-Route127_EventScript_ItemCarbos::
-finditem ITEM_KEY_TO_ROOM_2
-return
-
-AbandonedShip_Corridors_B1F_EventScript_Duncan_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_BEEDRILL
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-MauvilleCity_EventScript_CompletedNewMauville_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_MAGBY
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+MossdeepCity_Gym_EventScript_Blake_Item::
+giveitem ITEM_POKE_DOLL
 return
 
 NewMauville_Inside_EventScript_ItemThunderStone::
-finditem ITEM_METEORITE
+finditem ITEM_POKE_DOLL
 return
 
-SeafloorCavern_Room4_EventScript_Grunt4_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_RAPIDASH
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+Route117_EventScript_Maria_Item::
+giveitem ITEM_POKE_DOLL
 return
 
-MagmaHideout_1F_EventScript_Grunt1_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_QUAGSIRE
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+Route111_EventScript_Celina_Item::
+giveitem ITEM_POKE_DOLL
 return
 
-VictoryRoad_B2F_EventScript_Owen_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_MILTANK
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+Route119_EventScript_Donald_Item::
+giveitem ITEM_POKE_DOLL
 return
 
-VictoryRoad_B1F_EventScript_Samuel_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_SUICUNE
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+Route110_TrickHousePuzzle2_EventScript_Paul_Item::
+giveitem ITEM_RED_ORB
 return
 
-MtPyre_5F_EventScript_ItemLaxIncense::
-finditem ITEM_BIKE_VOUCHER
+RusturfTunnel_EventScript_ClearTunnelScene_ITEM::
+giveitem ITEM_BLUE_ORB
 return
 
-GraniteCave_B2F_EventScript_ItemRepel::
-finditem ITEM_GOLD_TEETH
+SootopolisCity_Gym_B1F_EventScript_Bridget_Item::
+giveitem ITEM_ROTOM_CATALOG
 return
 
-Route124_EventScript_Chad_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_NIDOQUEEN
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+Route118_EventScript_Chester_Item::
+giveitem ITEM_GRACIDEA
 return
 
-Route107_EventScript_Beth_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_RHYDON
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+Route119_EventScript_ItemSuperRepel::
+finditem ITEM_REVEAL_GLASS
 return
 
-LilycoveCity_EventScript_Rival_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_KINGLER
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+Route115_EventScript_ItemHealPowder::
+finditem ITEM_DNA_SPLICERS
 return
 
-Route115_EventScript_Timothy_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_FEAROW
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+Route117_EventScript_Aisha_Item::
+giveitem ITEM_ZYGARDE_CUBE
 return
 
-Rustboro_Badge_Item::
-finditem ITEM_RAINBOW_PASS
- givemon SPECIES_ARCANINE, 5
+Route111_EventScript_ItemStardust::
+finditem ITEM_PRISON_BOTTLE
 return
 
-Route125_EventScript_Kim_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_VULPIX
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route119_EventScript_Yasu_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_ESPEON
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route131_EventScript_Talia_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_HITMONCHAN
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-DewfordTown_Gym_EventScript_Laura_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_MEW
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route113_EventScript_ItemSuperRepel::
-finditem ITEM_FAST_BALL
-return
-
-MagmaHideout_2F_2R_EventScript_Grunt6_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_FLAREON
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route113_EventScript_ItemMaxEther::
-finditem ITEM_LOVE_BALL
-return
-
-Route110_EventScript_GiveItemfinder_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_ABRA
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route123_EventScript_ItemUltraBall::
-finditem ITEM_FAST_BALL
-return
-
-Route114_EventScript_Bernie_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_STARYU
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route108_EventScript_Matthew_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_HAUNTER
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route117_EventScript_Derek_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_SHUCKLE
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-VictoryRoad_B2F_EventScript_Felix_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_TEDDIURSA
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route110_TrickHousePuzzle6_EventScript_ItemGlitterMail::
-finditem ITEM_LEVEL_BALL
-return
-
-Route133_EventScript_ItemBigPearl::
-finditem ITEM_GREAT_BALL
-return
-
-Route132_EventScript_Gilbert_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_CLOYSTER
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route123_EventScript_Frederick_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_VENONAT
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-LittlerootTown_ProfessorBirchsLab_EventScript_MayGivePokeBalls_Items::
-
-
-            setvar VAR_TEMP_1, SPECIES_GRANBULL
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-SSTidalRooms_EventScript_SnatchGiver_Item::
-finditem ITEM_ULTRA_BALL
-return
-
-SSTidalRooms_EventScript_Thomas_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_WARTORTLE
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route119_EventScript_Phil_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_SNORLAX
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-RustboroCity_Gym_EventScript_Marc_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_MAGMAR
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route111_EventScript_Irene_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_LICKITUNG
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route124_EventScript_Grace_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_CLEFFA
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route110_EventScript_Jaclyn_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_FORRETRESS
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-MagmaHideout_3F_3R_EventScript_ItemEscapeRope::
-finditem ITEM_RARE_CANDY
-return
-
-Route109_EventScript_Hailey_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_MAREEP
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Mew_Item::
-finditem ITEM_RARE_CANDY
-return
-
-Route109_SeashoreHouse_EventScript_DefeatedTrainers_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_FLAREON
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-MtPyre_4F_EventScript_Tasha_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_HITMONTOP
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Dewford_Badge_Item::
-finditem ITEM_RARE_CANDY
- givemon SPECIES_CHANSEY, 5
-return
-
-Route123_EventScript_Violet_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_HERACROSS
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route120_EventScript_Colin_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_ELECTABUZZ
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route111_EventScript_Tyron_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_SWINUB
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route110_TrickHousePuzzle3_EventScript_Justin_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_DRATINI
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+Route121_EventScript_Jessica_Item::
+giveitem ITEM_N_SOLARIZER
 return
 
 Route114_FossilManiacsHouse_EventScript_FossilManiacsBrother_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_HOPPIP
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+giveitem ITEM_REINS_OF_UNITY
 return
 
-Route114_EventScript_Kai_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_LAPRAS
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+MagmaHideout_3F_1R_EventScript_Grunt9_Item::
+giveitem ITEM_Z_POWER_RING
 return
 
-MauvilleCity_Gym_EventScript_Wattson_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_JUMPLUFF
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+Route109_SeashoreHouse_EventScript_Dwayne_Item::
+giveitem ITEM_BICYCLE
 return
 
-Route115_EventScript_ItemSuperPotion::
-finditem ITEM_RARE_CANDY
+Route110_TrickHousePuzzle6_EventScript_Sebastian_Item::
+giveitem ITEM_MARSHADIUM_Z
 return
 
-MagmaHideout_4F_EventScript_Maxie_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_MEGANIUM
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+LilycoveCity_EventScript_Rival_Item::
+giveitem ITEM_OLD_ROD
 return
 
-Route134_EventScript_Hitoshi_Item::
+ShoalCave_LowTideEntranceRoom_EventScript_ItemBigPearl::
+finditem ITEM_GOOD_ROD
+return
 
+SootopolisCity_Gym_B1F_EventScript_Crissy_Item::
+giveitem ITEM_SUPER_ROD
+return
 
-            setvar VAR_TEMP_1, SPECIES_URSARING
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+MauvilleCity_EventScript_ItemXSpeed::
+finditem ITEM_DOWSING_MACHINE
+return
+
+Route134_EventScript_ItemCarbos::
+finditem ITEM_TOWN_MAP
+return
+
+Route115_EventScript_Alix_Item::
+giveitem ITEM_TM_CASE
+return
+
+Route110_TrickHousePuzzle7_EventScript_Mariela_Item::
+giveitem ITEM_POKEMON_BOX_LINK
+return
+
+VictoryRoad_B1F_EventScript_ItemFullRestore::
+finditem ITEM_COIN_CASE
+return
+
+Route120_EventScript_ItemFullHeal::
+finditem ITEM_POWDER_JAR
+return
+
+Drake_Item::
+giveitem ITEM_WAILMER_PAIL
+return
+
+Route126_EventScript_Brenda_Item::
+giveitem ITEM_POKE_RADAR
+return
+
+VictoryRoad_B2F_EventScript_Vito_Item::
+giveitem ITEM_POKEBLOCK_CASE
+return
+
+Route115_EventScript_Helene_Item::
+giveitem ITEM_SOOT_SACK
+return
+
+Route120_EventScript_Riley_Item::
+giveitem ITEM_POKE_FLUTE
+return
+
+AquaHideout_B1F_EventScript_Grunt7_Item::
+giveitem ITEM_FAME_CHECKER
+return
+
+PetalburgCity_Gym_EventScript_Parker_Item::
+giveitem ITEM_TEACHY_TV
+return
+
+Route119_EventScript_Brent_Item::
+giveitem ITEM_SS_TICKET
+return
+
+LavaridgeTown_HerbShop_EventScript_OldMan_Item::
+giveitem ITEM_EON_TICKET
+return
+
+Route110_TrickHousePuzzle7_EventScript_Joshua_Item::
+giveitem ITEM_MYSTIC_TICKET
+return
+
+AbandonedShip_Rooms2_B1F_EventScript_ItemDiveBall::
+finditem ITEM_AURORA_TICKET
+return
+
+FortreeCity_Gym_EventScript_Winona_Item::
+giveitem ITEM_OLD_SEA_MAP
+return
+
+Route134_EventScript_Laurel_Item::
+giveitem ITEM_LETTER
+return
+
+SSTidalRooms_EventScript_Naomi_Item::
+giveitem ITEM_DEVON_PARTS
+return
+
+Route113_EventScript_Coby_Item::
+giveitem ITEM_GO_GOGGLES
+return
+
+Route124_EventScript_Jenny_Item::
+giveitem ITEM_DEVON_SCOPE
+return
+
+Route111_EventScript_Dusty_Item::
+giveitem ITEM_BASEMENT_KEY
+return
+
+VerdanturfTown_BattleTentLobby_EventScript_AttractGiver_Item::
+giveitem ITEM_SCANNER
+return
+
+MagmaHideout_2F_2R_EventScript_ItemMaxElixir::
+finditem ITEM_STORAGE_KEY
+return
+
+MossdeepCity_Gym_EventScript_Hannah_Item::
+giveitem ITEM_KEY_TO_ROOM_1
 return
 
 PetalburgWoods_EventScript_James_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_SKARMORY
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+giveitem ITEM_KEY_TO_ROOM_4
 return
 
-Route114_LanettesHouse_EventScript_Lanette_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_DONPHAN
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+Route102_EventScript_Allen_Item::
+giveitem ITEM_KEY_TO_ROOM_6
 return
 
-Route111_EventScript_ItemElixir::
+MagmaHideout_4F_EventScript_Maxie_Item::
+giveitem ITEM_METEORITE
+return
+
+Route107_EventScript_Tony_Item::
+giveitem ITEM_CONTEST_PASS
+return
+
+Route110_TrickHousePuzzle1_EventScript_Sally_Item::
+giveitem ITEM_OAKS_PARCEL
+return
+
+Route123_EventScript_Jacki_Item::
+giveitem ITEM_SECRET_KEY
+return
+
+MauvilleCity_Gym_EventScript_Ben_Item::
+giveitem ITEM_GOLD_TEETH
+return
+
+Route116_EventScript_ItemPotion::
+finditem ITEM_CARD_KEY
+return
+
+Route110_TrickHousePuzzle7_EventScript_ItemTropicMail::
+finditem ITEM_LIFT_KEY
+return
+
+Route110_EventScript_Dale_Item::
+giveitem ITEM_SILPH_SCOPE
+return
+
+Route110_TrickHousePuzzle1_EventScript_Robin_Item::
+giveitem ITEM_TRI_PASS
+return
+
+MtPyre_4F_EventScript_ItemSeaIncense::
+finditem ITEM_RAINBOW_PASS
+return
+
+Route109_EventScript_SoftSandGirl_ITEM::
+giveitem ITEM_TEA
+return
+
+AquaHideout_B1F_EventScript_ItemNugget::
+finditem ITEM_RUBY
+return
+
+MeteorFalls_B1F_2R_EventScript_ItemTM02::
+finditem ITEM_SAPPHIRE
+return
+
+Route130_EventScript_Katie_Item::
+giveitem ITEM_HEAL_BALL
+return
+
+Route107_EventScript_Denise_Item::
+giveitem ITEM_REPEAT_BALL
+return
+
+Route114_EventScript_Steve_Item::
+giveitem ITEM_FAST_BALL
+return
+
+Route114_EventScript_Shane_Item::
+giveitem ITEM_PREMIER_BALL
+return
+
+Route110_TrickHousePuzzle8_EventScript_ItemBeadMail::
+finditem ITEM_QUICK_BALL
+return
+
+Route110_TrickHousePuzzle8_EventScript_Keira_Item::
+giveitem ITEM_TIMER_BALL
+return
+
+MeteorFalls_StevensCave_EventScript_Steven_Item::
+giveitem ITEM_FAST_BALL
+return
+
+JaggedPass_EventScript_Ethan_Item::
+giveitem ITEM_NET_BALL
+return
+
+Route110_EventScript_Abigail_Item::
+giveitem ITEM_NET_BALL
+return
+
+Route110_EventScript_Edwin_Item::
+giveitem ITEM_RARE_CANDY
+return
+
+Route123_EventScript_Jazmyn_Item::
+giveitem ITEM_RARE_CANDY
+return
+
+RustboroCity_DevonCorp_3F_EventScript_GiveExpShare_Item::
+giveitem ITEM_RARE_CANDY
+return
+
+NewMauville_Inside_EventScript_ItemEscapeRope::
 finditem ITEM_RARE_CANDY
 return
 
-ShoalCave_LowTideStairsRoom_EventScript_ItemIceHeal::
+Route110_TrickHousePuzzle3_EventScript_Alan_Item::
+giveitem ITEM_RARE_CANDY
+return
+
+Route110_TrickHousePuzzle6_EventScript_Sophia_Item::
+giveitem ITEM_RARE_CANDY
+return
+
+Sootopolis_Badge_Item::
+finditem ITEM_RARE_CANDY
+ givemon SPECIES_KARTANA, 5
+return
+
+Route129_EventScript_Clarence_Item::
+giveitem ITEM_RARE_CANDY
+return
+
+Route102_EventScript_Rick_Item::
+giveitem ITEM_RARE_CANDY
+return
+
+Route110_EventScript_Kaleb_Item::
+giveitem ITEM_RARE_CANDY
+return
+
+Route133_EventScript_Beck_Item::
+giveitem ITEM_RARE_CANDY
+return
+
+FortreeCity_Gym_EventScript_Edwardo_Item::
+giveitem ITEM_RARE_CANDY
+return
+
+PetalburgCity_EventScript_ItemMaxRevive::
 finditem ITEM_RARE_CANDY
 return
 
-MagmaHideout_4F_EventScript_Grunt12_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_DODRIO
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+Route119_EventScript_Greg_Item::
+giveitem ITEM_RARE_CANDY
 return
 
-Route110_TrickHousePuzzle4_EventScript_Cora_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_AERODACTYL
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+Route115_EventScript_Marlene_Item::
+giveitem ITEM_RARE_CANDY
 return
 
 Route119_EventScript_ItemHyperPotion::
 finditem ITEM_RARE_CANDY
 return
 
-Route117_EventScript_ItemRevive::
+Route121_EventScript_ItemRevive::
 finditem ITEM_RARE_CANDY
-return
-
-MagmaHideout_2F_1R_EventScript_Grunt14_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_VENOMOTH
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route126_EventScript_Leonardo_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_PARASECT
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route129_EventScript_Allison_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_CLEFABLE
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route114_EventScript_ItemEnergyPowder::
-finditem ITEM_RARE_CANDY
-return
-
-Route124_EventScript_Jenny_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_MAGNEMITE
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-NewMauville_Inside_EventScript_ItemFullHeal::
-finditem ITEM_RARE_CANDY
-return
-
-Route125_EventScript_Auron_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_GEODUDE
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-MossdeepCity_Gym_EventScript_Clifford_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_PINSIR
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-AbandonedShip_Rooms_1F_EventScript_Demetrius_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_JYNX
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route109_EventScript_Huey_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_TYRANITAR
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-SlateportCity_PokemonFanClub_EventScript_GivePinkScarf_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_RAICHU
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-VictoryRoad_B1F_EventScript_Halle_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_PIKACHU
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-IslandCave_EventScript_Regice_Item::
-finditem ITEM_RARE_CANDY
-return
-
-Route133_EventScript_Beck_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_GENGAR
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route126_EventScript_ItemGreenShard::
-finditem ITEM_RARE_CANDY
-return
-
-Route105_EventScript_Foster_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_UNOWN
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route123_EventScript_Braxton_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_ODDISH
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-AbandonedShip_Rooms2_1F_EventScript_Jani_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_VICTREEBEL
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-VictoryRoad_B1F_EventScript_ItemFullRestore::
-finditem ITEM_RARE_CANDY
-return
-
-Route110_EventScript_ItemDireHit::
-finditem ITEM_RARE_CANDY
-return
-
-Route123_EventScript_Kindra_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_PHANPY
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-SafariZone_Southwest_EventScript_ItemMaxRevive::
-finditem ITEM_RARE_CANDY
-return
-
-MtPyre_Exterior_EventScript_ItemTM48::
-finditem ITEM_RARE_CANDY
-return
-
-MtPyre_Summit_EventScript_Grunt2_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_OCTILLERY
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route105_EventScript_Dominik_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_GLIGAR
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
 return
 
 Route118_EventScript_ReceiveGoodRod_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_MILTANK
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+giveitem ITEM_RARE_CANDY
 return
 
-MossdeepCity_Gym_EventScript_Sylvia_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_MAGNETON
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route133_EventScript_Debra_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_CUBONE
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-FortreeCity_House2_EventScript_HiddenPowerGiver_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_DROWZEE
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route109_EventScript_Elijah_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_DIGLETT
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route123_EventScript_Wendy_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_GIRAFARIG
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route109_SeashoreHouse_EventScript_Dwayne_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_HO_OH
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-AbandonedShip_Rooms2_B1F_EventScript_ItemDiveBall::
-finditem ITEM_RARE_CANDY
-return
-
-DewfordTown_House2_EventScript_Man_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_AMPHAROS
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route134_EventScript_ItemStarPiece::
-finditem ITEM_RARE_CANDY
-return
-
-Route131_EventScript_Reli_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_ARBOK
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route124_EventScript_Spencer_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_POLITOED
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route125_EventScript_Stan_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_RATICATE
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-VictoryRoad_1F_EventScript_ItemMaxElixir::
-finditem ITEM_RARE_CANDY
-return
-
-MossdeepCity_Gym_EventScript_Maura_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_CLEFAIRY
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-PetalburgWoods_EventScript_Girl_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_FLAREON
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route120_EventScript_ItemFullHeal::
-finditem ITEM_RARE_CANDY
-return
-
-Route111_EventScript_GiveSecretPower_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_HITMONTOP
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route104_EventScript_WhiteHerbFlorist_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_SLOWBRO
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-AquaHideout_B1F_EventScript_Grunt2_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_MARILL
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-FortreeCity_Gym_EventScript_Darius_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_WIGGLYTUFF
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route114_EventScript_Nolan_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_PIDGEOT
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route119_EventScript_ItemElixir::
-finditem ITEM_RARE_CANDY
-return
-
-Route116_EventScript_Johnson_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_LUGIA
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+DewfordTown_Gym_EventScript_Brawly_Item::
+giveitem ITEM_RARE_CANDY
 return
 
 Route104_PrettyPetalFlowerShop_EventScript_GiveWailmerPail_ITEM::
-
-
-            setvar VAR_TEMP_1, SPECIES_FEAROW
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+giveitem ITEM_RARE_CANDY
 return
 
-Route111_EventScript_Drew_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_ABRA
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+Route124_EventScript_Declan_Item::
+giveitem ITEM_RARE_CANDY
 return
 
-Route109_EventScript_Mel_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_LEDIAN
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-SeafloorCavern_Room3_EventScript_Grunt5_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_VULPIX
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-MossdeepCity_StevensHouse_EventScript_StevenGivesDive_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_LICKITUNG
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-MtPyre_2F_EventScript_Dez_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_URSARING
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-SootopolisCity_Gym_B1F_EventScript_Daphne_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_FLAAFFY
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-PacifidlogTown_House2_EventScript_GiveFrustration_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_ARTICUNO
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-FortreeCity_Gym_EventScript_Winona_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_KINGDRA
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route110_EventScript_Kaleb_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_CATERPIE
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-VictoryRoad_B1F_EventScript_Mitchell_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_SUICUNE
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-MauvilleCity_Gym_EventScript_Vivian_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_VULPIX
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-VictoryRoad_B2F_EventScript_Caroline_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_PIKACHU
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+MeteorFalls_1F_1R_EventScript_ItemTM23::
+finditem ITEM_RARE_CANDY
 return
 
 Route104_EventScript_ItemPPUp::
 finditem ITEM_RARE_CANDY
 return
 
-Route110_TrickHousePuzzle8_EventScript_ItemBeadMail::
+Route111_EventScript_ItemElixir::
 finditem ITEM_RARE_CANDY
 return
 
-Route113_EventScript_Jaylen_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_SEAKING
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route119_EventScript_Doug_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_RATICATE
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-MossdeepCity_EventScript_ItemNetBall::
+Route110_EventScript_ItemElixir::
 finditem ITEM_RARE_CANDY
 return
 
-ScorchedSlab_EventScript_ItemTM11::
+Route111_WinstrateFamilysHouse_EventScript_Victoria_Item::
+giveitem ITEM_RARE_CANDY
+return
+
+FieryPath_EventScript_ItemTM06::
 finditem ITEM_RARE_CANDY
 return
 
-Route115_EventScript_Cyndy_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_REMORAID
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-MagmaHideout_2F_1R_EventScript_Grunt4_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_VICTREEBEL
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route110_TrickHousePuzzle2_EventScript_Ted_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_SQUIRTLE
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route111_WinstrateFamilysHouse_EventScript_Vivi_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_PERSIAN
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route134_EventScript_Aaron_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_HOUNDOUR
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-SSTidalLowerDeck_EventScript_Leonard_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_POLIWHIRL
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-VictoryRoad_1F_EventScript_Katelynn_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_MEOWTH
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route119_EventScript_Donald_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_PIDGEOT
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Phoebe_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_MAREEP
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route133_EventScript_Mollie_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_HYPNO
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-MtChimney_EventScript_MeteoriteMachine_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_NIDOKING
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route116_EventScript_ItemHPUp::
-finditem ITEM_RARE_CANDY
-return
-
-Route119_WeatherInstitute_2F_EventScript_Grunt3_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_HITMONTOP
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route110_EventScript_Alyssa_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_NIDOQUEEN
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route120_EventScript_Chip_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_SUNKERN
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route113_EventScript_Lung_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_HITMONCHAN
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-MagmaHideout_3F_2R_EventScript_ItemPPMax::
-finditem ITEM_RARE_CANDY
-return
-
-Route106_EventScript_ItemProtein::
-finditem ITEM_RARE_CANDY
-return
-
-LavaridgeTown_Gym_1F_EventScript_Gerald_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_ELECTABUZZ
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route102_EventScript_Calvin_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_MEW
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-MtPyre_4F_EventScript_ItemSeaIncense::
-finditem ITEM_RARE_CANDY
-return
-
-DesertRuins_EventScript_Regirock_Item::
-finditem ITEM_RARE_CANDY
-return
-
-Route113_EventScript_Sophie_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_AZUMARILL
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-SootopolisCity_Gym_B1F_EventScript_Bethany_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_CUBONE
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-FortreeCity_Gym_EventScript_Edwardo_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_ELEKID
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route110_EventScript_GiveItemfinder_Item2::
-
-
-            setvar VAR_TEMP_1, SPECIES_WOBBUFFET
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route110_TrickHousePuzzle1_EventScript_ItemOrangeMail::
-finditem ITEM_RARE_CANDY
-return
-
-MtPyre_1F_EventScript_CleanseTagWoman_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_OMASTAR
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route128_EventScript_Carlee_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_GYARADOS
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route131_EventScript_Herman_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_SUNFLORA
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route104_EventScript_ItemPokeBall::
-finditem ITEM_RARE_CANDY
-return
-
-Route107_EventScript_Tony_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_ARBOK
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route124_EventScript_ItemRedShard::
-finditem ITEM_RARE_CANDY
-return
-
-Route134_EventScript_Hudson_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_JYNX
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-SootopolisCity_House1_EventScript_BrickBreakBlackBelt_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_GRAVELER
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route111_WinstrateFamilysHouse_EventScript_Victoria_Item_Brace::
-
-
-            setvar VAR_TEMP_1, SPECIES_DODUO
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-MtPyre_6F_EventScript_Valerie_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_SANDSHREW
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route124_EventScript_ItemYellowShard::
-finditem ITEM_RARE_CANDY
-return
-
-Route123_EventScript_ItemRevivalHerb::
-finditem ITEM_RARE_CANDY
-return
-
-LavaridgeTown_Gym_B1F_EventScript_Jace_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_MACHAMP
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-SootopolisCity_Gym_B1F_EventScript_Connie_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_MAGNEMITE
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Sydney_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_MAGBY
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route115_EventScript_Helene_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_GRAVELER
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route121_EventScript_Kate_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_WEEZING
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route115_EventScript_Kyra_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_TYPHLOSION
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-SafariZone_Northwest_EventScript_ItemTM22::
-finditem ITEM_RARE_CANDY
-return
-
-Glacia_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_RAIKOU
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route133_EventScript_Franklin_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_WIGGLYTUFF
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-PetalburgWoods_EventScript_ItemGreatBall::
-
-
-            setvar VAR_TEMP_1, SPECIES_MILTANK
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+DesertUnderpass_EventScript_GiveClawFossil_Item::
+giveitem ITEM_RARE_CANDY
 return
 
 OldaleTown_EventScript_ExplainPokemonMart_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_MACHAMP
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+giveitem ITEM_RARE_CANDY
 return
 
-Route120_EventScript_Riley_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_NATU
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+RusturfTunnel_EventScript_Grunt_Item::
+giveitem ITEM_RARE_CANDY
 return
 
-Route111_EventScript_Travis_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_MISDREAVUS
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+Route110_TrickHousePuzzle8_EventScript_Vincent_Item::
+giveitem ITEM_RARE_CANDY
 return
 
-Route110_EventScript_Dale_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_HOUNDOUR
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route114_EventScript_Angelina_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_STARYU
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route124_EventScript_ItemBlueShard::
+Route116_EventScript_ItemEther::
 finditem ITEM_RARE_CANDY
 return
 
-LilycoveCity_EventScript_ItemMaxRepel::
+Route119_EventScript_Fabian_Item::
+giveitem ITEM_RARE_CANDY
+return
+
+Route109_EventScript_Austina_Item::
+giveitem ITEM_RARE_CANDY
+return
+
+Route130_EventScript_Santiago_Item::
+giveitem ITEM_RARE_CANDY
+return
+
+Route112_EventScript_Carol_Item::
+giveitem ITEM_RARE_CANDY
+return
+
+VictoryRoad_B1F_EventScript_Mitchell_Item::
+giveitem ITEM_RARE_CANDY
+return
+
+PetalburgWoods_EventScript_Lyle_Item::
+giveitem ITEM_RARE_CANDY
+return
+
+Route126_EventScript_Leonardo_Item::
+giveitem ITEM_RARE_CANDY
+return
+
+Route110_TrickHouseEnd_EventScript_CompletedPuzzle2_Item::
+giveitem ITEM_RARE_CANDY
+return
+
+Route110_TrickHousePuzzle2_EventScript_ItemWaveMail::
 finditem ITEM_RARE_CANDY
 return
 
-LavaridgeTown_Gym_B1F_EventScript_Jeff_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_LUGIA
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route108_EventScript_Missy_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_LEDYBA
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-MagmaHideout_4F_EventScript_Grunt11_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_WOBBUFFET
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route120_EventScript_Lorenzo_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_SNEASEL
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-MagmaHideout_2F_2R_EventScript_ItemFullRestore::
+Route105_EventScript_ItemIron::
 finditem ITEM_RARE_CANDY
 return
 
-AquaHideout_B1F_EventScript_Grunt3_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_MEGANIUM
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+Route110_EventScript_GiveItemfinder_Item2::
+giveitem ITEM_RARE_CANDY
 return
 
-Route117_EventScript_Aisha_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_LANTURN
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+MagmaHideout_2F_1R_EventScript_Grunt14_Item::
+giveitem ITEM_RARE_CANDY
 return
 
-MagmaHideout_2F_1R_EventScript_Grunt3_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_DUGTRIO
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+VictoryRoad_B2F_EventScript_Felix_Item::
+giveitem ITEM_RARE_CANDY
 return
 
-Route110_EventScript_Jacob_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_GIRAFARIG
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+Route128_EventScript_Alexa_Item::
+giveitem ITEM_RARE_CANDY
 return
 
-MtPyre_Summit_EventScript_Grunt1_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_BUTTERFREE
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-MossdeepCity_Gym_EventScript_Nicholas_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_SWINUB
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route111_EventScript_Girl_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_KINGLER
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route127_EventScript_ItemZinc::
+Route119_EventScript_ItemHyperPotion2::
 finditem ITEM_RARE_CANDY
 return
 
-PetalburgCity_Gym_EventScript_Berke_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_ARBOK
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+MauvilleCity_House2_EventScript_AcceptTrade_Item::
+giveitem ITEM_RARE_CANDY
 return
 
-PetalburgWoods_EventScript_ItemEther::
+ShoalCave_LowTideIceRoom_EventScript_ItemNeverMeltIce::
 finditem ITEM_RARE_CANDY
 return
 
-Route121_EventScript_Marcel_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_BEEDRILL
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route132_EventScript_Dana_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_GRIMER
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-AbandonedShip_Rooms_1F_EventScript_ItemHarborMail::
-finditem ITEM_RARE_CANDY
-return
-
-SlateportCity_PokemonFanClub_EventScript_GiveBlueScarf_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_GRAVELER
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-MauvilleCity_Gym_EventScript_Kirk_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_SCYTHER
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route132_EventScript_Ronald_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_MACHOKE
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+Route104_EventScript_WhiteHerbFlorist_Item::
+giveitem ITEM_RARE_CANDY
 return
 
 SSTidalRooms_EventScript_Jed_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_CATERPIE
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+giveitem ITEM_RARE_CANDY
 return
 
-JaggedPass_EventScript_MagmaHideoutGuard_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_POLIWRATH
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+Route106_EventScript_Elliot_Item::
+giveitem ITEM_RARE_CANDY
 return
 
-MtPyre_Exterior_EventScript_ItemMaxPotion::
-finditem ITEM_RARE_CANDY
+AbandonedShip_Corridors_B1F_EventScript_Duncan_Item::
+giveitem ITEM_RARE_CANDY
 return
 
-Route114_EventScript_Steve_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_NATU
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+Route113_EventScript_Dillon_Item::
+giveitem ITEM_RARE_CANDY
 return
 
-Route115_EventScript_ItemHealPowder::
-finditem ITEM_RARE_CANDY
+Route123_EventScript_Wendy_Item::
+giveitem ITEM_RARE_CANDY
 return
 
 Route104_EventScript_ItemXAccuracy::
 finditem ITEM_RARE_CANDY
 return
 
-Route110_EventScript_Jasmine_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_AMPHAROS
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route113_EventScript_ItemHyperPotion::
+Route114_EventScript_ItemProtein::
 finditem ITEM_RARE_CANDY
 return
 
-Route115_EventScript_ItemGreatBall::
-finditem ITEM_RARE_CANDY
+Route119_EventScript_Catherine_Item::
+giveitem ITEM_RARE_CANDY
 return
 
-Route118_EventScript_Rose_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_NATU
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-MossdeepCity_Gym_EventScript_Samantha_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_SCIZOR
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-MtPyre_Summit_EventScript_TeamAquaExits_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_WOBBUFFET
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-MtPyre_2F_EventScript_ItemUltraBall::
-finditem ITEM_RARE_CANDY
-return
-
-PetalburgWoods_EventScript_DevonResearcherPostBattle_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_URSARING
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route110_TrickHousePuzzle3_EventScript_Alan_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_SUDOWOODO
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-AbandonedShip_HiddenFloorRooms_EventScript_ItemWaterStone::
-finditem ITEM_RARE_CANDY
-return
-
-Route115_EventScript_Alix_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_MEGANIUM
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-MossdeepCity_Gym_EventScript_Hannah_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_VENUSAUR
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-SootopolisCity_EventScript_GiveWaterfall_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_CLEFABLE
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route109_EventScript_SoftSandGirl_ITEM::
-
-
-            setvar VAR_TEMP_1, SPECIES_SKIPLOOM
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route115_EventScript_Koichi_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_LICKITUNG
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-JaggedPass_EventScript_ItemBurnHeal::
-finditem ITEM_RARE_CANDY
-return
-
-MtPyre_6F_EventScript_ItemTM30::
-finditem ITEM_RARE_CANDY
-return
-
-MagmaHideout_2F_2R_EventScript_Grunt15_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_GOLEM
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-PetalburgCity_Gym_EventScript_Mary_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_MEOWTH
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route116_EventScript_Clark_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_GENGAR
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route132_EventScript_Darcy_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_KRABBY
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route126_EventScript_Nikki_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_PARASECT
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-MauvilleCity_EventScript_Wattson_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_TYPHLOSION
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-GraniteCave_B1F_EventScript_ItemPokeBall::
-finditem ITEM_PROTECTIVE_PADS
-return
-
-Route124_EventScript_Declan_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_FURRET
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route110_TrickHousePuzzle6_EventScript_Sophia_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_MACHOKE
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route123_EventScript_ItemPPUp::
-finditem ITEM_TM74
-return
-
-Route119_EventScript_Greg_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_MAGMAR
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-AquaHideout_B2F_EventScript_Grunt8_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_VULPIX
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-PacifidlogTown_House2_EventScript_GiveReturn_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_KAKUNA
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-LavaridgeTown_Gym_1F_EventScript_Flannery_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_POLIWHIRL
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route110_TrickHousePuzzle2_EventScript_ItemHarborMail::
-finditem ITEM_AMPHAROSITE
-return
-
-Route115_EventScript_Marlene_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_VENUSAUR
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route119_WeatherInstitute_2F_EventScript_Grunt2_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_NOCTOWL
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-SeafloorCavern_Room1_EventScript_Grunt1_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_DIGLETT
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route123_EventScript_ItemElixir::
-finditem ITEM_TM65
-return
-
-MauvilleCity_EventScript_ItemXSpeed::
-finditem ITEM_POTION
-return
-
-ShoalCave_LowTideInnerRoom_EventScript_ItemRareCandy::
-finditem ITEM_BLUE_FLUTE
-return
-
-JaggedPass_EventScript_Diana_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_SCIZOR
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-ArtisanCave_1F_EventScript_ItemCarbos::
-finditem ITEM_FLUFFY_TAIL
-return
-
-MagmaHideout_4F_EventScript_ItemMaxRevive::
-finditem ITEM_GUARD_SPEC
-return
-
-MauvilleCity_Gym_EventScript_Shawn_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_TEDDIURSA
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-AquaHideout_B1F_EventScript_Electrode1_Item::
-finditem ITEM_STARDUST
-return
-
-Route123_EventScript_Jacki_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_MR_MIME
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route118_EventScript_Dalton_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_HOUNDOOM
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route130_EventScript_Santiago_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_TOTODILE
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-NavelRock_Top_EventScript_HoOh_ITEM::
-finditem ITEM_ENIGMA_BERRY
-return
-
-RustboroCity_EventScript_ReturnGoods_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_GASTLY
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-FallarborTown_CozmosHouse_EventScript_PlayerHasMeteorite_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_MACHAMP
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route125_EventScript_Tanya_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_SNEASEL
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-MEScrCmd_givepokemon::
-
-
-            setvar VAR_TEMP_1, SPECIES_LARVITAR
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route134_EventScript_Kelvin_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_ARTICUNO
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-SSTidalRooms_EventScript_Naomi_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_GOLEM
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-ShoalCave_LowTideIceRoom_EventScript_ItemNeverMeltIce::
-finditem ITEM_FIST_PLATE
-return
-
-Route109_EventScript_Lola_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_VILEPLUME
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-RustboroCity_Gym_EventScript_Josh_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_MACHOP
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-SSTidalLowerDeck_EventScript_Phillip_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_WEEPINBELL
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route114_EventScript_ItemRareCandy::
-finditem ITEM_STEEL_MEMORY
-return
-
-Route113_EventScript_Lawrence_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_DITTO
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route111_EventScript_Branden_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_KANGASKHAN
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route112_EventScript_Bryant_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_VICTREEBEL
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-PetalburgCity_Gym_EventScript_Parker_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_ARBOK
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route123_EventScript_Jazmyn_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_RATICATE
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Petalburg_Badge_Item::
-finditem ITEM_POMEG_BERRY
- givemon SPECIES_KINGLER, 5
-return
-
-AbandonedShip_Rooms2_1F_EventScript_Garrison_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_DUGTRIO
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route119_WeatherInstitute_1F_EventScript_Grunt1_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_ONIX
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route120_EventScript_Angelica_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_SNEASEL
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-MagmaHideout_3F_2R_EventScript_Grunt10_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_MR_MIME
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-MossdeepCity_Gym_EventScript_Kathleen_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_GOLDUCK
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route110_TrickHousePuzzle2_EventScript_Paul_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_FARFETCHD
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route129_EventScript_Chase_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_MEWTWO
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-RusturfTunnel_EventScript_ItemMaxEther::
-finditem ITEM_WISE_GLASSES
-return
-
-Route119_EventScript_ItemSuperRepel::
-finditem ITEM_EVIOLITE
-return
-
-Gabby_Ty_EventScript_3_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_MOLTRES
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-MeteorFalls_1F_1R_EventScript_ItemFullHeal::
-finditem ITEM_WEPEAR_BERRY
-return
-
-Route107_EventScript_Darrin_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_NINETALES
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-VerdanturfTown_BattleTentLobby_EventScript_AttractGiver_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_SPINARAK
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-MeteorFalls_1F_1R_EventScript_ItemPPUP::
-finditem ITEM_RED_NECTAR
-return
-
-DesertUnderpass_EventScript_GiveClawFossil_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_CHARIZARD
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route128_EventScript_Alexa_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_FORRETRESS
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route119_EventScript_Takashi_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_CLOYSTER
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route109_EventScript_Edmond_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_TANGELA
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route119_WeatherInstitute_1F_EventScript_Grunt4_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_POLIWAG
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route110_TrickHouseEnd_EventScript_CompletedPuzzle6_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_QWILFISH
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-VictoryRoad_B2F_EventScript_Dianne_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_GLIGAR
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-AquaHideout_B1F_EventScript_Electrode2_Item::
-finditem ITEM_SWEET_HEART
-return
-
-RusturfTunnel_EventScript_Mike_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_ALAKAZAM
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route119_EventScript_Rachel_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_WEEZING
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route120_EventScript_ItemHyperPotion::
-finditem ITEM_DREAM_MAIL
-return
-
-DewfordTown_EventScript_GiveOldRod_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_ARCANINE
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route111_EventScript_Brooke_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_VULPIX
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route110_TrickHousePuzzle2_EventScript_Georgia_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_ARCANINE
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route132_EventScript_ItemProtein::
-finditem ITEM_HEAT_ROCK
-return
-
-Route109_EventScript_Ricky_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_VOLTORB
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route133_EventScript_ItemMaxRevive::
-finditem ITEM_FULL_HEAL
-return
-
-Route104_EventScript_ItemPotion::
-finditem ITEM_FIGHTING_GEM
-return
-
-Route117_EventScript_Dylan_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_SEAKING
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route132_EventScript_Paxton_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_SNEASEL
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-MtPyre_6F_EventScript_Cedric_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_SANDSHREW
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route111_EventScript_ItemHPUp::
-finditem ITEM_HASTY_MINT
-return
-
-Route119_WeatherInstitute_2F_EventScript_ReceiveCastform_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_MAGNETON
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-MtPyre_3F_EventScript_Kayla_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_SNEASEL
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route131_EventScript_Kevin_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_GIRAFARIG
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route103_EventScript_ItemPPUp::
-finditem ITEM_FULL_RESTORE
+SlateportCity_PokemonFanClub_EventScript_GiveYellowScarf_Item::
+giveitem ITEM_RARE_CANDY
 return
 
-Route133_EventScript_Warren_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_ELECTABUZZ
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route110_EventScript_Edward_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_WARTORTLE
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route103_EventScript_Item_Rival::
-
-
-            setvar VAR_TEMP_1, SPECIES_PERSIAN
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-DewfordTown_Gym_EventScript_Brawly_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_KRABBY
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route119_WeatherInstitute_2F_EventScript_Grunt5_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_KINGLER
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+MtPyre_2F_EventScript_Mark_Item::
+giveitem ITEM_RARE_CANDY
 return
-
-Route116_EventScript_Karen_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_MAROWAK
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-AbandonedShip_Rooms_1F_Eventscript_Thalia_Item::
-
 
-            setvar VAR_TEMP_1, SPECIES_PUPITAR
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+Route109_EventScript_Elijah_Item::
+giveitem ITEM_RARE_CANDY
 return
 
 Route120_EventScript_Jeffrey_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_NOCTOWL
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+giveitem ITEM_RARE_CANDY
 return
 
-NewMauville_Inside_EventScript_ItemParalyzeHeal::
-finditem ITEM_TM13
+Route110_TrickHousePuzzle4_EventScript_ItemMechMail::
+finditem ITEM_RARE_CANDY
 return
 
-Route110_EventScript_Abigail_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_ZAPDOS
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+Lavaridge_Badge_Item::
+finditem ITEM_RARE_CANDY
+ givemon SPECIES_MELTAN, 5
 return
 
-Route115_EventScript_Jaiden_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_MAGBY
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+Route110_EventScript_Jaclyn_Item::
+giveitem ITEM_RARE_CANDY
 return
 
-SeafloorCavern_Room3_EventScript_Shelly_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_CYNDAQUIL
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+FortreeCity_House4_EventScript_WingullReturned_Item::
+giveitem ITEM_RARE_CANDY
 return
 
-Route116_EventScript_Devan_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_CLEFFA
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+Route120_EventScript_ItemRevive::
+finditem ITEM_RARE_CANDY
 return
 
-Route110_EventScript_Timmy_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_GRANBULL
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+JaggedPass_EventScript_Eric_Item::
+giveitem ITEM_RARE_CANDY
 return
 
-Route111_EventScript_Becky_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_HOUNDOUR
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+Route126_EventScript_Isobel_Item::
+giveitem ITEM_RARE_CANDY
 return
 
-Route110_TrickHousePuzzle7_EventScript_Alvaro_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_VILEPLUME
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+FortreeCity_Gym_EventScript_Jared_Item::
+giveitem ITEM_RARE_CANDY
 return
 
-Route111_EventScript_Bryan_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_IVYSAUR
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+Route121_EventScript_Kate_Item::
+giveitem ITEM_RARE_CANDY
 return
 
-Route121_EventScript_ItemRevive::
-finditem ITEM_TM07
+Glacia_Item::
+giveitem ITEM_RARE_CANDY
 return
 
-Route128_EventScript_Wayne_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_HITMONCHAN
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+RustboroCity_EventScript_ReturnGoods_Item::
+giveitem ITEM_RARE_CANDY
 return
 
-Route126_EventScript_Brenda_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_AZUMARILL
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+DewfordTown_Gym_EventScript_Laura_Item::
+giveitem ITEM_RARE_CANDY
 return
 
-ShoalCave_LowTideIceRoom_EventScript_ItemTM07::
-finditem ITEM_DYNITE_ORE
+Route129_EventScript_Tisha_Item::
+giveitem ITEM_RARE_CANDY
 return
 
-Route110_EventScript_Edwin_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_GYARADOS
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+FortreeCity_Gym_EventScript_Darius_Item::
+giveitem ITEM_RARE_CANDY
 return
 
-Route128_EventScript_Isaiah_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_METAPOD
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+Route108_EventScript_Jerome_Item::
+giveitem ITEM_RARE_CANDY
 return
 
-VictoryRoad_1F_EventScript_Edgar_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_MOLTRES
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+PetalburgCity_Gym_EventScript_Mary_Item::
+giveitem ITEM_RARE_CANDY
 return
 
-MossdeepCity_Gym_EventScript_Preston_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_VULPIX
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+AbandonedShip_Rooms_B1F_EventScript_ItemEscapeRope::
+finditem ITEM_RARE_CANDY
 return
 
-Route119_EventScript_Chris_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_AMPHAROS
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+MagmaHideout_3F_2R_EventScript_Grunt10_Item::
+giveitem ITEM_RARE_CANDY
 return
 
-Route129_EventScript_Reed_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_FERALIGATR
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+MagmaHideout_2F_1R_EventScript_Grunt3_Item::
+giveitem ITEM_RARE_CANDY
 return
 
-PetalburgWoods_EventScript_Lyle_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_CUBONE
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+Route115_EventScript_Koichi_Item::
+giveitem ITEM_RARE_CANDY
 return
 
-Route124_EventScript_Isabella_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_SUNKERN
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+MtPyre_2F_EventScript_Zander_Item::
+giveitem ITEM_RARE_CANDY
 return
 
-Route114_EventScript_Lenny_Item::
+SootopolisCity_Gym_1F_EventScript_Juan_Item::
+giveitem ITEM_RARE_CANDY
+return
 
+Route133_EventScript_Debra_Item::
+giveitem ITEM_RARE_CANDY
+return
 
-            setvar VAR_TEMP_1, SPECIES_TENTACOOL
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+Route128_EventScript_Katelyn_Item::
+giveitem ITEM_BLACK_APRICORN
+return
+
+Route120_EventScript_Keigo_Item::
+giveitem ITEM_MAX_ELIXIR
+return
+
+MagmaHideout_2F_2R_EventScript_Grunt6_Item::
+giveitem ITEM_BIG_MUSHROOM
+return
+
+SootopolisCity_Gym_B1F_EventScript_Olivia_Item::
+giveitem ITEM_STRANGE_SOUVENIR
+return
+
+JaggedPass_EventScript_Julio_Item::
+giveitem ITEM_PIDGEOTITE
+return
+
+Route134_EventScript_Reyna_Item::
+giveitem ITEM_RETRO_MAIL
+return
+
+Route113_EventScript_Madeline_Item::
+giveitem ITEM_MAX_POTION
+return
+
+Route126_EventScript_Barry_Item::
+giveitem ITEM_LEMONADE
+return
+
+Route119_EventScript_Jackson_Item::
+giveitem ITEM_EJECT_PACK
+return
+
+LilycoveCity_EventScript_ItemMaxRepel::
+finditem ITEM_CALM_MINT
+return
+
+Route131_EventScript_Susie_Item::
+giveitem ITEM_SUPER_REPEL
+return
+
+SSTidalRooms_EventScript_SnatchGiver_Item::
+finditem ITEM_RELIC_CROWN
+return
+
+Route110_TrickHousePuzzle4_EventScript_Yuji_Item::
+giveitem ITEM_WHITE_HERB
+return
+
+MauvilleCity_EventScript_Wattson_Item::
+giveitem ITEM_REVIVAL_HERB
+return
+
+Route107_EventScript_Lisa_Item::
+giveitem ITEM_GRASS_GEM
+return
+
+Sydney_Item::
+giveitem ITEM_HEAL_POWDER
+return
+
+Route118_EventScript_Deandre_Item::
+giveitem ITEM_BEAD_MAIL
 return
 
 Route121_EventScript_ItemZinc::
 finditem ITEM_SUPER_POTION
 return
 
-MossdeepCity_StevensHouse_EventScript_GiveBeldum_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_DODUO
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route119_EventScript_GiveFlyHM_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_HITMONLEE
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route113_EventScript_Tori_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_ODDISH
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-PetalburgWoods_EventScript_DevonResearcherLeft_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_HOUNDOOM
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-VictoryRoad_B1F_EventScript_ItemTM29::
-finditem ITEM_MAX_POTION
-return
-
-NewMauville_Inside_EventScript_ItemEscapeRope::
-finditem ITEM_MAX_POTION
-return
-
-PetalburgCity_WallysHouse_EventScript_GiveHM03Surf_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_CATERPIE
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route119_EventScript_ItemZinc::
-finditem ITEM_BEEDRILLITE
-return
-
-SafariZone_Southeast_EventScript_ItemBigPearl::
-finditem ITEM_FOSSILIZED_BIRD
-return
-
-Route116_EventScript_Janice_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_SNUBBULL
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route120_EventScript_Callie_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_WIGGLYTUFF
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route110_TrickHousePuzzle3_EventScript_ItemWoodMail::
-finditem ITEM_ROCKIUM_Z
-return
-
-Route111_EventScript_ItemTM37::
-finditem ITEM_RED_SCARF
-return
-
-PetalburgWoods_EventScript_ItemParalyzeHeal::
-
-
-            setvar VAR_TEMP_1, SPECIES_DODUO
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route119_EventScript_ItemNugget::
-finditem ITEM_RIBBON_SWEET
-return
-
-SeafloorCavern_Room9_EventScript_ArchieAwakenKyogre_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_CROBAT
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route102_EventScript_ItemPotion::
-finditem ITEM_DYNAMAX_CANDY
-return
-
-Route119_EventScript_Brent_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_GOLDUCK
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route110_TrickHousePuzzle7_EventScript_Everett_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_STARYU
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route125_EventScript_Sharon_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_CHARMELEON
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route108_EventScript_Carolina_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_ARIADOS
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Mauville_Badge_Item::
-finditem ITEM_MECH_MAIL
- givemon SPECIES_FURRET, 5
-return
-
-Route119_EventScript_Catherine_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_RATTATA
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-BirthIsland_Exterior_EventScript_Deoxys_Item::
-finditem ITEM_ROOM_SERVICE
-return
-
-Route106_EventScript_Douglas_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_SNORLAX
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route111_EventScript_Wilton_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_ZAPDOS
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route110_TrickHousePuzzle4_EventScript_ItemMechMail::
-finditem ITEM_CHESTO_BERRY
-return
-
-MauvilleCity_Gym_EventScript_Ben_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_PERSIAN
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-VictoryRoad_1F_EventScript_Quincy_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_DODRIO
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route105_EventScript_Beverly_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_SPEAROW
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-MossdeepCity_House3_EventScript_SuperRodFisherman_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_MEOWTH
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-RustboroCity_Gym_EventScript_Tommy_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_KRABBY
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route121_EventScript_Myles_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_NIDORAN_M
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route123_EventScript_GigaDrainGirl_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_KANGASKHAN
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route111_WinstrateFamilysHouse_EventScript_Vicky_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_IGGLYBUFF
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-MtPyre_5F_EventScript_Atsushi_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_CROCONAW
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-MagmaHideout_2F_2R_EventScript_Grunt8_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_VICTREEBEL
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route117_EventScript_Melina_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_SLOWKING
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-MossdeepCity_Gym_EventScript_TateAndLiza_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_HAUNTER
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-LavaridgeTown_Gym_1F_EventScript_Axle_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_ZAPDOS
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route123_EventScript_Ed_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_ARTICUNO
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route125_EventScript_Nolen_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_CHARMANDER
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route108_EventScript_ItemStarPiece::
-finditem ITEM_FULL_HEAL
-return
-
-LavaridgeTown_Gym_B1F_EventScript_Keegan_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_MACHOKE
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-VictoryRoad_B2F_EventScript_Julie_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_PIDGEY
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-SlateportCity_Harbor_EventScript_DeepSeaTooth_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_MANKEY
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route120_EventScript_Jenna_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_CLOYSTER
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-DesertUnderpass_EventScript_GiveRootFossil_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_NIDOQUEEN
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-MtPyre_3F_EventScript_William_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_GRIMER
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-RusturfTunnel_EventScript_ItemPokeBall::
-finditem ITEM_LAX_INCENSE
-return
-
-Route110_TrickHouseEnd_EventScript_CompletedPuzzle2_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_VENUSAUR
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-AbandonedShip_Rooms2_1F_EventScript_ItemRevive::
-finditem ITEM_IRON_BALL
-return
-
-VictoryRoad_B1F_EventScript_Shannon_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_VICTREEBEL
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route105_EventScript_ItemIron::
-finditem ITEM_SHALOUR_SABLE
-return
-
-Route123_EventScript_Davis_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_SHELLDER
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-MtPyre_3F_EventScript_Gabrielle_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_SMOOCHUM
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-GraniteCave_1F_EventScript_Hiker_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_WEEPINBELL
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route120_EventScript_StevenGiveDeconScope_ITEM::
-
-
-            setvar VAR_TEMP_1, SPECIES_ALAKAZAM
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route110_TrickHousePuzzle3_EventScript_Martha_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_OMASTAR
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route110_TrickHousePuzzle3_EventScript_ItemShadowMail::
-finditem ITEM_CAREFUL_MINT
-return
-
-Route110_TrickHousePuzzle7_EventScript_Joshua_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_NIDOKING
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-MarineCave_End_EventScript_Kyogre_Item::
-finditem ITEM_GROWTH_MULCH
-return
-
-Route110_TrickHousePuzzle7_EventScript_ItemTropicMail::
-finditem ITEM_TOXIC_ORB
-return
-
-AbandonedShip_Corridors_1F_EventScript_Charlie_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_SHELLDER
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-MtPyre_Summit_EventScript_Grunt4_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_TAUROS
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route113_EventScript_Dillon_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_TOGEPI
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route117_EventScript_Isaac_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_TOGEPI
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route123_EventScript_Alberto_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_ODDISH
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route116_EventScript_Joey_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_KAKUNA
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route108_EventScript_Jerome_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_ELECTRODE
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-VictoryRoad_1F_EventScript_Albert_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_SMOOCHUM
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route112_EventScript_Carol_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_HOPPIP
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-RustboroCity_EventScript_ItemXDefend::
-finditem ITEM_POKE_TOY
-return
-
-Route110_TrickHouseEnd_EventScript_CompletedPuzzle4_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_GIRAFARIG
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-SlateportCity_EventScript_BerryPowderClerk_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_SNORLAX
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route118_EventScript_ItemHyperPotion::
-finditem ITEM_JOLLY_MINT
-return
-
-SootopolisCity_LotadAndSeedotHouse_EventScript_BigSeedot_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_STEELIX
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route111_EventScript_Celina_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_JOLTEON
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route112_EventScript_Larry_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_PARAS
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+Route119_WeatherInstitute_2F_EventScript_Grunt5_Item::
+giveitem ITEM_CRACKED_POT
 return
-
-Route111_WinstrateFamilysHouse_EventScript_Victoria_Item::
-
 
-            setvar VAR_TEMP_1, SPECIES_POLITOED
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+NewMauville_Inside_EventScript_ItemFullHeal::
+finditem ITEM_LONELY_MINT
 return
 
 Route133_EventScript_Linda_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_MR_MIME
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route110_TrickHousePuzzle8_EventScript_Leroy_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_GRAVELER
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route134_EventScript_Reyna_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_SKARMORY
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route126_EventScript_Dean_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_QUAGSIRE
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route118_EventScript_Chester_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_GENGAR
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route119_EventScript_ItemLeafStone::
-finditem ITEM_SACRED_ASH
-return
-
-RustboroCity_DevonCorp_3F_EventScript_GiveExpShare_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_DITTO
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-SlateportCity_PokemonFanClub_EventScript_GiveYellowScarf_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_QWILFISH
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-AquaHideout_B1F_EventScript_Grunt5_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_TANGELA
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-MagmaHideout_1F_EventScript_Grunt2_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_MAROWAK
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route130_EventScript_Rodney_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_VILEPLUME
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route123_EventScript_ItemCalcium::
-finditem ITEM_REVIVE
-return
-
-LavaridgeTown_Gym_B1F_EventScript_Eli_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_SUICUNE
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route116_EventScript_Jose_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_FARFETCHD
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-MauvilleCity_EventScript_DefeatedWally_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_PERSIAN
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route134_EventScript_Marley_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_BUTTERFREE
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-NewMauville_Inside_EventScript_Voltorb1_Item::
-finditem ITEM_MAX_ETHER
-return
-
-MossdeepCity_Gym_EventScript_Macey_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_PIDGEY
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-MagmaHideout_3F_1R_EventScript_ItemNugget::
-finditem ITEM_TM32
-return
-
-SSTidalRooms_EventScript_Colton_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_WEEZING
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route130_EventScript_Katie_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_AIPOM
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-AbandonedShip_HiddenFloorRooms_EventScript_ItemScanner::
-finditem ITEM_BLACK_SLUDGE
-return
-
-Route119_EventScript_ItemHyperPotion2::
-finditem ITEM_BERRY_JUICE
-return
-
-Route113_GlassWorkshop_EventScript_GlassWorker_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_PORYGON2
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-MauvilleCity_Gym_EventScript_Angelo_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_ABRA
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-VictoryRoad_B2F_EventScript_ItemFullHeal::
-finditem ITEM_TM15
-return
-
-Route121_EventScript_ItemCarbos::
-finditem ITEM_TM48
-return
-
-VictoryRoad_B1F_EventScript_Michelle_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_DODRIO
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Fortree_Badge_Item::
-finditem ITEM_ELECTRIC_GEM
- givemon SPECIES_JIGGLYPUFF, 5
-return
-
-Route109_EventScript_Alice_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_MAGCARGO
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-MeteorFalls_1F_1R_EventScript_ItemTM23::
-finditem ITEM_CHOICE_BAND
-return
-
-Route121_EventScript_Vanessa_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_QWILFISH
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route117_EventScript_Lydia_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_QUILAVA
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route120_EventScript_ItemNestBall::
-finditem ITEM_RELAXED_MINT
-return
-
-MagmaHideout_2F_2R_EventScript_Grunt7_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_GASTLY
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route119_WeatherInstitute_2F_EventScript_Shelly_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_DONPHAN
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-SSTidalRooms_EventScript_Garret_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_DRATINI
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route105_EventScript_Josue_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_GROWLITHE
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-FortreeCity_Gym_EventScript_Flint_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_FERALIGATR
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route132_EventScript_ItemRareCandy::
-finditem ITEM_TM44
-return
-
-Route116_EventScript_ItemRepel::
-finditem ITEM_ABILITY_PATCH
-return
-
-Route114_EventScript_Tyra_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_SUICUNE
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route132_EventScript_Kiyo_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_NIDORINO
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-GraniteCave_1F_EventScript_ItemEscapeRope::
-finditem ITEM_REVIVE
-return
-
-Drake_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_NIDORAN_M
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route109_EventScript_Carter_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_MACHOKE
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route125_EventScript_Ernest_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_MAGNEMITE
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-RustboroCity_Gym_EventScript_Roxanne_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_SLOWKING
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route123_EventScript_Miu_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_PIDGEOTTO
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-LavaridgeTown_Gym_1F_EventScript_Cole_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_PARAS
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route132_EventScript_Makayla_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_WEEPINBELL
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route121_EventScript_Pat_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_NIDOKING
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-SootopolisCity_Gym_B1F_EventScript_Brianna_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_CLEFABLE
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route118_EventScript_Perry_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_SMEARGLE
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route109_SeashoreHouse_EventScript_Johanna_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_CROBAT
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route110_EventScript_ItemRareCandy::
-finditem ITEM_SCOPE_LENS
-return
-
-VictoryRoad_1F_EventScript_WallyEntranceBattle_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_VAPOREON
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route109_EventScript_Austina_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_GYARADOS
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route104_EventScript_Boy2_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_PHANPY
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route108_EventScript_Cory_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_ARBOK
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-JaggedPass_EventScript_Autumn_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_MAGNETON
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route128_EventScript_Ruben_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_PARAS
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route109_EventScript_Chandler_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_DODUO
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route110_EventScript_ItemElixir::
-finditem ITEM_RELIC_COPPER
-return
-
-Route115_EventScript_ItemPPUp::
-finditem ITEM_MUSCLE_BAND
-return
-
-Route111_EventScript_Hayden_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_DUGTRIO
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route120_EventScript_Clarissa_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_TYROGUE
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route112_EventScript_Shayla_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_TOGEPI
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route121_EventScript_Jessica_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_HOPPIP
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route109_SeashoreHouse_EventScript_Simon_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_SUNFLORA
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route112_EventScript_Brice_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_CROCONAW
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route111_EventScript_Heidi_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_GROWLITHE
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route110_EventScript_Benjamin_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_GRAVELER
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route113_EventScript_Wyatt_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_SMOOCHUM
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route126_EventScript_Sienna_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_SUDOWOODO
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-SlateportCity_PokemonFanClub_EventScript_GiveGreenScarf_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_MAGNEMITE
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route113_EventScript_Lao_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_SWINUB
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-AquaHideout_B2F_EventScript_Matt_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_MARILL
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route105_EventScript_Imani_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_PUPITAR
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route111_EventScript_ItemStardust::
-finditem ITEM_PINK_SCARF
-return
-
-ShoalCave_LowTideEntranceRoom_EventScript_ItemBigPearl::
-finditem ITEM_ANTIDOTE
-return
-
-Route119_EventScript_Dayton_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_CORSOLA
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route110_TrickHousePuzzle1_EventScript_Sally_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_ELECTABUZZ
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-DewfordTown_Gym_EventScript_Jocelyn_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_KANGASKHAN
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-SeafloorCavern_Room9_EventScript_ItemTM26::
-finditem ITEM_TM02
-return
-
-Route134_EventScript_Jack_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_OMANYTE
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-AquaHideout_B2F_EventScript_Grunt6_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_HORSEA
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-MagmaHideout_4F_EventScript_Grunt13_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_PIDGEOTTO
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-AquaHideout_B1F_EventScript_ItemMaxElixir::
-finditem ITEM_ESCAPE_ROPE
-return
-
-Route121_EventScript_Tammy_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_YANMA
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route109_EventScript_ItemPotion::
-finditem ITEM_HYPER_POTION
-return
-
-MagmaHideout_4F_EventScript_Tabitha_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_TOGETIC
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-MagmaHideout_2F_1R_EventScript_Grunt5_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_QUAGSIRE
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route110_TrickHousePuzzle6_EventScript_Sebastian_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_MACHOKE
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-MeteorFalls_B1F_2R_EventScript_ItemTM02::
-finditem ITEM_MODEST_MINT
-return
-
-Route102_EventScript_Allen_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_MAGNETON
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route113_EventScript_Coby_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_PONYTA
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-FieryPath_EventScript_ItemFireStone::
-finditem ITEM_DAMP_MULCH
-return
-
-Route106_EventScript_Ned_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_UMBREON
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-SeafloorCavern_Room1_EventScript_Grunt2_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_MARILL
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-SootopolisCity_Gym_B1F_EventScript_Annika_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_WIGGLYTUFF
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route107_EventScript_Lisa_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_CHARIZARD
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route119_EventScript_Taylor_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_ZUBAT
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-SootopolisCity_Gym_1F_EventScript_Juan_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_GEODUDE
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-MeteorFalls_1F_2R_EventScript_John_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_RAPIDASH
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route110_TrickHousePuzzle7_EventScript_Patricia_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_BUTTERFREE
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-MossdeepCity_Gym_EventScript_Virgil_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_FURRET
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route102_EventScript_Tiana_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_CHINCHOU
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-NewMauville_Inside_EventScript_Voltorb3_Item::
-finditem ITEM_TM95
-return
-
-Route109_EventScript_Gwen_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_RHYDON
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route110_TrickHousePuzzle1_EventScript_Robin_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_IGGLYBUFF
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route108_EventScript_Tara_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_WARTORTLE
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route110_TrickHousePuzzle6_EventScript_Benny_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_PUPITAR
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+giveitem ITEM_CHOICE_SPECS
 return
 
-Route114_EventScript_Claude_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_CHARMANDER
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route109_EventScript_David_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_MUK
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-RustboroCity_CuttersHouse_EventScript_Cutter_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_MACHAMP
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route110_TrickHousePuzzle8_EventScript_Keira_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_SCYTHER
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route134_EventScript_Alex_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_FORRETRESS
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-MagmaHideout_2F_2R_EventScript_ItemMaxElixir::
-finditem ITEM_TINY_MUSHROOM
-return
-
-VictoryRoad_1F_EventScript_Hope_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_GROWLITHE
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route116_EventScript_Dawson_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_BELLOSSOM
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-SeafloorCavern_Room4_EventScript_Grunt3_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_KABUTO
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-MossdeepCity_Gym_EventScript_Nate_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_PERSIAN
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-ArtisanCave_B1F_EventScript_ItemHPUp::
-finditem ITEM_ALTARIANITE
-return
-
-Route124_EventScript_Roland_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_MAGNEMITE
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route129_EventScript_Tisha_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_VICTREEBEL
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route121_EventScript_Cristin_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_LARVITAR
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+Route123_EventScript_Braxton_Item::
+giveitem ITEM_POTION
 return
 
-Route110_TrickHouseEnd_EventScript_CompletedPuzzle3_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_SANDSHREW
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+MossdeepCity_Gym_EventScript_Kathleen_Item::
+giveitem ITEM_RARE_CANDY
 return
-
-FortreeCity_House4_EventScript_WingullReturned_Item::
-
 
-            setvar VAR_TEMP_1, SPECIES_MAGNETON
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+Route105_EventScript_Andres_Item::
+giveitem ITEM_CAREFUL_MINT
 return
 
-Route126_EventScript_Barry_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_REMORAID
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+MtPyre_Summit_EventScript_TeamAquaExits_Item::
+giveitem ITEM_QUICK_POWDER
 return
-
-Route111_EventScript_Beau_Item::
-
 
-            setvar VAR_TEMP_1, SPECIES_RHYDON
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+Rustboro_Badge_Item::
+finditem ITEM_AERODACTYLITE
+ givemon SPECIES_SCATTERBUG, 5
 return
 
 SlateportCity_PokemonFanClub_EventScript_GiveRedScarf_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_KAKUNA
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+giveitem ITEM_BUGINIUM_Z
 return
 
-Route110_TrickHousePuzzle7_EventScript_Mariela_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_CHARMELEON
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+Route121_EventScript_Vanessa_Item::
+giveitem ITEM_BIG_PEARL
 return
 
-Route128_EventScript_Katelyn_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_TYPHLOSION
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+Route119_EventScript_ItemZinc::
+finditem ITEM_X_SPEED
 return
 
-Route114_EventScript_ItemProtein::
-finditem ITEM_PERSIM_BERRY
+Route109_SeashoreHouse_EventScript_DefeatedTrainers_Item::
+giveitem ITEM_SUPER_POTION
 return
 
-RusturfTunnel_EventScript_ClearTunnelScene_ITEM::
-
-
-            setvar VAR_TEMP_1, SPECIES_CLOYSTER
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+MtPyre_2F_EventScript_ItemUltraBall::
+finditem ITEM_TM05
 return
 
-FortreeCity_Gym_EventScript_Jared_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_PONYTA
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+MagmaHideout_4F_EventScript_ItemMaxRevive::
+finditem ITEM_RAZZ_BERRY
 return
 
-LavaridgeTown_Gym_1F_EventScript_Danielle_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_UMBREON
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+Route110_TrickHousePuzzle3_EventScript_ItemWoodMail::
+finditem ITEM_AWAKENING
 return
 
-MossdeepCity_Gym_EventScript_Blake_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_JUMPLUFF
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+Route121_EventScript_ItemCarbos::
+finditem ITEM_FULL_RESTORE
 return
 
-MtPyre_Summit_EventScript_Grunt3_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_BEEDRILL
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+PetalburgCity_Gym_EventScript_George_Item::
+giveitem ITEM_ASSAULT_VEST
 return
 
-Route107_EventScript_Denise_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_PIDGEOT
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+Route123_EventScript_Miu_Item::
+giveitem ITEM_MYSTIC_WATER
 return
 
-Route110_TrickHousePuzzle1_EventScript_Eddie_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_GLOOM
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+Route120_EventScript_Robert_Item::
+giveitem ITEM_WISHING_PIECE
 return
 
-SlateportCity_PokemonFanClub_EventScript_GiveSootheBell_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_SCIZOR
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+Route119_EventScript_GiveFlyHM_Item::
+giveitem ITEM_LUSTROUS_ORB
 return
 
-Route111_EventScript_Daisuke_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_VENOMOTH
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+Route128_EventScript_Isaiah_Item::
+giveitem ITEM_ANTIDOTE
 return
 
-Route117_EventScript_Brandi_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_SLOWPOKE
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+Route110_EventScript_Jacob_Item::
+giveitem ITEM_ENERGY_ROOT
 return
 
-PetalburgCity_EventScript_ItemMaxRevive::
-finditem ITEM_HONDEW_BERRY
+RusturfTunnel_EventScript_ItemMaxEther::
+finditem ITEM_BURN_HEAL
 return
 
-PetalburgCity_Gym_EventScript_NormanBattle_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_OCTILLERY
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+VictoryRoad_1F_EventScript_Edgar_Item::
+giveitem ITEM_OCCA_BERRY
 return
 
-Route131_EventScript_Kara_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_SNUBBULL
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+Route119_WeatherInstitute_2F_EventScript_Shelly_Item::
+giveitem ITEM_ROCKIUM_Z
 return
 
-GraniteCave_B2F_EventScript_ItemRareCandy::
-finditem ITEM_ALAKAZITE
+Route112_EventScript_Larry_Item::
+giveitem ITEM_MAX_ELIXIR
 return
 
-MtPyre_2F_EventScript_Mark_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_TAUROS
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+Route132_EventScript_Ronald_Item::
+giveitem ITEM_LEMONADE
 return
 
-Route110_TrickHousePuzzle7_EventScript_Alexis_Item::
+Route123_EventScript_ItemRevivalHerb::
+finditem ITEM_MEWTWONITE_X
+return
 
+Route124_EventScript_ItemBlueShard::
+finditem ITEM_TANGA_BERRY
+return
 
-            setvar VAR_TEMP_1, SPECIES_SEEL
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+RusturfTunnel_EventScript_Grunt_Item_Two::
+giveitem ITEM_ULTRANECROZIUM_Z
 return
 
 Route120_EventScript_Jennifer_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_GRAVELER
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route110_TrickHousePuzzle4_EventScript_Yuji_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_CHARIZARD
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-LavaridgeTown_EventScript_MayGiveGoGoggles_ITEM::
-
-
-            setvar VAR_TEMP_1, SPECIES_ZAPDOS
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-SootopolisCity_Gym_B1F_EventScript_Bridget_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_GYARADOS
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route106_EventScript_Elliot_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_TENTACRUEL
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route115_EventScript_ItemIron::
-finditem ITEM_REVIVAL_HERB
-return
-
-Route114_EventScript_Shane_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_SPINARAK
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route116_EventScript_GiveRepeatBall_Item::
-finditem ITEM_HELIX_FOSSIL
-return
-
-LilycoveCity_House2_EventScript_FatMan_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_GEODUDE
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-MagmaHideout_3F_1R_EventScript_Grunt9_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_HYPNO
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route120_EventScript_Leonel_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_POLITOED
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-VictoryRoad_1F_EventScript_ItemPPUp::
-finditem ITEM_GENTLE_MINT
-return
-
-Route134_EventScript_ItemCarbos::
-finditem ITEM_TM28
-return
-
-DewfordTown_Gym_EventScript_Brenden_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_KANGASKHAN
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-LavaridgeTown_HerbShop_EventScript_OldMan_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_METAPOD
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-MeteorFalls_StevensCave_EventScript_Steven_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_LANTURN
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route118_EventScript_Barny_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_MACHAMP
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-FortreeCity_Gym_EventScript_Ashley_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_HERACROSS
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-AquaHideout_1F_EventScript_Grunt1_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_TYPHLOSION
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route112_EventScript_ItemNugget::
-finditem ITEM_BUG_GEM
-return
-
-DewfordTown_Gym_EventScript_Lilith_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_KADABRA
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route106_EventScript_Kyla_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_DITTO
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route121_EventScript_Walter_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_DRAGONAIR
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route111_EventScript_Dusty_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_CLEFABLE
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route110_TrickHousePuzzle8_EventScript_Vincent_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_VICTREEBEL
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route126_EventScript_Isobel_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_SEAKING
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route116_EventScript_ItemEther::
-finditem ITEM_SCIZORITE
-return
-
-MtPyre_2F_EventScript_Leah_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_RHYHORN
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route129_EventScript_Clarence_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_PIKACHU
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route117_EventScript_ItemGreatBall::
-finditem ITEM_AMULET_COIN
-return
-
-Route115_EventScript_Hector_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_PORYGON
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-Route116_EventScript_Sarah_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_MACHOKE
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
-return
-
-PetalburgCity_EventScript_ItemEther::
-finditem ITEM_HARBOR_MAIL
-return
-
-AquaHideout_B1F_EventScript_ItemNugget::
-finditem ITEM_FRESH_WATER
+giveitem ITEM_EXP_CANDY_S
 return
 
 Route111_EventScript_Celia_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_MAREEP
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+giveitem ITEM_PEARL_STRING
 return
 
-MagmaHideout_3F_1R_EventScript_Grunt16_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_DONPHAN
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+Route108_EventScript_Missy_Item::
+giveitem ITEM_TM67
 return
 
-Route110_EventScript_Anthony_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_PIKACHU
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+DewfordTown_Gym_EventScript_Brenden_Item::
+giveitem ITEM_WISE_GLASSES
 return
 
-JaggedPass_EventScript_Julio_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_VULPIX
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+Route117_EventScript_Derek_Item::
+giveitem ITEM_MAX_REVIVE
 return
 
-AncientTomb_EventScript_Registeel_Item::
-finditem ITEM_ENERGY_ROOT
+Mew_Item::
+finditem ITEM_BELUE_BERRY
+return
+
+PetalburgCity_Gym_EventScript_Jody_Item::
+giveitem ITEM_ROCK_GEM
+return
+
+Gabby_Ty_EventScript_2_Item::
+giveitem ITEM_GROUNDIUM_Z
+return
+
+Route110_TrickHousePuzzle3_EventScript_ItemShadowMail::
+finditem ITEM_ENERGY_POWDER
+return
+
+DesertUnderpass_EventScript_GiveRootFossil_Item::
+giveitem ITEM_SUPER_POTION
+return
+
+VictoryRoad_1F_EventScript_Albert_Item::
+giveitem ITEM_WEPEAR_BERRY
+return
+
+Route121_EventScript_Cristin_Item::
+giveitem ITEM_REVIVE
+return
+
+MossdeepCity_Gym_EventScript_Virgil_Item::
+giveitem ITEM_CHOICE_SCARF
+return
+
+Route129_EventScript_Allison_Item::
+giveitem ITEM_GROUND_MEMORY
+return
+
+Route117_EventScript_Dylan_Item::
+giveitem ITEM_SWEET_HEART
+return
+
+Route134_EventScript_Aaron_Item::
+giveitem ITEM_SUPER_POTION
+return
+
+VictoryRoad_1F_EventScript_Katelynn_Item::
+giveitem ITEM_SMOKE_BALL
+return
+
+Route132_EventScript_ItemRareCandy::
+finditem ITEM_ABILITY_CAPSULE
+return
+
+MossdeepCity_Gym_EventScript_Macey_Item::
+giveitem ITEM_TM14
+return
+
+Route108_EventScript_Matthew_Item::
+giveitem ITEM_KASIB_BERRY
 return
 
 Route112_EventScript_Trent_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_TYRANITAR
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+giveitem ITEM_TM36
 return
 
-Mosdeep_Badge_Item::
-finditem ITEM_SASSY_MINT
- givemon SPECIES_HYPNO, 5
+AbandonedShip_Rooms2_1F_EventScript_ItemRevive::
+finditem ITEM_TM82
+return
+
+Route104_EventScript_ItemPotion::
+finditem ITEM_BOOST_MULCH
+return
+
+SeafloorCavern_Room4_EventScript_Grunt4_Item::
+giveitem ITEM_TM23
+return
+
+Route123_EventScript_GigaDrainGirl_Item::
+giveitem ITEM_CHILAN_BERRY
+return
+
+LittlerootTown_ProfessorBirchsLab_EventScript_MayGivePokeBalls_Items::
+giveitem ITEM_TM92
+return
+
+Route110_TrickHousePuzzle7_EventScript_Alvaro_Item::
+giveitem ITEM_AWAKENING
+return
+
+Route109_EventScript_Carter_Item::
+giveitem ITEM_TM83
+return
+
+MossdeepCity_Gym_EventScript_Sylvia_Item::
+giveitem ITEM_TM60
+return
+
+Phoebe_Item::
+giveitem ITEM_SACRED_ASH
+return
+
+Route116_EventScript_Dawson_Item::
+giveitem ITEM_STARDUST
+return
+
+Gabby_Ty_EventScript_1_Item::
+giveitem ITEM_LANSAT_BERRY
+return
+
+Route111_EventScript_Irene_Item::
+giveitem ITEM_ELIXIR
+return
+
+RustboroCity_Gym_EventScript_Roxanne_Item::
+giveitem ITEM_TM34
+return
+
+JaggedPass_EventScript_ItemBurnHeal::
+finditem ITEM_TM50
+return
+
+AquaHideout_B1F_EventScript_Electrode2_Item::
+finditem ITEM_TM75
+return
+
+SafariZone_Southeast_EventScript_ItemBigPearl::
+finditem ITEM_SODA_POP
+return
+
+Route109_EventScript_Hailey_Item::
+giveitem ITEM_TOXIC_ORB
+return
+
+Route113_EventScript_ItemSuperRepel::
+finditem ITEM_MAX_HONEY
+return
+
+Route116_EventScript_Jose_Item::
+giveitem ITEM_PSYCHIUM_Z
+return
+
+Route118_EventScript_ItemHyperPotion::
+finditem ITEM_REVIVE
+return
+
+SootopolisCity_Gym_B1F_EventScript_Brianna_Item::
+giveitem ITEM_LEFTOVERS
+return
+
+Route132_EventScript_Jonathan_Item::
+giveitem ITEM_BOLD_MINT
+return
+
+Route126_EventScript_Nikki_Item::
+giveitem ITEM_MOOMOO_MILK
+return
+
+SafariZone_Northeast_EventScript_ItemNugget::
+finditem ITEM_RIBBON_SWEET
+return
+
+Route104_EventScript_Boy2_Item::
+giveitem ITEM_SUPER_POTION
+return
+
+PetalburgCity_EventScript_ItemEther::
+finditem ITEM_WHIPPED_DREAM
+return
+
+SafariZone_Northwest_EventScript_ItemTM22::
+finditem ITEM_MOOMOO_MILK
+return
+
+Route121_EventScript_Cale_Item::
+giveitem ITEM_HYPER_POTION
+return
+
+MossdeepCity_Gym_EventScript_Samantha_Item::
+giveitem ITEM_ASPEAR_BERRY
+return
+
+Route106_EventScript_ItemProtein::
+finditem ITEM_X_SP_DEF
+return
+
+MtPyre_3F_EventScript_ItemSuperRepel::
+finditem ITEM_TM27
+return
+
+AquaHideout_1F_EventScript_Grunt1_Item::
+giveitem ITEM_TM48
+return
+
+SeafloorCavern_Room3_EventScript_Shelly_Item::
+giveitem ITEM_HEAT_ROCK
+return
+
+VictoryRoad_1F_EventScript_Quincy_Item::
+giveitem ITEM_RELIC_SILVER
+return
+
+Route134_EventScript_Kelvin_Item::
+giveitem ITEM_ETHER
+return
+
+Route123_EventScript_Violet_Item::
+giveitem ITEM_STEELIXITE
+return
+
+Route113_EventScript_ItemHyperPotion::
+finditem ITEM_AUDINITE
+return
+
+SSTidalRooms_EventScript_Colton_Item::
+giveitem ITEM_ETHER
+return
+
+Route117_EventScript_ItemGreatBall::
+finditem ITEM_GRASSY_SEED
+return
+
+Route105_EventScript_Beverly_Item::
+giveitem ITEM_RELIC_COPPER
+return
+
+Route110_EventScript_ItemDireHit::
+finditem ITEM_WATER_STONE
+return
+
+AquaHideout_B2F_EventScript_Grunt6_Item::
+giveitem ITEM_FIRIUM_Z
+return
+
+Route111_EventScript_Brooke_Item::
+giveitem ITEM_STAR_PIECE
+return
+
+MagmaHideout_3F_1R_EventScript_ItemNugget::
+finditem ITEM_TM98
+return
+
+NewMauville_Inside_EventScript_Voltorb1_Item::
+finditem ITEM_WAVE_MAIL
+return
+
+VictoryRoad_B1F_EventScript_Samuel_Item::
+giveitem ITEM_METRONOME
+return
+
+Route119_EventScript_ItemRareCandy::
+finditem ITEM_ANTIDOTE
+return
+
+Route111_EventScript_Beau_Item::
+giveitem ITEM_GOLD_BOTTLE_CAP
+return
+
+Route110_TrickHousePuzzle6_EventScript_Benny_Item::
+giveitem ITEM_POTION
+return
+
+Route114_EventScript_Lenny_Item::
+giveitem ITEM_PIKASHUNIUM_Z
+return
+
+Route132_EventScript_Makayla_Item::
+giveitem ITEM_LEPPA_BERRY
+return
+
+Route115_EventScript_ItemPPUp::
+finditem ITEM_POWER_BAND
+return
+
+PetalburgWoods_EventScript_DevonResearcherPostBattle_Item::
+giveitem ITEM_PINK_APRICORN
+return
+
+Route102_EventScript_Calvin_Item::
+giveitem ITEM_QUICK_CLAW
+return
+
+FortreeCity_Gym_EventScript_Ashley_Item::
+giveitem ITEM_ROWAP_BERRY
+return
+
+Route132_EventScript_Darcy_Item::
+giveitem ITEM_DYNAMAX_CANDY
+return
+
+PacifidlogTown_House2_EventScript_GiveReturn_Item::
+giveitem ITEM_POMEG_BERRY
+return
+
+Route115_EventScript_ItemTM01::
+finditem ITEM_HYPER_POTION
+return
+
+ArtisanCave_B1F_EventScript_ItemHPUp::
+finditem ITEM_FLUFFY_TAIL
+return
+
+FortreeCity_House2_EventScript_HiddenPowerGiver_Item::
+giveitem ITEM_ENERGY_POWDER
+return
+
+SeafloorCavern_Room1_EventScript_Grunt1_Item::
+giveitem ITEM_TINY_MUSHROOM
+return
+
+Route133_EventScript_ItemStarPiece::
+finditem ITEM_MACHO_BRACE
+return
+
+Route110_EventScript_Timmy_Item::
+giveitem ITEM_MAX_POTION
+return
+
+Route113_EventScript_Wyatt_Item::
+giveitem ITEM_ABOMASITE
+return
+
+Route125_EventScript_ItemBigPearl::
+finditem ITEM_PEARL
+return
+
+Route116_EventScript_Sarah_Item::
+giveitem ITEM_STEEL_MEMORY
+return
+
+PetalburgCity_Gym_EventScript_Alexia_Item::
+giveitem ITEM_TM81
+return
+
+Route109_EventScript_Huey_Item::
+giveitem ITEM_HYPER_POTION
+return
+
+Route126_EventScript_Dean_Item::
+giveitem ITEM_ODD_INCENSE
+return
+
+MtPyre_5F_EventScript_ItemLaxIncense::
+finditem ITEM_BEEDRILLITE
+return
+
+Route118_EventScript_Rose_Item::
+giveitem ITEM_EXP_CANDY_L
+return
+
+VictoryRoad_B2F_EventScript_Julie_Item::
+giveitem ITEM_HELIX_FOSSIL
+return
+
+LavaridgeTown_Gym_1F_EventScript_Flannery_Item::
+giveitem ITEM_SOOTHE_BELL
+return
+
+Route119_EventScript_Chris_Item::
+giveitem ITEM_SWEET_HEART
+return
+
+MagmaHideout_4F_EventScript_Grunt12_Item::
+giveitem ITEM_ARMORITE_ORE
+return
+
+Route131_EventScript_Talia_Item::
+giveitem ITEM_DAMP_ROCK
+return
+
+MossdeepCity_StevensHouse_EventScript_StevenGivesDive_Item::
+giveitem ITEM_SUPER_POTION
+return
+
+MtChimney_EventScript_MeteoriteMachine_Item::
+giveitem ITEM_TM91
+return
+
+Route113_EventScript_Lawrence_Item::
+giveitem ITEM_SUPER_LURE
+return
+
+DewfordTown_EventScript_GiveOldRod_Item::
+giveitem ITEM_PAMTRE_BERRY
+return
+
+Route114_EventScript_Nolan_Item::
+giveitem ITEM_X_DEFENSE
+return
+
+Route111_EventScript_Branden_Item::
+giveitem ITEM_INSECT_PLATE
+return
+
+Route110_TrickHousePuzzle3_EventScript_Martha_Item::
+giveitem ITEM_LAVA_COOKIE
+return
+
+Route133_EventScript_ItemBigPearl::
+finditem ITEM_QUIET_MINT
+return
+
+MeteorFalls_1F_1R_EventScript_ItemFullHeal::
+finditem ITEM_HYPER_POTION
+return
+
+Route110_TrickHouseEnd_EventScript_CompletedPuzzle3_Item::
+giveitem ITEM_TM59
+return
+
+Route120_EventScript_Leonel_Item::
+giveitem ITEM_FIGHTING_GEM
+return
+
+MtPyre_6F_EventScript_ItemTM30::
+finditem ITEM_DRACO_PLATE
+return
+
+Route123_EventScript_Frederick_Item::
+giveitem ITEM_WEAKNESS_POLICY
+return
+
+MagmaHideout_3F_2R_EventScript_ItemPPMax::
+finditem ITEM_TROPIC_MAIL
+return
+
+DewfordTown_Hall_EventScript_SludgeBombMan_Item::
+giveitem ITEM_HYPER_POTION
+return
+
+ShoalCave_LowTideIceRoom_EventScript_ItemTM07::
+finditem ITEM_AMPHAROSITE
+return
+
+IslandCave_EventScript_Regice_Item::
+finditem ITEM_NUGGET
+return
+
+Route117_EventScript_ItemRevive::
+finditem ITEM_ABILITY_PATCH
+return
+
+Route116_EventScript_Karen_Item::
+giveitem ITEM_HEAL_POWDER
+return
+
+Gabby_Ty_EventScript_3_Item::
+giveitem ITEM_BLAZIKENITE
+return
+
+Route110_EventScript_Benjamin_Item::
+giveitem ITEM_SUPER_POTION
+return
+
+Route111_WinstrateFamilysHouse_EventScript_Vivi_Item::
+giveitem ITEM_MIND_PLATE
+return
+
+Route125_EventScript_Sharon_Item::
+giveitem ITEM_LUCKY_PUNCH
+return
+
+Route111_EventScript_Heidi_Item::
+giveitem ITEM_ADAMANT_ORB
+return
+
+Route110_TrickHousePuzzle7_EventScript_Alexis_Item::
+giveitem ITEM_ELECTIRIZER
+return
+
+Route102_EventScript_ItemPotion::
+finditem ITEM_HEAL_POWDER
+return
+
+MtPyre_2F_EventScript_Dez_Item::
+giveitem ITEM_JAW_FOSSIL
+return
+
+Route110_EventScript_Edward_Item::
+giveitem ITEM_MAX_HONEY
+return
+
+SootopolisCity_Gym_B1F_EventScript_Daphne_Item::
+giveitem ITEM_SILK_SCARF
+return
+
+MauvilleCity_EventScript_DefeatedWally_Item::
+giveitem ITEM_HERACRONITE
+return
+
+Route119_EventScript_Rachel_Item::
+giveitem ITEM_SWAMPERTITE
+return
+
+Route124_EventScript_Grace_Item::
+giveitem ITEM_POISONIUM_Z
+return
+
+Route114_EventScript_ItemRareCandy::
+finditem ITEM_POTION
+return
+
+BirthIsland_Exterior_EventScript_Deoxys_Item::
+finditem ITEM_BLASTOISINITE
+return
+
+Route113_EventScript_Lao_Item::
+giveitem ITEM_GALARICA_CUFF
+return
+
+PetalburgWoods_EventScript_Girl_Item::
+giveitem ITEM_SUPER_POTION
+return
+
+Route123_EventScript_Ed_Item::
+giveitem ITEM_TM69
+return
+
+Route115_EventScript_Timothy_Item::
+giveitem ITEM_SHOAL_SALT
+return
+
+PetalburgCity_Gym_EventScript_Randall_Item::
+giveitem ITEM_HONDEW_BERRY
+return
+
+Route107_EventScript_Beth_Item::
+giveitem ITEM_POWER_WEIGHT
+return
+
+RustboroCity_Flat2_2F_EventScript_NinjaBoy_Item::
+giveitem ITEM_TM76
+return
+
+NewMauville_Inside_EventScript_Voltorb3_Item::
+finditem ITEM_MOOMOO_MILK
+return
+
+Route109_EventScript_Mel_Item::
+giveitem ITEM_HEAL_POWDER
+return
+
+Route114_LanettesHouse_EventScript_Lanette_Item::
+giveitem ITEM_GUARD_SPEC
+return
+
+Route106_EventScript_Kyla_Item::
+giveitem ITEM_DRAGON_GEM
+return
+
+MtPyre_Exterior_EventScript_ItemTM48::
+finditem ITEM_BERRY_SWEET
+return
+
+Route113_EventScript_Sophie_Item::
+giveitem ITEM_FRESH_WATER
+return
+
+Route116_EventScript_Janice_Item::
+giveitem ITEM_SUPER_POTION
+return
+
+Route119_WeatherInstitute_1F_EventScript_Grunt1_Item::
+giveitem ITEM_DESTINY_KNOT
+return
+
+Route103_EventScript_ItemPPUp::
+finditem ITEM_PSYCHIC_GEM
+return
+
+DewfordTown_House2_EventScript_Man_Item::
+giveitem ITEM_TM42
+return
+
+Route116_EventScript_ItemHPUp::
+finditem ITEM_POKE_TOY
+return
+
+Route119_WeatherInstitute_1F_EventScript_Grunt4_Item::
+giveitem ITEM_MARSHADIUM_Z
+return
+
+Route134_EventScript_Jack_Item::
+giveitem ITEM_PARALYZE_HEAL
+return
+
+MtPyre_Summit_EventScript_Grunt3_Item::
+giveitem ITEM_LUM_BERRY
+return
+
+MagmaHideout_2F_1R_EventScript_Grunt4_Item::
+giveitem ITEM_POTION
+return
+
+Route124_EventScript_ItemYellowShard::
+finditem ITEM_FRESH_WATER
+return
+
+Route110_TrickHousePuzzle7_EventScript_Patricia_Item::
+giveitem ITEM_RED_APRICORN
+return
+
+AquaHideout_B2F_EventScript_ItemNestBall::
+finditem ITEM_TM17
+return
+
+Route114_EventScript_RoarGentleman_Item::
+giveitem ITEM_MAX_REVIVE
+return
+
+Route123_EventScript_Alberto_Item::
+giveitem ITEM_SPELON_BERRY
+return
+
+ScorchedSlab_EventScript_ItemTM11::
+finditem ITEM_LAX_INCENSE
+return
+
+AbandonedShip_Rooms_1F_Eventscript_Thalia_Item::
+giveitem ITEM_KOMMONIUM_Z
+return
+
+MauvilleCity_Gym_EventScript_Shawn_Item::
+giveitem ITEM_CHIPPED_POT
+return
+
+MossdeepCity_Gym_EventScript_Nicholas_Item::
+giveitem ITEM_MUSCLE_FEATHER
+return
+
+Route120_EventScript_Angelica_Item::
+giveitem ITEM_SILVER_POWDER
+return
+
+Route127_EventScript_ItemCarbos::
+finditem ITEM_TM03
+return
+
+LavaridgeTown_EventScript_MayGiveGoGoggles_ITEM::
+giveitem ITEM_REVIVAL_HERB
+return
+
+Route118_EventScript_Wade_Item::
+giveitem ITEM_POKE_DOLL
+return
+
+JaggedPass_EventScript_Diana_Item::
+giveitem ITEM_LAGGING_TAIL
+return
+
+Route120_EventScript_Clarissa_Item::
+giveitem ITEM_FLAME_ORB
+return
+
+MagmaHideout_4F_EventScript_Grunt11_Item::
+giveitem ITEM_SODA_POP
+return
+
+Route119_EventScript_ItemNugget::
+finditem ITEM_NOMEL_BERRY
+return
+
+Route110_TrickHouseEnd_EventScript_CompletedPuzzle4_Item::
+giveitem ITEM_ANTIDOTE
+return
+
+Route127_EventScript_ItemZinc::
+finditem ITEM_ICICLE_PLATE
+return
+
+Dewford_Badge_Item::
+finditem ITEM_BUG_GEM
+ givemon SPECIES_SIZZLIPEDE, 5
+return
+
+Route103_EventScript_ItemGuardSpec::
+finditem ITEM_MOOMOO_MILK
+return
+
+MagmaHideout_1F_EventScript_Grunt1_Item::
+giveitem ITEM_ROSELI_BERRY
+return
+
+GraniteCave_1F_EventScript_Hiker_Item::
+giveitem ITEM_TART_APPLE
+return
+
+Route125_EventScript_Stan_Item::
+giveitem ITEM_GRIP_CLAW
+return
+
+MeteorFalls_1F_1R_EventScript_ItemPPUP::
+finditem ITEM_BERRY_JUICE
 return
 
 MeteorFalls_1F_1R_EventScript_ItemMoonStone::
-finditem ITEM_ABOMASITE
+finditem ITEM_FLOWER_SWEET
+return
+
+RustboroCity_Gym_EventScript_Marc_Item::
+giveitem ITEM_PROTEIN
+return
+
+Route129_EventScript_Reed_Item::
+giveitem ITEM_COMET_SHARD
+return
+
+Route119_EventScript_Hideo_Item::
+giveitem ITEM_BERRY_JUICE
+return
+
+SootopolisCity_Gym_B1F_EventScript_Andrea_Item::
+giveitem ITEM_DARK_GEM
+return
+
+Route117_EventScript_Brandi_Item::
+giveitem ITEM_SUPER_POTION
+return
+
+AbandonedShip_Room_B1F_EventScript_ItemTM13::
+finditem ITEM_TM97
+return
+
+Route105_EventScript_Luis_Item::
+giveitem ITEM_OVAL_STONE
+return
+
+Route103_EventScript_Item_Rival::
+giveitem ITEM_SUPER_POTION
+return
+
+SSTidalLowerDeck_EventScript_Leonard_Item::
+giveitem ITEM_HYPER_POTION
+return
+
+ShoalCave_LowTideStairsRoom_EventScript_ItemIceHeal::
+finditem ITEM_TM26
+return
+
+VictoryRoad_1F_EventScript_WallyEntranceBattle_Item::
+giveitem ITEM_SHOAL_SHELL
+return
+
+NewMauville_Inside_EventScript_ItemUltraBall::
+finditem ITEM_SUPER_POTION
+return
+
+Route124_EventScript_Chad_Item::
+giveitem ITEM_MAX_LURE
+return
+
+Route111_EventScript_Becky_Item::
+giveitem ITEM_HABAN_BERRY
+return
+
+Route117_EventScript_Isaac_Item::
+giveitem ITEM_TM89
+return
+
+Route120_EventScript_Jenna_Item::
+giveitem ITEM_GHOSTIUM_Z
+return
+
+AquaHideout_B1F_EventScript_Electrode1_Item::
+finditem ITEM_MAGNET
+return
+
+Route134_EventScript_Marley_Item::
+giveitem ITEM_GARCHOMPITE
+return
+
+Route134_EventScript_Alex_Item::
+giveitem ITEM_METAL_COAT
+return
+
+Route125_EventScript_Kim_Item::
+giveitem ITEM_FAIRY_MEMORY
+return
+
+Route114_EventScript_Lucas_Item::
+giveitem ITEM_WIKI_BERRY
+return
+
+AbandonedShip_Rooms_1F_EventScript_ItemHarborMail::
+finditem ITEM_ICE_GEM
+return
+
+Route116_EventScript_ItemXSpecial::
+finditem ITEM_SMOOTH_ROCK
+return
+
+SSTidalRooms_EventScript_Micah_Item::
+giveitem ITEM_GALARICA_WREATH
+return
+
+Route133_EventScript_Conor_Item::
+giveitem ITEM_VENUSAURITE
+return
+
+SootopolisCity_Gym_B1F_EventScript_Bethany_Item::
+giveitem ITEM_ZINC
+return
+
+Route117_EventScript_Anna_Item::
+giveitem ITEM_TM84
+return
+
+AbandonedShip_Rooms2_1F_EventScript_Kira_Item::
+giveitem ITEM_HYPER_POTION
+return
+
+Route110_EventScript_Isabel_Item::
+giveitem ITEM_AIR_BALLOON
+return
+
+MtPyre_6F_EventScript_Cedric_Item::
+giveitem ITEM_MAX_ELIXIR
+return
+
+Route114_EventScript_Charlotte_Item::
+giveitem ITEM_PSYCHIC_SEED
+return
+
+AquaHideout_B1F_EventScript_Grunt3_Item::
+giveitem ITEM_METAGROSSITE
+return
+
+Route118_EventScript_Perry_Item::
+giveitem ITEM_SUPER_POTION
+return
+
+Route132_EventScript_ItemProtein::
+finditem ITEM_NORMALIUM_Z
+return
+
+Route110_TrickHouseEnd_EventScript_CompletedPuzzle7_Item::
+giveitem ITEM_ROCK_MEMORY
+return
+
+AbandonedShip_Rooms2_1F_EventScript_Garrison_Item::
+giveitem ITEM_SUPER_POTION
+return
+
+FieryPath_EventScript_ItemFireStone::
+finditem ITEM_MAGO_BERRY
+return
+
+ShoalCave_LowTideInnerRoom_EventScript_ItemRareCandy::
+finditem ITEM_JABOCA_BERRY
+return
+
+Route117_EventScript_Melina_Item::
+giveitem ITEM_ETHER
+return
+
+SafariZone_Southwest_EventScript_ItemMaxRevive::
+finditem ITEM_LATIOSITE
+return
+
+Route111_EventScript_Drew_Item::
+giveitem ITEM_ICE_HEAL
+return
+
+Route111_EventScript_ItemHPUp::
+finditem ITEM_MOON_STONE
+return
+
+SlateportCity_EventScript_BerryPowderClerk_Item::
+giveitem ITEM_STEELIUM_Z
+return
+
+Route113_GlassWorkshop_EventScript_GlassWorker_Item::
+giveitem ITEM_SUPER_POTION
+return
+
+Route110_TrickHousePuzzle4_EventScript_Cora_Item::
+giveitem ITEM_X_DEFENSE
+return
+
+Route124_EventScript_Isabella_Item::
+giveitem ITEM_IMPISH_MINT
+return
+
+Route128_EventScript_Harrison_Item::
+giveitem ITEM_HASTY_MINT
+return
+
+Route123_EventScript_Kindra_Item::
+giveitem ITEM_SUPER_POTION
+return
+
+AquaHideout_B2F_EventScript_Grunt8_Item::
+giveitem ITEM_TM54
+return
+
+SootopolisCity_Gym_B1F_EventScript_Annika_Item::
+giveitem ITEM_GROUND_GEM
+return
+
+Route108_EventScript_ItemStarPiece::
+finditem ITEM_ZAP_PLATE
+return
+
+Route112_EventScript_ItemNugget::
+finditem ITEM_GRASS_MEMORY
+return
+
+Route119_EventScript_Takashi_Item::
+giveitem ITEM_HYPER_POTION
+return
+
+LavaridgeTown_Gym_B1F_EventScript_Jace_Item::
+giveitem ITEM_PARALYZE_HEAL
+return
+
+Route119_EventScript_Kent_Item::
+giveitem ITEM_DUBIOUS_DISC
+return
+
+AbandonedShip_Rooms_1F_EventScript_Demetrius_Item::
+giveitem ITEM_STICKY_BARB
+return
+
+Route114_EventScript_Bernie_Item::
+giveitem ITEM_DRAGON_MEMORY
+return
+
+Route109_EventScript_Chandler_Item::
+giveitem ITEM_SPOOKY_PLATE
+return
+
+Route110_TrickHousePuzzle1_EventScript_ItemOrangeMail::
+finditem ITEM_TM20
+return
+
+GraniteCave_B2F_EventScript_ItemRareCandy::
+finditem ITEM_TOXIC_PLATE
+return
+
+Route112_EventScript_Shayla_Item::
+giveitem ITEM_TM07
+return
+
+MagmaHideout_2F_1R_EventScript_Grunt5_Item::
+giveitem ITEM_HYPER_POTION
+return
+
+AbandonedShip_HiddenFloorRooms_EventScript_ItemTM18::
+finditem ITEM_TM58
+return
+
+MtPyre_1F_EventScript_CleanseTagWoman_Item::
+giveitem ITEM_BURN_HEAL
+return
+
+Route120_EventScript_Chip_Item::
+giveitem ITEM_IRON_PLATE
+return
+
+Route125_EventScript_Tanya_Item::
+giveitem ITEM_HYPER_POTION
+return
+
+Route119_EventScript_ItemElixir2::
+finditem ITEM_GRASSIUM_Z
+return
+
+LilycoveCity_House2_EventScript_FatMan_Item::
+giveitem ITEM_IRON_BALL
+return
+
+Route120_EventScript_Colin_Item::
+giveitem ITEM_PLUME_FOSSIL
+return
+
+Route105_EventScript_Josue_Item::
+giveitem ITEM_COLBUR_BERRY
+return
+
+LavaridgeTown_Gym_B1F_EventScript_Jeff_Item::
+giveitem ITEM_HEAVY_DUTY_BOOTS
+return
+
+Route110_TrickHousePuzzle8_EventScript_Leroy_Item::
+giveitem ITEM_PETAYA_BERRY
+return
+
+Route123_EventScript_ItemCalcium::
+finditem ITEM_SACRED_ASH
+return
+
+Route121_EventScript_Tammy_Item::
+giveitem ITEM_UTILITY_UMBRELLA
+return
+
+Route115_EventScript_ItemIron::
+finditem ITEM_TM71
+return
+
+Route126_EventScript_Pablo_Item::
+giveitem ITEM_AWAKENING
+return
+
+Route111_EventScript_Bryan_Item::
+giveitem ITEM_STAR_SWEET
+return
+
+Route116_EventScript_Devan_Item::
+giveitem ITEM_NEVER_MELT_ICE
+return
+
+DewfordTown_Gym_EventScript_Lilith_Item::
+giveitem ITEM_PSYCHIC_MEMORY
+return
+
+LavaridgeTown_Gym_1F_EventScript_Cole_Item::
+giveitem ITEM_RESIST_FEATHER
+return
+
+GraniteCave_B1F_EventScript_ItemPokeBall::
+finditem ITEM_BERRY_JUICE
+return
+
+VictoryRoad_B2F_EventScript_Caroline_Item::
+giveitem ITEM_FAIRIUM_Z
+return
+
+SeafloorCavern_Room9_EventScript_ArchieAwakenKyogre_Item::
+giveitem ITEM_ARMOR_FOSSIL
+return
+
+GraniteCave_1F_EventScript_ItemEscapeRope::
+finditem ITEM_MIMIKIUM_Z
+return
+
+Route111_EventScript_Victor_Item::
+giveitem ITEM_PERSIM_BERRY
+return
+
+RustboroCity_CuttersHouse_EventScript_Cutter_Item::
+giveitem ITEM_BURN_HEAL
+return
+
+MossdeepCity_StevensHouse_EventScript_GiveBeldum_Item::
+giveitem ITEM_ELIXIR
+return
+
+Route119_WeatherInstitute_2F_EventScript_ReceiveCastform_Item::
+giveitem ITEM_HEART_SCALE
+return
+
+AquaHideout_B1F_EventScript_ItemMasterBall::
+finditem ITEM_CARBOS
+return
+
+VictoryRoad_1F_EventScript_Hope_Item::
+giveitem ITEM_ADRENALINE_ORB
+return
+
+Route132_EventScript_Dana_Item::
+giveitem ITEM_POWER_LENS
+return
+
+Route130_EventScript_Rodney_Item::
+giveitem ITEM_TM32
+return
+
+Route112_EventScript_Bryant_Item::
+giveitem ITEM_ENERGY_ROOT
+return
+
+Route123_EventScript_Davis_Item::
+giveitem ITEM_CLEANSE_TAG
+return
+
+Route114_EventScript_ItemEnergyPowder::
+finditem ITEM_ALORAICHIUM_Z
+return
+
+Route114_EventScript_Kai_Item::
+giveitem ITEM_MENTAL_HERB
+return
+
+Route110_EventScript_Anthony_Item::
+giveitem ITEM_SACRED_ASH
+return
+
+RusturfTunnel_EventScript_ItemPokeBall::
+finditem ITEM_RAZOR_CLAW
+return
+
+FallarborTown_CozmosHouse_EventScript_PlayerHasMeteorite_Item::
+giveitem ITEM_GROWTH_MULCH
 return
 
 LavaridgeTown_EventScript_EggWoman_Item::
+giveitem ITEM_SHARP_BEAK
+return
 
+Route119_EventScript_Hugh_Item::
+giveitem ITEM_FIGY_BERRY
+return
 
-            setvar VAR_TEMP_1, SPECIES_KANGASKHAN
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+MauvilleCity_Gym_EventScript_Angelo_Item::
+giveitem ITEM_CHARCOAL
+return
+
+Route115_EventScript_ItemSuperPotion::
+finditem ITEM_SWEET_HEART
+return
+
+FortreeCity_Gym_EventScript_Flint_Item::
+giveitem ITEM_BANETTITE
+return
+
+Route125_EventScript_Presley_Item::
+giveitem ITEM_BRAVE_MINT
+return
+
+Route131_EventScript_Kara_Item::
+giveitem ITEM_FOCUS_SASH
+return
+
+Route120_EventScript_StevenGiveDeconScope_ITEM::
+giveitem ITEM_FIRE_STONE
+return
+
+MagmaHideout_2F_2R_EventScript_Grunt7_Item::
+giveitem ITEM_ICE_STONE
+return
+
+Mauville_Badge_Item::
+finditem ITEM_PRETTY_FEATHER
+ givemon SPECIES_TAUROS, 5
+return
+
+Route119_EventScript_ItemLeafStone::
+finditem ITEM_SASSY_MINT
+return
+
+MossdeepCity_Gym_EventScript_Maura_Item::
+giveitem ITEM_MAX_ELIXIR
+return
+
+Route109_EventScript_Gwen_Item::
+giveitem ITEM_BABIRI_BERRY
+return
+
+Route110_TrickHousePuzzle7_EventScript_Everett_Item::
+giveitem ITEM_RELAXED_MINT
+return
+
+DewfordTown_Gym_EventScript_Cristian_Item::
+giveitem ITEM_LOPUNNITE
+return
+
+MagmaHideout_4F_EventScript_Tabitha_Item::
+giveitem ITEM_MAX_POTION
+return
+
+PetalburgWoods_EventScript_DevonResearcherLeft_Item::
+giveitem ITEM_HONEY
+return
+
+MossdeepCity_EventScript_KingsRockBoy_Item::
+giveitem ITEM_SUPER_POTION
+return
+
+Route120_EventScript_ItemNestBall::
+finditem ITEM_ICIUM_Z
+return
+
+Route115_EventScript_Hector_Item::
+giveitem ITEM_GUARD_SPEC
+return
+
+AquaHideout_B2F_EventScript_Matt_Item::
+giveitem ITEM_PP_UP
+return
+
+Route110_EventScript_Joseph_Item::
+giveitem ITEM_KANGASKHANITE
+return
+
+Route111_WinstrateFamilysHouse_EventScript_Victoria_Item_Brace::
+giveitem ITEM_DARKINIUM_Z
+return
+
+LavaridgeTown_Gym_1F_EventScript_Danielle_Item::
+giveitem ITEM_GANLON_BERRY
+return
+
+VictoryRoad_B1F_EventScript_Michelle_Item::
+giveitem ITEM_ZOOM_LENS
+return
+
+Route132_EventScript_Kiyo_Item::
+giveitem ITEM_TERRAIN_EXTENDER
+return
+
+MossdeepCity_EventScript_ItemNetBall::
+finditem ITEM_BLUK_BERRY
+return
+
+PetalburgWoods_EventScript_ItemParalyzeHeal::
+giveitem ITEM_ETHER
+return
+
+Route114_EventScript_Tyra_Item::
+giveitem ITEM_MAX_POTION
+return
+
+Route110_EventScript_Alyssa_Item::
+giveitem ITEM_RELIC_VASE
+return
+
+Route125_EventScript_Ernest_Item::
+giveitem ITEM_BURN_HEAL
+return
+
+Petalburg_Badge_Item::
+finditem ITEM_THUNDER_STONE
+ givemon SPECIES_PSYDUCK, 5
+return
+
+Route104_EventScript_ItemPokeBall::
+finditem ITEM_FULL_HEAL
+return
+
+Route110_EventScript_Jasmine_Item::
+giveitem ITEM_TM30
+return
+
+Route105_EventScript_Dominik_Item::
+giveitem ITEM_SODA_POP
+return
+
+MagmaHideout_2F_2R_EventScript_Grunt15_Item::
+giveitem ITEM_TM61
+return
+
+Route111_EventScript_Wilton_Item::
+giveitem ITEM_WAVE_INCENSE
+return
+
+Route113_EventScript_Jaylen_Item::
+giveitem ITEM_METAL_POWDER
+return
+
+RustboroCity_EventScript_ItemXDefend::
+finditem ITEM_FLYINIUM_Z
+return
+
+LavaridgeTown_Gym_1F_EventScript_Axle_Item::
+giveitem ITEM_COVER_FOSSIL
+return
+
+MtPyre_3F_EventScript_Gabrielle_Item::
+giveitem ITEM_HARD_STONE
+return
+
+AbandonedShip_HiddenFloorRooms_EventScript_ItemWaterStone::
+finditem ITEM_SWIFT_FEATHER
+return
+
+SeafloorCavern_Room1_EventScript_Grunt2_Item::
+giveitem ITEM_BLACK_GLASSES
+return
+
+Route116_EventScript_Clark_Item::
+giveitem ITEM_BINDING_BAND
+return
+
+Route110_TrickHousePuzzle2_EventScript_ItemHarborMail::
+finditem ITEM_ICE_HEAL
+return
+
+Route114_EventScript_Nancy_Item::
+giveitem ITEM_TM08
+return
+
+PetalburgWoods_EventScript_ItemGreatBall::
+giveitem ITEM_BIG_MALASADA
+return
+
+Route110_TrickHousePuzzle1_EventScript_Eddie_Item::
+giveitem ITEM_GREEN_SCARF
+return
+
+Route118_EventScript_Barny_Item::
+giveitem ITEM_CHOPLE_BERRY
+return
+
+Route113_EventScript_Tori_Item::
+giveitem ITEM_MAX_POTION
+return
+
+Route116_EventScript_Joey_Item::
+giveitem ITEM_FOSSILIZED_FISH
+return
+
+MagmaHideout_3F_1R_EventScript_Grunt16_Item::
+giveitem ITEM_NAUGHTY_MINT
+return
+
+Route106_EventScript_Ned_Item::
+giveitem ITEM_KEE_BERRY
+return
+
+MtPyre_6F_EventScript_Valerie_Item::
+giveitem ITEM_WATER_MEMORY
+return
+
+Route108_EventScript_Tara_Item::
+giveitem ITEM_SACRED_ASH
+return
+
+MauvilleCity_EventScript_CompletedNewMauville_Item::
+giveitem ITEM_WIDE_LENS
 return
 
 AquaHideout_B2F_EventScript_Grunt4_Item::
-
-
-            setvar VAR_TEMP_1, SPECIES_DEWGONG
-           setvar VAR_TEMP_2, 5
-           call Get_Pokemon
+giveitem ITEM_CATCHING_CHARM
 return
 
-Sootopolis_Badge_Item::
+MauvilleCity_House1_EventScript_RockSmashDude_Item::
+giveitem ITEM_DAMP_MULCH
+return
+
+Route106_EventScript_Douglas_Item::
+giveitem ITEM_AGUAV_BERRY
+return
+
+Route115_EventScript_Kyra_Item::
+giveitem ITEM_FOSSILIZED_DINO
+return
+
+Route131_EventScript_Reli_Item::
+giveitem ITEM_POTION
+return
+
+MtPyre_Summit_EventScript_Grunt1_Item::
+giveitem ITEM_LUCKY_EGG
+return
+
+Route126_EventScript_Sienna_Item::
+giveitem ITEM_FIGHTINIUM_Z
+return
+
+Route121_EventScript_Marcel_Item::
+giveitem ITEM_AWAKENING
+return
+
+AquaHideout_B1F_EventScript_Grunt5_Item::
+giveitem ITEM_MAX_POTION
+return
+
+Route120_EventScript_ItemHyperPotion::
+finditem ITEM_ADAMANT_MINT
+return
+
+Route132_EventScript_Paxton_Item::
+giveitem ITEM_SAFETY_GOGGLES
+return
+
+JaggedPass_EventScript_Autumn_Item::
+giveitem ITEM_CORNN_BERRY
+return
+
+NavelRock_Top_EventScript_HoOh_ITEM::
+finditem ITEM_RAZOR_FANG
+return
+
+SootopolisCity_House1_EventScript_BrickBreakBlackBelt_Item::
+giveitem ITEM_POTION
+return
+
+Route131_EventScript_Richard_Item::
+giveitem ITEM_DREAD_PLATE
+return
+
+Route111_EventScript_Travis_Item::
+giveitem ITEM_ENERGY_POWDER
+return
+
+PetalburgCity_WallysHouse_EventScript_GiveHM03Surf_Item::
+giveitem ITEM_LOVE_SWEET
+return
+
+Route131_EventScript_Herman_Item::
+giveitem ITEM_WHITE_FLUTE
+return
+
+Route119_WeatherInstitute_2F_EventScript_Grunt3_Item::
+giveitem ITEM_MAX_REVIVE
+return
+
+SSTidalRooms_EventScript_Thomas_Item::
+giveitem ITEM_SHARPEDONITE
+return
+
+MtPyre_2F_EventScript_Leah_Item::
+giveitem ITEM_FIGHTING_MEMORY
+return
+
+LavaridgeTown_Gym_B1F_EventScript_Eli_Item::
+giveitem ITEM_DRAGONIUM_Z
+return
+
+Route128_EventScript_Ruben_Item::
+giveitem ITEM_SUPER_POTION
+return
+
+AbandonedShip_HiddenFloorRooms_EventScript_ItemScanner::
+finditem ITEM_MAX_MUSHROOMS
+return
+
+Route112_EventScript_Brice_Item::
+giveitem ITEM_TM44
+return
+
+VictoryRoad_B1F_EventScript_ItemTM29::
+finditem ITEM_TM43
+return
+
+Route126_EventScript_ItemGreenShard::
+finditem ITEM_TM52
+return
+
+Route105_EventScript_Foster_Item::
+giveitem ITEM_YELLOW_NECTAR
+return
+
+MagmaHideout_1F_EventScript_ItemRareCandy::
+finditem ITEM_GALARICA_TWIG
+return
+
+Route115_EventScript_ItemGreatBall::
+finditem ITEM_SALAMENCITE
+return
+
+Route116_EventScript_Johnson_Item::
+giveitem ITEM_ELECTRIC_GEM
+return
+
+Route105_EventScript_Imani_Item::
+giveitem ITEM_FULL_RESTORE
+return
+
+RustboroCity_Gym_EventScript_Josh_Item::
+giveitem ITEM_BIG_ROOT
+return
+
+SlateportCity_Harbor_EventScript_DeepSeaTooth_Item::
+giveitem ITEM_TM19
+return
+
+MauvilleCity_Gym_EventScript_Vivian_Item::
+giveitem ITEM_GREEN_SHARD
+return
+
+Route109_EventScript_Alice_Item::
+giveitem ITEM_POTION
+return
+
+MeteorFalls_1F_2R_EventScript_John_Item::
+giveitem ITEM_MUSCLE_BAND
+return
+
+MtPyre_Summit_EventScript_Grunt4_Item::
+giveitem ITEM_RASH_MINT
+return
+
+Route125_EventScript_Nolen_Item::
+giveitem ITEM_ENERGY_POWDER
+return
+
+VictoryRoad_B2F_EventScript_ItemFullHeal::
+finditem ITEM_LURE
+return
+
+Route102_EventScript_Tiana_Item::
+giveitem ITEM_SLOWBRONITE
+return
+
+Route110_TrickHousePuzzle6_EventScript_ItemGlitterMail::
+finditem ITEM_POKE_DOLL
+return
+
+SlateportCity_PokemonFanClub_EventScript_GiveBlueScarf_Item::
+giveitem ITEM_LEAF_STONE
+return
+
+MossdeepCity_Gym_EventScript_Clifford_Item::
+giveitem ITEM_TM70
+return
+
+Route110_TrickHouseEnd_EventScript_CompletedPuzzle6_Item::
+giveitem ITEM_X_SP_ATK
+return
+
+AncientTomb_EventScript_Registeel_Item::
 finditem ITEM_POTION
- givemon SPECIES_UNOWN, 5
+return
+
+NewMauville_Inside_EventScript_ItemParalyzeHeal::
+finditem ITEM_EXP_CANDY_XL
+return
+
+Route133_EventScript_Warren_Item::
+giveitem ITEM_RED_SHARD
+return
+
+FortreeCity_Gym_EventScript_Humberto_Item::
+giveitem ITEM_BLACK_SLUDGE
+return
+
+Route111_EventScript_Hayden_Item::
+giveitem ITEM_BURN_HEAL
+return
+
+Route119_EventScript_Doug_Item::
+giveitem ITEM_OLD_GATEAU
+return
+
+Route123_EventScript_ItemPPUp::
+finditem ITEM_ETHER
+return
+
+Route133_EventScript_Mollie_Item::
+giveitem ITEM_X_ATTACK
+return
+
+MtPyre_5F_EventScript_Atsushi_Item::
+giveitem ITEM_MAX_POTION
+return
+
+MtPyre_Exterior_EventScript_ItemMaxPotion::
+finditem ITEM_TM06
+return
+
+Route110_TrickHousePuzzle4_EventScript_Paula_Item::
+giveitem ITEM_DEEP_SEA_TOOTH
+return
+
+VictoryRoad_B1F_EventScript_Shannon_Item::
+giveitem ITEM_SUPER_POTION
+return
+
+Route131_EventScript_Kevin_Item::
+giveitem ITEM_REVIVE
+return
+
+Route119_EventScript_Yasu_Item::
+giveitem ITEM_EEVIUM_Z
+return
+
+JaggedPass_EventScript_MagmaHideoutGuard_Item::
+giveitem ITEM_ESCAPE_ROPE
+return
+
+Route113_EventScript_Lung_Item::
+giveitem ITEM_DURIN_BERRY
+return
+
+AbandonedShip_Corridors_1F_EventScript_Charlie_Item::
+giveitem ITEM_LEEK
+return
+
+Route133_EventScript_ItemMaxRevive::
+finditem ITEM_LIFE_ORB
+return
+
+Route110_TrickHouseEnd_EventScript_CompletedPuzzle1_Item::
+giveitem ITEM_BLUE_FLUTE
+return
+
+SeafloorCavern_Room9_EventScript_ItemTM26::
+finditem ITEM_GOOEY_MULCH
+return
+
+Route120_EventScript_Lorenzo_Item::
+giveitem ITEM_EXPERT_BELT
+return
+
+SlateportCity_PokemonFanClub_EventScript_GiveGreenScarf_Item::
+giveitem ITEM_TM18
+return
+
+Route133_EventScript_Franklin_Item::
+giveitem ITEM_HYPER_POTION
+return
+
+Route109_EventScript_Lola_Item::
+giveitem ITEM_FRESH_WATER
+return
+
+MagmaHideout_1F_EventScript_Grunt2_Item::
+giveitem ITEM_FRESH_WATER
+return
+
+SlateportCity_PokemonFanClub_EventScript_GiveSootheBell_Item::
+giveitem ITEM_GARDEVOIRITE
+return
+
+Route110_EventScript_ItemRareCandy::
+finditem ITEM_CLAW_FOSSIL
+return
+
+SeafloorCavern_Room4_EventScript_Grunt3_Item::
+giveitem ITEM_MECH_MAIL
+return
+
+Route108_EventScript_Carolina_Item::
+giveitem ITEM_MODEST_MINT
+return
+
+Route124_EventScript_Lila_Item::
+giveitem ITEM_ENERGY_POWDER
+return
+
+Route123_EventScript_Fernando_Item::
+giveitem ITEM_RED_FLUTE
+return
+
+SootopolisCity_Gym_B1F_EventScript_Tiffany_Item::
+giveitem ITEM_QUALOT_BERRY
+return
+
+VictoryRoad_1F_EventScript_ItemMaxElixir::
+finditem ITEM_SOLGANIUM_Z
+return
+
+MauvilleCity_Gym_EventScript_Wattson_Item::
+giveitem ITEM_AMULET_COIN
+return
+
+MauvilleCity_Gym_EventScript_Kirk_Item::
+giveitem ITEM_POTION
+return
+
+Route134_EventScript_Hudson_Item::
+giveitem ITEM_UPGRADE
+return
+
+GraniteCave_StevensRoom_EventScript_Steven_Item::
+giveitem ITEM_ROOT_FOSSIL
+return
+
+MtPyre_3F_EventScript_William_Item::
+giveitem ITEM_FULL_HEAL
+return
+
+MtPyre_3F_EventScript_Kayla_Item::
+giveitem ITEM_SUPER_POTION
+return
+
+RusturfTunnel_EventScript_Mike_Item::
+giveitem ITEM_LIGHT_CLAY
+return
+
+Route114_EventScript_Angelina_Item::
+giveitem ITEM_ICE_HEAL
+return
+
+DesertRuins_EventScript_Regirock_Item::
+finditem ITEM_TM45
+return
+
+Route111_EventScript_ItemTM37::
+finditem ITEM_EXP_SHARE
+return
+
+LavaridgeTown_Gym_B1F_EventScript_Keegan_Item::
+giveitem ITEM_ELIXIR
+return
+
+Route111_EventScript_Bianca_Item::
+giveitem ITEM_WATMEL_BERRY
+return
+
+VictoryRoad_B2F_EventScript_Dianne_Item::
+giveitem ITEM_POWER_BRACER
+return
+
+Route113_EventScript_ItemMaxEther::
+finditem ITEM_ELECTRIC_MEMORY
+return
+
+Route119_EventScript_Dayton_Item::
+giveitem ITEM_FOSSILIZED_BIRD
+return
+
+SafariZone_North_EventScript_ItemCalcium::
+finditem ITEM_TM21
+return
+
+PacifidlogTown_House2_EventScript_GiveFrustration_Item::
+giveitem ITEM_FRESH_WATER
+return
+
+GraniteCave_B2F_EventScript_ItemRepel::
+finditem ITEM_TM68
+return
+
+Route120_EventScript_ItemNugget::
+finditem ITEM_STEEL_GEM
+return
+
+Route119_EventScript_ItemElixir::
+finditem ITEM_TM29
+return
+
+Route109_EventScript_David_Item::
+giveitem ITEM_YACHE_BERRY
+return
+
+Route109_SeashoreHouse_EventScript_Simon_Item::
+giveitem ITEM_BURN_HEAL
+return
+
+Route119_WeatherInstitute_2F_EventScript_Grunt2_Item::
+giveitem ITEM_SHALOUR_SABLE
+return
+
+Route129_EventScript_Chase_Item::
+giveitem ITEM_ROCK_INCENSE
+return
+
+AbandonedShip_CaptainsOffice_EventScript_ItemStorageKey::
+finditem ITEM_TIMID_MINT
+return
+
+Route107_EventScript_Camron_Item::
+giveitem ITEM_TM01
+return
+
+SSTidalLowerDeck_EventScript_Phillip_Item::
+giveitem ITEM_ELECTRIUM_Z
+return
+
+Route110_TrickHousePuzzle3_EventScript_Justin_Item::
+giveitem ITEM_ABSOLITE
+return
+
+MossdeepCity_Gym_EventScript_TateAndLiza_Item::
+giveitem ITEM_TM96
+return
+
+ArtisanCave_1F_EventScript_ItemCarbos::
+finditem ITEM_SCEPTILITE
+return
+
+SeafloorCavern_Room3_EventScript_Grunt5_Item::
+giveitem ITEM_ENIGMA_BERRY_E_READER
+return
+
+Route132_EventScript_Gilbert_Item::
+giveitem ITEM_X_SP_ATK
+return
+
+Fortree_Badge_Item::
+finditem ITEM_POTION
+ givemon SPECIES_KLINK, 5
+return
+
+SootopolisCity_Gym_B1F_EventScript_Connie_Item::
+giveitem ITEM_AMAZE_MULCH
+return
+
+Route107_EventScript_Darrin_Item::
+giveitem ITEM_REVIVAL_HERB
+return
+
+Route121_EventScript_Myles_Item::
+giveitem ITEM_TM10
+return
+
+Route109_EventScript_Edmond_Item::
+giveitem ITEM_IRON
+return
+
+MagmaHideout_3F_3R_EventScript_ItemEscapeRope::
+finditem ITEM_AGGRONITE
+return
+
+AquaHideout_B1F_EventScript_Grunt2_Item::
+giveitem ITEM_CHARIZARDITE_Y
+return
+
+Route110_EventScript_GiveItemfinder_Item::
+giveitem ITEM_POTION
+return
+
+Route128_EventScript_Carlee_Item::
+giveitem ITEM_DIRE_HIT
+return
+
+MagmaHideout_2F_2R_EventScript_Grunt8_Item::
+giveitem ITEM_RABUTA_BERRY
+return
+
+Route111_EventScript_Tyron_Item::
+giveitem ITEM_STRAWBERRY_SWEET
+return
+
+PetalburgWoods_EventScript_ItemXAttack::
+giveitem ITEM_DECIDIUM_Z
+return
+
+Route115_EventScript_Nob_Item::
+giveitem ITEM_ENERGY_POWDER
+return
+
+Route111_WinstrateFamilysHouse_EventScript_Vicky_Item::
+giveitem ITEM_TM55
+return
+
+Route110_TrickHouseEnd_EventScript_CompletedPuzzle5_Item::
+giveitem ITEM_HEAL_POWDER
+return
+
+Route111_EventScript_GiveSecretPower_Item::
+giveitem ITEM_AWAKENING
+return
+
+Route116_EventScript_GiveRepeatBall_Item::
+finditem ITEM_SALAC_BERRY
+return
+
+RustboroCity_Gym_EventScript_Tommy_Item::
+giveitem ITEM_SWEET_HEART
+return
+
+Route111_EventScript_Daisuke_Item::
+giveitem ITEM_SURPRISE_MULCH
+return
+
+Route121_EventScript_Walter_Item::
+giveitem ITEM_TM100
+return
+
+Route134_EventScript_Hitoshi_Item::
+giveitem ITEM_RED_SCARF
+return
+
+Route124_EventScript_ItemRedShard::
+finditem ITEM_PP_MAX
+return
+
+Route123_EventScript_ItemUltraBall::
+finditem ITEM_LIGHT_BALL
+return
+
+MossdeepCity_Gym_EventScript_Preston_Item::
+giveitem ITEM_POISON_BARB
+return
+
+Route110_TrickHousePuzzle2_EventScript_Ted_Item::
+giveitem ITEM_POTION
+return
+
+SootopolisCity_EventScript_GiveWaterfall_Item::
+giveitem ITEM_RINDO_BERRY
+return
+
+Route124_EventScript_Spencer_Item::
+giveitem ITEM_SODA_POP
+return
+
+VictoryRoad_B1F_EventScript_Halle_Item::
+giveitem ITEM_SUN_STONE
+return
+
+Route127_EventScript_ItemRareCandy::
+finditem ITEM_SEA_INCENSE
+return
+
+Route115_EventScript_Jaiden_Item::
+giveitem ITEM_DARK_MEMORY
+return
+
+Route128_EventScript_Wayne_Item::
+giveitem ITEM_TM22
+return
+
+SootopolisCity_LotadAndSeedotHouse_EventScript_BigSeedot_Item::
+giveitem ITEM_MAX_ELIXIR
+return
+
+Route124_EventScript_Roland_Item::
+giveitem ITEM_MAX_REVIVE
+return
+
+Route121_EventScript_Pat_Item::
+giveitem ITEM_SODA_POP
+return
+
+Route120_EventScript_Callie_Item::
+giveitem ITEM_PARALYZE_HEAL
+return
+
+Route111_EventScript_Girl_Item::
+giveitem ITEM_TM87
+return
+
+Route118_EventScript_Dalton_Item::
+giveitem ITEM_MAX_ETHER
+return
+
+PetalburgWoods_EventScript_ItemEther::
+finditem ITEM_MICLE_BERRY
+return
+
+MossdeepCity_Gym_EventScript_Nate_Item::
+giveitem ITEM_MAX_ELIXIR
+return
+
+SlateportCity_PokemonFanClub_EventScript_GivePinkScarf_Item::
+giveitem ITEM_SERIOUS_MINT
+return
+
+Route119_EventScript_Taylor_Item::
+giveitem ITEM_SPELL_TAG
+return
+
+NewMauville_Inside_EventScript_Voltorb2_Item::
+finditem ITEM_ENERGY_ROOT
+return
+
+Route119_EventScript_Phil_Item::
+giveitem ITEM_REVIVAL_HERB
+return
+
+MtPyre_4F_EventScript_Tasha_Item::
+giveitem ITEM_TM88
+return
+
+MossdeepCity_House3_EventScript_SuperRodFisherman_Item::
+giveitem ITEM_REVIVAL_HERB
+return
+
+Route116_EventScript_Jerry_Item::
+giveitem ITEM_SCOPE_LENS
+return
+
+VictoryRoad_B2F_EventScript_Owen_Item::
+giveitem ITEM_RELIC_BAND
+return
+
+Route116_EventScript_ItemRepel::
+finditem ITEM_MOOMOO_MILK
+return
+
+MagmaHideout_2F_2R_EventScript_ItemFullRestore::
+finditem ITEM_ALTARIANITE
+return
+
+PetalburgCity_Gym_EventScript_Berke_Item::
+giveitem ITEM_MANECTITE
+return
+
+MarineCave_End_EventScript_Kyogre_Item::
+finditem ITEM_HYPER_POTION
+return
+
+Route109_SeashoreHouse_EventScript_Johanna_Item::
+giveitem ITEM_TM65
+return
+
+Route134_EventScript_ItemStarPiece::
+finditem ITEM_APICOT_BERRY
+return
+
+Route115_EventScript_Cyndy_Item::
+giveitem ITEM_TM46
+return
+
+AquaHideout_B1F_EventScript_ItemMaxElixir::
+finditem ITEM_ROCKY_HELMET
+return
+
+Route109_EventScript_Ricky_Item::
+giveitem ITEM_SUPER_POTION
+return
+
+Route123_EventScript_ItemElixir::
+finditem ITEM_SUPER_POTION
+return
+
+MEScrCmd_givepokemon::
+giveitem ITEM_MAX_POTION
+return
+
+Route109_EventScript_ItemPPUp::
+finditem ITEM_TM80
 return
 
 
 trainer_items::
     switch VAR_TRAINER_BATTLE_OPPONENT_A
 
-  case TRAINER_FERNANDO_1, Route123_EventScript_Fernando_Item
-  case TRAINER_GABBY_AND_TY_1, Gabby_Ty_EventScript_1_Item
-  case TRAINER_TIFFANY, SootopolisCity_Gym_B1F_EventScript_Tiffany_Item
-  case TRAINER_DEANDRE, Route118_EventScript_Deandre_Item
-  case TRAINER_ANNA_AND_MEG_1, Route117_EventScript_Anna_Item
-  case TRAINER_NANCY, Route114_EventScript_Nancy_Item
-  case TRAINER_NICOLAS_1, MeteorFalls_1F_2R_EventScript_Nicolas_Item
-  case TRAINER_KIRA_AND_DAN_1, AbandonedShip_Rooms2_1F_EventScript_Kira_Item
-  case TRAINER_PRESLEY, Route125_EventScript_Presley_Item
-  case TRAINER_PABLO_1, Route126_EventScript_Pablo_Item
-  case TRAINER_JONATHAN, Route132_EventScript_Jonathan_Item
-  case TRAINER_RANDALL, PetalburgCity_Gym_EventScript_Randall_Item
-  case TRAINER_LUIS, Route105_EventScript_Luis_Item
-  case TRAINER_ETHAN_1, JaggedPass_EventScript_Ethan_Item
-  case TRAINER_KEIGO, Route120_EventScript_Keigo_Item
-  case TRAINER_GRUNT_RUSTURF_TUNNEL, RusturfTunnel_EventScript_Grunt_Item_Two
-  case TRAINER_CALE, Route121_EventScript_Cale_Item
-  case TRAINER_OLIVIA, SootopolisCity_Gym_B1F_EventScript_Olivia_Item
-  case TRAINER_ROBERT_1, Route120_EventScript_Robert_Item
-  case TRAINER_CAMRON, Route107_EventScript_Camron_Item
-  case TRAINER_LUCAS_1, Route114_EventScript_Lucas_Item
-  case TRAINER_VICTOR, Route111_EventScript_Victor_Item
-  case TRAINER_ZANDER, MtPyre_2F_EventScript_Zander_Item
-  case TRAINER_ALEXIA, PetalburgCity_Gym_EventScript_Alexia_Item
-  case TRAINER_HARRISON, Route128_EventScript_Harrison_Item
-  case TRAINER_ERIC, JaggedPass_EventScript_Eric_Item
-  case TRAINER_BIANCA, Route111_EventScript_Bianca_Item
-  case TRAINER_WADE, Route118_EventScript_Wade_Item
-  case TRAINER_ISABEL_1, Route110_EventScript_Isabel_Item
-  case TRAINER_JOSEPH, Route110_EventScript_Joseph_Item
-  case TRAINER_RICK, Route102_EventScript_Rick_Item
-  case TRAINER_GEORGE, PetalburgCity_Gym_EventScript_George_Item
-  case TRAINER_KENT, Route119_EventScript_Kent_Item
-  case TRAINER_GABBY_AND_TY_2, Gabby_Ty_EventScript_2_Item
-  case TRAINER_LAUREL, Route134_EventScript_Laurel_Item
-  case TRAINER_ANDREA, SootopolisCity_Gym_B1F_EventScript_Andrea_Item
-  case TRAINER_FABIAN, Route119_EventScript_Fabian_Item
-  case TRAINER_NOB_1, Route115_EventScript_Nob_Item
-  case TRAINER_MARIA_1, Route117_EventScript_Maria_Item
-  case TRAINER_CHARLOTTE, Route114_EventScript_Charlotte_Item
-  case TRAINER_PAULA, Route110_TrickHousePuzzle4_EventScript_Paula_Item
-  case TRAINER_HIDEO, Route119_EventScript_Hideo_Item
-  case TRAINER_MADELINE_1, Route113_EventScript_Madeline_Item
-  case TRAINER_LILA_AND_ROY_1, Route124_EventScript_Lila_Item
-  case TRAINER_JODY, PetalburgCity_Gym_EventScript_Jody_Item
-  case TRAINER_CRISSY, SootopolisCity_Gym_B1F_EventScript_Crissy_Item
-  case TRAINER_RICHARD, Route131_EventScript_Richard_Item
-  case TRAINER_HUGH, Route119_EventScript_Hugh_Item
-  case TRAINER_ANDRES_1, Route105_EventScript_Andres_Item
+  case TRAINER_GARRET, SSTidalRooms_EventScript_Garret_Item
+  case TRAINER_GRUNT_MAGMA_HIDEOUT_13, MagmaHideout_4F_EventScript_Grunt13_Item
+  case TRAINER_JOCELYN, DewfordTown_Gym_EventScript_Jocelyn_Item
   case TRAINER_MAY_ROUTE_119_MUDKIP, Route119_EventScript_RivalExitScottArrive_Item
-  case TRAINER_JERRY_1, Route116_EventScript_Jerry_Item
+  case TRAINER_GRUNT_MT_PYRE_2, MtPyre_Summit_EventScript_Grunt2_Item
+  case TRAINER_CLAUDE, Route114_EventScript_Claude_Item
+  case TRAINER_GEORGIA, Route110_TrickHousePuzzle2_EventScript_Georgia_Item
+  case TRAINER_NICOLAS_1, MeteorFalls_1F_2R_EventScript_Nicolas_Item
+  case TRAINER_AURON, Route125_EventScript_Auron_Item
+  case TRAINER_GERALD, LavaridgeTown_Gym_1F_EventScript_Gerald_Item
+  case TRAINER_JANI, AbandonedShip_Rooms2_1F_EventScript_Jani_Item
+  case TRAINER_NORMAN_1, PetalburgCity_Gym_EventScript_NormanBattle_Item
+  case TRAINER_CORY_1, Route108_EventScript_Cory_Item
+  case TRAINER_LYDIA_1, Route117_EventScript_Lydia_Item
+  case TRAINER_BLAKE, MossdeepCity_Gym_EventScript_Blake_Item
+  case TRAINER_MARIA_1, Route117_EventScript_Maria_Item
+  case TRAINER_CELINA, Route111_EventScript_Celina_Item
+  case TRAINER_DONALD, Route119_EventScript_Donald_Item
+  case TRAINER_PAUL, Route110_TrickHousePuzzle2_EventScript_Paul_Item
+  case TRAINER_BRIDGET, SootopolisCity_Gym_B1F_EventScript_Bridget_Item
+  case TRAINER_CHESTER, Route118_EventScript_Chester_Item
+  case TRAINER_AISHA, Route117_EventScript_Aisha_Item
+  case TRAINER_JESSICA_1, Route121_EventScript_Jessica_Item
+  case TRAINER_GRUNT_MAGMA_HIDEOUT_9, MagmaHideout_3F_1R_EventScript_Grunt9_Item
+  case TRAINER_DWAYNE, Route109_SeashoreHouse_EventScript_Dwayne_Item
+  case TRAINER_SEBASTIAN, Route110_TrickHousePuzzle6_EventScript_Sebastian_Item
+  case TRAINER_MAY_LILYCOVE_MUDKIP, LilycoveCity_EventScript_Rival_Item
+  case TRAINER_CRISSY, SootopolisCity_Gym_B1F_EventScript_Crissy_Item
+  case TRAINER_ALIX, Route115_EventScript_Alix_Item
+  case TRAINER_MARIELA, Route110_TrickHousePuzzle7_EventScript_Mariela_Item
+  case TRAINER_DRAKE, Drake_Item
+  case TRAINER_BRENDA, Route126_EventScript_Brenda_Item
+  case TRAINER_VITO, VictoryRoad_B2F_EventScript_Vito_Item
+  case TRAINER_HELENE, Route115_EventScript_Helene_Item
+  case TRAINER_RILEY, Route120_EventScript_Riley_Item
+  case TRAINER_GRUNT_AQUA_HIDEOUT_7, AquaHideout_B1F_EventScript_Grunt7_Item
+  case TRAINER_PARKER, PetalburgCity_Gym_EventScript_Parker_Item
+  case TRAINER_BRENT, Route119_EventScript_Brent_Item
+  case TRAINER_JOSHUA, Route110_TrickHousePuzzle7_EventScript_Joshua_Item
+  case TRAINER_WINONA_1, FortreeCity_Gym_EventScript_Winona_Item
+  case TRAINER_LAUREL, Route134_EventScript_Laurel_Item
+  case TRAINER_NAOMI, SSTidalRooms_EventScript_Naomi_Item
+  case TRAINER_COBY, Route113_EventScript_Coby_Item
+  case TRAINER_JENNY_1, Route124_EventScript_Jenny_Item
+  case TRAINER_DUSTY_1, Route111_EventScript_Dusty_Item
+  case TRAINER_HANNAH, MossdeepCity_Gym_EventScript_Hannah_Item
+  case TRAINER_JAMES_1, PetalburgWoods_EventScript_James_Item
+  case TRAINER_ALLEN, Route102_EventScript_Allen_Item
+  case TRAINER_MAXIE_MAGMA_HIDEOUT, MagmaHideout_4F_EventScript_Maxie_Item
+  case TRAINER_TONY_1, Route107_EventScript_Tony_Item
+  case TRAINER_SALLY, Route110_TrickHousePuzzle1_EventScript_Sally_Item
+  case TRAINER_JACKI_1, Route123_EventScript_Jacki_Item
+  case TRAINER_BEN, MauvilleCity_Gym_EventScript_Ben_Item
+  case TRAINER_DALE, Route110_EventScript_Dale_Item
+  case TRAINER_ROBIN, Route110_TrickHousePuzzle1_EventScript_Robin_Item
+  case TRAINER_KATIE, Route130_EventScript_Katie_Item
+  case TRAINER_DENISE, Route107_EventScript_Denise_Item
+  case TRAINER_STEVE_1, Route114_EventScript_Steve_Item
+  case TRAINER_SHANE, Route114_EventScript_Shane_Item
+  case TRAINER_KEIRA, Route110_TrickHousePuzzle8_EventScript_Keira_Item
+  case TRAINER_STEVEN, MeteorFalls_StevensCave_EventScript_Steven_Item
+  case TRAINER_ETHAN_1, JaggedPass_EventScript_Ethan_Item
+  case TRAINER_ABIGAIL_1, Route110_EventScript_Abigail_Item
+  case TRAINER_EDWIN_1, Route110_EventScript_Edwin_Item
+  case TRAINER_JAZMYN, Route123_EventScript_Jazmyn_Item
+  case TRAINER_ALAN, Route110_TrickHousePuzzle3_EventScript_Alan_Item
+  case TRAINER_SOPHIA, Route110_TrickHousePuzzle6_EventScript_Sophia_Item
+  case TRAINER_CLARENCE, Route129_EventScript_Clarence_Item
+  case TRAINER_RICK, Route102_EventScript_Rick_Item
+  case TRAINER_KALEB, Route110_EventScript_Kaleb_Item
+  case TRAINER_BECK, Route133_EventScript_Beck_Item
+  case TRAINER_EDWARDO, FortreeCity_Gym_EventScript_Edwardo_Item
+  case TRAINER_GREG, Route119_EventScript_Greg_Item
+  case TRAINER_MARLENE, Route115_EventScript_Marlene_Item
+  case TRAINER_BRAWLY_1, DewfordTown_Gym_EventScript_Brawly_Item
+  case TRAINER_DECLAN, Route124_EventScript_Declan_Item
+  case TRAINER_VICTORIA, Route111_WinstrateFamilysHouse_EventScript_Victoria_Item
+  case TRAINER_VINCENT, Route110_TrickHousePuzzle8_EventScript_Vincent_Item
+  case TRAINER_FABIAN, Route119_EventScript_Fabian_Item
+  case TRAINER_AUSTINA, Route109_EventScript_Austina_Item
+  case TRAINER_SANTIAGO, Route130_EventScript_Santiago_Item
+  case TRAINER_CAROL, Route112_EventScript_Carol_Item
+  case TRAINER_MITCHELL, VictoryRoad_B1F_EventScript_Mitchell_Item
+  case TRAINER_LYLE, PetalburgWoods_EventScript_Lyle_Item
+  case TRAINER_LEONARDO, Route126_EventScript_Leonardo_Item
+  case TRAINER_MAY_ROUTE_110_MUDKIP, Route110_EventScript_GiveItemfinder_Item2
+  case TRAINER_GRUNT_MAGMA_HIDEOUT_14, MagmaHideout_2F_1R_EventScript_Grunt14_Item
+  case TRAINER_FELIX, VictoryRoad_B2F_EventScript_Felix_Item
+  case TRAINER_ALEXA, Route128_EventScript_Alexa_Item
+  case TRAINER_LEA_AND_JED, SSTidalRooms_EventScript_Jed_Item
+  case TRAINER_ELLIOT_1, Route106_EventScript_Elliot_Item
+  case TRAINER_DUNCAN, AbandonedShip_Corridors_B1F_EventScript_Duncan_Item
+  case TRAINER_DILLON, Route113_EventScript_Dillon_Item
+  case TRAINER_WENDY, Route123_EventScript_Wendy_Item
+  case TRAINER_CATHERINE_1, Route119_EventScript_Catherine_Item
+  case TRAINER_MARK, MtPyre_2F_EventScript_Mark_Item
+  case TRAINER_ELIJAH, Route109_EventScript_Elijah_Item
+  case TRAINER_JEFFREY_1, Route120_EventScript_Jeffrey_Item
+  case TRAINER_JACLYN, Route110_EventScript_Jaclyn_Item
+  case TRAINER_ERIC, JaggedPass_EventScript_Eric_Item
+  case TRAINER_ISOBEL, Route126_EventScript_Isobel_Item
+  case TRAINER_JARED, FortreeCity_Gym_EventScript_Jared_Item
+  case TRAINER_KATE_AND_JOY, Route121_EventScript_Kate_Item
+  case TRAINER_GLACIA, Glacia_Item
+  case TRAINER_LAURA, DewfordTown_Gym_EventScript_Laura_Item
+  case TRAINER_TISHA, Route129_EventScript_Tisha_Item
+  case TRAINER_DARIUS, FortreeCity_Gym_EventScript_Darius_Item
+  case TRAINER_JEROME, Route108_EventScript_Jerome_Item
+  case TRAINER_MARY, PetalburgCity_Gym_EventScript_Mary_Item
+  case TRAINER_GRUNT_MAGMA_HIDEOUT_10, MagmaHideout_3F_2R_EventScript_Grunt10_Item
+  case TRAINER_GRUNT_MAGMA_HIDEOUT_3, MagmaHideout_2F_1R_EventScript_Grunt3_Item
+  case TRAINER_KOICHI, Route115_EventScript_Koichi_Item
+  case TRAINER_ZANDER, MtPyre_2F_EventScript_Zander_Item
+  case TRAINER_JUAN_1, SootopolisCity_Gym_1F_EventScript_Juan_Item
+  case TRAINER_DEBRA, Route133_EventScript_Debra_Item
+  case TRAINER_KATELYN_1, Route128_EventScript_Katelyn_Item
+  case TRAINER_KEIGO, Route120_EventScript_Keigo_Item
+  case TRAINER_GRUNT_MAGMA_HIDEOUT_6, MagmaHideout_2F_2R_EventScript_Grunt6_Item
+  case TRAINER_OLIVIA, SootopolisCity_Gym_B1F_EventScript_Olivia_Item
+  case TRAINER_JULIO, JaggedPass_EventScript_Julio_Item
+  case TRAINER_REYNA, Route134_EventScript_Reyna_Item
+  case TRAINER_MADELINE_1, Route113_EventScript_Madeline_Item
+  case TRAINER_BARRY, Route126_EventScript_Barry_Item
+  case TRAINER_JACKSON_1, Route119_EventScript_Jackson_Item
+  case TRAINER_SUSIE, Route131_EventScript_Susie_Item
+  case TRAINER_YUJI, Route110_TrickHousePuzzle4_EventScript_Yuji_Item
+  case TRAINER_LISA_AND_RAY, Route107_EventScript_Lisa_Item
+  case TRAINER_SIDNEY, Sydney_Item
+  case TRAINER_DEANDRE, Route118_EventScript_Deandre_Item
+  case TRAINER_GRUNT_WEATHER_INST_5, Route119_WeatherInstitute_2F_EventScript_Grunt5_Item
+  case TRAINER_LINDA, Route133_EventScript_Linda_Item
+  case TRAINER_BRAXTON, Route123_EventScript_Braxton_Item
+  case TRAINER_KATHLEEN, MossdeepCity_Gym_EventScript_Kathleen_Item
+  case TRAINER_ANDRES_1, Route105_EventScript_Andres_Item
+  case TRAINER_VANESSA, Route121_EventScript_Vanessa_Item
+  case TRAINER_GEORGE, PetalburgCity_Gym_EventScript_George_Item
+  case TRAINER_MIU_AND_YUKI, Route123_EventScript_Miu_Item
+  case TRAINER_ROBERT_1, Route120_EventScript_Robert_Item
+  case TRAINER_ISAIAH_1, Route128_EventScript_Isaiah_Item
+  case TRAINER_JACOB, Route110_EventScript_Jacob_Item
+  case TRAINER_EDGAR, VictoryRoad_1F_EventScript_Edgar_Item
+  case TRAINER_SHELLY_WEATHER_INSTITUTE, Route119_WeatherInstitute_2F_EventScript_Shelly_Item
+  case TRAINER_LARRY, Route112_EventScript_Larry_Item
+  case TRAINER_RONALD, Route132_EventScript_Ronald_Item
+  case TRAINER_GRUNT_RUSTURF_TUNNEL, RusturfTunnel_EventScript_Grunt_Item_Two
+  case TRAINER_JENNIFER, Route120_EventScript_Jennifer_Item
+  case TRAINER_CELIA, Route111_EventScript_Celia_Item
+  case TRAINER_MISSY, Route108_EventScript_Missy_Item
+  case TRAINER_BRENDEN, DewfordTown_Gym_EventScript_Brenden_Item
+  case TRAINER_DEREK, Route117_EventScript_Derek_Item
+  case TRAINER_JODY, PetalburgCity_Gym_EventScript_Jody_Item
+  case TRAINER_GABBY_AND_TY_2, Gabby_Ty_EventScript_2_Item
+  case TRAINER_ALBERT, VictoryRoad_1F_EventScript_Albert_Item
+  case TRAINER_CRISTIN_1, Route121_EventScript_Cristin_Item
+  case TRAINER_VIRGIL, MossdeepCity_Gym_EventScript_Virgil_Item
+  case TRAINER_ALLISON, Route129_EventScript_Allison_Item
+  case TRAINER_DYLAN_1, Route117_EventScript_Dylan_Item
+  case TRAINER_AARON, Route134_EventScript_Aaron_Item
+  case TRAINER_KATELYNN, VictoryRoad_1F_EventScript_Katelynn_Item
+  case TRAINER_MACEY, MossdeepCity_Gym_EventScript_Macey_Item
+  case TRAINER_MATTHEW, Route108_EventScript_Matthew_Item
+  case TRAINER_TRENT_1, Route112_EventScript_Trent_Item
+  case TRAINER_GRUNT_SEAFLOOR_CAVERN_4, SeafloorCavern_Room4_EventScript_Grunt4_Item
+  case TRAINER_ALVARO, Route110_TrickHousePuzzle7_EventScript_Alvaro_Item
+  case TRAINER_CARTER, Route109_EventScript_Carter_Item
+  case TRAINER_SYLVIA, MossdeepCity_Gym_EventScript_Sylvia_Item
+  case TRAINER_PHOEBE, Phoebe_Item
+  case TRAINER_DAWSON, Route116_EventScript_Dawson_Item
+  case TRAINER_GABBY_AND_TY_1, Gabby_Ty_EventScript_1_Item
+  case TRAINER_IRENE, Route111_EventScript_Irene_Item
+  case TRAINER_ROXANNE_1, RustboroCity_Gym_EventScript_Roxanne_Item
+  case TRAINER_HAILEY, Route109_EventScript_Hailey_Item
+  case TRAINER_JOSE, Route116_EventScript_Jose_Item
+  case TRAINER_BRIANNA, SootopolisCity_Gym_B1F_EventScript_Brianna_Item
+  case TRAINER_JONATHAN, Route132_EventScript_Jonathan_Item
+  case TRAINER_NIKKI, Route126_EventScript_Nikki_Item
+  case TRAINER_CALE, Route121_EventScript_Cale_Item
+  case TRAINER_SAMANTHA, MossdeepCity_Gym_EventScript_Samantha_Item
+  case TRAINER_GRUNT_AQUA_HIDEOUT_1, AquaHideout_1F_EventScript_Grunt1_Item
+  case TRAINER_SHELLY_SEAFLOOR_CAVERN, SeafloorCavern_Room3_EventScript_Shelly_Item
+  case TRAINER_QUINCY, VictoryRoad_1F_EventScript_Quincy_Item
+  case TRAINER_KELVIN, Route134_EventScript_Kelvin_Item
+  case TRAINER_VIOLET, Route123_EventScript_Violet_Item
+  case TRAINER_COLTON, SSTidalRooms_EventScript_Colton_Item
+  case TRAINER_BEVERLY, Route105_EventScript_Beverly_Item
+  case TRAINER_GRUNT_AQUA_HIDEOUT_6, AquaHideout_B2F_EventScript_Grunt6_Item
+  case TRAINER_BROOKE_1, Route111_EventScript_Brooke_Item
+  case TRAINER_SAMUEL, VictoryRoad_B1F_EventScript_Samuel_Item
+  case TRAINER_BEAU, Route111_EventScript_Beau_Item
+  case TRAINER_BENNY, Route110_TrickHousePuzzle6_EventScript_Benny_Item
+  case TRAINER_LENNY, Route114_EventScript_Lenny_Item
+  case TRAINER_MAKAYLA, Route132_EventScript_Makayla_Item
+  case TRAINER_CALVIN_1, Route102_EventScript_Calvin_Item
+  case TRAINER_ASHLEY, FortreeCity_Gym_EventScript_Ashley_Item
+  case TRAINER_DARCY, Route132_EventScript_Darcy_Item
+  case TRAINER_GRUNT_SEAFLOOR_CAVERN_1, SeafloorCavern_Room1_EventScript_Grunt1_Item
+  case TRAINER_TIMMY, Route110_EventScript_Timmy_Item
+  case TRAINER_WYATT, Route113_EventScript_Wyatt_Item
+  case TRAINER_SARAH, Route116_EventScript_Sarah_Item
+  case TRAINER_ALEXIA, PetalburgCity_Gym_EventScript_Alexia_Item
+  case TRAINER_HUEY, Route109_EventScript_Huey_Item
+  case TRAINER_DEAN, Route126_EventScript_Dean_Item
+  case TRAINER_ROSE_1, Route118_EventScript_Rose_Item
+  case TRAINER_JULIE, VictoryRoad_B2F_EventScript_Julie_Item
+  case TRAINER_FLANNERY_1, LavaridgeTown_Gym_1F_EventScript_Flannery_Item
+  case TRAINER_CHRIS, Route119_EventScript_Chris_Item
+  case TRAINER_GRUNT_MAGMA_HIDEOUT_12, MagmaHideout_4F_EventScript_Grunt12_Item
+  case TRAINER_TALIA, Route131_EventScript_Talia_Item
+  case TRAINER_LAWRENCE, Route113_EventScript_Lawrence_Item
+  case TRAINER_NOLAN, Route114_EventScript_Nolan_Item
+  case TRAINER_BRANDEN, Route111_EventScript_Branden_Item
+  case TRAINER_MARTHA, Route110_TrickHousePuzzle3_EventScript_Martha_Item
+  case TRAINER_LEONEL, Route120_EventScript_Leonel_Item
+  case TRAINER_FREDRICK, Route123_EventScript_Frederick_Item
+  case TRAINER_KAREN_1, Route116_EventScript_Karen_Item
+  case TRAINER_GABBY_AND_TY_3, Gabby_Ty_EventScript_3_Item
+  case TRAINER_BENJAMIN_1, Route110_EventScript_Benjamin_Item
+  case TRAINER_VIVI, Route111_WinstrateFamilysHouse_EventScript_Vivi_Item
+  case TRAINER_SHARON, Route125_EventScript_Sharon_Item
+  case TRAINER_HEIDI, Route111_EventScript_Heidi_Item
+  case TRAINER_ALEXIS, Route110_TrickHousePuzzle7_EventScript_Alexis_Item
+  case TRAINER_DEZ_AND_LUKE, MtPyre_2F_EventScript_Dez_Item
+  case TRAINER_EDWARD, Route110_EventScript_Edward_Item
+  case TRAINER_DAPHNE, SootopolisCity_Gym_B1F_EventScript_Daphne_Item
+  case TRAINER_WALLY_MAUVILLE, MauvilleCity_EventScript_DefeatedWally_Item
+  case TRAINER_RACHEL, Route119_EventScript_Rachel_Item
+  case TRAINER_GRACE, Route124_EventScript_Grace_Item
+  case TRAINER_LAO_1, Route113_EventScript_Lao_Item
+  case TRAINER_ED, Route123_EventScript_Ed_Item
+  case TRAINER_TIMOTHY_1, Route115_EventScript_Timothy_Item
+  case TRAINER_RANDALL, PetalburgCity_Gym_EventScript_Randall_Item
+  case TRAINER_BETH, Route107_EventScript_Beth_Item
+  case TRAINER_MEL_AND_PAUL, Route109_EventScript_Mel_Item
+  case TRAINER_KYLA, Route106_EventScript_Kyla_Item
+  case TRAINER_SOPHIE, Route113_EventScript_Sophie_Item
+  case TRAINER_JANICE, Route116_EventScript_Janice_Item
+  case TRAINER_GRUNT_WEATHER_INST_1, Route119_WeatherInstitute_1F_EventScript_Grunt1_Item
+  case TRAINER_GRUNT_WEATHER_INST_4, Route119_WeatherInstitute_1F_EventScript_Grunt4_Item
+  case TRAINER_JACK, Route134_EventScript_Jack_Item
+  case TRAINER_GRUNT_MT_PYRE_3, MtPyre_Summit_EventScript_Grunt3_Item
+  case TRAINER_GRUNT_MAGMA_HIDEOUT_4, MagmaHideout_2F_1R_EventScript_Grunt4_Item
+  case TRAINER_PATRICIA, Route110_TrickHousePuzzle7_EventScript_Patricia_Item
+  case TRAINER_ALBERTO, Route123_EventScript_Alberto_Item
+  case TRAINER_THALIA_1, AbandonedShip_Rooms_1F_Eventscript_Thalia_Item
+  case TRAINER_SHAWN, MauvilleCity_Gym_EventScript_Shawn_Item
+  case TRAINER_NICHOLAS, MossdeepCity_Gym_EventScript_Nicholas_Item
+  case TRAINER_ANGELICA, Route120_EventScript_Angelica_Item
+  case TRAINER_WADE, Route118_EventScript_Wade_Item
+  case TRAINER_DIANA_1, JaggedPass_EventScript_Diana_Item
+  case TRAINER_CLARISSA, Route120_EventScript_Clarissa_Item
+  case TRAINER_GRUNT_MAGMA_HIDEOUT_11, MagmaHideout_4F_EventScript_Grunt11_Item
+  case TRAINER_GRUNT_MAGMA_HIDEOUT_1, MagmaHideout_1F_EventScript_Grunt1_Item
+  case TRAINER_STAN, Route125_EventScript_Stan_Item
+  case TRAINER_MARC, RustboroCity_Gym_EventScript_Marc_Item
+  case TRAINER_REED, Route129_EventScript_Reed_Item
+  case TRAINER_HIDEO, Route119_EventScript_Hideo_Item
+  case TRAINER_ANDREA, SootopolisCity_Gym_B1F_EventScript_Andrea_Item
+  case TRAINER_BRANDI, Route117_EventScript_Brandi_Item
+  case TRAINER_LUIS, Route105_EventScript_Luis_Item
+  case TRAINER_MAY_ROUTE_103_MUDKIP, Route103_EventScript_Item_Rival
+  case TRAINER_LEONARD, SSTidalLowerDeck_EventScript_Leonard_Item
+  case TRAINER_WALLY_VR_1, VictoryRoad_1F_EventScript_WallyEntranceBattle_Item
+  case TRAINER_CHAD, Route124_EventScript_Chad_Item
+  case TRAINER_BECKY, Route111_EventScript_Becky_Item
+  case TRAINER_ISAAC_1, Route117_EventScript_Isaac_Item
+  case TRAINER_JENNA, Route120_EventScript_Jenna_Item
+  case TRAINER_MARLEY, Route134_EventScript_Marley_Item
+  case TRAINER_ALEX, Route134_EventScript_Alex_Item
+  case TRAINER_KIM_AND_IRIS, Route125_EventScript_Kim_Item
+  case TRAINER_LUCAS_1, Route114_EventScript_Lucas_Item
   case TRAINER_MICAH, SSTidalRooms_EventScript_Micah_Item
   case TRAINER_CONOR, Route133_EventScript_Conor_Item
-  case TRAINER_HUMBERTO, FortreeCity_Gym_EventScript_Humberto_Item
-  case TRAINER_SUSIE, Route131_EventScript_Susie_Item
-  case TRAINER_JACKSON_1, Route119_EventScript_Jackson_Item
-  case TRAINER_VITO, VictoryRoad_B2F_EventScript_Vito_Item
-  case TRAINER_GRUNT_AQUA_HIDEOUT_7, AquaHideout_B1F_EventScript_Grunt7_Item
-  case TRAINER_CRISTIAN, DewfordTown_Gym_EventScript_Cristian_Item
-  case TRAINER_DUNCAN, AbandonedShip_Corridors_B1F_EventScript_Duncan_Item
-  case TRAINER_GRUNT_SEAFLOOR_CAVERN_4, SeafloorCavern_Room4_EventScript_Grunt4_Item
-  case TRAINER_GRUNT_MAGMA_HIDEOUT_1, MagmaHideout_1F_EventScript_Grunt1_Item
-  case TRAINER_OWEN, VictoryRoad_B2F_EventScript_Owen_Item
-  case TRAINER_SAMUEL, VictoryRoad_B1F_EventScript_Samuel_Item
-  case TRAINER_CHAD, Route124_EventScript_Chad_Item
-  case TRAINER_BETH, Route107_EventScript_Beth_Item
-  case TRAINER_MAY_LILYCOVE_MUDKIP, LilycoveCity_EventScript_Rival_Item
-  case TRAINER_TIMOTHY_1, Route115_EventScript_Timothy_Item
-  case TRAINER_KIM_AND_IRIS, Route125_EventScript_Kim_Item
-  case TRAINER_YASU, Route119_EventScript_Yasu_Item
-  case TRAINER_TALIA, Route131_EventScript_Talia_Item
-  case TRAINER_LAURA, DewfordTown_Gym_EventScript_Laura_Item
-  case TRAINER_GRUNT_MAGMA_HIDEOUT_6, MagmaHideout_2F_2R_EventScript_Grunt6_Item
-  case TRAINER_BERNIE_1, Route114_EventScript_Bernie_Item
-  case TRAINER_MATTHEW, Route108_EventScript_Matthew_Item
-  case TRAINER_DEREK, Route117_EventScript_Derek_Item
-  case TRAINER_FELIX, VictoryRoad_B2F_EventScript_Felix_Item
-  case TRAINER_GILBERT, Route132_EventScript_Gilbert_Item
-  case TRAINER_FREDRICK, Route123_EventScript_Frederick_Item
-  case TRAINER_THOMAS, SSTidalRooms_EventScript_Thomas_Item
-  case TRAINER_PHIL, Route119_EventScript_Phil_Item
-  case TRAINER_MARC, RustboroCity_Gym_EventScript_Marc_Item
-  case TRAINER_IRENE, Route111_EventScript_Irene_Item
-  case TRAINER_GRACE, Route124_EventScript_Grace_Item
-  case TRAINER_JACLYN, Route110_EventScript_Jaclyn_Item
-  case TRAINER_HAILEY, Route109_EventScript_Hailey_Item
-  case TRAINER_TASHA, MtPyre_4F_EventScript_Tasha_Item
-  case TRAINER_VIOLET, Route123_EventScript_Violet_Item
-  case TRAINER_COLIN, Route120_EventScript_Colin_Item
-  case TRAINER_TYRON, Route111_EventScript_Tyron_Item
-  case TRAINER_JUSTIN, Route110_TrickHousePuzzle3_EventScript_Justin_Item
-  case TRAINER_KAI, Route114_EventScript_Kai_Item
-  case TRAINER_WATTSON_1, MauvilleCity_Gym_EventScript_Wattson_Item
-  case TRAINER_MAXIE_MAGMA_HIDEOUT, MagmaHideout_4F_EventScript_Maxie_Item
-  case TRAINER_HITOSHI, Route134_EventScript_Hitoshi_Item
-  case TRAINER_JAMES_1, PetalburgWoods_EventScript_James_Item
-  case TRAINER_GRUNT_MAGMA_HIDEOUT_12, MagmaHideout_4F_EventScript_Grunt12_Item
-  case TRAINER_CORA, Route110_TrickHousePuzzle4_EventScript_Cora_Item
-  case TRAINER_GRUNT_MAGMA_HIDEOUT_14, MagmaHideout_2F_1R_EventScript_Grunt14_Item
-  case TRAINER_LEONARDO, Route126_EventScript_Leonardo_Item
-  case TRAINER_ALLISON, Route129_EventScript_Allison_Item
-  case TRAINER_JENNY_1, Route124_EventScript_Jenny_Item
-  case TRAINER_AURON, Route125_EventScript_Auron_Item
-  case TRAINER_CLIFFORD, MossdeepCity_Gym_EventScript_Clifford_Item
-  case TRAINER_DEMETRIUS, AbandonedShip_Rooms_1F_EventScript_Demetrius_Item
-  case TRAINER_HUEY, Route109_EventScript_Huey_Item
-  case TRAINER_HALLE, VictoryRoad_B1F_EventScript_Halle_Item
-  case TRAINER_BECK, Route133_EventScript_Beck_Item
-  case TRAINER_FOSTER, Route105_EventScript_Foster_Item
-  case TRAINER_BRAXTON, Route123_EventScript_Braxton_Item
-  case TRAINER_JANI, AbandonedShip_Rooms2_1F_EventScript_Jani_Item
-  case TRAINER_KINDRA, Route123_EventScript_Kindra_Item
-  case TRAINER_GRUNT_MT_PYRE_2, MtPyre_Summit_EventScript_Grunt2_Item
-  case TRAINER_DOMINIK, Route105_EventScript_Dominik_Item
-  case TRAINER_SYLVIA, MossdeepCity_Gym_EventScript_Sylvia_Item
-  case TRAINER_DEBRA, Route133_EventScript_Debra_Item
-  case TRAINER_ELIJAH, Route109_EventScript_Elijah_Item
-  case TRAINER_WENDY, Route123_EventScript_Wendy_Item
-  case TRAINER_DWAYNE, Route109_SeashoreHouse_EventScript_Dwayne_Item
-  case TRAINER_RELI_AND_IAN, Route131_EventScript_Reli_Item
-  case TRAINER_SPENCER, Route124_EventScript_Spencer_Item
-  case TRAINER_STAN, Route125_EventScript_Stan_Item
-  case TRAINER_MAURA, MossdeepCity_Gym_EventScript_Maura_Item
-  case TRAINER_GRUNT_AQUA_HIDEOUT_2, AquaHideout_B1F_EventScript_Grunt2_Item
-  case TRAINER_DARIUS, FortreeCity_Gym_EventScript_Darius_Item
-  case TRAINER_NOLAN, Route114_EventScript_Nolan_Item
-  case TRAINER_JOHNSON, Route116_EventScript_Johnson_Item
-  case TRAINER_DREW, Route111_EventScript_Drew_Item
-  case TRAINER_MEL_AND_PAUL, Route109_EventScript_Mel_Item
-  case TRAINER_GRUNT_SEAFLOOR_CAVERN_5, SeafloorCavern_Room3_EventScript_Grunt5_Item
-  case TRAINER_DEZ_AND_LUKE, MtPyre_2F_EventScript_Dez_Item
-  case TRAINER_DAPHNE, SootopolisCity_Gym_B1F_EventScript_Daphne_Item
-  case TRAINER_WINONA_1, FortreeCity_Gym_EventScript_Winona_Item
-  case TRAINER_KALEB, Route110_EventScript_Kaleb_Item
-  case TRAINER_MITCHELL, VictoryRoad_B1F_EventScript_Mitchell_Item
-  case TRAINER_VIVIAN, MauvilleCity_Gym_EventScript_Vivian_Item
-  case TRAINER_CAROLINE, VictoryRoad_B2F_EventScript_Caroline_Item
-  case TRAINER_JAYLEN, Route113_EventScript_Jaylen_Item
-  case TRAINER_DOUG, Route119_EventScript_Doug_Item
-  case TRAINER_CYNDY_1, Route115_EventScript_Cyndy_Item
-  case TRAINER_GRUNT_MAGMA_HIDEOUT_4, MagmaHideout_2F_1R_EventScript_Grunt4_Item
-  case TRAINER_TED, Route110_TrickHousePuzzle2_EventScript_Ted_Item
-  case TRAINER_VIVI, Route111_WinstrateFamilysHouse_EventScript_Vivi_Item
-  case TRAINER_AARON, Route134_EventScript_Aaron_Item
-  case TRAINER_LEONARD, SSTidalLowerDeck_EventScript_Leonard_Item
-  case TRAINER_KATELYNN, VictoryRoad_1F_EventScript_Katelynn_Item
-  case TRAINER_DONALD, Route119_EventScript_Donald_Item
-  case TRAINER_PHOEBE, Phoebe_Item
-  case TRAINER_MOLLIE, Route133_EventScript_Mollie_Item
-  case TRAINER_GRUNT_WEATHER_INST_3, Route119_WeatherInstitute_2F_EventScript_Grunt3_Item
-  case TRAINER_ALYSSA, Route110_EventScript_Alyssa_Item
-  case TRAINER_CHIP, Route120_EventScript_Chip_Item
-  case TRAINER_LUNG, Route113_EventScript_Lung_Item
-  case TRAINER_GERALD, LavaridgeTown_Gym_1F_EventScript_Gerald_Item
-  case TRAINER_CALVIN_1, Route102_EventScript_Calvin_Item
-  case TRAINER_SOPHIE, Route113_EventScript_Sophie_Item
   case TRAINER_BETHANY, SootopolisCity_Gym_B1F_EventScript_Bethany_Item
-  case TRAINER_EDWARDO, FortreeCity_Gym_EventScript_Edwardo_Item
-  case TRAINER_MAY_ROUTE_110_MUDKIP, Route110_EventScript_GiveItemfinder_Item2
-  case TRAINER_CARLEE, Route128_EventScript_Carlee_Item
-  case TRAINER_HERMAN, Route131_EventScript_Herman_Item
-  case TRAINER_TONY_1, Route107_EventScript_Tony_Item
-  case TRAINER_HUDSON, Route134_EventScript_Hudson_Item
-  case TRAINER_VALERIE_1, MtPyre_6F_EventScript_Valerie_Item
-  case TRAINER_JACE, LavaridgeTown_Gym_B1F_EventScript_Jace_Item
-  case TRAINER_CONNIE, SootopolisCity_Gym_B1F_EventScript_Connie_Item
-  case TRAINER_SIDNEY, Sydney_Item
-  case TRAINER_HELENE, Route115_EventScript_Helene_Item
-  case TRAINER_KATE_AND_JOY, Route121_EventScript_Kate_Item
-  case TRAINER_KYRA, Route115_EventScript_Kyra_Item
-  case TRAINER_GLACIA, Glacia_Item
-  case TRAINER_FRANKLIN, Route133_EventScript_Franklin_Item
-  case TRAINER_RILEY, Route120_EventScript_Riley_Item
-  case TRAINER_TRAVIS, Route111_EventScript_Travis_Item
-  case TRAINER_DALE, Route110_EventScript_Dale_Item
-  case TRAINER_ANGELINA, Route114_EventScript_Angelina_Item
-  case TRAINER_JEFF, LavaridgeTown_Gym_B1F_EventScript_Jeff_Item
-  case TRAINER_MISSY, Route108_EventScript_Missy_Item
-  case TRAINER_GRUNT_MAGMA_HIDEOUT_11, MagmaHideout_4F_EventScript_Grunt11_Item
-  case TRAINER_LORENZO, Route120_EventScript_Lorenzo_Item
-  case TRAINER_GRUNT_AQUA_HIDEOUT_3, AquaHideout_B1F_EventScript_Grunt3_Item
-  case TRAINER_AISHA, Route117_EventScript_Aisha_Item
-  case TRAINER_GRUNT_MAGMA_HIDEOUT_3, MagmaHideout_2F_1R_EventScript_Grunt3_Item
-  case TRAINER_JACOB, Route110_EventScript_Jacob_Item
-  case TRAINER_GRUNT_MT_PYRE_1, MtPyre_Summit_EventScript_Grunt1_Item
-  case TRAINER_NICHOLAS, MossdeepCity_Gym_EventScript_Nicholas_Item
-  case TRAINER_BERKE, PetalburgCity_Gym_EventScript_Berke_Item
-  case TRAINER_MARCEL, Route121_EventScript_Marcel_Item
-  case TRAINER_DANA, Route132_EventScript_Dana_Item
-  case TRAINER_KIRK, MauvilleCity_Gym_EventScript_Kirk_Item
-  case TRAINER_RONALD, Route132_EventScript_Ronald_Item
-  case TRAINER_LEA_AND_JED, SSTidalRooms_EventScript_Jed_Item
-  case TRAINER_GRUNT_JAGGED_PASS, JaggedPass_EventScript_MagmaHideoutGuard_Item
-  case TRAINER_STEVE_1, Route114_EventScript_Steve_Item
-  case TRAINER_JASMINE, Route110_EventScript_Jasmine_Item
-  case TRAINER_ROSE_1, Route118_EventScript_Rose_Item
-  case TRAINER_SAMANTHA, MossdeepCity_Gym_EventScript_Samantha_Item
-  case TRAINER_ALAN, Route110_TrickHousePuzzle3_EventScript_Alan_Item
-  case TRAINER_ALIX, Route115_EventScript_Alix_Item
-  case TRAINER_HANNAH, MossdeepCity_Gym_EventScript_Hannah_Item
-  case TRAINER_KOICHI, Route115_EventScript_Koichi_Item
-  case TRAINER_GRUNT_MAGMA_HIDEOUT_15, MagmaHideout_2F_2R_EventScript_Grunt15_Item
-  case TRAINER_MARY, PetalburgCity_Gym_EventScript_Mary_Item
-  case TRAINER_CLARK, Route116_EventScript_Clark_Item
-  case TRAINER_DARCY, Route132_EventScript_Darcy_Item
-  case TRAINER_NIKKI, Route126_EventScript_Nikki_Item
-  case TRAINER_DECLAN, Route124_EventScript_Declan_Item
-  case TRAINER_SOPHIA, Route110_TrickHousePuzzle6_EventScript_Sophia_Item
-  case TRAINER_GREG, Route119_EventScript_Greg_Item
-  case TRAINER_GRUNT_AQUA_HIDEOUT_8, AquaHideout_B2F_EventScript_Grunt8_Item
-  case TRAINER_FLANNERY_1, LavaridgeTown_Gym_1F_EventScript_Flannery_Item
-  case TRAINER_MARLENE, Route115_EventScript_Marlene_Item
-  case TRAINER_GRUNT_WEATHER_INST_2, Route119_WeatherInstitute_2F_EventScript_Grunt2_Item
-  case TRAINER_GRUNT_SEAFLOOR_CAVERN_1, SeafloorCavern_Room1_EventScript_Grunt1_Item
-  case TRAINER_DIANA_1, JaggedPass_EventScript_Diana_Item
-  case TRAINER_SHAWN, MauvilleCity_Gym_EventScript_Shawn_Item
-  case TRAINER_JACKI_1, Route123_EventScript_Jacki_Item
-  case TRAINER_DALTON_1, Route118_EventScript_Dalton_Item
-  case TRAINER_SANTIAGO, Route130_EventScript_Santiago_Item
-  case TRAINER_TANYA, Route125_EventScript_Tanya_Item
-  case TRAINER_KELVIN, Route134_EventScript_Kelvin_Item
-  case TRAINER_NAOMI, SSTidalRooms_EventScript_Naomi_Item
-  case TRAINER_LOLA_1, Route109_EventScript_Lola_Item
-  case TRAINER_JOSH, RustboroCity_Gym_EventScript_Josh_Item
-  case TRAINER_PHILLIP, SSTidalLowerDeck_EventScript_Phillip_Item
-  case TRAINER_LAWRENCE, Route113_EventScript_Lawrence_Item
-  case TRAINER_BRANDEN, Route111_EventScript_Branden_Item
-  case TRAINER_BRYANT, Route112_EventScript_Bryant_Item
-  case TRAINER_PARKER, PetalburgCity_Gym_EventScript_Parker_Item
-  case TRAINER_JAZMYN, Route123_EventScript_Jazmyn_Item
-  case TRAINER_GARRISON, AbandonedShip_Rooms2_1F_EventScript_Garrison_Item
-  case TRAINER_GRUNT_WEATHER_INST_1, Route119_WeatherInstitute_1F_EventScript_Grunt1_Item
-  case TRAINER_ANGELICA, Route120_EventScript_Angelica_Item
-  case TRAINER_GRUNT_MAGMA_HIDEOUT_10, MagmaHideout_3F_2R_EventScript_Grunt10_Item
-  case TRAINER_KATHLEEN, MossdeepCity_Gym_EventScript_Kathleen_Item
-  case TRAINER_PAUL, Route110_TrickHousePuzzle2_EventScript_Paul_Item
-  case TRAINER_CHASE, Route129_EventScript_Chase_Item
-  case TRAINER_GABBY_AND_TY_3, Gabby_Ty_EventScript_3_Item
-  case TRAINER_DARRIN, Route107_EventScript_Darrin_Item
-  case TRAINER_ALEXA, Route128_EventScript_Alexa_Item
-  case TRAINER_TAKASHI, Route119_EventScript_Takashi_Item
-  case TRAINER_EDMOND, Route109_EventScript_Edmond_Item
-  case TRAINER_GRUNT_WEATHER_INST_4, Route119_WeatherInstitute_1F_EventScript_Grunt4_Item
-  case TRAINER_DIANNE, VictoryRoad_B2F_EventScript_Dianne_Item
-  case TRAINER_MIKE_1, RusturfTunnel_EventScript_Mike_Item
-  case TRAINER_RACHEL, Route119_EventScript_Rachel_Item
-  case TRAINER_BROOKE_1, Route111_EventScript_Brooke_Item
-  case TRAINER_GEORGIA, Route110_TrickHousePuzzle2_EventScript_Georgia_Item
-  case TRAINER_RICKY_1, Route109_EventScript_Ricky_Item
-  case TRAINER_DYLAN_1, Route117_EventScript_Dylan_Item
-  case TRAINER_PAXTON, Route132_EventScript_Paxton_Item
+  case TRAINER_ANNA_AND_MEG_1, Route117_EventScript_Anna_Item
+  case TRAINER_KIRA_AND_DAN_1, AbandonedShip_Rooms2_1F_EventScript_Kira_Item
+  case TRAINER_ISABEL_1, Route110_EventScript_Isabel_Item
   case TRAINER_CEDRIC, MtPyre_6F_EventScript_Cedric_Item
-  case TRAINER_KAYLA, MtPyre_3F_EventScript_Kayla_Item
-  case TRAINER_KEVIN, Route131_EventScript_Kevin_Item
-  case TRAINER_WARREN, Route133_EventScript_Warren_Item
-  case TRAINER_EDWARD, Route110_EventScript_Edward_Item
-  case TRAINER_MAY_ROUTE_103_MUDKIP, Route103_EventScript_Item_Rival
-  case TRAINER_BRAWLY_1, DewfordTown_Gym_EventScript_Brawly_Item
-  case TRAINER_GRUNT_WEATHER_INST_5, Route119_WeatherInstitute_2F_EventScript_Grunt5_Item
-  case TRAINER_KAREN_1, Route116_EventScript_Karen_Item
-  case TRAINER_THALIA_1, AbandonedShip_Rooms_1F_Eventscript_Thalia_Item
-  case TRAINER_JEFFREY_1, Route120_EventScript_Jeffrey_Item
-  case TRAINER_ABIGAIL_1, Route110_EventScript_Abigail_Item
-  case TRAINER_JAIDEN, Route115_EventScript_Jaiden_Item
-  case TRAINER_SHELLY_SEAFLOOR_CAVERN, SeafloorCavern_Room3_EventScript_Shelly_Item
-  case TRAINER_DEVAN, Route116_EventScript_Devan_Item
-  case TRAINER_TIMMY, Route110_EventScript_Timmy_Item
-  case TRAINER_BECKY, Route111_EventScript_Becky_Item
-  case TRAINER_ALVARO, Route110_TrickHousePuzzle7_EventScript_Alvaro_Item
-  case TRAINER_BRYAN, Route111_EventScript_Bryan_Item
-  case TRAINER_WAYNE, Route128_EventScript_Wayne_Item
-  case TRAINER_BRENDA, Route126_EventScript_Brenda_Item
-  case TRAINER_EDWIN_1, Route110_EventScript_Edwin_Item
-  case TRAINER_ISAIAH_1, Route128_EventScript_Isaiah_Item
-  case TRAINER_EDGAR, VictoryRoad_1F_EventScript_Edgar_Item
-  case TRAINER_PRESTON, MossdeepCity_Gym_EventScript_Preston_Item
-  case TRAINER_CHRIS, Route119_EventScript_Chris_Item
-  case TRAINER_REED, Route129_EventScript_Reed_Item
-  case TRAINER_LYLE, PetalburgWoods_EventScript_Lyle_Item
-  case TRAINER_ISABELLA, Route124_EventScript_Isabella_Item
-  case TRAINER_LENNY, Route114_EventScript_Lenny_Item
-  case TRAINER_TORI_AND_TIA, Route113_EventScript_Tori_Item
-  case TRAINER_GRUNT_PETALBURG_WOODS, PetalburgWoods_EventScript_DevonResearcherLeft_Item
-  case TRAINER_JANICE, Route116_EventScript_Janice_Item
-  case TRAINER_CALLIE, Route120_EventScript_Callie_Item
-  case TRAINER_ARCHIE, SeafloorCavern_Room9_EventScript_ArchieAwakenKyogre_Item
-  case TRAINER_BRENT, Route119_EventScript_Brent_Item
-  case TRAINER_EVERETT, Route110_TrickHousePuzzle7_EventScript_Everett_Item
-  case TRAINER_SHARON, Route125_EventScript_Sharon_Item
-  case TRAINER_CAROLINA, Route108_EventScript_Carolina_Item
-  case TRAINER_CATHERINE_1, Route119_EventScript_Catherine_Item
-  case TRAINER_DOUGLAS, Route106_EventScript_Douglas_Item
-  case TRAINER_WILTON_1, Route111_EventScript_Wilton_Item
-  case TRAINER_BEN, MauvilleCity_Gym_EventScript_Ben_Item
-  case TRAINER_QUINCY, VictoryRoad_1F_EventScript_Quincy_Item
-  case TRAINER_BEVERLY, Route105_EventScript_Beverly_Item
-  case TRAINER_TOMMY, RustboroCity_Gym_EventScript_Tommy_Item
-  case TRAINER_MYLES, Route121_EventScript_Myles_Item
-  case TRAINER_VICKY, Route111_WinstrateFamilysHouse_EventScript_Vicky_Item
-  case TRAINER_ATSUSHI, MtPyre_5F_EventScript_Atsushi_Item
-  case TRAINER_GRUNT_MAGMA_HIDEOUT_8, MagmaHideout_2F_2R_EventScript_Grunt8_Item
-  case TRAINER_MELINA, Route117_EventScript_Melina_Item
-  case TRAINER_TATE_AND_LIZA_1, MossdeepCity_Gym_EventScript_TateAndLiza_Item
-  case TRAINER_AXLE, LavaridgeTown_Gym_1F_EventScript_Axle_Item
-  case TRAINER_ED, Route123_EventScript_Ed_Item
-  case TRAINER_NOLEN, Route125_EventScript_Nolen_Item
-  case TRAINER_KEEGAN, LavaridgeTown_Gym_B1F_EventScript_Keegan_Item
-  case TRAINER_JULIE, VictoryRoad_B2F_EventScript_Julie_Item
-  case TRAINER_JENNA, Route120_EventScript_Jenna_Item
-  case TRAINER_WILLIAM, MtPyre_3F_EventScript_William_Item
-  case TRAINER_SHANNON, VictoryRoad_B1F_EventScript_Shannon_Item
-  case TRAINER_DAVIS, Route123_EventScript_Davis_Item
-  case TRAINER_GABRIELLE_1, MtPyre_3F_EventScript_Gabrielle_Item
-  case TRAINER_MARTHA, Route110_TrickHousePuzzle3_EventScript_Martha_Item
-  case TRAINER_JOSHUA, Route110_TrickHousePuzzle7_EventScript_Joshua_Item
-  case TRAINER_CHARLIE, AbandonedShip_Corridors_1F_EventScript_Charlie_Item
-  case TRAINER_GRUNT_MT_PYRE_4, MtPyre_Summit_EventScript_Grunt4_Item
-  case TRAINER_DILLON, Route113_EventScript_Dillon_Item
-  case TRAINER_ISAAC_1, Route117_EventScript_Isaac_Item
-  case TRAINER_ALBERTO, Route123_EventScript_Alberto_Item
-  case TRAINER_JOEY, Route116_EventScript_Joey_Item
-  case TRAINER_JEROME, Route108_EventScript_Jerome_Item
-  case TRAINER_ALBERT, VictoryRoad_1F_EventScript_Albert_Item
-  case TRAINER_CAROL, Route112_EventScript_Carol_Item
-  case TRAINER_CELINA, Route111_EventScript_Celina_Item
-  case TRAINER_LARRY, Route112_EventScript_Larry_Item
-  case TRAINER_VICTORIA, Route111_WinstrateFamilysHouse_EventScript_Victoria_Item
-  case TRAINER_LINDA, Route133_EventScript_Linda_Item
-  case TRAINER_LEROY, Route110_TrickHousePuzzle8_EventScript_Leroy_Item
-  case TRAINER_REYNA, Route134_EventScript_Reyna_Item
-  case TRAINER_DEAN, Route126_EventScript_Dean_Item
-  case TRAINER_CHESTER, Route118_EventScript_Chester_Item
-  case TRAINER_GRUNT_AQUA_HIDEOUT_5, AquaHideout_B1F_EventScript_Grunt5_Item
-  case TRAINER_GRUNT_MAGMA_HIDEOUT_2, MagmaHideout_1F_EventScript_Grunt2_Item
-  case TRAINER_RODNEY, Route130_EventScript_Rodney_Item
-  case TRAINER_ELI, LavaridgeTown_Gym_B1F_EventScript_Eli_Item
-  case TRAINER_JOSE, Route116_EventScript_Jose_Item
-  case TRAINER_WALLY_MAUVILLE, MauvilleCity_EventScript_DefeatedWally_Item
-  case TRAINER_MARLEY, Route134_EventScript_Marley_Item
-  case TRAINER_MACEY, MossdeepCity_Gym_EventScript_Macey_Item
-  case TRAINER_COLTON, SSTidalRooms_EventScript_Colton_Item
-  case TRAINER_KATIE, Route130_EventScript_Katie_Item
-  case TRAINER_ANGELO, MauvilleCity_Gym_EventScript_Angelo_Item
-  case TRAINER_MICHELLE, VictoryRoad_B1F_EventScript_Michelle_Item
-  case TRAINER_ALICE, Route109_EventScript_Alice_Item
-  case TRAINER_VANESSA, Route121_EventScript_Vanessa_Item
-  case TRAINER_LYDIA_1, Route117_EventScript_Lydia_Item
-  case TRAINER_GRUNT_MAGMA_HIDEOUT_7, MagmaHideout_2F_2R_EventScript_Grunt7_Item
-  case TRAINER_SHELLY_WEATHER_INSTITUTE, Route119_WeatherInstitute_2F_EventScript_Shelly_Item
-  case TRAINER_GARRET, SSTidalRooms_EventScript_Garret_Item
-  case TRAINER_JOSUE, Route105_EventScript_Josue_Item
-  case TRAINER_FLINT, FortreeCity_Gym_EventScript_Flint_Item
-  case TRAINER_TYRA_AND_IVY, Route114_EventScript_Tyra_Item
-  case TRAINER_KIYO, Route132_EventScript_Kiyo_Item
-  case TRAINER_DRAKE, Drake_Item
-  case TRAINER_CARTER, Route109_EventScript_Carter_Item
-  case TRAINER_ERNEST_1, Route125_EventScript_Ernest_Item
-  case TRAINER_ROXANNE_1, RustboroCity_Gym_EventScript_Roxanne_Item
-  case TRAINER_MIU_AND_YUKI, Route123_EventScript_Miu_Item
-  case TRAINER_COLE, LavaridgeTown_Gym_1F_EventScript_Cole_Item
-  case TRAINER_MAKAYLA, Route132_EventScript_Makayla_Item
-  case TRAINER_PAT, Route121_EventScript_Pat_Item
-  case TRAINER_BRIANNA, SootopolisCity_Gym_B1F_EventScript_Brianna_Item
+  case TRAINER_CHARLOTTE, Route114_EventScript_Charlotte_Item
+  case TRAINER_GRUNT_AQUA_HIDEOUT_3, AquaHideout_B1F_EventScript_Grunt3_Item
   case TRAINER_PERRY, Route118_EventScript_Perry_Item
-  case TRAINER_JOHANNA, Route109_SeashoreHouse_EventScript_Johanna_Item
-  case TRAINER_WALLY_VR_1, VictoryRoad_1F_EventScript_WallyEntranceBattle_Item
-  case TRAINER_AUSTINA, Route109_EventScript_Austina_Item
-  case TRAINER_CORY_1, Route108_EventScript_Cory_Item
-  case TRAINER_AUTUMN, JaggedPass_EventScript_Autumn_Item
-  case TRAINER_RUBEN, Route128_EventScript_Ruben_Item
-  case TRAINER_CHANDLER, Route109_EventScript_Chandler_Item
-  case TRAINER_HAYDEN, Route111_EventScript_Hayden_Item
-  case TRAINER_CLARISSA, Route120_EventScript_Clarissa_Item
-  case TRAINER_SHAYLA, Route112_EventScript_Shayla_Item
-  case TRAINER_JESSICA_1, Route121_EventScript_Jessica_Item
-  case TRAINER_SIMON, Route109_SeashoreHouse_EventScript_Simon_Item
-  case TRAINER_BRICE, Route112_EventScript_Brice_Item
-  case TRAINER_HEIDI, Route111_EventScript_Heidi_Item
-  case TRAINER_BENJAMIN_1, Route110_EventScript_Benjamin_Item
-  case TRAINER_WYATT, Route113_EventScript_Wyatt_Item
-  case TRAINER_SIENNA, Route126_EventScript_Sienna_Item
-  case TRAINER_LAO_1, Route113_EventScript_Lao_Item
-  case TRAINER_MATT, AquaHideout_B2F_EventScript_Matt_Item
-  case TRAINER_IMANI, Route105_EventScript_Imani_Item
-  case TRAINER_DAYTON, Route119_EventScript_Dayton_Item
-  case TRAINER_SALLY, Route110_TrickHousePuzzle1_EventScript_Sally_Item
-  case TRAINER_JOCELYN, DewfordTown_Gym_EventScript_Jocelyn_Item
-  case TRAINER_JACK, Route134_EventScript_Jack_Item
-  case TRAINER_GRUNT_AQUA_HIDEOUT_6, AquaHideout_B2F_EventScript_Grunt6_Item
-  case TRAINER_GRUNT_MAGMA_HIDEOUT_13, MagmaHideout_4F_EventScript_Grunt13_Item
-  case TRAINER_TAMMY, Route121_EventScript_Tammy_Item
-  case TRAINER_TABITHA_MAGMA_HIDEOUT, MagmaHideout_4F_EventScript_Tabitha_Item
-  case TRAINER_GRUNT_MAGMA_HIDEOUT_5, MagmaHideout_2F_1R_EventScript_Grunt5_Item
-  case TRAINER_SEBASTIAN, Route110_TrickHousePuzzle6_EventScript_Sebastian_Item
-  case TRAINER_ALLEN, Route102_EventScript_Allen_Item
-  case TRAINER_COBY, Route113_EventScript_Coby_Item
-  case TRAINER_NED, Route106_EventScript_Ned_Item
-  case TRAINER_GRUNT_SEAFLOOR_CAVERN_2, SeafloorCavern_Room1_EventScript_Grunt2_Item
+  case TRAINER_GARRISON, AbandonedShip_Rooms2_1F_EventScript_Garrison_Item
+  case TRAINER_MELINA, Route117_EventScript_Melina_Item
+  case TRAINER_DREW, Route111_EventScript_Drew_Item
+  case TRAINER_CORA, Route110_TrickHousePuzzle4_EventScript_Cora_Item
+  case TRAINER_ISABELLA, Route124_EventScript_Isabella_Item
+  case TRAINER_HARRISON, Route128_EventScript_Harrison_Item
+  case TRAINER_KINDRA, Route123_EventScript_Kindra_Item
+  case TRAINER_GRUNT_AQUA_HIDEOUT_8, AquaHideout_B2F_EventScript_Grunt8_Item
   case TRAINER_ANNIKA, SootopolisCity_Gym_B1F_EventScript_Annika_Item
-  case TRAINER_LISA_AND_RAY, Route107_EventScript_Lisa_Item
-  case TRAINER_TAYLOR, Route119_EventScript_Taylor_Item
-  case TRAINER_JUAN_1, SootopolisCity_Gym_1F_EventScript_Juan_Item
-  case TRAINER_JOHN_AND_JAY_1, MeteorFalls_1F_2R_EventScript_John_Item
-  case TRAINER_PATRICIA, Route110_TrickHousePuzzle7_EventScript_Patricia_Item
-  case TRAINER_VIRGIL, MossdeepCity_Gym_EventScript_Virgil_Item
-  case TRAINER_TIANA, Route102_EventScript_Tiana_Item
-  case TRAINER_GWEN, Route109_EventScript_Gwen_Item
-  case TRAINER_ROBIN, Route110_TrickHousePuzzle1_EventScript_Robin_Item
-  case TRAINER_TARA, Route108_EventScript_Tara_Item
-  case TRAINER_BENNY, Route110_TrickHousePuzzle6_EventScript_Benny_Item
-  case TRAINER_CLAUDE, Route114_EventScript_Claude_Item
-  case TRAINER_DAVID, Route109_EventScript_David_Item
-  case TRAINER_KEIRA, Route110_TrickHousePuzzle8_EventScript_Keira_Item
-  case TRAINER_ALEX, Route134_EventScript_Alex_Item
-  case TRAINER_HOPE, VictoryRoad_1F_EventScript_Hope_Item
-  case TRAINER_DAWSON, Route116_EventScript_Dawson_Item
-  case TRAINER_GRUNT_SEAFLOOR_CAVERN_3, SeafloorCavern_Room4_EventScript_Grunt3_Item
-  case TRAINER_NATE, MossdeepCity_Gym_EventScript_Nate_Item
-  case TRAINER_ROLAND, Route124_EventScript_Roland_Item
-  case TRAINER_TISHA, Route129_EventScript_Tisha_Item
-  case TRAINER_CRISTIN_1, Route121_EventScript_Cristin_Item
-  case TRAINER_BARRY, Route126_EventScript_Barry_Item
-  case TRAINER_BEAU, Route111_EventScript_Beau_Item
-  case TRAINER_MARIELA, Route110_TrickHousePuzzle7_EventScript_Mariela_Item
-  case TRAINER_KATELYN_1, Route128_EventScript_Katelyn_Item
-  case TRAINER_JARED, FortreeCity_Gym_EventScript_Jared_Item
-  case TRAINER_DANIELLE, LavaridgeTown_Gym_1F_EventScript_Danielle_Item
-  case TRAINER_BLAKE, MossdeepCity_Gym_EventScript_Blake_Item
-  case TRAINER_GRUNT_MT_PYRE_3, MtPyre_Summit_EventScript_Grunt3_Item
-  case TRAINER_DENISE, Route107_EventScript_Denise_Item
-  case TRAINER_EDDIE, Route110_TrickHousePuzzle1_EventScript_Eddie_Item
-  case TRAINER_DAISUKE, Route111_EventScript_Daisuke_Item
-  case TRAINER_BRANDI, Route117_EventScript_Brandi_Item
-  case TRAINER_NORMAN_1, PetalburgCity_Gym_EventScript_NormanBattle_Item
-  case TRAINER_KARA, Route131_EventScript_Kara_Item
-  case TRAINER_MARK, MtPyre_2F_EventScript_Mark_Item
-  case TRAINER_ALEXIS, Route110_TrickHousePuzzle7_EventScript_Alexis_Item
-  case TRAINER_JENNIFER, Route120_EventScript_Jennifer_Item
-  case TRAINER_YUJI, Route110_TrickHousePuzzle4_EventScript_Yuji_Item
-  case TRAINER_BRIDGET, SootopolisCity_Gym_B1F_EventScript_Bridget_Item
-  case TRAINER_ELLIOT_1, Route106_EventScript_Elliot_Item
-  case TRAINER_SHANE, Route114_EventScript_Shane_Item
-  case TRAINER_GRUNT_MAGMA_HIDEOUT_9, MagmaHideout_3F_1R_EventScript_Grunt9_Item
-  case TRAINER_LEONEL, Route120_EventScript_Leonel_Item
-  case TRAINER_BRENDEN, DewfordTown_Gym_EventScript_Brenden_Item
-  case TRAINER_STEVEN, MeteorFalls_StevensCave_EventScript_Steven_Item
-  case TRAINER_BARNY, Route118_EventScript_Barny_Item
-  case TRAINER_ASHLEY, FortreeCity_Gym_EventScript_Ashley_Item
-  case TRAINER_GRUNT_AQUA_HIDEOUT_1, AquaHideout_1F_EventScript_Grunt1_Item
+  case TRAINER_TAKASHI, Route119_EventScript_Takashi_Item
+  case TRAINER_JACE, LavaridgeTown_Gym_B1F_EventScript_Jace_Item
+  case TRAINER_KENT, Route119_EventScript_Kent_Item
+  case TRAINER_DEMETRIUS, AbandonedShip_Rooms_1F_EventScript_Demetrius_Item
+  case TRAINER_BERNIE_1, Route114_EventScript_Bernie_Item
+  case TRAINER_CHANDLER, Route109_EventScript_Chandler_Item
+  case TRAINER_SHAYLA, Route112_EventScript_Shayla_Item
+  case TRAINER_GRUNT_MAGMA_HIDEOUT_5, MagmaHideout_2F_1R_EventScript_Grunt5_Item
+  case TRAINER_CHIP, Route120_EventScript_Chip_Item
+  case TRAINER_TANYA, Route125_EventScript_Tanya_Item
+  case TRAINER_COLIN, Route120_EventScript_Colin_Item
+  case TRAINER_JOSUE, Route105_EventScript_Josue_Item
+  case TRAINER_JEFF, LavaridgeTown_Gym_B1F_EventScript_Jeff_Item
+  case TRAINER_LEROY, Route110_TrickHousePuzzle8_EventScript_Leroy_Item
+  case TRAINER_TAMMY, Route121_EventScript_Tammy_Item
+  case TRAINER_PABLO_1, Route126_EventScript_Pablo_Item
+  case TRAINER_BRYAN, Route111_EventScript_Bryan_Item
+  case TRAINER_DEVAN, Route116_EventScript_Devan_Item
   case TRAINER_LILITH, DewfordTown_Gym_EventScript_Lilith_Item
-  case TRAINER_KYLA, Route106_EventScript_Kyla_Item
-  case TRAINER_WALTER_1, Route121_EventScript_Walter_Item
-  case TRAINER_DUSTY_1, Route111_EventScript_Dusty_Item
-  case TRAINER_VINCENT, Route110_TrickHousePuzzle8_EventScript_Vincent_Item
-  case TRAINER_ISOBEL, Route126_EventScript_Isobel_Item
-  case TRAINER_LEAH, MtPyre_2F_EventScript_Leah_Item
-  case TRAINER_CLARENCE, Route129_EventScript_Clarence_Item
-  case TRAINER_HECTOR, Route115_EventScript_Hector_Item
-  case TRAINER_SARAH, Route116_EventScript_Sarah_Item
-  case TRAINER_CELIA, Route111_EventScript_Celia_Item
-  case TRAINER_GRUNT_MAGMA_HIDEOUT_16, MagmaHideout_3F_1R_EventScript_Grunt16_Item
+  case TRAINER_COLE, LavaridgeTown_Gym_1F_EventScript_Cole_Item
+  case TRAINER_CAROLINE, VictoryRoad_B2F_EventScript_Caroline_Item
+  case TRAINER_ARCHIE, SeafloorCavern_Room9_EventScript_ArchieAwakenKyogre_Item
+  case TRAINER_VICTOR, Route111_EventScript_Victor_Item
+  case TRAINER_HOPE, VictoryRoad_1F_EventScript_Hope_Item
+  case TRAINER_DANA, Route132_EventScript_Dana_Item
+  case TRAINER_RODNEY, Route130_EventScript_Rodney_Item
+  case TRAINER_BRYANT, Route112_EventScript_Bryant_Item
+  case TRAINER_DAVIS, Route123_EventScript_Davis_Item
+  case TRAINER_KAI, Route114_EventScript_Kai_Item
   case TRAINER_ANTHONY, Route110_EventScript_Anthony_Item
-  case TRAINER_JULIO, JaggedPass_EventScript_Julio_Item
-  case TRAINER_TRENT_1, Route112_EventScript_Trent_Item
+  case TRAINER_HUGH, Route119_EventScript_Hugh_Item
+  case TRAINER_ANGELO, MauvilleCity_Gym_EventScript_Angelo_Item
+  case TRAINER_FLINT, FortreeCity_Gym_EventScript_Flint_Item
+  case TRAINER_PRESLEY, Route125_EventScript_Presley_Item
+  case TRAINER_KARA, Route131_EventScript_Kara_Item
+  case TRAINER_GRUNT_MAGMA_HIDEOUT_7, MagmaHideout_2F_2R_EventScript_Grunt7_Item
+  case TRAINER_MAURA, MossdeepCity_Gym_EventScript_Maura_Item
+  case TRAINER_GWEN, Route109_EventScript_Gwen_Item
+  case TRAINER_EVERETT, Route110_TrickHousePuzzle7_EventScript_Everett_Item
+  case TRAINER_CRISTIAN, DewfordTown_Gym_EventScript_Cristian_Item
+  case TRAINER_TABITHA_MAGMA_HIDEOUT, MagmaHideout_4F_EventScript_Tabitha_Item
+  case TRAINER_GRUNT_PETALBURG_WOODS, PetalburgWoods_EventScript_DevonResearcherLeft_Item
+  case TRAINER_HECTOR, Route115_EventScript_Hector_Item
+  case TRAINER_MATT, AquaHideout_B2F_EventScript_Matt_Item
+  case TRAINER_JOSEPH, Route110_EventScript_Joseph_Item
+  case TRAINER_DANIELLE, LavaridgeTown_Gym_1F_EventScript_Danielle_Item
+  case TRAINER_MICHELLE, VictoryRoad_B1F_EventScript_Michelle_Item
+  case TRAINER_KIYO, Route132_EventScript_Kiyo_Item
+  case TRAINER_TYRA_AND_IVY, Route114_EventScript_Tyra_Item
+  case TRAINER_ALYSSA, Route110_EventScript_Alyssa_Item
+  case TRAINER_ERNEST_1, Route125_EventScript_Ernest_Item
+  case TRAINER_JASMINE, Route110_EventScript_Jasmine_Item
+  case TRAINER_DOMINIK, Route105_EventScript_Dominik_Item
+  case TRAINER_GRUNT_MAGMA_HIDEOUT_15, MagmaHideout_2F_2R_EventScript_Grunt15_Item
+  case TRAINER_WILTON_1, Route111_EventScript_Wilton_Item
+  case TRAINER_JAYLEN, Route113_EventScript_Jaylen_Item
+  case TRAINER_AXLE, LavaridgeTown_Gym_1F_EventScript_Axle_Item
+  case TRAINER_GABRIELLE_1, MtPyre_3F_EventScript_Gabrielle_Item
+  case TRAINER_GRUNT_SEAFLOOR_CAVERN_2, SeafloorCavern_Room1_EventScript_Grunt2_Item
+  case TRAINER_CLARK, Route116_EventScript_Clark_Item
+  case TRAINER_NANCY, Route114_EventScript_Nancy_Item
+  case TRAINER_EDDIE, Route110_TrickHousePuzzle1_EventScript_Eddie_Item
+  case TRAINER_BARNY, Route118_EventScript_Barny_Item
+  case TRAINER_TORI_AND_TIA, Route113_EventScript_Tori_Item
+  case TRAINER_JOEY, Route116_EventScript_Joey_Item
+  case TRAINER_GRUNT_MAGMA_HIDEOUT_16, MagmaHideout_3F_1R_EventScript_Grunt16_Item
+  case TRAINER_NED, Route106_EventScript_Ned_Item
+  case TRAINER_VALERIE_1, MtPyre_6F_EventScript_Valerie_Item
+  case TRAINER_TARA, Route108_EventScript_Tara_Item
   case TRAINER_GRUNT_AQUA_HIDEOUT_4, AquaHideout_B2F_EventScript_Grunt4_Item
+  case TRAINER_DOUGLAS, Route106_EventScript_Douglas_Item
+  case TRAINER_KYRA, Route115_EventScript_Kyra_Item
+  case TRAINER_RELI_AND_IAN, Route131_EventScript_Reli_Item
+  case TRAINER_GRUNT_MT_PYRE_1, MtPyre_Summit_EventScript_Grunt1_Item
+  case TRAINER_SIENNA, Route126_EventScript_Sienna_Item
+  case TRAINER_MARCEL, Route121_EventScript_Marcel_Item
+  case TRAINER_GRUNT_AQUA_HIDEOUT_5, AquaHideout_B1F_EventScript_Grunt5_Item
+  case TRAINER_PAXTON, Route132_EventScript_Paxton_Item
+  case TRAINER_AUTUMN, JaggedPass_EventScript_Autumn_Item
+  case TRAINER_RICHARD, Route131_EventScript_Richard_Item
+  case TRAINER_TRAVIS, Route111_EventScript_Travis_Item
+  case TRAINER_HERMAN, Route131_EventScript_Herman_Item
+  case TRAINER_GRUNT_WEATHER_INST_3, Route119_WeatherInstitute_2F_EventScript_Grunt3_Item
+  case TRAINER_THOMAS, SSTidalRooms_EventScript_Thomas_Item
+  case TRAINER_LEAH, MtPyre_2F_EventScript_Leah_Item
+  case TRAINER_ELI, LavaridgeTown_Gym_B1F_EventScript_Eli_Item
+  case TRAINER_RUBEN, Route128_EventScript_Ruben_Item
+  case TRAINER_BRICE, Route112_EventScript_Brice_Item
+  case TRAINER_FOSTER, Route105_EventScript_Foster_Item
+  case TRAINER_JOHNSON, Route116_EventScript_Johnson_Item
+  case TRAINER_IMANI, Route105_EventScript_Imani_Item
+  case TRAINER_JOSH, RustboroCity_Gym_EventScript_Josh_Item
+  case TRAINER_VIVIAN, MauvilleCity_Gym_EventScript_Vivian_Item
+  case TRAINER_ALICE, Route109_EventScript_Alice_Item
+  case TRAINER_JOHN_AND_JAY_1, MeteorFalls_1F_2R_EventScript_John_Item
+  case TRAINER_GRUNT_MT_PYRE_4, MtPyre_Summit_EventScript_Grunt4_Item
+  case TRAINER_NOLEN, Route125_EventScript_Nolen_Item
+  case TRAINER_TIANA, Route102_EventScript_Tiana_Item
+  case TRAINER_CLIFFORD, MossdeepCity_Gym_EventScript_Clifford_Item
+  case TRAINER_WARREN, Route133_EventScript_Warren_Item
+  case TRAINER_HUMBERTO, FortreeCity_Gym_EventScript_Humberto_Item
+  case TRAINER_HAYDEN, Route111_EventScript_Hayden_Item
+  case TRAINER_DOUG, Route119_EventScript_Doug_Item
+  case TRAINER_MOLLIE, Route133_EventScript_Mollie_Item
+  case TRAINER_ATSUSHI, MtPyre_5F_EventScript_Atsushi_Item
+  case TRAINER_PAULA, Route110_TrickHousePuzzle4_EventScript_Paula_Item
+  case TRAINER_SHANNON, VictoryRoad_B1F_EventScript_Shannon_Item
+  case TRAINER_KEVIN, Route131_EventScript_Kevin_Item
+  case TRAINER_YASU, Route119_EventScript_Yasu_Item
+  case TRAINER_GRUNT_JAGGED_PASS, JaggedPass_EventScript_MagmaHideoutGuard_Item
+  case TRAINER_LUNG, Route113_EventScript_Lung_Item
+  case TRAINER_CHARLIE, AbandonedShip_Corridors_1F_EventScript_Charlie_Item
+  case TRAINER_LORENZO, Route120_EventScript_Lorenzo_Item
+  case TRAINER_FRANKLIN, Route133_EventScript_Franklin_Item
+  case TRAINER_LOLA_1, Route109_EventScript_Lola_Item
+  case TRAINER_GRUNT_MAGMA_HIDEOUT_2, MagmaHideout_1F_EventScript_Grunt2_Item
+  case TRAINER_GRUNT_SEAFLOOR_CAVERN_3, SeafloorCavern_Room4_EventScript_Grunt3_Item
+  case TRAINER_CAROLINA, Route108_EventScript_Carolina_Item
+  case TRAINER_LILA_AND_ROY_1, Route124_EventScript_Lila_Item
+  case TRAINER_FERNANDO_1, Route123_EventScript_Fernando_Item
+  case TRAINER_TIFFANY, SootopolisCity_Gym_B1F_EventScript_Tiffany_Item
+  case TRAINER_WATTSON_1, MauvilleCity_Gym_EventScript_Wattson_Item
+  case TRAINER_KIRK, MauvilleCity_Gym_EventScript_Kirk_Item
+  case TRAINER_HUDSON, Route134_EventScript_Hudson_Item
+  case TRAINER_WILLIAM, MtPyre_3F_EventScript_William_Item
+  case TRAINER_KAYLA, MtPyre_3F_EventScript_Kayla_Item
+  case TRAINER_MIKE_1, RusturfTunnel_EventScript_Mike_Item
+  case TRAINER_ANGELINA, Route114_EventScript_Angelina_Item
+  case TRAINER_KEEGAN, LavaridgeTown_Gym_B1F_EventScript_Keegan_Item
+  case TRAINER_BIANCA, Route111_EventScript_Bianca_Item
+  case TRAINER_DIANNE, VictoryRoad_B2F_EventScript_Dianne_Item
+  case TRAINER_DAYTON, Route119_EventScript_Dayton_Item
+  case TRAINER_DAVID, Route109_EventScript_David_Item
+  case TRAINER_SIMON, Route109_SeashoreHouse_EventScript_Simon_Item
+  case TRAINER_GRUNT_WEATHER_INST_2, Route119_WeatherInstitute_2F_EventScript_Grunt2_Item
+  case TRAINER_CHASE, Route129_EventScript_Chase_Item
+  case TRAINER_CAMRON, Route107_EventScript_Camron_Item
+  case TRAINER_PHILLIP, SSTidalLowerDeck_EventScript_Phillip_Item
+  case TRAINER_JUSTIN, Route110_TrickHousePuzzle3_EventScript_Justin_Item
+  case TRAINER_TATE_AND_LIZA_1, MossdeepCity_Gym_EventScript_TateAndLiza_Item
+  case TRAINER_GRUNT_SEAFLOOR_CAVERN_5, SeafloorCavern_Room3_EventScript_Grunt5_Item
+  case TRAINER_GILBERT, Route132_EventScript_Gilbert_Item
+  case TRAINER_CONNIE, SootopolisCity_Gym_B1F_EventScript_Connie_Item
+  case TRAINER_DARRIN, Route107_EventScript_Darrin_Item
+  case TRAINER_MYLES, Route121_EventScript_Myles_Item
+  case TRAINER_EDMOND, Route109_EventScript_Edmond_Item
+  case TRAINER_GRUNT_AQUA_HIDEOUT_2, AquaHideout_B1F_EventScript_Grunt2_Item
+  case TRAINER_CARLEE, Route128_EventScript_Carlee_Item
+  case TRAINER_GRUNT_MAGMA_HIDEOUT_8, MagmaHideout_2F_2R_EventScript_Grunt8_Item
+  case TRAINER_TYRON, Route111_EventScript_Tyron_Item
+  case TRAINER_NOB_1, Route115_EventScript_Nob_Item
+  case TRAINER_VICKY, Route111_WinstrateFamilysHouse_EventScript_Vicky_Item
+  case TRAINER_TOMMY, RustboroCity_Gym_EventScript_Tommy_Item
+  case TRAINER_DAISUKE, Route111_EventScript_Daisuke_Item
+  case TRAINER_WALTER_1, Route121_EventScript_Walter_Item
+  case TRAINER_HITOSHI, Route134_EventScript_Hitoshi_Item
+  case TRAINER_PRESTON, MossdeepCity_Gym_EventScript_Preston_Item
+  case TRAINER_TED, Route110_TrickHousePuzzle2_EventScript_Ted_Item
+  case TRAINER_SPENCER, Route124_EventScript_Spencer_Item
+  case TRAINER_HALLE, VictoryRoad_B1F_EventScript_Halle_Item
+  case TRAINER_JAIDEN, Route115_EventScript_Jaiden_Item
+  case TRAINER_WAYNE, Route128_EventScript_Wayne_Item
+  case TRAINER_ROLAND, Route124_EventScript_Roland_Item
+  case TRAINER_PAT, Route121_EventScript_Pat_Item
+  case TRAINER_CALLIE, Route120_EventScript_Callie_Item
+  case TRAINER_DALTON_1, Route118_EventScript_Dalton_Item
+  case TRAINER_NATE, MossdeepCity_Gym_EventScript_Nate_Item
+  case TRAINER_TAYLOR, Route119_EventScript_Taylor_Item
+  case TRAINER_PHIL, Route119_EventScript_Phil_Item
+  case TRAINER_TASHA, MtPyre_4F_EventScript_Tasha_Item
+  case TRAINER_JERRY_1, Route116_EventScript_Jerry_Item
+  case TRAINER_OWEN, VictoryRoad_B2F_EventScript_Owen_Item
+  case TRAINER_BERKE, PetalburgCity_Gym_EventScript_Berke_Item
+  case TRAINER_JOHANNA, Route109_SeashoreHouse_EventScript_Johanna_Item
+  case TRAINER_CYNDY_1, Route115_EventScript_Cyndy_Item
+  case TRAINER_RICKY_1, Route109_EventScript_Ricky_Item
 case TRAINER_BRENDAN_ROUTE_103_MUDKIP, Route103_EventScript_Item_Rival
     case TRAINER_BRENDAN_ROUTE_110_MUDKIP, Route110_EventScript_GiveItemfinder_Item2
     case TRAINER_BRENDAN_ROUTE_119_MUDKIP, Route119_EventScript_RivalExitScottArrive_Item
@@ -5595,56 +3453,65 @@ Recieve_Pokemon_Party::
 	msgbox gText_NicknameThisPokemon, MSGBOX_YESNO
 	call Common_EventScript_GetGiftMonPartySlot
 	call Common_EventScript_NameReceivedPartyMon
-	end
+	return
 
 Recieve_Pokemon_PC::
 	call Recieve_Mon_Fanfare
 	msgbox gText_NicknameThisPokemon, MSGBOX_YESNO
 	call Common_EventScript_NameReceivedBoxMon
    call Common_EventScript_TransferredToPC
-	end
+	return
 
 Get_Pokemon::
-	givemon VAR_TEMP_1, 15
+	givemon VAR_TEMP_1, VAR_TEMP_2
 	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PARTY, Recieve_Pokemon_Party
 	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PC, Recieve_Pokemon_PC
 	goto Common_EventScript_NoMoreRoomForPokemon
 Rustboro_Pokemon::
-    setvar VAR_TEMP_1, SPECIES_BLASTOISE
+    setvar VAR_TEMP_1, SPECIES_PANSAGE
    setvar VAR_TEMP_2, 15
    call Get_Pokemon
 
 Dewford_Pokemon::
-    setvar VAR_TEMP_1, SPECIES_GENGAR
+    setvar VAR_TEMP_1, SPECIES_DRUDDIGON
    setvar VAR_TEMP_2, 19
    call Get_Pokemon
 
 Mauville_Pokemon::
-    setvar VAR_TEMP_1, SPECIES_RATTATA
+    setvar VAR_TEMP_1, SPECIES_NIDORAN_M
    setvar VAR_TEMP_2, 24
    call Get_Pokemon
 
 Lavaridge_Pokemon::
-    setvar VAR_TEMP_1, SPECIES_MILTANK
+    setvar VAR_TEMP_1, SPECIES_OSHAWOTT
    setvar VAR_TEMP_2, 29
    call Get_Pokemon
 
 Petalburg_Pokemon::
-    setvar VAR_TEMP_1, SPECIES_GLIGAR
+    setvar VAR_TEMP_1, SPECIES_KARTANA
    setvar VAR_TEMP_2, 31
    call Get_Pokemon
 
 Fortree_Pokemon::
-    setvar VAR_TEMP_1, SPECIES_WOBBUFFET
+    setvar VAR_TEMP_1, SPECIES_HYPNO
    setvar VAR_TEMP_2, 33
    call Get_Pokemon
 
 Mosdeep_Pokemon::
-    setvar VAR_TEMP_1, SPECIES_MACHOKE
+    setvar VAR_TEMP_1, SPECIES_TOGEPI
    setvar VAR_TEMP_2, 42
    call Get_Pokemon
 
 Sootopolis_Pokemon::
-    setvar VAR_TEMP_1, SPECIES_MAGBY
+    setvar VAR_TEMP_1, SPECIES_CRADILY
    setvar VAR_TEMP_2, 46
    call Get_Pokemon
+Startup_Stuff::
+setflag FLAG_ALL_BALLS_MASTERBALL
+clearflag FLAG_HMS_NEED_BADGES
+setflag FLAG_RARE_CANDY_MOD
+return
+
+cheat_man::
+    call Startup_Stuff
+    return
