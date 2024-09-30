@@ -107,68 +107,66 @@ AbandonedShip_Corridors_B1F_EventScript_Duncan::
 # 54 "data/maps/AbandonedShip_Corridors_B1F/scripts.pory"
 	msgbox AbandonedShip_Corridors_B1F_Text_DuncanPostBattle, MSGBOX_AUTOCLOSE
 # 55 "data/maps/AbandonedShip_Corridors_B1F/scripts.pory"
-	call AbandonedShip_Corridors_B1F_EventScript_Duncan_Item
-# 56 "data/maps/AbandonedShip_Corridors_B1F/scripts.pory"
 	end
+# 56 "data/maps/AbandonedShip_Corridors_B1F/scripts.pory"
+
 # 57 "data/maps/AbandonedShip_Corridors_B1F/scripts.pory"
-
-# 58 "data/maps/AbandonedShip_Corridors_B1F/scripts.pory"
 AbandonedShip_Corridors_B1F_Text_DuncanIntro:
-# 59 "data/maps/AbandonedShip_Corridors_B1F/scripts.pory"
+# 58 "data/maps/AbandonedShip_Corridors_B1F/scripts.pory"
 	.string "When we go out to sea, we SAILORS\n"
-# 60 "data/maps/AbandonedShip_Corridors_B1F/scripts.pory"
+# 59 "data/maps/AbandonedShip_Corridors_B1F/scripts.pory"
 	.string "always bring our POKéMON.\l"
-# 61 "data/maps/AbandonedShip_Corridors_B1F/scripts.pory"
+# 60 "data/maps/AbandonedShip_Corridors_B1F/scripts.pory"
 	.string "How about a quick battle?$"
+# 61 "data/maps/AbandonedShip_Corridors_B1F/scripts.pory"
+
 # 62 "data/maps/AbandonedShip_Corridors_B1F/scripts.pory"
-
-# 63 "data/maps/AbandonedShip_Corridors_B1F/scripts.pory"
 AbandonedShip_Corridors_B1F_Text_DuncanDefeat:
-# 64 "data/maps/AbandonedShip_Corridors_B1F/scripts.pory"
+# 63 "data/maps/AbandonedShip_Corridors_B1F/scripts.pory"
 	.string "Whoops, I'm sunk!$"
+# 64 "data/maps/AbandonedShip_Corridors_B1F/scripts.pory"
+
 # 65 "data/maps/AbandonedShip_Corridors_B1F/scripts.pory"
-
-# 66 "data/maps/AbandonedShip_Corridors_B1F/scripts.pory"
 AbandonedShip_Corridors_B1F_Text_DuncanPostBattle:
-# 67 "data/maps/AbandonedShip_Corridors_B1F/scripts.pory"
+# 66 "data/maps/AbandonedShip_Corridors_B1F/scripts.pory"
 	.string "The ship's bottom has sunk into the\n"
-# 68 "data/maps/AbandonedShip_Corridors_B1F/scripts.pory"
+# 67 "data/maps/AbandonedShip_Corridors_B1F/scripts.pory"
 	.string "depths.\p"
-# 69 "data/maps/AbandonedShip_Corridors_B1F/scripts.pory"
+# 68 "data/maps/AbandonedShip_Corridors_B1F/scripts.pory"
 	.string "If a POKéMON knew how to go underwater,\n"
-# 70 "data/maps/AbandonedShip_Corridors_B1F/scripts.pory"
+# 69 "data/maps/AbandonedShip_Corridors_B1F/scripts.pory"
 	.string "we might make some progress…$"
+# 70 "data/maps/AbandonedShip_Corridors_B1F/scripts.pory"
+
 # 71 "data/maps/AbandonedShip_Corridors_B1F/scripts.pory"
-
-# 72 "data/maps/AbandonedShip_Corridors_B1F/scripts.pory"
 AbandonedShip_Corridors_B1F_Text_YayItsAShip:
-# 73 "data/maps/AbandonedShip_Corridors_B1F/scripts.pory"
+# 72 "data/maps/AbandonedShip_Corridors_B1F/scripts.pory"
 	.string "Yay!\n"
-# 74 "data/maps/AbandonedShip_Corridors_B1F/scripts.pory"
+# 73 "data/maps/AbandonedShip_Corridors_B1F/scripts.pory"
 	.string "It's a ship!$"
+# 74 "data/maps/AbandonedShip_Corridors_B1F/scripts.pory"
+
 # 75 "data/maps/AbandonedShip_Corridors_B1F/scripts.pory"
-
-# 76 "data/maps/AbandonedShip_Corridors_B1F/scripts.pory"
 AbandonedShip_Corridors_B1F_Text_DoorIsLocked:
-# 77 "data/maps/AbandonedShip_Corridors_B1F/scripts.pory"
+# 76 "data/maps/AbandonedShip_Corridors_B1F/scripts.pory"
 	.string "The door is locked.\p"
-# 78 "data/maps/AbandonedShip_Corridors_B1F/scripts.pory"
+# 77 "data/maps/AbandonedShip_Corridors_B1F/scripts.pory"
 	.string "“STORAGE” is painted on the door.$"
+# 78 "data/maps/AbandonedShip_Corridors_B1F/scripts.pory"
+
 # 79 "data/maps/AbandonedShip_Corridors_B1F/scripts.pory"
-
-# 80 "data/maps/AbandonedShip_Corridors_B1F/scripts.pory"
 AbandonedShip_Corridors_B1F_Text_InsertedStorageKey:
-# 81 "data/maps/AbandonedShip_Corridors_B1F/scripts.pory"
+# 80 "data/maps/AbandonedShip_Corridors_B1F/scripts.pory"
 	.string "{PLAYER} inserted and turned the\n"
-# 82 "data/maps/AbandonedShip_Corridors_B1F/scripts.pory"
+# 81 "data/maps/AbandonedShip_Corridors_B1F/scripts.pory"
 	.string "STORAGE KEY.\p"
-# 83 "data/maps/AbandonedShip_Corridors_B1F/scripts.pory"
+# 82 "data/maps/AbandonedShip_Corridors_B1F/scripts.pory"
 	.string "The inserted KEY stuck fast,\n"
-# 84 "data/maps/AbandonedShip_Corridors_B1F/scripts.pory"
+# 83 "data/maps/AbandonedShip_Corridors_B1F/scripts.pory"
 	.string "but the door opened.$"
-# 85 "data/maps/AbandonedShip_Corridors_B1F/scripts.pory"
+# 84 "data/maps/AbandonedShip_Corridors_B1F/scripts.pory"
 
-# 86 "data/maps/AbandonedShip_Corridors_B1F/scripts.pory"
+# 85 "data/maps/AbandonedShip_Corridors_B1F/scripts.pory"
 AbandonedShip_Text_TheDoorIsOpen:
-# 87 "data/maps/AbandonedShip_Corridors_B1F/scripts.pory"
+# 86 "data/maps/AbandonedShip_Corridors_B1F/scripts.pory"
 	.string "The door is open.$"

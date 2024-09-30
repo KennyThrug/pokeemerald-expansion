@@ -583,114 +583,108 @@ Route110_TrickHousePuzzle3_EventScript_Justin::
 # 292 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
 	msgbox Route110_TrickHousePuzzle3_Text_JustinPostBattle, MSGBOX_AUTOCLOSE
 # 293 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
-	call Route110_TrickHousePuzzle3_EventScript_Justin_Item
+	end
 # 294 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
-	end
+
 # 295 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
-
-# 296 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
 Route110_TrickHousePuzzle3_EventScript_Martha::
-# 297 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
+# 296 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
 	trainerbattle_single TRAINER_MARTHA, Route110_TrickHousePuzzle3_Text_MarthaIntro, Route110_TrickHousePuzzle3_Text_MarthaDefeat
-# 298 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
+# 297 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
 	msgbox Route110_TrickHousePuzzle3_Text_MarthaPostBattle, MSGBOX_AUTOCLOSE
+# 298 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
+	end
 # 299 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
-	call Route110_TrickHousePuzzle3_EventScript_Martha_Item
+
 # 300 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
-	end
-# 301 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
-
-# 302 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
 Route110_TrickHousePuzzle3_EventScript_Alan::
-# 303 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
+# 301 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
 	trainerbattle_single TRAINER_ALAN, Route110_TrickHousePuzzle3_Text_AlanIntro, Route110_TrickHousePuzzle3_Text_AlanDefeat
-# 304 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
+# 302 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
 	msgbox Route110_TrickHousePuzzle3_Text_AlanPostBattle, MSGBOX_AUTOCLOSE
-# 305 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
-	call Route110_TrickHousePuzzle3_EventScript_Alan_Item
-# 306 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
+# 303 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
 	end
-# 307 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
+# 304 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
 
-# 308 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
+# 305 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
 Route110_TrickHousePuzzle3_Text_WroteSecretCodeLockOpened:
-# 309 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
+# 306 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
 	.string "{PLAYER} wrote down the secret code\n"
-# 310 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
+# 307 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
 	.string "on the door.\p"
-# 311 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
+# 308 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
 	.string "“TRICK MASTER is coveted.”\n"
-# 312 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
+# 309 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
 	.string "… … … … … … … …\p"
-# 313 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
+# 310 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
 	.string "The lock clicked open!$"
+# 311 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
+
+# 312 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
+Route110_TrickHousePuzzle3_Text_JustinIntro:
+# 313 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
+	.string "I keep coming back to this same place!$"
 # 314 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
 
 # 315 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
-Route110_TrickHousePuzzle3_Text_JustinIntro:
-# 316 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
-	.string "I keep coming back to this same place!$"
-# 317 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
-
-# 318 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
 Route110_TrickHousePuzzle3_Text_JustinDefeat:
-# 319 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
+# 316 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
 	.string "I'm already having trouble, and then\n"
-# 320 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
+# 317 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
 	.string "you have to beat me? It's not fair!$"
-# 321 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
+# 318 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
 
-# 322 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
+# 319 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
 Route110_TrickHousePuzzle3_Text_JustinPostBattle:
-# 323 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
+# 320 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
 	.string "It's full of doors here!\n"
-# 324 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
+# 321 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
 	.string "It's too small and dark in here! Help!$"
-# 325 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
+# 322 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
 
-# 326 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
+# 323 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
 Route110_TrickHousePuzzle3_Text_MarthaIntro:
-# 327 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
+# 324 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
 	.string "I don't know what's going on here.\n"
-# 328 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
+# 325 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
 	.string "I'm starting to feel sad…$"
+# 326 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
+
+# 327 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
+Route110_TrickHousePuzzle3_Text_MarthaDefeat:
+# 328 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
+	.string "You… You're awful!$"
 # 329 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
 
 # 330 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
-Route110_TrickHousePuzzle3_Text_MarthaDefeat:
-# 331 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
-	.string "You… You're awful!$"
-# 332 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
-
-# 333 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
 Route110_TrickHousePuzzle3_Text_MarthaPostBattle:
-# 334 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
+# 331 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
 	.string "I know I'm weak!\n"
-# 335 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
+# 332 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
 	.string "And, I have no sense of direction!$"
-# 336 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
+# 333 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
 
-# 337 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
+# 334 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
 Route110_TrickHousePuzzle3_Text_AlanIntro:
-# 338 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
+# 335 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
 	.string "I don't get it. What would anyone want\n"
-# 339 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
+# 336 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
 	.string "with a house this bizarre?$"
-# 340 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
+# 337 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
 
-# 341 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
+# 338 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
 Route110_TrickHousePuzzle3_Text_AlanDefeat:
-# 342 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
+# 339 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
 	.string "I don't get it.\n"
-# 343 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
+# 340 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
 	.string "How did I lose?$"
-# 344 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
+# 341 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
 
-# 345 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
+# 342 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
 Route110_TrickHousePuzzle3_Text_AlanPostBattle:
-# 346 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
+# 343 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
 	.string "I don't get it.\n"
-# 347 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
+# 344 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
 	.string "How many traps are in this house?\p"
-# 348 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
+# 345 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
 	.string "You may be the one to solve that.$"

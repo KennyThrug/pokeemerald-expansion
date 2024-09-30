@@ -39,120 +39,118 @@ AbandonedShip_Rooms_1F_EventScript_Thalia::
 # 20 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
 	release
 # 21 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
-	call AbandonedShip_Rooms_1F_Eventscript_Thalia_Item
+	end
 # 22 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
-	end
+
 # 23 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
-
-# 24 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
 AbandonedShip_Rooms_1F_EventScript_RegisterThalia::
-# 25 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
+# 24 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
 	special PlayerFaceTrainerAfterBattle
-# 26 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
+# 25 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
 	waitmovement 0
-# 27 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
+# 26 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
 	msgbox AbandonedShip_Rooms_1F_Text_ThaliaRegister, MSGBOX_DEFAULT
-# 28 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
+# 27 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
 	register_matchcall TRAINER_THALIA_1
-# 29 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
+# 28 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
 	release
+# 29 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
+	end
 # 30 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
-	end
+
 # 31 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
-
-# 32 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
 AbandonedShip_Rooms_1F_EventScript_ThaliaRematch::
-# 33 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
+# 32 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
 	trainerbattle_rematch TRAINER_THALIA_1, AbandonedShip_Rooms_1F_Text_ThaliaRematchIntro, AbandonedShip_Rooms_1F_Text_ThaliaRematchDefeat
-# 34 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
+# 33 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
 	msgbox AbandonedShip_Rooms_1F_Text_ThaliaPostRematch, MSGBOX_AUTOCLOSE
-# 35 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
+# 34 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
 	end
+# 35 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
+
 # 36 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
-
-# 37 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
 AbandonedShip_Rooms_1F_Text_TakingALookAround:
-# 38 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
+# 37 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
 	.string "Ships of this sort are rare, so I'm\n"
-# 39 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
+# 38 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
 	.string "taking a look around.\p"
-# 40 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
+# 39 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
 	.string "Hmhm…\n"
-# 41 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
+# 40 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
 	.string "There appear to be other cabins…$"
+# 41 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
+
 # 42 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
-
-# 43 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
 AbandonedShip_Rooms_1F_Text_ThaliaIntro:
+# 43 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
+	.string "What on earth would compel you to\n"
 # 44 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
-	.string "What on earth would compel you to\n"
-# 45 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
 	.string "come here? You must be curious!$"
+# 45 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
+
 # 46 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
-
-# 47 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
 AbandonedShip_Rooms_1F_Text_ThaliaDefeat:
-# 48 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
+# 47 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
 	.string "Not just curious, but also strong…$"
+# 48 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
+
 # 49 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
-
-# 50 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
 AbandonedShip_Rooms_1F_Text_ThaliaPostBattle:
-# 51 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
+# 50 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
 	.string "The man next door…\p"
-# 52 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
+# 51 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
 	.string "He says he's just sightseeing,\n"
-# 53 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
+# 52 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
 	.string "but I don't know about that.$"
+# 53 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
+
 # 54 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
-
-# 55 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
 AbandonedShip_Rooms_1F_Text_ThaliaRegister:
-# 56 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
+# 55 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
 	.string "You're such a tough TRAINER!\n"
-# 57 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
+# 56 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
 	.string "Let me register you as a memento!$"
+# 57 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
+
 # 58 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
-
-# 59 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
 AbandonedShip_Rooms_1F_Text_ThaliaRematchIntro:
-# 60 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
+# 59 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
 	.string "What on earth would compel you to\n"
-# 61 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
+# 60 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
 	.string "come back? You must really be curious!$"
+# 61 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
+
 # 62 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
-
-# 63 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
 AbandonedShip_Rooms_1F_Text_ThaliaRematchDefeat:
-# 64 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
+# 63 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
 	.string "Aren't you too strong?$"
+# 64 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
+
 # 65 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
-
-# 66 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
 AbandonedShip_Rooms_1F_Text_ThaliaPostRematch:
-# 67 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
+# 66 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
 	.string "I'm sure that man's up to something!\n"
-# 68 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
+# 67 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
 	.string "He just acts so suspiciously!$"
+# 68 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
+
 # 69 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
-
-# 70 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
 AbandonedShip_Rooms_1F_Text_DemetriusIntro:
-# 71 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
+# 70 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
 	.string "Waaah!\n"
-# 72 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
+# 71 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
 	.string "I've been found! …Huh?$"
+# 72 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
+
 # 73 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
-
-# 74 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
 AbandonedShip_Rooms_1F_Text_DemetriusDefeat:
-# 75 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
+# 74 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
 	.string "Oh, you're not my mom.$"
-# 76 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
+# 75 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
 
-# 77 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
+# 76 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
 AbandonedShip_Rooms_1F_Text_DemetriusPostBattle:
-# 78 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
+# 77 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
 	.string "I'm in trouble with my mom, so I ran.\n"
-# 79 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
+# 78 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
 	.string "Keep it a secret where I am!$"

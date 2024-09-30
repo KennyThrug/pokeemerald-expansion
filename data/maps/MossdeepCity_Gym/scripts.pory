@@ -60,8 +60,8 @@ MossdeepCity_Gym_EventScript_TateAndLiza::
 
 MossdeepCity_Gym_EventScript_TateAndLizaDefeated::
 	call Mosdeep_Badge_Item
+	call Mosdeep_Pokemon
 	setflag FLAG_DEFEATED_MOSSDEEP_GYM
-	setflag FLAG_BADGE07_GET
 	setflag FLAG_HIDE_AQUA_HIDEOUT_GRUNTS
 	clearflag FLAG_HIDE_SLATEPORT_CITY_STERNS_SHIPYARD_MR_BRINEY
 	clearflag FLAG_UNKNOWN_0x393

@@ -189,24 +189,20 @@ Route124_EventScript_Declan::
 # 95 "data/maps/Route124/scripts.pory"
 	msgbox Route124_Text_DeclanPostBattle, MSGBOX_AUTOCLOSE
 # 96 "data/maps/Route124/scripts.pory"
-	call Route124_EventScript_Declan_Item
+	end
 # 97 "data/maps/Route124/scripts.pory"
-	end
+
 # 98 "data/maps/Route124/scripts.pory"
-
-# 99 "data/maps/Route124/scripts.pory"
 Route124_EventScript_Isabella::
-# 100 "data/maps/Route124/scripts.pory"
+# 99 "data/maps/Route124/scripts.pory"
 	trainerbattle_single TRAINER_ISABELLA, Route124_Text_IsabellaIntro, Route124_Text_IsabellaDefeat
-# 101 "data/maps/Route124/scripts.pory"
+# 100 "data/maps/Route124/scripts.pory"
 	msgbox Route124_Text_IsabellaPostBattle, MSGBOX_AUTOCLOSE
-# 102 "data/maps/Route124/scripts.pory"
-	call Route124_EventScript_Isabella_Item
-# 103 "data/maps/Route124/scripts.pory"
+# 101 "data/maps/Route124/scripts.pory"
 	end
-# 104 "data/maps/Route124/scripts.pory"
+# 102 "data/maps/Route124/scripts.pory"
 
-# 105 "data/maps/Route124/scripts.pory"
+# 103 "data/maps/Route124/scripts.pory"
 Route124_Text_HuntersHouse:
-# 106 "data/maps/Route124/scripts.pory"
+# 104 "data/maps/Route124/scripts.pory"
 	.string "HUNTER'S HOUSE$"

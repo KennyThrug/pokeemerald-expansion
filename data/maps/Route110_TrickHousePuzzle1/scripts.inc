@@ -53,108 +53,102 @@ Route110_TrickHousePuzzle1_EventScript_Sally::
 # 27 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
 	msgbox Route110_TrickHousePuzzle1_Text_SallyPostBattle, MSGBOX_AUTOCLOSE
 # 28 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
-	call Route110_TrickHousePuzzle1_EventScript_Sally_Item
+	end
 # 29 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
-	end
+
 # 30 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
-
-# 31 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
 Route110_TrickHousePuzzle1_EventScript_Eddie::
-# 32 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
+# 31 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
 	trainerbattle_single TRAINER_EDDIE, Route110_TrickHousePuzzle1_Text_EddieIntro, Route110_TrickHousePuzzle1_Text_EddieDefeat
-# 33 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
+# 32 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
 	msgbox Route110_TrickHousePuzzle1_Text_EddiePostBattle, MSGBOX_AUTOCLOSE
+# 33 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
+	end
 # 34 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
-	call Route110_TrickHousePuzzle1_EventScript_Eddie_Item
+
 # 35 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
-	end
-# 36 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
-
-# 37 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
 Route110_TrickHousePuzzle1_EventScript_Robin::
-# 38 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
+# 36 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
 	trainerbattle_single TRAINER_ROBIN, Route110_TrickHousePuzzle1_Text_RobinIntro, Route110_TrickHousePuzzle1_Text_RobinDefeat
-# 39 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
+# 37 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
 	msgbox Route110_TrickHousePuzzle1_Text_RobinPostBattle, MSGBOX_AUTOCLOSE
-# 40 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
-	call Route110_TrickHousePuzzle1_EventScript_Robin_Item
-# 41 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
+# 38 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
 	end
-# 42 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
+# 39 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
 
-# 43 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
+# 40 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
 Route110_TrickHousePuzzle1_Text_WroteSecretCodeLockOpened::
-# 44 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
+# 41 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
 	.string "{PLAYER} wrote down the secret code\n"
-# 45 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
+# 42 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
 	.string "on the door.\p"
-# 46 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
+# 43 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
 	.string "“TRICK MASTER is fabulous.”\n"
-# 47 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
+# 44 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
 	.string "… … … … … … … …\p"
-# 48 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
+# 45 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
 	.string "The lock clicked open!$"
-# 49 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
+# 46 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
 
-# 50 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
+# 47 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
 Route110_TrickHousePuzzle1_Text_SallyIntro:
-# 51 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
+# 48 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
 	.string "I'll hack and slash my way to victory\n"
-# 52 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
+# 49 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
 	.string "with the CUT we just learned!$"
+# 50 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
+
+# 51 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
+Route110_TrickHousePuzzle1_Text_SallyDefeat:
+# 52 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
+	.string "Why are you so serious?$"
 # 53 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
 
 # 54 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
-Route110_TrickHousePuzzle1_Text_SallyDefeat:
-# 55 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
-	.string "Why are you so serious?$"
-# 56 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
-
-# 57 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
 Route110_TrickHousePuzzle1_Text_SallyPostBattle:
-# 58 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
+# 55 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
 	.string "I never get tired of hacking\n"
-# 59 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
+# 56 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
 	.string "and slashing!$"
-# 60 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
+# 57 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
 
-# 61 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
+# 58 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
 Route110_TrickHousePuzzle1_Text_EddieIntro:
-# 62 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
+# 59 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
 	.string "I wandered into this weird house\n"
-# 63 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
+# 60 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
 	.string "by accident…$"
+# 61 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
+
+# 62 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
+Route110_TrickHousePuzzle1_Text_EddieDefeat:
+# 63 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
+	.string "And now I've lost…$"
 # 64 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
 
 # 65 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
-Route110_TrickHousePuzzle1_Text_EddieDefeat:
-# 66 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
-	.string "And now I've lost…$"
-# 67 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
-
-# 68 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
 Route110_TrickHousePuzzle1_Text_EddiePostBattle:
-# 69 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
+# 66 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
 	.string "I lost my way, I lost a battle, and I'm\n"
-# 70 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
+# 67 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
 	.string "now even more lost… I can't get out…$"
+# 68 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
+
+# 69 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
+Route110_TrickHousePuzzle1_Text_RobinIntro:
+# 70 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
+	.string "Just who is the TRICK MASTER?$"
 # 71 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
 
 # 72 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
-Route110_TrickHousePuzzle1_Text_RobinIntro:
+Route110_TrickHousePuzzle1_Text_RobinDefeat:
 # 73 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
-	.string "Just who is the TRICK MASTER?$"
+	.string "I lost while I was lost in thought!$"
 # 74 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
 
 # 75 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
-Route110_TrickHousePuzzle1_Text_RobinDefeat:
-# 76 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
-	.string "I lost while I was lost in thought!$"
-# 77 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
-
-# 78 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
 Route110_TrickHousePuzzle1_Text_RobinPostBattle:
-# 79 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
+# 76 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
 	.string "You're strong!\n"
-# 80 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
+# 77 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
 	.string "Just who are you?$"

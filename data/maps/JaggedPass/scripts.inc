@@ -169,380 +169,368 @@ JaggedPass_EventScript_MagmaHideoutGuard::
 # 85 "data/maps/JaggedPass/scripts.pory"
 	releaseall
 # 86 "data/maps/JaggedPass/scripts.pory"
-	call JaggedPass_EventScript_MagmaHideoutGuard_Item
+	end
 # 87 "data/maps/JaggedPass/scripts.pory"
-	end
+
 # 88 "data/maps/JaggedPass/scripts.pory"
-
-# 89 "data/maps/JaggedPass/scripts.pory"
 JaggedPass_EventScript_GuardDefeated::
-# 90 "data/maps/JaggedPass/scripts.pory"
+# 89 "data/maps/JaggedPass/scripts.pory"
 	applymovement LOCALID_HIDEOUT_GUARD, Common_Movement_FacePlayer
+# 90 "data/maps/JaggedPass/scripts.pory"
+	waitmovement 0
 # 91 "data/maps/JaggedPass/scripts.pory"
-	waitmovement 0
-# 92 "data/maps/JaggedPass/scripts.pory"
 	msgbox JaggedPass_Text_GoWhereverYouWant, MSGBOX_DEFAULT
-# 93 "data/maps/JaggedPass/scripts.pory"
+# 92 "data/maps/JaggedPass/scripts.pory"
 	closemessage
-# 94 "data/maps/JaggedPass/scripts.pory"
+# 93 "data/maps/JaggedPass/scripts.pory"
 	applymovement LOCALID_HIDEOUT_GUARD, Common_Movement_FaceOriginalDirection
-# 95 "data/maps/JaggedPass/scripts.pory"
+# 94 "data/maps/JaggedPass/scripts.pory"
 	waitmovement 0
-# 96 "data/maps/JaggedPass/scripts.pory"
+# 95 "data/maps/JaggedPass/scripts.pory"
 	releaseall
+# 96 "data/maps/JaggedPass/scripts.pory"
+	end
 # 97 "data/maps/JaggedPass/scripts.pory"
-	end
+
 # 98 "data/maps/JaggedPass/scripts.pory"
-
-# 99 "data/maps/JaggedPass/scripts.pory"
 JaggedPass_EventScript_Eric::
-# 100 "data/maps/JaggedPass/scripts.pory"
+# 99 "data/maps/JaggedPass/scripts.pory"
 	trainerbattle_single TRAINER_ERIC, JaggedPass_Text_EricIntro, JaggedPass_Text_EricDefeat
-# 101 "data/maps/JaggedPass/scripts.pory"
+# 100 "data/maps/JaggedPass/scripts.pory"
 	msgbox JaggedPass_Text_EricPostBattle, MSGBOX_AUTOCLOSE
+# 101 "data/maps/JaggedPass/scripts.pory"
+	end
 # 102 "data/maps/JaggedPass/scripts.pory"
-	call JaggedPass_EventScript_Eric_Item
+
 # 103 "data/maps/JaggedPass/scripts.pory"
-	end
-# 104 "data/maps/JaggedPass/scripts.pory"
-
-# 105 "data/maps/JaggedPass/scripts.pory"
 JaggedPass_EventScript_Diana::
-# 106 "data/maps/JaggedPass/scripts.pory"
+# 104 "data/maps/JaggedPass/scripts.pory"
 	trainerbattle_single TRAINER_DIANA_1, JaggedPass_Text_DianaIntro, JaggedPass_Text_DianaDefeat, JaggedPass_EventScript_RegisterDiana
-# 107 "data/maps/JaggedPass/scripts.pory"
+# 105 "data/maps/JaggedPass/scripts.pory"
 	specialvar VAR_RESULT, ShouldTryRematchBattle
-# 108 "data/maps/JaggedPass/scripts.pory"
+# 106 "data/maps/JaggedPass/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, JaggedPass_EventScript_DianaRematch
-# 109 "data/maps/JaggedPass/scripts.pory"
+# 107 "data/maps/JaggedPass/scripts.pory"
 	msgbox JaggedPass_Text_DianaPostBattle, MSGBOX_DEFAULT
+# 108 "data/maps/JaggedPass/scripts.pory"
+	release
+# 109 "data/maps/JaggedPass/scripts.pory"
+	end
 # 110 "data/maps/JaggedPass/scripts.pory"
-	release
+
 # 111 "data/maps/JaggedPass/scripts.pory"
-	call JaggedPass_EventScript_Diana_Item
-# 112 "data/maps/JaggedPass/scripts.pory"
-	end
-# 113 "data/maps/JaggedPass/scripts.pory"
-
-# 114 "data/maps/JaggedPass/scripts.pory"
 JaggedPass_EventScript_RegisterDiana::
-# 115 "data/maps/JaggedPass/scripts.pory"
+# 112 "data/maps/JaggedPass/scripts.pory"
 	special PlayerFaceTrainerAfterBattle
-# 116 "data/maps/JaggedPass/scripts.pory"
+# 113 "data/maps/JaggedPass/scripts.pory"
 	msgbox JaggedPass_Text_DianaRegister, MSGBOX_DEFAULT
-# 117 "data/maps/JaggedPass/scripts.pory"
+# 114 "data/maps/JaggedPass/scripts.pory"
 	register_matchcall TRAINER_DIANA_1
+# 115 "data/maps/JaggedPass/scripts.pory"
+	release
+# 116 "data/maps/JaggedPass/scripts.pory"
+	end
+# 117 "data/maps/JaggedPass/scripts.pory"
+
 # 118 "data/maps/JaggedPass/scripts.pory"
-	release
-# 119 "data/maps/JaggedPass/scripts.pory"
-	end
-# 120 "data/maps/JaggedPass/scripts.pory"
-
-# 121 "data/maps/JaggedPass/scripts.pory"
 JaggedPass_EventScript_DianaRematch::
-# 122 "data/maps/JaggedPass/scripts.pory"
+# 119 "data/maps/JaggedPass/scripts.pory"
 	trainerbattle_rematch TRAINER_DIANA_1, JaggedPass_Text_DianaRematchIntro, JaggedPass_Text_DianaRematchDefeat
-# 123 "data/maps/JaggedPass/scripts.pory"
+# 120 "data/maps/JaggedPass/scripts.pory"
 	msgbox JaggedPass_Text_DianaPostRematch, MSGBOX_AUTOCLOSE
-# 124 "data/maps/JaggedPass/scripts.pory"
+# 121 "data/maps/JaggedPass/scripts.pory"
 	end
-# 125 "data/maps/JaggedPass/scripts.pory"
+# 122 "data/maps/JaggedPass/scripts.pory"
 
-# 126 "data/maps/JaggedPass/scripts.pory"
+# 123 "data/maps/JaggedPass/scripts.pory"
 JaggedPass_EventScript_Ethan::
-# 127 "data/maps/JaggedPass/scripts.pory"
+# 124 "data/maps/JaggedPass/scripts.pory"
 	trainerbattle_single TRAINER_ETHAN_1, JaggedPass_Text_EthanIntro, JaggedPass_Text_EthanDefeat, JaggedPass_EventScript_RegisterEthan
-# 128 "data/maps/JaggedPass/scripts.pory"
+# 125 "data/maps/JaggedPass/scripts.pory"
 	specialvar VAR_RESULT, ShouldTryRematchBattle
-# 129 "data/maps/JaggedPass/scripts.pory"
+# 126 "data/maps/JaggedPass/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, JaggedPass_EventScript_EthanRematch
-# 130 "data/maps/JaggedPass/scripts.pory"
+# 127 "data/maps/JaggedPass/scripts.pory"
 	msgbox JaggedPass_Text_EthanPostBattle, MSGBOX_DEFAULT
+# 128 "data/maps/JaggedPass/scripts.pory"
+	release
+# 129 "data/maps/JaggedPass/scripts.pory"
+	end
+# 130 "data/maps/JaggedPass/scripts.pory"
+
 # 131 "data/maps/JaggedPass/scripts.pory"
-	release
-# 132 "data/maps/JaggedPass/scripts.pory"
-	call JaggedPass_EventScript_Ethan_Item
-# 133 "data/maps/JaggedPass/scripts.pory"
-	end
-# 134 "data/maps/JaggedPass/scripts.pory"
-
-# 135 "data/maps/JaggedPass/scripts.pory"
 JaggedPass_EventScript_RegisterEthan::
-# 136 "data/maps/JaggedPass/scripts.pory"
+# 132 "data/maps/JaggedPass/scripts.pory"
 	special PlayerFaceTrainerAfterBattle
-# 137 "data/maps/JaggedPass/scripts.pory"
+# 133 "data/maps/JaggedPass/scripts.pory"
 	msgbox JaggedPass_Text_EthanRegister, MSGBOX_DEFAULT
-# 138 "data/maps/JaggedPass/scripts.pory"
+# 134 "data/maps/JaggedPass/scripts.pory"
 	register_matchcall TRAINER_ETHAN_1
-# 139 "data/maps/JaggedPass/scripts.pory"
+# 135 "data/maps/JaggedPass/scripts.pory"
 	release
-# 140 "data/maps/JaggedPass/scripts.pory"
+# 136 "data/maps/JaggedPass/scripts.pory"
 	end
-# 141 "data/maps/JaggedPass/scripts.pory"
+# 137 "data/maps/JaggedPass/scripts.pory"
 
-# 142 "data/maps/JaggedPass/scripts.pory"
+# 138 "data/maps/JaggedPass/scripts.pory"
 JaggedPass_EventScript_EthanRematch::
-# 143 "data/maps/JaggedPass/scripts.pory"
+# 139 "data/maps/JaggedPass/scripts.pory"
 	trainerbattle_rematch TRAINER_ETHAN_1, JaggedPass_Text_EthanRematchIntro, JaggedPass_Text_EthanRematchDefeat
-# 144 "data/maps/JaggedPass/scripts.pory"
+# 140 "data/maps/JaggedPass/scripts.pory"
 	msgbox JaggedPass_Text_EthanPostRematch, MSGBOX_AUTOCLOSE
-# 145 "data/maps/JaggedPass/scripts.pory"
+# 141 "data/maps/JaggedPass/scripts.pory"
 	end
-# 146 "data/maps/JaggedPass/scripts.pory"
+# 142 "data/maps/JaggedPass/scripts.pory"
 
-# 147 "data/maps/JaggedPass/scripts.pory"
+# 143 "data/maps/JaggedPass/scripts.pory"
 JaggedPass_EventScript_Julio::
-# 148 "data/maps/JaggedPass/scripts.pory"
+# 144 "data/maps/JaggedPass/scripts.pory"
 	trainerbattle_single TRAINER_JULIO, JaggedPass_Text_JulioIntro, JaggedPass_Text_JulioDefeat
-# 149 "data/maps/JaggedPass/scripts.pory"
+# 145 "data/maps/JaggedPass/scripts.pory"
 	msgbox JaggedPass_Text_JulioPostBattle, MSGBOX_AUTOCLOSE
+# 146 "data/maps/JaggedPass/scripts.pory"
+	end
+# 147 "data/maps/JaggedPass/scripts.pory"
+
+# 148 "data/maps/JaggedPass/scripts.pory"
+JaggedPass_EventScript_Autumn::
+# 149 "data/maps/JaggedPass/scripts.pory"
+	trainerbattle_single TRAINER_AUTUMN, JaggedPass_Text_AutumnIntro, JaggedPass_Text_AutumnDefeat
 # 150 "data/maps/JaggedPass/scripts.pory"
-	call JaggedPass_EventScript_Julio_Item
+	msgbox JaggedPass_Text_AutumnPostBattle, MSGBOX_AUTOCLOSE
 # 151 "data/maps/JaggedPass/scripts.pory"
 	end
 # 152 "data/maps/JaggedPass/scripts.pory"
 
 # 153 "data/maps/JaggedPass/scripts.pory"
-JaggedPass_EventScript_Autumn::
-# 154 "data/maps/JaggedPass/scripts.pory"
-	trainerbattle_single TRAINER_AUTUMN, JaggedPass_Text_AutumnIntro, JaggedPass_Text_AutumnDefeat
-# 155 "data/maps/JaggedPass/scripts.pory"
-	msgbox JaggedPass_Text_AutumnPostBattle, MSGBOX_AUTOCLOSE
-# 156 "data/maps/JaggedPass/scripts.pory"
-	call JaggedPass_EventScript_Autumn_Item
-# 157 "data/maps/JaggedPass/scripts.pory"
-	end
-# 158 "data/maps/JaggedPass/scripts.pory"
-
-# 159 "data/maps/JaggedPass/scripts.pory"
 JaggedPass_Text_EricIntro:
-# 160 "data/maps/JaggedPass/scripts.pory"
+# 154 "data/maps/JaggedPass/scripts.pory"
 	.string "MT. CHIMNEY's JAGGED PASS…\p"
-# 161 "data/maps/JaggedPass/scripts.pory"
+# 155 "data/maps/JaggedPass/scripts.pory"
 	.string "Now this is what I've always wanted\n"
-# 162 "data/maps/JaggedPass/scripts.pory"
+# 156 "data/maps/JaggedPass/scripts.pory"
 	.string "in a mountain.\p"
-# 163 "data/maps/JaggedPass/scripts.pory"
+# 157 "data/maps/JaggedPass/scripts.pory"
 	.string "This jagged bumpiness…\n"
-# 164 "data/maps/JaggedPass/scripts.pory"
+# 158 "data/maps/JaggedPass/scripts.pory"
 	.string "It rocks my soul!$"
-# 165 "data/maps/JaggedPass/scripts.pory"
+# 159 "data/maps/JaggedPass/scripts.pory"
 
-# 166 "data/maps/JaggedPass/scripts.pory"
+# 160 "data/maps/JaggedPass/scripts.pory"
 JaggedPass_Text_EricDefeat:
-# 167 "data/maps/JaggedPass/scripts.pory"
+# 161 "data/maps/JaggedPass/scripts.pory"
 	.string "Losing left me bitter!$"
-# 168 "data/maps/JaggedPass/scripts.pory"
+# 162 "data/maps/JaggedPass/scripts.pory"
 
-# 169 "data/maps/JaggedPass/scripts.pory"
+# 163 "data/maps/JaggedPass/scripts.pory"
 JaggedPass_Text_EricPostBattle:
-# 170 "data/maps/JaggedPass/scripts.pory"
+# 164 "data/maps/JaggedPass/scripts.pory"
 	.string "Yes, I did lose at POKéMON…\p"
-# 171 "data/maps/JaggedPass/scripts.pory"
+# 165 "data/maps/JaggedPass/scripts.pory"
 	.string "But, when it comes to the love of\n"
-# 172 "data/maps/JaggedPass/scripts.pory"
+# 166 "data/maps/JaggedPass/scripts.pory"
 	.string "the mountains, I have you beat!$"
-# 173 "data/maps/JaggedPass/scripts.pory"
+# 167 "data/maps/JaggedPass/scripts.pory"
 
-# 174 "data/maps/JaggedPass/scripts.pory"
+# 168 "data/maps/JaggedPass/scripts.pory"
 JaggedPass_Text_DianaIntro:
-# 175 "data/maps/JaggedPass/scripts.pory"
+# 169 "data/maps/JaggedPass/scripts.pory"
 	.string "This place isn't your casual hike.\n"
-# 176 "data/maps/JaggedPass/scripts.pory"
+# 170 "data/maps/JaggedPass/scripts.pory"
 	.string "It's not suited for a picnic.$"
-# 177 "data/maps/JaggedPass/scripts.pory"
+# 171 "data/maps/JaggedPass/scripts.pory"
 
-# 178 "data/maps/JaggedPass/scripts.pory"
+# 172 "data/maps/JaggedPass/scripts.pory"
 JaggedPass_Text_DianaDefeat:
-# 179 "data/maps/JaggedPass/scripts.pory"
+# 173 "data/maps/JaggedPass/scripts.pory"
 	.string "Ohhh, no!\n"
-# 180 "data/maps/JaggedPass/scripts.pory"
+# 174 "data/maps/JaggedPass/scripts.pory"
 	.string "The ground is too bumpy…$"
-# 181 "data/maps/JaggedPass/scripts.pory"
+# 175 "data/maps/JaggedPass/scripts.pory"
 
-# 182 "data/maps/JaggedPass/scripts.pory"
+# 176 "data/maps/JaggedPass/scripts.pory"
 JaggedPass_Text_DianaPostBattle:
-# 183 "data/maps/JaggedPass/scripts.pory"
+# 177 "data/maps/JaggedPass/scripts.pory"
 	.string "Did you know?\p"
-# 184 "data/maps/JaggedPass/scripts.pory"
+# 178 "data/maps/JaggedPass/scripts.pory"
 	.string "Some people cleverly ride their\n"
-# 185 "data/maps/JaggedPass/scripts.pory"
+# 179 "data/maps/JaggedPass/scripts.pory"
 	.string "bicycles up this horribly bumpy pass.$"
-# 186 "data/maps/JaggedPass/scripts.pory"
+# 180 "data/maps/JaggedPass/scripts.pory"
 
-# 187 "data/maps/JaggedPass/scripts.pory"
+# 181 "data/maps/JaggedPass/scripts.pory"
 JaggedPass_Text_DianaRegister:
-# 188 "data/maps/JaggedPass/scripts.pory"
+# 182 "data/maps/JaggedPass/scripts.pory"
 	.string "Will you ever be back in this area?\n"
-# 189 "data/maps/JaggedPass/scripts.pory"
+# 183 "data/maps/JaggedPass/scripts.pory"
 	.string "If you do return, I'd like a rematch.$"
-# 190 "data/maps/JaggedPass/scripts.pory"
+# 184 "data/maps/JaggedPass/scripts.pory"
 
-# 191 "data/maps/JaggedPass/scripts.pory"
+# 185 "data/maps/JaggedPass/scripts.pory"
 JaggedPass_Text_DianaRematchIntro:
-# 192 "data/maps/JaggedPass/scripts.pory"
+# 186 "data/maps/JaggedPass/scripts.pory"
 	.string "Picnics are fun wherever you go.\n"
-# 193 "data/maps/JaggedPass/scripts.pory"
+# 187 "data/maps/JaggedPass/scripts.pory"
 	.string "Just like POKéMON!$"
-# 194 "data/maps/JaggedPass/scripts.pory"
+# 188 "data/maps/JaggedPass/scripts.pory"
 
-# 195 "data/maps/JaggedPass/scripts.pory"
+# 189 "data/maps/JaggedPass/scripts.pory"
 JaggedPass_Text_DianaRematchDefeat:
-# 196 "data/maps/JaggedPass/scripts.pory"
+# 190 "data/maps/JaggedPass/scripts.pory"
 	.string "I only lost because the ground is\n"
-# 197 "data/maps/JaggedPass/scripts.pory"
+# 191 "data/maps/JaggedPass/scripts.pory"
 	.string "too bumpy!$"
-# 198 "data/maps/JaggedPass/scripts.pory"
+# 192 "data/maps/JaggedPass/scripts.pory"
 
-# 199 "data/maps/JaggedPass/scripts.pory"
+# 193 "data/maps/JaggedPass/scripts.pory"
 JaggedPass_Text_DianaPostRematch:
-# 200 "data/maps/JaggedPass/scripts.pory"
+# 194 "data/maps/JaggedPass/scripts.pory"
 	.string "I'll forget about losing and just\n"
-# 201 "data/maps/JaggedPass/scripts.pory"
+# 195 "data/maps/JaggedPass/scripts.pory"
 	.string "enjoy this bumpy hike.$"
-# 202 "data/maps/JaggedPass/scripts.pory"
+# 196 "data/maps/JaggedPass/scripts.pory"
 
-# 203 "data/maps/JaggedPass/scripts.pory"
+# 197 "data/maps/JaggedPass/scripts.pory"
 JaggedPass_Text_EthanIntro:
-# 204 "data/maps/JaggedPass/scripts.pory"
+# 198 "data/maps/JaggedPass/scripts.pory"
 	.string "JAGGED PASS is hard to walk on.\n"
-# 205 "data/maps/JaggedPass/scripts.pory"
+# 199 "data/maps/JaggedPass/scripts.pory"
 	.string "It's a good place for training.$"
-# 206 "data/maps/JaggedPass/scripts.pory"
+# 200 "data/maps/JaggedPass/scripts.pory"
 
-# 207 "data/maps/JaggedPass/scripts.pory"
+# 201 "data/maps/JaggedPass/scripts.pory"
 JaggedPass_Text_EthanDefeat:
-# 208 "data/maps/JaggedPass/scripts.pory"
+# 202 "data/maps/JaggedPass/scripts.pory"
 	.string "It was all over while we were still\n"
-# 209 "data/maps/JaggedPass/scripts.pory"
+# 203 "data/maps/JaggedPass/scripts.pory"
 	.string "trying to find a good footing…$"
-# 210 "data/maps/JaggedPass/scripts.pory"
+# 204 "data/maps/JaggedPass/scripts.pory"
 
-# 211 "data/maps/JaggedPass/scripts.pory"
+# 205 "data/maps/JaggedPass/scripts.pory"
 JaggedPass_Text_EthanPostBattle:
-# 212 "data/maps/JaggedPass/scripts.pory"
+# 206 "data/maps/JaggedPass/scripts.pory"
 	.string "If I had an ACRO BIKE, I'd be able to\n"
-# 213 "data/maps/JaggedPass/scripts.pory"
+# 207 "data/maps/JaggedPass/scripts.pory"
 	.string "jump ledges.$"
-# 214 "data/maps/JaggedPass/scripts.pory"
+# 208 "data/maps/JaggedPass/scripts.pory"
 
-# 215 "data/maps/JaggedPass/scripts.pory"
+# 209 "data/maps/JaggedPass/scripts.pory"
 JaggedPass_Text_EthanRegister:
-# 216 "data/maps/JaggedPass/scripts.pory"
+# 210 "data/maps/JaggedPass/scripts.pory"
 	.string "When I get more used to this bumpiness,\n"
-# 217 "data/maps/JaggedPass/scripts.pory"
+# 211 "data/maps/JaggedPass/scripts.pory"
 	.string "I'll be sure to win!\p"
-# 218 "data/maps/JaggedPass/scripts.pory"
+# 212 "data/maps/JaggedPass/scripts.pory"
 	.string "Can you register me in your POKéNAV?$"
-# 219 "data/maps/JaggedPass/scripts.pory"
+# 213 "data/maps/JaggedPass/scripts.pory"
 
-# 220 "data/maps/JaggedPass/scripts.pory"
+# 214 "data/maps/JaggedPass/scripts.pory"
 JaggedPass_Text_EthanRematchIntro:
-# 221 "data/maps/JaggedPass/scripts.pory"
+# 215 "data/maps/JaggedPass/scripts.pory"
 	.string "I got used to this bumpiness.\n"
-# 222 "data/maps/JaggedPass/scripts.pory"
+# 216 "data/maps/JaggedPass/scripts.pory"
 	.string "I sing while I climb now.$"
-# 223 "data/maps/JaggedPass/scripts.pory"
+# 217 "data/maps/JaggedPass/scripts.pory"
 
-# 224 "data/maps/JaggedPass/scripts.pory"
+# 218 "data/maps/JaggedPass/scripts.pory"
 JaggedPass_Text_EthanRematchDefeat:
-# 225 "data/maps/JaggedPass/scripts.pory"
+# 219 "data/maps/JaggedPass/scripts.pory"
 	.string "It's still not easy to battle on this\n"
-# 226 "data/maps/JaggedPass/scripts.pory"
+# 220 "data/maps/JaggedPass/scripts.pory"
 	.string "bumpy ground…$"
-# 227 "data/maps/JaggedPass/scripts.pory"
+# 221 "data/maps/JaggedPass/scripts.pory"
 
-# 228 "data/maps/JaggedPass/scripts.pory"
+# 222 "data/maps/JaggedPass/scripts.pory"
 JaggedPass_Text_EthanPostRematch:
-# 229 "data/maps/JaggedPass/scripts.pory"
+# 223 "data/maps/JaggedPass/scripts.pory"
 	.string "I should get an ACRO BIKE from RYDEL\n"
-# 230 "data/maps/JaggedPass/scripts.pory"
+# 224 "data/maps/JaggedPass/scripts.pory"
 	.string "in MAUVILLE CITY…$"
+# 225 "data/maps/JaggedPass/scripts.pory"
+
+# 226 "data/maps/JaggedPass/scripts.pory"
+JaggedPass_Text_GruntIntro:
+# 227 "data/maps/JaggedPass/scripts.pory"
+	.string "Wah!\n"
+# 228 "data/maps/JaggedPass/scripts.pory"
+	.string "What are you doing here?\p"
+# 229 "data/maps/JaggedPass/scripts.pory"
+	.string "What am I doing in a place like this?\p"
+# 230 "data/maps/JaggedPass/scripts.pory"
+	.string "What business is it of yours?$"
 # 231 "data/maps/JaggedPass/scripts.pory"
 
 # 232 "data/maps/JaggedPass/scripts.pory"
-JaggedPass_Text_GruntIntro:
-# 233 "data/maps/JaggedPass/scripts.pory"
-	.string "Wah!\n"
-# 234 "data/maps/JaggedPass/scripts.pory"
-	.string "What are you doing here?\p"
-# 235 "data/maps/JaggedPass/scripts.pory"
-	.string "What am I doing in a place like this?\p"
-# 236 "data/maps/JaggedPass/scripts.pory"
-	.string "What business is it of yours?$"
-# 237 "data/maps/JaggedPass/scripts.pory"
-
-# 238 "data/maps/JaggedPass/scripts.pory"
 JaggedPass_Text_GruntDefeat:
-# 239 "data/maps/JaggedPass/scripts.pory"
+# 233 "data/maps/JaggedPass/scripts.pory"
 	.string "Urrrgh…\p"
-# 240 "data/maps/JaggedPass/scripts.pory"
+# 234 "data/maps/JaggedPass/scripts.pory"
 	.string "I should've ducked into our HIDEOUT\n"
-# 241 "data/maps/JaggedPass/scripts.pory"
+# 235 "data/maps/JaggedPass/scripts.pory"
 	.string "right away…$"
+# 236 "data/maps/JaggedPass/scripts.pory"
+
+# 237 "data/maps/JaggedPass/scripts.pory"
+JaggedPass_Text_GoWhereverYouWant:
+# 238 "data/maps/JaggedPass/scripts.pory"
+	.string "Okay, oh-kay!\n"
+# 239 "data/maps/JaggedPass/scripts.pory"
+	.string "I admit it--you're strong!\p"
+# 240 "data/maps/JaggedPass/scripts.pory"
+	.string "Don't worry about me.\n"
+# 241 "data/maps/JaggedPass/scripts.pory"
+	.string "Go wherever you want!$"
 # 242 "data/maps/JaggedPass/scripts.pory"
 
 # 243 "data/maps/JaggedPass/scripts.pory"
-JaggedPass_Text_GoWhereverYouWant:
-# 244 "data/maps/JaggedPass/scripts.pory"
-	.string "Okay, oh-kay!\n"
-# 245 "data/maps/JaggedPass/scripts.pory"
-	.string "I admit it--you're strong!\p"
-# 246 "data/maps/JaggedPass/scripts.pory"
-	.string "Don't worry about me.\n"
-# 247 "data/maps/JaggedPass/scripts.pory"
-	.string "Go wherever you want!$"
-# 248 "data/maps/JaggedPass/scripts.pory"
-
-# 249 "data/maps/JaggedPass/scripts.pory"
 JaggedPass_Text_BoulderShakingInResponseToEmblem:
-# 250 "data/maps/JaggedPass/scripts.pory"
+# 244 "data/maps/JaggedPass/scripts.pory"
 	.string "Oh! This boulder is shaking in response\n"
-# 251 "data/maps/JaggedPass/scripts.pory"
+# 245 "data/maps/JaggedPass/scripts.pory"
 	.string "to the MAGMA EMBLEM!$"
-# 252 "data/maps/JaggedPass/scripts.pory"
+# 246 "data/maps/JaggedPass/scripts.pory"
 
-# 253 "data/maps/JaggedPass/scripts.pory"
+# 247 "data/maps/JaggedPass/scripts.pory"
 JaggedPass_Text_JulioIntro:
-# 254 "data/maps/JaggedPass/scripts.pory"
+# 248 "data/maps/JaggedPass/scripts.pory"
 	.string "Aiyeeh! It's awfully scary to shoot\n"
-# 255 "data/maps/JaggedPass/scripts.pory"
+# 249 "data/maps/JaggedPass/scripts.pory"
 	.string "down the mountain in one go!$"
-# 256 "data/maps/JaggedPass/scripts.pory"
+# 250 "data/maps/JaggedPass/scripts.pory"
 
-# 257 "data/maps/JaggedPass/scripts.pory"
+# 251 "data/maps/JaggedPass/scripts.pory"
 JaggedPass_Text_JulioDefeat:
-# 258 "data/maps/JaggedPass/scripts.pory"
+# 252 "data/maps/JaggedPass/scripts.pory"
 	.string "I feel like I'm falling apart…$"
-# 259 "data/maps/JaggedPass/scripts.pory"
+# 253 "data/maps/JaggedPass/scripts.pory"
 
-# 260 "data/maps/JaggedPass/scripts.pory"
+# 254 "data/maps/JaggedPass/scripts.pory"
 JaggedPass_Text_JulioPostBattle:
-# 261 "data/maps/JaggedPass/scripts.pory"
+# 255 "data/maps/JaggedPass/scripts.pory"
 	.string "My bicycle bounced around so much,\n"
-# 262 "data/maps/JaggedPass/scripts.pory"
+# 256 "data/maps/JaggedPass/scripts.pory"
 	.string "my rear end's sore…$"
-# 263 "data/maps/JaggedPass/scripts.pory"
+# 257 "data/maps/JaggedPass/scripts.pory"
 
-# 264 "data/maps/JaggedPass/scripts.pory"
+# 258 "data/maps/JaggedPass/scripts.pory"
 JaggedPass_Text_AutumnIntro:
-# 265 "data/maps/JaggedPass/scripts.pory"
+# 259 "data/maps/JaggedPass/scripts.pory"
 	.string "I climb this hill every day.\n"
-# 266 "data/maps/JaggedPass/scripts.pory"
+# 260 "data/maps/JaggedPass/scripts.pory"
 	.string "I have confidence in my strength!$"
-# 267 "data/maps/JaggedPass/scripts.pory"
+# 261 "data/maps/JaggedPass/scripts.pory"
 
-# 268 "data/maps/JaggedPass/scripts.pory"
+# 262 "data/maps/JaggedPass/scripts.pory"
 JaggedPass_Text_AutumnDefeat:
-# 269 "data/maps/JaggedPass/scripts.pory"
+# 263 "data/maps/JaggedPass/scripts.pory"
 	.string "Hmm…\n"
-# 270 "data/maps/JaggedPass/scripts.pory"
+# 264 "data/maps/JaggedPass/scripts.pory"
 	.string "What went wrong?$"
-# 271 "data/maps/JaggedPass/scripts.pory"
+# 265 "data/maps/JaggedPass/scripts.pory"
 
-# 272 "data/maps/JaggedPass/scripts.pory"
+# 266 "data/maps/JaggedPass/scripts.pory"
 JaggedPass_Text_AutumnPostBattle:
-# 273 "data/maps/JaggedPass/scripts.pory"
+# 267 "data/maps/JaggedPass/scripts.pory"
 	.string "What is that odd rock protrusion\n"
-# 274 "data/maps/JaggedPass/scripts.pory"
+# 268 "data/maps/JaggedPass/scripts.pory"
 	.string "a little up the hill from here?$"
