@@ -667,7 +667,7 @@ Route104_EventScript_Boy2::
 # 334 "data/maps/Route104/scripts.pory"
 	msgbox Route104_Text_LikeFillingMouthWithSeedsTakeThis, MSGBOX_DEFAULT
 # 335 "data/maps/Route104/scripts.pory"
-	call Route104_EventScript_Boy2_Item
+	call Route104_EventScript_Boy2
 # 336 "data/maps/Route104/scripts.pory"
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 # 337 "data/maps/Route104/scripts.pory"

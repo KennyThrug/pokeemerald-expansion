@@ -137,166 +137,154 @@ Route112_EventScript_Brice::
 # 69 "data/maps/Route112/scripts.pory"
 	msgbox Route112_Text_BricePostBattle, MSGBOX_AUTOCLOSE
 # 70 "data/maps/Route112/scripts.pory"
-	call Route112_EventScript_Brice_Item
+	end
 # 71 "data/maps/Route112/scripts.pory"
-	end
+
 # 72 "data/maps/Route112/scripts.pory"
-
-# 73 "data/maps/Route112/scripts.pory"
 Route112_EventScript_Trent::
-# 74 "data/maps/Route112/scripts.pory"
+# 73 "data/maps/Route112/scripts.pory"
 	trainerbattle_single TRAINER_TRENT_1, Route112_Text_TrentIntro, Route112_Text_TrentDefeat, Route112_EventScript_RegisterTrent
-# 75 "data/maps/Route112/scripts.pory"
+# 74 "data/maps/Route112/scripts.pory"
 	specialvar VAR_RESULT, ShouldTryRematchBattle
-# 76 "data/maps/Route112/scripts.pory"
+# 75 "data/maps/Route112/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, Route112_EventScript_RematchTrent
-# 77 "data/maps/Route112/scripts.pory"
+# 76 "data/maps/Route112/scripts.pory"
 	msgbox Route112_Text_TrentPostBattle, MSGBOX_DEFAULT
+# 77 "data/maps/Route112/scripts.pory"
+	release
 # 78 "data/maps/Route112/scripts.pory"
-	call Route112_EventScript_Trent_Item
+	end
 # 79 "data/maps/Route112/scripts.pory"
-	release
+
 # 80 "data/maps/Route112/scripts.pory"
-	end
-# 81 "data/maps/Route112/scripts.pory"
-
-# 82 "data/maps/Route112/scripts.pory"
 Route112_EventScript_RegisterTrent::
-# 83 "data/maps/Route112/scripts.pory"
+# 81 "data/maps/Route112/scripts.pory"
 	special PlayerFaceTrainerAfterBattle
-# 84 "data/maps/Route112/scripts.pory"
+# 82 "data/maps/Route112/scripts.pory"
 	waitmovement 0
-# 85 "data/maps/Route112/scripts.pory"
+# 83 "data/maps/Route112/scripts.pory"
 	msgbox Route112_Text_TrentRegister, MSGBOX_DEFAULT
-# 86 "data/maps/Route112/scripts.pory"
+# 84 "data/maps/Route112/scripts.pory"
 	register_matchcall TRAINER_TRENT_1
-# 87 "data/maps/Route112/scripts.pory"
+# 85 "data/maps/Route112/scripts.pory"
 	release
+# 86 "data/maps/Route112/scripts.pory"
+	end
+# 87 "data/maps/Route112/scripts.pory"
+
 # 88 "data/maps/Route112/scripts.pory"
-	end
-# 89 "data/maps/Route112/scripts.pory"
-
-# 90 "data/maps/Route112/scripts.pory"
 Route112_EventScript_RematchTrent::
-# 91 "data/maps/Route112/scripts.pory"
+# 89 "data/maps/Route112/scripts.pory"
 	trainerbattle_rematch TRAINER_TRENT_1, Route112_Text_TrentRematchIntro, Route112_Text_TrentRematchDefeat
-# 92 "data/maps/Route112/scripts.pory"
+# 90 "data/maps/Route112/scripts.pory"
 	msgbox Route112_Text_TrentRematchPostBattle, MSGBOX_AUTOCLOSE
+# 91 "data/maps/Route112/scripts.pory"
+	end
+# 92 "data/maps/Route112/scripts.pory"
+
 # 93 "data/maps/Route112/scripts.pory"
-	end
-# 94 "data/maps/Route112/scripts.pory"
-
-# 95 "data/maps/Route112/scripts.pory"
 Route112_EventScript_Larry::
-# 96 "data/maps/Route112/scripts.pory"
+# 94 "data/maps/Route112/scripts.pory"
 	trainerbattle_single TRAINER_LARRY, Route112_Text_LarryIntro, Route112_Text_LarryDefeat
-# 97 "data/maps/Route112/scripts.pory"
+# 95 "data/maps/Route112/scripts.pory"
 	msgbox Route112_Text_LarryPostBattle, MSGBOX_AUTOCLOSE
+# 96 "data/maps/Route112/scripts.pory"
+	end
+# 97 "data/maps/Route112/scripts.pory"
+
 # 98 "data/maps/Route112/scripts.pory"
-	call Route112_EventScript_Larry_Item
-# 99 "data/maps/Route112/scripts.pory"
-	end
-# 100 "data/maps/Route112/scripts.pory"
-
-# 101 "data/maps/Route112/scripts.pory"
 Route112_EventScript_Carol::
-# 102 "data/maps/Route112/scripts.pory"
+# 99 "data/maps/Route112/scripts.pory"
 	trainerbattle_single TRAINER_CAROL, Route112_Text_CarolIntro, Route112_Text_CarolDefeat
-# 103 "data/maps/Route112/scripts.pory"
+# 100 "data/maps/Route112/scripts.pory"
 	msgbox Route112_Text_CarolPostBattle, MSGBOX_AUTOCLOSE
-# 104 "data/maps/Route112/scripts.pory"
-	call Route112_EventScript_Carol_Item
-# 105 "data/maps/Route112/scripts.pory"
+# 101 "data/maps/Route112/scripts.pory"
 	end
-# 106 "data/maps/Route112/scripts.pory"
+# 102 "data/maps/Route112/scripts.pory"
 
-# 107 "data/maps/Route112/scripts.pory"
+# 103 "data/maps/Route112/scripts.pory"
 Route112_EventScript_Bryant::
-# 108 "data/maps/Route112/scripts.pory"
+# 104 "data/maps/Route112/scripts.pory"
 	trainerbattle_single TRAINER_BRYANT, Route112_Text_BryantIntro, Route112_Text_BryantDefeat
-# 109 "data/maps/Route112/scripts.pory"
+# 105 "data/maps/Route112/scripts.pory"
 	msgbox Route112_Text_BryantPostBattle, MSGBOX_AUTOCLOSE
+# 106 "data/maps/Route112/scripts.pory"
+	end
+# 107 "data/maps/Route112/scripts.pory"
+
+# 108 "data/maps/Route112/scripts.pory"
+Route112_EventScript_Shayla::
+# 109 "data/maps/Route112/scripts.pory"
+	trainerbattle_single TRAINER_SHAYLA, Route112_Text_ShaylaIntro, Route112_Text_ShaylaDefeat
 # 110 "data/maps/Route112/scripts.pory"
-	call Route112_EventScript_Bryant_Item
+	msgbox Route112_Text_ShaylaPostBattle, MSGBOX_AUTOCLOSE
 # 111 "data/maps/Route112/scripts.pory"
 	end
 # 112 "data/maps/Route112/scripts.pory"
 
 # 113 "data/maps/Route112/scripts.pory"
-Route112_EventScript_Shayla::
-# 114 "data/maps/Route112/scripts.pory"
-	trainerbattle_single TRAINER_SHAYLA, Route112_Text_ShaylaIntro, Route112_Text_ShaylaDefeat
-# 115 "data/maps/Route112/scripts.pory"
-	msgbox Route112_Text_ShaylaPostBattle, MSGBOX_AUTOCLOSE
-# 116 "data/maps/Route112/scripts.pory"
-	call Route112_EventScript_Shayla_Item
-# 117 "data/maps/Route112/scripts.pory"
-	end
-# 118 "data/maps/Route112/scripts.pory"
-
-# 119 "data/maps/Route112/scripts.pory"
 Route112_Text_LeaderGoingToAwakenThing:
-# 120 "data/maps/Route112/scripts.pory"
+# 114 "data/maps/Route112/scripts.pory"
 	.string "Hey, man, is our leader really going\n"
-# 121 "data/maps/Route112/scripts.pory"
+# 115 "data/maps/Route112/scripts.pory"
 	.string "to awaken that thing?$"
-# 122 "data/maps/Route112/scripts.pory"
+# 116 "data/maps/Route112/scripts.pory"
 
-# 123 "data/maps/Route112/scripts.pory"
+# 117 "data/maps/Route112/scripts.pory"
 Route112_Text_YeahWeNeedMeteorite:
-# 124 "data/maps/Route112/scripts.pory"
+# 118 "data/maps/Route112/scripts.pory"
 	.string "Sounds like it, yeah. But I heard\n"
-# 125 "data/maps/Route112/scripts.pory"
+# 119 "data/maps/Route112/scripts.pory"
 	.string "we need a METEORITE to do it.$"
-# 126 "data/maps/Route112/scripts.pory"
+# 120 "data/maps/Route112/scripts.pory"
 
-# 127 "data/maps/Route112/scripts.pory"
+# 121 "data/maps/Route112/scripts.pory"
 Route112_Text_OhThatsWhyCrewWentToFallarbor:
-# 128 "data/maps/Route112/scripts.pory"
+# 122 "data/maps/Route112/scripts.pory"
 	.string "Oh, I get it now. That's why the rest\n"
-# 129 "data/maps/Route112/scripts.pory"
+# 123 "data/maps/Route112/scripts.pory"
 	.string "of the crew went out to FALLARBOR.$"
-# 130 "data/maps/Route112/scripts.pory"
+# 124 "data/maps/Route112/scripts.pory"
 
-# 131 "data/maps/Route112/scripts.pory"
+# 125 "data/maps/Route112/scripts.pory"
 Route112_Text_CantLetAnyonePassUntilTheyreBack:
-# 132 "data/maps/Route112/scripts.pory"
+# 126 "data/maps/Route112/scripts.pory"
 	.string "You got it. And until they come back,\n"
-# 133 "data/maps/Route112/scripts.pory"
+# 127 "data/maps/Route112/scripts.pory"
 	.string "we're not to let anyone pass, right.$"
-# 134 "data/maps/Route112/scripts.pory"
+# 128 "data/maps/Route112/scripts.pory"
 
-# 135 "data/maps/Route112/scripts.pory"
+# 129 "data/maps/Route112/scripts.pory"
 Route112_Text_NotEasyToGetBackToLavaridge:
-# 136 "data/maps/Route112/scripts.pory"
+# 130 "data/maps/Route112/scripts.pory"
 	.string "Eh, I'd like to get to MAUVILLE, but if\n"
-# 137 "data/maps/Route112/scripts.pory"
+# 131 "data/maps/Route112/scripts.pory"
 	.string "I went down these ledges, it'd be no\l"
-# 138 "data/maps/Route112/scripts.pory"
+# 132 "data/maps/Route112/scripts.pory"
 	.string "easy matter to get back to LAVARIDGE.$"
-# 139 "data/maps/Route112/scripts.pory"
+# 133 "data/maps/Route112/scripts.pory"
 
-# 140 "data/maps/Route112/scripts.pory"
+# 134 "data/maps/Route112/scripts.pory"
 Route112_Text_MtChimneyCableCarSign:
-# 141 "data/maps/Route112/scripts.pory"
+# 135 "data/maps/Route112/scripts.pory"
 	.string "MT. CHIMNEY CABLE CAR\n"
-# 142 "data/maps/Route112/scripts.pory"
+# 136 "data/maps/Route112/scripts.pory"
 	.string "“A short walk {UP_ARROW} way!”$"
-# 143 "data/maps/Route112/scripts.pory"
+# 137 "data/maps/Route112/scripts.pory"
 
-# 144 "data/maps/Route112/scripts.pory"
+# 138 "data/maps/Route112/scripts.pory"
 Route112_Text_MtChimneySign:
-# 145 "data/maps/Route112/scripts.pory"
+# 139 "data/maps/Route112/scripts.pory"
 	.string "MT. CHIMNEY\p"
-# 146 "data/maps/Route112/scripts.pory"
+# 140 "data/maps/Route112/scripts.pory"
 	.string "“For LAVARIDGE TOWN or the summit,\n"
-# 147 "data/maps/Route112/scripts.pory"
+# 141 "data/maps/Route112/scripts.pory"
 	.string "please take the CABLE CAR.”$"
-# 148 "data/maps/Route112/scripts.pory"
+# 142 "data/maps/Route112/scripts.pory"
 
-# 149 "data/maps/Route112/scripts.pory"
+# 143 "data/maps/Route112/scripts.pory"
 Route112_Text_RouteSignLavaridge:
-# 150 "data/maps/Route112/scripts.pory"
+# 144 "data/maps/Route112/scripts.pory"
 	.string "ROUTE 112\n"
-# 151 "data/maps/Route112/scripts.pory"
+# 145 "data/maps/Route112/scripts.pory"
 	.string "{LEFT_ARROW} LAVARIDGE TOWN$"
