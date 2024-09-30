@@ -483,7 +483,7 @@ static void DoBattlePyramidTrainerHillBattle(void)
 // Initiates battle where Wally catches Ralts
 void StartWallyTutorialBattle(void)
 {
-    CreateMaleMon(&gEnemyParty[0], SPECIES_RALTS, 5);
+    CreateMaleMon(&gEnemyParty[0], SPECIES_MINCCINO, 5);
     LockPlayerFieldControls();
     gMain.savedCallback = CB2_ReturnToFieldContinueScriptPlayMapMusic;
     gBattleTypeFlags = BATTLE_TYPE_WALLY_TUTORIAL;
@@ -535,73 +535,73 @@ void BattleSetup_StartLegendaryBattle(void)
     switch (GetMonData(&gEnemyParty[0], MON_DATA_SPECIES, NULL))
     {
     default:
-    case SPECIES_GROUDON:
-        gBattleTypeFlags |= BATTLE_TYPE_GROUDON;
-        CreateBattleStartTask(B_TRANSITION_GROUDON, MUS_VS_KYOGRE_GROUDON);
-        break;
-    case SPECIES_KYOGRE:
-        gBattleTypeFlags |= BATTLE_TYPE_KYOGRE;
-        CreateBattleStartTask(B_TRANSITION_KYOGRE, MUS_VS_KYOGRE_GROUDON);
-        break;
-    case SPECIES_RAYQUAZA:
-        gBattleTypeFlags |= BATTLE_TYPE_RAYQUAZA;
-        CreateBattleStartTask(B_TRANSITION_RAYQUAZA, MUS_VS_RAYQUAZA);
-        break;
-    case SPECIES_DEOXYS:
-        CreateBattleStartTask(B_TRANSITION_BLUR, MUS_RG_VS_DEOXYS);
-        break;
-    case SPECIES_LUGIA:
-    case SPECIES_HO_OH:
-        CreateBattleStartTask(B_TRANSITION_BLUR, MUS_RG_VS_LEGEND);
-        break;
-    case SPECIES_MEW:
-        CreateBattleStartTask(B_TRANSITION_GRID_SQUARES, MUS_VS_MEW);
-        break;
-    }
+    case SPECIES_MOLTRES:
+    gBattleTypeFlags |= BATTLE_TYPE_GROUDON;
+    CreateBattleStartTask(B_TRANSITION_ANGLED_WIPES, MUS_ENCOUNTER_SWIMMER);
+    break;
+case SPECIES_LUNALA:
+gBattleTypeFlags |= BATTLE_TYPE_KYOGRE;
+CreateBattleStartTask(B_TRANSITION_REGIROCK, MUS_ENCOUNTER_MALE);
+break;
+case SPECIES_MELMETAL:
+gBattleTypeFlags |= BATTLE_TYPE_RAYQUAZA;
+CreateBattleStartTask(B_TRANSITION_ANGLED_WIPES, MUS_ENCOUNTER_AQUA);
+break;
+case SPECIES_YVELTAL:
+CreateBattleStartTask(B_TRANSITION_RIPPLE, MUS_ENCOUNTER_MALE);
+break;
+case SPECIES_GROUDON_PRIMAL:
+case SPECIES_THUNDURUS:
+CreateBattleStartTask(B_TRANSITION_GROUDON, MUS_ENCOUNTER_FEMALE);
+break;
+case SPECIES_DIANCIE:
+CreateBattleStartTask(B_TRANSITION_GRID_SQUARES, MUS_ENCOUNTER_INTERVIEWER);
+break;
+}
 
-    IncrementGameStat(GAME_STAT_TOTAL_BATTLES);
-    IncrementGameStat(GAME_STAT_WILD_BATTLES);
-    IncrementDailyWildBattles();
-    TryUpdateGymLeaderRematchFromWild();
+IncrementGameStat(GAME_STAT_TOTAL_BATTLES);
+IncrementGameStat(GAME_STAT_WILD_BATTLES);
+IncrementDailyWildBattles();
+TryUpdateGymLeaderRematchFromWild();
 }
 
 void StartGroudonKyogreBattle(void)
 {
-    LockPlayerFieldControls();
-    gMain.savedCallback = CB2_EndScriptedWildBattle;
-    gBattleTypeFlags = BATTLE_TYPE_LEGENDARY | BATTLE_TYPE_KYOGRE_GROUDON;
+LockPlayerFieldControls();
+gMain.savedCallback = CB2_EndScriptedWildBattle;
+gBattleTypeFlags = BATTLE_TYPE_LEGENDARY | BATTLE_TYPE_KYOGRE_GROUDON;
 
-    if (gGameVersion == VERSION_RUBY)
-        CreateBattleStartTask(B_TRANSITION_ANGLED_WIPES, MUS_VS_KYOGRE_GROUDON); // GROUDON
-    else
-        CreateBattleStartTask(B_TRANSITION_RIPPLE, MUS_VS_KYOGRE_GROUDON); // KYOGRE
+if (gGameVersion == VERSION_RUBY)
+CreateBattleStartTask(B_TRANSITION_ANGLED_WIPES, MUS_VS_KYOGRE_GROUDON); // GROUDON
+else
+CreateBattleStartTask(B_TRANSITION_RIPPLE, MUS_VS_KYOGRE_GROUDON); // KYOGRE
 
-    IncrementGameStat(GAME_STAT_TOTAL_BATTLES);
-    IncrementGameStat(GAME_STAT_WILD_BATTLES);
-    IncrementDailyWildBattles();
-    TryUpdateGymLeaderRematchFromWild();
+IncrementGameStat(GAME_STAT_TOTAL_BATTLES);
+IncrementGameStat(GAME_STAT_WILD_BATTLES);
+IncrementDailyWildBattles();
+TryUpdateGymLeaderRematchFromWild();
 }
 
 void StartRegiBattle(void)
 {
-    u8 transitionId;
-    u16 species;
+u8 transitionId;
+u16 species;
 
-    LockPlayerFieldControls();
-    gMain.savedCallback = CB2_EndScriptedWildBattle;
-    gBattleTypeFlags = BATTLE_TYPE_LEGENDARY | BATTLE_TYPE_REGI;
+LockPlayerFieldControls();
+gMain.savedCallback = CB2_EndScriptedWildBattle;
+gBattleTypeFlags = BATTLE_TYPE_LEGENDARY | BATTLE_TYPE_REGI;
 
-    species = GetMonData(&gEnemyParty[0], MON_DATA_SPECIES);
-    switch (species)
-    {
-    case SPECIES_REGIROCK:
-        transitionId = B_TRANSITION_REGIROCK;
-        break;
-    case SPECIES_REGICE:
-        transitionId = B_TRANSITION_REGICE;
-        break;
-    case SPECIES_REGISTEEL:
-        transitionId = B_TRANSITION_REGISTEEL;
+species = GetMonData(&gEnemyParty[0], MON_DATA_SPECIES);
+switch (species)
+{
+case SPECIES_DEOXYS:
+transitionId = B_TRANSITION_PHOEBE;
+break;
+case SPECIES_NECROZMA_DUSK_MANE:
+transitionId = B_TRANSITION_MAGMA;
+break;
+case SPECIES_REGISTEEL:
+transitionId = B_TRANSITION_GROUDON;
         break;
     default:
         transitionId = B_TRANSITION_GRID_SQUARES;
@@ -841,33 +841,33 @@ u8 GetTrainerBattleTransition(void)
     u8 playerLevel;
 
     if (gTrainerBattleOpponent_A == TRAINER_SECRET_BASE)
-        return B_TRANSITION_CHAMPION;
+        return B_TRANSITION_KYOGRE;
 
-    if (gTrainers[gTrainerBattleOpponent_A].trainerClass == TRAINER_CLASS_ELITE_FOUR)
-    {
-        if (gTrainerBattleOpponent_A == TRAINER_SIDNEY)
-            return B_TRANSITION_SIDNEY;
-        if (gTrainerBattleOpponent_A == TRAINER_PHOEBE)
-            return B_TRANSITION_PHOEBE;
+if (gTrainers[gTrainerBattleOpponent_A].trainerClass == TRAINER_CLASS_ELITE_FOUR)
+{
+    if (gTrainerBattleOpponent_A == TRAINER_SIDNEY)
+    return B_TRANSITION_SIDNEY;
+    if (gTrainerBattleOpponent_A == TRAINER_PHOEBE)
+        return B_TRANSITION_BLUR;
         if (gTrainerBattleOpponent_A == TRAINER_GLACIA)
-            return B_TRANSITION_GLACIA;
-        if (gTrainerBattleOpponent_A == TRAINER_DRAKE)
-            return B_TRANSITION_DRAKE;
-        return B_TRANSITION_CHAMPION;
-    }
+            return B_TRANSITION_REGISTEEL;
+            if (gTrainerBattleOpponent_A == TRAINER_DRAKE)
+                return B_TRANSITION_RAYQUAZA;
+                return B_TRANSITION_RIPPLE;
+            }
+        
+            if (gTrainers[gTrainerBattleOpponent_A].trainerClass == TRAINER_CLASS_CHAMPION)
+                return B_TRANSITION_REGICE;
 
-    if (gTrainers[gTrainerBattleOpponent_A].trainerClass == TRAINER_CLASS_CHAMPION)
-        return B_TRANSITION_CHAMPION;
+                if (gTrainers[gTrainerBattleOpponent_A].trainerClass == TRAINER_CLASS_TEAM_MAGMA
+                    || gTrainers[gTrainerBattleOpponent_A].trainerClass == TRAINER_CLASS_MAGMA_LEADER
+                    || gTrainers[gTrainerBattleOpponent_A].trainerClass == TRAINER_CLASS_MAGMA_ADMIN)
+                    return B_TRANSITION_RIPPLE;
 
-    if (gTrainers[gTrainerBattleOpponent_A].trainerClass == TRAINER_CLASS_TEAM_MAGMA
-        || gTrainers[gTrainerBattleOpponent_A].trainerClass == TRAINER_CLASS_MAGMA_LEADER
-        || gTrainers[gTrainerBattleOpponent_A].trainerClass == TRAINER_CLASS_MAGMA_ADMIN)
-        return B_TRANSITION_MAGMA;
-
-    if (gTrainers[gTrainerBattleOpponent_A].trainerClass == TRAINER_CLASS_TEAM_AQUA
-        || gTrainers[gTrainerBattleOpponent_A].trainerClass == TRAINER_CLASS_AQUA_LEADER
-        || gTrainers[gTrainerBattleOpponent_A].trainerClass == TRAINER_CLASS_AQUA_ADMIN)
-        return B_TRANSITION_AQUA;
+                    if (gTrainers[gTrainerBattleOpponent_A].trainerClass == TRAINER_CLASS_TEAM_AQUA
+                        || gTrainers[gTrainerBattleOpponent_A].trainerClass == TRAINER_CLASS_AQUA_LEADER
+                        || gTrainers[gTrainerBattleOpponent_A].trainerClass == TRAINER_CLASS_AQUA_ADMIN)
+                        return B_TRANSITION_SIDNEY;
 
     if (gTrainers[gTrainerBattleOpponent_A].doubleBattle == TRUE)
         minPartyCount = 2; // double battles always at least have 2 pokemon.
@@ -1478,46 +1478,46 @@ void PlayTrainerEncounterMusic(void)
         switch (GetTrainerEncounterMusicId(trainerId))
         {
         case TRAINER_ENCOUNTER_MUSIC_MALE:
-            music = MUS_ENCOUNTER_MALE;
-            break;
-        case TRAINER_ENCOUNTER_MUSIC_FEMALE:
-            music = MUS_ENCOUNTER_FEMALE;
-            break;
-        case TRAINER_ENCOUNTER_MUSIC_GIRL:
-            music = MUS_ENCOUNTER_GIRL;
-            break;
-        case TRAINER_ENCOUNTER_MUSIC_INTENSE:
-            music = MUS_ENCOUNTER_INTENSE;
-            break;
-        case TRAINER_ENCOUNTER_MUSIC_COOL:
-            music = MUS_ENCOUNTER_COOL;
-            break;
-        case TRAINER_ENCOUNTER_MUSIC_AQUA:
-            music = MUS_ENCOUNTER_AQUA;
-            break;
-        case TRAINER_ENCOUNTER_MUSIC_MAGMA:
             music = MUS_ENCOUNTER_MAGMA;
-            break;
-        case TRAINER_ENCOUNTER_MUSIC_SWIMMER:
-            music = MUS_ENCOUNTER_SWIMMER;
-            break;
-        case TRAINER_ENCOUNTER_MUSIC_TWINS:
-            music = MUS_ENCOUNTER_TWINS;
-            break;
-        case TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR:
-            music = MUS_ENCOUNTER_ELITE_FOUR;
-            break;
-        case TRAINER_ENCOUNTER_MUSIC_HIKER:
-            music = MUS_ENCOUNTER_HIKER;
-            break;
-        case TRAINER_ENCOUNTER_MUSIC_INTERVIEWER:
-            music = MUS_ENCOUNTER_INTERVIEWER;
-            break;
-        case TRAINER_ENCOUNTER_MUSIC_RICH:
-            music = MUS_ENCOUNTER_RICH;
-            break;
-        default:
-            music = MUS_ENCOUNTER_SUSPICIOUS;
+break;
+case TRAINER_ENCOUNTER_MUSIC_FEMALE:
+music = MUS_ENCOUNTER_MALE;
+break;
+case TRAINER_ENCOUNTER_MUSIC_GIRL:
+music = MUS_RG_VS_DEOXYS;
+break;
+case TRAINER_ENCOUNTER_MUSIC_INTENSE:
+music = MUS_ENCOUNTER_SWIMMER;
+break;
+case TRAINER_ENCOUNTER_MUSIC_COOL:
+music = MUS_ENCOUNTER_GIRL;
+break;
+case TRAINER_ENCOUNTER_MUSIC_AQUA:
+music = MUS_ENCOUNTER_FEMALE;
+break;
+case TRAINER_ENCOUNTER_MUSIC_MAGMA:
+music = MUS_VS_REGI;
+break;
+case TRAINER_ENCOUNTER_MUSIC_SWIMMER:
+music = MUS_ENCOUNTER_MAGMA;
+break;
+case TRAINER_ENCOUNTER_MUSIC_TWINS:
+music = MUS_ENCOUNTER_COOL;
+break;
+case TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR:
+music = MUS_VS_REGI;
+break;
+case TRAINER_ENCOUNTER_MUSIC_HIKER:
+music = MUS_RG_VS_LEGEND;
+break;
+case TRAINER_ENCOUNTER_MUSIC_INTERVIEWER:
+music = MUS_VS_RAYQUAZA;
+break;
+case TRAINER_ENCOUNTER_MUSIC_RICH:
+music = MUS_ENCOUNTER_INTENSE;
+break;
+default:
+music = MUS_ENCOUNTER_COOL;
         }
         PlayNewMapMusic(music);
     }

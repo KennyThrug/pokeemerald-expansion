@@ -5801,7 +5801,20 @@ bool8 PokemonUseItemEffects(struct Pokemon *mon, u16 item, u8 partyIndex, u8 mov
 
                 if (param == 0) // Rare Candy
                 {
-                    dataUnsigned = gExperienceTables[gSpeciesInfo[GetMonData(mon, MON_DATA_SPECIES, NULL)].growthRate][GetMonData(mon, MON_DATA_LEVEL, NULL) + 1];
+                    u16 num_levels;
+                    if (FlagGet(FLAG_RARE_CANDY_MOD)){
+                        u8 i;
+                        for(i = 0; i < 101; i++){
+                            if(CheckBagHasItem(item,i)){
+                                num_levels = i;
+                            }
+                        }
+                        AddBagItem(item,1);
+                    }
+                    else{
+                        num_levels = GetMonData(mon, MON_DATA_LEVEL, NULL) + 1;
+                    }
+                    dataUnsigned = gExperienceTables[gSpeciesInfo[GetMonData(mon, MON_DATA_SPECIES, NULL)].growthRate][num_levels];
                 }
                 else if (param - 1 < ARRAY_COUNT(sExpCandyExperienceTable)) // EXP Candies
                 {
