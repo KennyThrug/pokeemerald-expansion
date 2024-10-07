@@ -3821,6 +3821,9 @@ bool8 PokemonUseItemEffects(struct Pokemon *mon, u16 item, u8 partyIndex, u8 mov
                                 num_levels = i;
                             }
                         }
+                        if(GetMonData(mon, MON_DATA_LEVEL, NULL) >= num_levels){
+                            num_levels = GetMonData(mon, MON_DATA_LEVEL, NULL);
+                        }
                         AddBagItem(item,1);
                     }
                     else{
