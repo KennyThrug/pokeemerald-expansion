@@ -1075,3 +1075,4 @@ EventScript_VsSeekerChargingDone::
 	.include "data/text/save.inc"
 	.include "data/text/birch_speech.inc"
 	.include "data/scripts/randomizer_scripts.inc"
+	.include "data/scripts/randomizer_scripts_common.inc"
