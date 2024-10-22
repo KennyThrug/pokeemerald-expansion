@@ -15392,7 +15392,7 @@ static void Cmd_handleballthrow(void)
             gBattleSpritesDataPtr->animationData->isCriticalCapture = FALSE;
             gBattleSpritesDataPtr->animationData->criticalCaptureSuccess = FALSE;
 
-            if (CriticalCapture(odds) || FlagGet(FLAG_ALL_BALLS_MASTERBALL))
+            if (CriticalCapture(odds))
             {
                 maxShakes = BALL_1_SHAKE;  // critical capture doesn't guarantee capture
                 shakes = maxShakes;
@@ -15403,7 +15403,7 @@ static void Cmd_handleballthrow(void)
                 maxShakes = BALL_3_SHAKES_SUCCESS;
             }
 
-            if (gLastUsedItem == ITEM_MASTER_BALL)
+            if (gLastUsedItem == ITEM_MASTER_BALL || FlagGet(FLAG_ALL_BALLS_MASTERBALL))
             {
                 shakes = maxShakes;
             }
