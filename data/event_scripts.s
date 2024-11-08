@@ -1076,3 +1076,4 @@ EventScript_VsSeekerChargingDone::
 	.include "data/text/birch_speech.inc"
 	.include "data/scripts/randomizer_scripts.inc"
 	.include "data/scripts/randomizer_scripts_common.inc"
+	.include "data/maps/PalletTown/scripts.inc"

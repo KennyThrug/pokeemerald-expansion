@@ -10,3 +10,6 @@ Common_Eventscript_Give_Pokemon::
 	callnative GetItemBallIdAndAmountFromTemplate
 	finditem VAR_RESULT VAR_0x8009
 	end
+
+Oldale_Eventscript_Item::
+	return

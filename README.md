@@ -1,3 +1,16 @@
+# Combination
+## TODO List
+- [ ] Add Correct Pallet and spritesheet
+- [ ] Add NPC Graphics
+- [ ] Add Maps
+- [ ] Add Trainers
+
+### To add an NPC
+Add an ID to event_objects.h
+Add pointer to object_event_graphics_info_pointers.h
+Add struct to object_event_graphics_info.h
+Obviously add the sprite to graphics/object_events/pics/people
+
 # pokeemerald-expansion
 
 ### Important: DO NOT use GitHub's "Download Zip" option. Using this option will not download the commit history required to update your expansion version or merge other feature branches. Instead, please read [this guide](https://github.com/Pawkkie/Team-Aquas-Asset-Repo/wiki/The-Basics-of-GitHub) to learn how to fork the repository and clone locally from there.
