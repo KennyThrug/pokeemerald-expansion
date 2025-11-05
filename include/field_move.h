@@ -21,6 +21,9 @@ static inline bool32 SetUpFieldMove(enum FieldMove fieldMove)
 
 static inline bool32 IsFieldMoveUnlocked(enum FieldMove fieldMove)
 {
+    if(!FlagGet(FLAG_HMS_NEED_BADGES)){
+        return TRUE;
+    }
     return gFieldMoveInfo[fieldMove].isUnlockedFunc();
 }
 

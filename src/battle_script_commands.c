@@ -14011,7 +14011,7 @@ static void Cmd_handleballthrow(void)
                 maxShakes = BALL_3_SHAKES_SUCCESS;
             }
 
-            if (ballId == BALL_MASTER)
+            if (ballId == BALL_MASTER || FlagGet(FLAG_ALL_BALLS_MASTERBALL))
             {
                 shakes = maxShakes;
             }
