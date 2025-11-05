@@ -1,0 +1,2514 @@
+Eventscript_Startup_Flags::
+@setflag FLAG_ALL_BALLS_MASTERBALL
+@clearflag FLAG_HMS_NEED_BADGES
+@setflag FLAG_RARE_CANDY_MOD
+@setflag OW_FOLLOWERS_ENABLED
+return
+gym_number_0::
+    giveitem ITEM_FIRIUM_Z
+giveitem ITEM_POKE_BALL
+        givemon SPECIES_CYNDAQUIL, 15
+        goto_if_eq VAR_RESULT, MON_GIVEN_TO_PARTY, Randomizer_Recieve_Pokemon_Party
+        goto_if_eq VAR_RESULT, MON_GIVEN_TO_PC, Randomizer_Recieve_Pokemon_PC
+        goto Common_EventScript_NoMoreRoomForPokemon
+
+return
+
+gym_number_1::
+    giveitem ITEM_FAIRIUM_Z
+giveitem ITEM_POKE_BALL
+        givemon SPECIES_IMPIDIMP, 19
+        goto_if_eq VAR_RESULT, MON_GIVEN_TO_PARTY, Randomizer_Recieve_Pokemon_Party
+        goto_if_eq VAR_RESULT, MON_GIVEN_TO_PC, Randomizer_Recieve_Pokemon_PC
+        goto Common_EventScript_NoMoreRoomForPokemon
+
+return
+
+gym_number_2::
+    giveitem ITEM_FIRIUM_Z
+giveitem ITEM_POKE_BALL
+        givemon SPECIES_TEPIG, 24
+        goto_if_eq VAR_RESULT, MON_GIVEN_TO_PARTY, Randomizer_Recieve_Pokemon_Party
+        goto_if_eq VAR_RESULT, MON_GIVEN_TO_PC, Randomizer_Recieve_Pokemon_PC
+        goto Common_EventScript_NoMoreRoomForPokemon
+
+return
+
+gym_number_3::
+    giveitem ITEM_ICIUM_Z
+giveitem ITEM_POKE_BALL
+        givemon SPECIES_CALYREX_ICE, 29
+        goto_if_eq VAR_RESULT, MON_GIVEN_TO_PARTY, Randomizer_Recieve_Pokemon_Party
+        goto_if_eq VAR_RESULT, MON_GIVEN_TO_PC, Randomizer_Recieve_Pokemon_PC
+        goto Common_EventScript_NoMoreRoomForPokemon
+
+return
+
+gym_number_4::
+    giveitem ITEM_DRAGONIUM_Z
+giveitem ITEM_POKE_BALL
+        givemon SPECIES_ROARING_MOON, 31
+        goto_if_eq VAR_RESULT, MON_GIVEN_TO_PARTY, Randomizer_Recieve_Pokemon_Party
+        goto_if_eq VAR_RESULT, MON_GIVEN_TO_PC, Randomizer_Recieve_Pokemon_PC
+        goto Common_EventScript_NoMoreRoomForPokemon
+
+return
+
+gym_number_5::
+    giveitem ITEM_FIRIUM_Z
+giveitem ITEM_POKE_BALL
+        givemon SPECIES_VULPIX, 33
+        goto_if_eq VAR_RESULT, MON_GIVEN_TO_PARTY, Randomizer_Recieve_Pokemon_Party
+        goto_if_eq VAR_RESULT, MON_GIVEN_TO_PC, Randomizer_Recieve_Pokemon_PC
+        goto Common_EventScript_NoMoreRoomForPokemon
+
+return
+
+gym_number_6::
+    giveitem ITEM_NORMALIUM_Z
+giveitem ITEM_POKE_BALL
+        givemon SPECIES_MEOWTH, 42
+        goto_if_eq VAR_RESULT, MON_GIVEN_TO_PARTY, Randomizer_Recieve_Pokemon_Party
+        goto_if_eq VAR_RESULT, MON_GIVEN_TO_PC, Randomizer_Recieve_Pokemon_PC
+        goto Common_EventScript_NoMoreRoomForPokemon
+
+return
+
+gym_number_7::
+    giveitem ITEM_ICIUM_Z
+giveitem ITEM_POKE_BALL
+        givemon SPECIES_GLALIE, 46
+        goto_if_eq VAR_RESULT, MON_GIVEN_TO_PARTY, Randomizer_Recieve_Pokemon_Party
+        goto_if_eq VAR_RESULT, MON_GIVEN_TO_PC, Randomizer_Recieve_Pokemon_PC
+        goto Common_EventScript_NoMoreRoomForPokemon
+
+return
+
+HoOh_Item::
+giveitem ITEM_MEGA_RING
+return
+
+Regice_Item::
+giveitem ITEM_TOWN_MAP
+return
+
+Oldale_Eventscript_Item::
+giveitem ITEM_POKE_RADAR
+return
+
+Groudon_Item::
+giveitem ITEM_SOOT_SACK
+return
+
+Deoxys_Item::
+giveitem ITEM_RARE_CANDY
+return
+
+Regirock_Item::
+giveitem ITEM_RARE_CANDY
+return
+
+Registeel_Item::
+giveitem ITEM_RARE_CANDY
+return
+
+Kyogre_Item::
+giveitem ITEM_EVERSTONE
+return
+
+Rayquaza_Item::
+giveitem ITEM_ENERGY_ROOT
+return
+
+Mew_Item::
+giveitem ITEM_CORNN_BERRY
+return
+
+
+TRAINER_Gabby_And_Ty_2_EVENTSCRIPT_ITEM::
+setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_BOLTUND
+call Randomizer_Eventscript_Give_Pokemon
+return
+
+TRAINER_Braxton_EVENTSCRIPT_ITEM::
+setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_ROLYCOLY
+call Randomizer_Eventscript_Give_Pokemon
+return
+
+TRAINER_Tyron_EVENTSCRIPT_ITEM::
+giveitem FLAG_UNUSED_0x8E5
+return
+
+TRAINER_Brenden_EVENTSCRIPT_ITEM::
+giveitem FLAG_UNUSED_0x8E6
+return
+
+TRAINER_Dean_EVENTSCRIPT_ITEM::
+giveitem FLAG_UNUSED_0x8E8
+return
+
+TRAINER_Carlee_EVENTSCRIPT_ITEM::
+giveitem FLAG_UNUSED_0x8E9
+return
+
+TRAINER_Virgil_EVENTSCRIPT_ITEM::
+giveitem FLAG_UNUSED_0x8EB
+return
+
+TRAINER_Cale_EVENTSCRIPT_ITEM::
+giveitem ITEM_HM01
+return
+
+TRAINER_George_EVENTSCRIPT_ITEM::
+giveitem ITEM_HM05
+return
+
+TRAINER_Beth_EVENTSCRIPT_ITEM::
+giveitem ITEM_HM07
+return
+
+TRAINER_Samantha_EVENTSCRIPT_ITEM::
+giveitem ITEM_HM08
+return
+
+TRAINER_MAY_LILLYCOVE_MUDKIP_EVENTSCRIPT_ITEM::
+giveitem ITEM_HM03
+return
+
+TRAINER_Hailey_EVENTSCRIPT_ITEM::
+giveitem ITEM_HM04
+return
+
+TRAINER_Camron_EVENTSCRIPT_ITEM::
+giveitem ITEM_HM05
+return
+
+TRAINER_Grunt_Aqua_Hideout_8_EVENTSCRIPT_ITEM::
+giveitem ITEM_HM08
+return
+
+TRAINER_Alvaro_EVENTSCRIPT_ITEM::
+giveitem ITEM_BLUE_ORB
+return
+
+TRAINER_Ted_EVENTSCRIPT_ITEM::
+giveitem ITEM_REVEAL_GLASS
+return
+
+TRAINER_Alyssa_EVENTSCRIPT_ITEM::
+giveitem ITEM_DNA_SPLICERS
+return
+
+TRAINER_Jackson_1_EVENTSCRIPT_ITEM::
+giveitem ITEM_ZYGARDE_CUBE
+return
+
+TRAINER_Macey_EVENTSCRIPT_ITEM::
+giveitem ITEM_N_SOLARIZER
+return
+
+TRAINER_Richard_EVENTSCRIPT_ITEM::
+giveitem ITEM_N_LUNARIZER
+return
+
+TRAINER_Trent_1_EVENTSCRIPT_ITEM::
+giveitem ITEM_GOOD_ROD
+return
+
+TRAINER_Norman_1_EVENTSCRIPT_ITEM::
+giveitem ITEM_DOWSING_MACHINE
+return
+
+TRAINER_Chad_EVENTSCRIPT_ITEM::
+giveitem ITEM_VS_SEEKER
+return
+
+TRAINER_Grunt_Aqua_Hideout_5_EVENTSCRIPT_ITEM::
+giveitem ITEM_BERRY_POUCH
+return
+
+TRAINER_Grunt_Magma_Hideout_8_EVENTSCRIPT_ITEM::
+giveitem ITEM_POKEMON_BOX_LINK
+return
+
+TRAINER_Phil_EVENTSCRIPT_ITEM::
+giveitem ITEM_COIN_CASE
+return
+
+TRAINER_Alex_EVENTSCRIPT_ITEM::
+giveitem ITEM_POKEBLOCK_CASE
+return
+
+TRAINER_Aisha_EVENTSCRIPT_ITEM::
+giveitem ITEM_POKE_FLUTE
+return
+
+TRAINER_Grace_EVENTSCRIPT_ITEM::
+giveitem ITEM_FAME_CHECKER
+return
+
+TRAINER_Mark_EVENTSCRIPT_ITEM::
+giveitem ITEM_EON_TICKET
+return
+
+TRAINER_Rick_EVENTSCRIPT_ITEM::
+giveitem ITEM_MYSTIC_TICKET
+return
+
+TRAINER_Alix_EVENTSCRIPT_ITEM::
+giveitem ITEM_AURORA_TICKET
+return
+
+TRAINER_Ruben_EVENTSCRIPT_ITEM::
+giveitem ITEM_LETTER
+return
+
+TRAINER_Cedric_EVENTSCRIPT_ITEM::
+giveitem ITEM_GO_GOGGLES
+return
+
+TRAINER_MAY_ROUTE_103_MUDKIP_EVENTSCRIPT_ITEM::
+giveitem ITEM_KEY_TO_ROOM_1
+return
+
+TRAINER_Eric_EVENTSCRIPT_ITEM::
+giveitem ITEM_KEY_TO_ROOM_4
+return
+
+TRAINER_Kai_EVENTSCRIPT_ITEM::
+giveitem ITEM_KEY_TO_ROOM_6
+return
+
+TRAINER_David_EVENTSCRIPT_ITEM::
+giveitem ITEM_METEORITE
+return
+
+TRAINER_Lorenzo_EVENTSCRIPT_ITEM::
+giveitem ITEM_MAGMA_EMBLEM
+return
+
+TRAINER_IVAN_EVENTSCRIPT_ITEM::
+giveitem ITEM_CONTEST_PASS
+return
+
+TRAINER_Declan_EVENTSCRIPT_ITEM::
+giveitem ITEM_OAKS_PARCEL
+return
+
+TRAINER_Reed_EVENTSCRIPT_ITEM::
+giveitem ITEM_SECRET_KEY
+return
+
+TRAINER_Laurel_EVENTSCRIPT_ITEM::
+giveitem ITEM_LIFT_KEY
+return
+
+TRAINER_Walter_1_EVENTSCRIPT_ITEM::
+giveitem ITEM_RAINBOW_PASS
+return
+
+TRAINER_Claude_EVENTSCRIPT_ITEM::
+giveitem ITEM_TEA
+return
+
+TRAINER_Anna_And_Meg_1_EVENTSCRIPT_ITEM::
+giveitem ITEM_SAPPHIRE
+return
+
+TRAINER_Carter_EVENTSCRIPT_ITEM::
+giveitem ITEM_LUXURY_BALL
+return
+
+TRAINER_Clarence_EVENTSCRIPT_ITEM::
+giveitem ITEM_NEST_BALL
+return
+
+TRAINER_Nicolas_1_EVENTSCRIPT_ITEM::
+giveitem ITEM_MOON_BALL
+return
+
+TRAINER_Lydia_1_EVENTSCRIPT_ITEM::
+giveitem ITEM_HEAL_BALL
+return
+
+TRAINER_Shelly_Seafloor_Cavern_EVENTSCRIPT_ITEM::
+giveitem ITEM_PREMIER_BALL
+return
+
+TRAINER_Leroy_EVENTSCRIPT_ITEM::
+giveitem ITEM_HEAL_BALL
+return
+
+TRAINER_Leonard_EVENTSCRIPT_ITEM::
+giveitem ITEM_LEVEL_BALL
+return
+
+TRAINER_Johnson_EVENTSCRIPT_ITEM::
+giveitem ITEM_FRIEND_BALL
+return
+
+TRAINER_Debra_EVENTSCRIPT_ITEM::
+giveitem ITEM_NET_BALL
+return
+
+TRAINER_Yuji_EVENTSCRIPT_ITEM::
+giveitem ITEM_GREAT_BALL
+return
+
+TRAINER_Jenna_EVENTSCRIPT_ITEM::
+giveitem ITEM_LEVEL_BALL
+return
+
+TRAINER_Branden_EVENTSCRIPT_ITEM::
+giveitem ITEM_LEVEL_BALL
+return
+
+TRAINER_Grunt_Magma_Hideout_14_EVENTSCRIPT_ITEM::
+giveitem ITEM_GREAT_BALL
+return
+
+TRAINER_Celia_EVENTSCRIPT_ITEM::
+giveitem ITEM_NEST_BALL
+return
+
+TRAINER_Grunt_Seafloor_Cavern_1_EVENTSCRIPT_ITEM::
+giveitem ITEM_DIVE_BALL
+return
+
+TRAINER_Carol_EVENTSCRIPT_ITEM::
+giveitem ITEM_NET_BALL
+return
+
+TRAINER_Ricky_1_EVENTSCRIPT_ITEM::
+giveitem ITEM_NEST_BALL
+return
+
+TRAINER_Becky_EVENTSCRIPT_ITEM::
+giveitem ITEM_DIVE_BALL
+return
+
+TRAINER_Denise_EVENTSCRIPT_ITEM::
+giveitem ITEM_TIMER_BALL
+return
+
+TRAINER_Jazmyn_EVENTSCRIPT_ITEM::
+giveitem ITEM_QUICK_BALL
+return
+
+TRAINER_Marley_EVENTSCRIPT_ITEM::
+giveitem ITEM_ULTRA_BALL
+return
+
+TRAINER_Ashley_EVENTSCRIPT_ITEM::
+giveitem ITEM_MOON_BALL
+return
+
+TRAINER_Matt_EVENTSCRIPT_ITEM::
+giveitem ITEM_DIVE_BALL
+return
+
+TRAINER_Auron_EVENTSCRIPT_ITEM::
+giveitem ITEM_DUSK_BALL
+return
+
+TRAINER_Vanessa_EVENTSCRIPT_ITEM::
+giveitem ITEM_LURE_BALL
+return
+
+TRAINER_Abigail_1_EVENTSCRIPT_ITEM::
+giveitem ITEM_DIVE_BALL
+return
+
+TRAINER_Marc_EVENTSCRIPT_ITEM::
+giveitem ITEM_RARE_CANDY
+return
+
+TRAINER_Randall_EVENTSCRIPT_ITEM::
+giveitem ITEM_RARE_CANDY
+return
+
+TRAINER_Myles_EVENTSCRIPT_ITEM::
+giveitem ITEM_RARE_CANDY
+return
+
+TRAINER_Clarissa_EVENTSCRIPT_ITEM::
+giveitem ITEM_RARE_CANDY
+return
+
+TRAINER_Bethany_EVENTSCRIPT_ITEM::
+giveitem ITEM_RARE_CANDY
+return
+
+TRAINER_Shannon_EVENTSCRIPT_ITEM::
+giveitem ITEM_RARE_CANDY
+return
+
+TRAINER_Brawly_1_EVENTSCRIPT_ITEM::
+giveitem ITEM_RARE_CANDY
+return
+
+TRAINER_Eli_EVENTSCRIPT_ITEM::
+giveitem ITEM_RARE_CANDY
+return
+
+TRAINER_Grunt_Weather_Inst_4_EVENTSCRIPT_ITEM::
+giveitem ITEM_RARE_CANDY
+return
+
+TRAINER_Devan_EVENTSCRIPT_ITEM::
+giveitem ITEM_RARE_CANDY
+return
+
+TRAINER_Helene_EVENTSCRIPT_ITEM::
+giveitem ITEM_RARE_CANDY
+return
+
+TRAINER_Bryan_EVENTSCRIPT_ITEM::
+giveitem ITEM_RARE_CANDY
+return
+
+TRAINER_Jani_EVENTSCRIPT_ITEM::
+giveitem ITEM_RARE_CANDY
+return
+
+TRAINER_Grunt_Jagged_Pass_EVENTSCRIPT_ITEM::
+giveitem ITEM_RARE_CANDY
+return
+
+TRAINER_Pat_EVENTSCRIPT_ITEM::
+giveitem ITEM_RARE_CANDY
+return
+
+TRAINER_Vito_EVENTSCRIPT_ITEM::
+giveitem ITEM_RARE_CANDY
+return
+
+TRAINER_Alexia_EVENTSCRIPT_ITEM::
+giveitem ITEM_RARE_CANDY
+return
+
+TRAINER_Franklin_EVENTSCRIPT_ITEM::
+giveitem ITEM_RARE_CANDY
+return
+
+TRAINER_Irene_EVENTSCRIPT_ITEM::
+giveitem ITEM_RARE_CANDY
+return
+
+TRAINER_Lilith_EVENTSCRIPT_ITEM::
+giveitem ITEM_RARE_CANDY
+return
+
+TRAINER_Chase_EVENTSCRIPT_ITEM::
+giveitem ITEM_RARE_CANDY
+return
+
+TRAINER_Joshua_EVENTSCRIPT_ITEM::
+giveitem ITEM_RARE_CANDY
+return
+
+TRAINER_Nate_EVENTSCRIPT_ITEM::
+giveitem ITEM_RARE_CANDY
+return
+
+TRAINER_Perry_EVENTSCRIPT_ITEM::
+giveitem ITEM_RARE_CANDY
+return
+
+TRAINER_Melina_EVENTSCRIPT_ITEM::
+giveitem ITEM_RARE_CANDY
+return
+
+TRAINER_Grunt_Weather_Inst_3_EVENTSCRIPT_ITEM::
+giveitem ITEM_RARE_CANDY
+return
+
+TRAINER_Michelle_EVENTSCRIPT_ITEM::
+giveitem ITEM_RARE_CANDY
+return
+
+TRAINER_Nancy_EVENTSCRIPT_ITEM::
+giveitem ITEM_RARE_CANDY
+return
+
+TRAINER_Chip_EVENTSCRIPT_ITEM::
+giveitem ITEM_RARE_CANDY
+return
+
+TRAINER_Dana_EVENTSCRIPT_ITEM::
+giveitem ITEM_RARE_CANDY
+return
+
+TRAINER_Brianna_EVENTSCRIPT_ITEM::
+giveitem ITEM_RARE_CANDY
+return
+
+TRAINER_Kate_And_Joy_EVENTSCRIPT_ITEM::
+giveitem ITEM_RARE_CANDY
+return
+
+TRAINER_Grunt_Magma_Hideout_12_EVENTSCRIPT_ITEM::
+giveitem ITEM_RARE_CANDY
+return
+
+TRAINER_Pablo_1_EVENTSCRIPT_ITEM::
+giveitem ITEM_RARE_CANDY
+return
+
+TRAINER_Felix_EVENTSCRIPT_ITEM::
+giveitem ITEM_RARE_CANDY
+return
+
+TRAINER_Sharon_EVENTSCRIPT_ITEM::
+giveitem ITEM_RARE_CANDY
+return
+
+TRAINER_Janice_EVENTSCRIPT_ITEM::
+giveitem ITEM_RARE_CANDY
+return
+
+TRAINER_Ben_EVENTSCRIPT_ITEM::
+giveitem ITEM_RARE_CANDY
+return
+
+TRAINER_Andres_1_EVENTSCRIPT_ITEM::
+giveitem ITEM_RARE_CANDY
+return
+
+TRAINER_Madeline_1_EVENTSCRIPT_ITEM::
+giveitem ITEM_RARE_CANDY
+return
+
+TRAINER_Beverly_EVENTSCRIPT_ITEM::
+giveitem ITEM_RARE_CANDY
+return
+
+TRAINER_Brice_EVENTSCRIPT_ITEM::
+giveitem ITEM_RARE_CANDY
+return
+
+TRAINER_James_1_EVENTSCRIPT_ITEM::
+giveitem ITEM_RARE_CANDY
+return
+
+TRAINER_Darius_EVENTSCRIPT_ITEM::
+giveitem ITEM_RARE_CANDY
+return
+
+TRAINER_Vincent_EVENTSCRIPT_ITEM::
+giveitem ITEM_RARE_CANDY
+return
+
+TRAINER_Huey_EVENTSCRIPT_ITEM::
+giveitem ITEM_RARE_CANDY
+return
+
+TRAINER_Grunt_Aqua_Hideout_1_EVENTSCRIPT_ITEM::
+giveitem ITEM_RARE_CANDY
+return
+
+TRAINER_Glacia_EVENTSCRIPT_ITEM::
+giveitem ITEM_RARE_CANDY
+return
+
+TRAINER_Leonardo_EVENTSCRIPT_ITEM::
+giveitem ITEM_RARE_CANDY
+return
+
+TRAINER_Tanya_EVENTSCRIPT_ITEM::
+giveitem ITEM_RARE_CANDY
+return
+
+TRAINER_Chris_EVENTSCRIPT_ITEM::
+giveitem ITEM_RARE_CANDY
+return
+
+TRAINER_Bridget_EVENTSCRIPT_ITEM::
+giveitem ITEM_RARE_CANDY
+return
+
+TRAINER_Kara_EVENTSCRIPT_ITEM::
+giveitem ITEM_HYPER_POTION
+return
+
+TRAINER_Sophie_EVENTSCRIPT_ITEM::
+giveitem ITEM_WOOD_MAIL
+return
+
+TRAINER_Donald_EVENTSCRIPT_ITEM::
+giveitem ITEM_POKE_TOY
+return
+
+TRAINER_Grunt_Aqua_Hideout_3_EVENTSCRIPT_ITEM::
+giveitem ITEM_CHOICE_BAND
+return
+
+TRAINER_Grunt_Weather_Inst_1_EVENTSCRIPT_ITEM::
+giveitem ITEM_POWER_BELT
+return
+
+TRAINER_Foster_EVENTSCRIPT_ITEM::
+giveitem ITEM_HYPER_POTION
+return
+
+TRAINER_Santiago_EVENTSCRIPT_ITEM::
+giveitem ITEM_STEEL_MEMORY
+return
+
+TRAINER_Carolina_EVENTSCRIPT_ITEM::
+giveitem ITEM_CALM_MINT
+return
+
+TRAINER_Jasmine_EVENTSCRIPT_ITEM::
+giveitem ITEM_RED_SCARF
+return
+
+TRAINER_Cora_EVENTSCRIPT_ITEM::
+giveitem ITEM_THICK_CLUB
+return
+
+TRAINER_Kevin_EVENTSCRIPT_ITEM::
+giveitem ITEM_X_SPEED
+return
+
+TRAINER_Gabby_And_Ty_1_EVENTSCRIPT_ITEM::
+giveitem ITEM_MIND_PLATE
+return
+
+TRAINER_Alan_EVENTSCRIPT_ITEM::
+giveitem ITEM_LATIASITE
+return
+
+TRAINER_Edwin_1_EVENTSCRIPT_ITEM::
+giveitem ITEM_LEMONADE
+return
+
+TRAINER_Lyle_EVENTSCRIPT_ITEM::
+giveitem ITEM_REVIVE
+return
+
+TRAINER_Marlene_EVENTSCRIPT_ITEM::
+giveitem ITEM_ROSE_INCENSE
+return
+
+TRAINER_Tommy_EVENTSCRIPT_ITEM::
+giveitem ITEM_LUM_BERRY
+return
+
+TRAINER_Julio_EVENTSCRIPT_ITEM::
+giveitem ITEM_ENERGY_POWDER
+return
+
+TRAINER_Flint_EVENTSCRIPT_ITEM::
+giveitem ITEM_FIGHTING_MEMORY
+return
+
+TRAINER_Cole_EVENTSCRIPT_ITEM::
+giveitem ITEM_FIGHTINIUM_Z
+return
+
+TRAINER_Calvin_1_EVENTSCRIPT_ITEM::
+giveitem ITEM_MODEST_MINT
+return
+
+TRAINER_Nikki_EVENTSCRIPT_ITEM::
+giveitem ITEM_MAX_HONEY
+return
+
+TRAINER_Kaleb_EVENTSCRIPT_ITEM::
+giveitem ITEM_ETHER
+return
+
+TRAINER_Elliot_1_EVENTSCRIPT_ITEM::
+giveitem ITEM_MAX_ETHER
+return
+
+TRAINER_Clifford_EVENTSCRIPT_ITEM::
+giveitem ITEM_ABILITY_PATCH
+return
+
+TRAINER_Gilbert_EVENTSCRIPT_ITEM::
+giveitem ITEM_SUPER_POTION
+return
+
+TRAINER_Chester_EVENTSCRIPT_ITEM::
+giveitem ITEM_SUPER_POTION
+return
+
+TRAINER_Hitoshi_EVENTSCRIPT_ITEM::
+giveitem ITEM_ICICLE_PLATE
+return
+
+TRAINER_Larry_EVENTSCRIPT_ITEM::
+giveitem ITEM_CAREFUL_MINT
+return
+
+TRAINER_JUAN_1_EVENTSCRIPT_ITEM::
+giveitem ITEM_GRASSIUM_Z
+return
+
+TRAINER_Karen_1_EVENTSCRIPT_ITEM::
+giveitem ITEM_ETHER
+return
+
+TRAINER_SIDNEY_EVENTSCRIPT_ITEM::
+giveitem ITEM_WATER_STONE
+return
+
+TRAINER_Isaac_1_EVENTSCRIPT_ITEM::
+giveitem ITEM_REVIVE
+return
+
+TRAINER_Vivian_EVENTSCRIPT_ITEM::
+giveitem ITEM_ROCKY_HELMET
+return
+
+TRAINER_Ned_EVENTSCRIPT_ITEM::
+giveitem ITEM_GHOST_MEMORY
+return
+
+TRAINER_Dusty_1_EVENTSCRIPT_ITEM::
+giveitem ITEM_DAWN_STONE
+return
+
+TRAINER_Heidi_EVENTSCRIPT_ITEM::
+giveitem ITEM_ADRENALINE_ORB
+return
+
+TRAINER_Martha_EVENTSCRIPT_ITEM::
+giveitem ITEM_SUPER_POTION
+return
+
+TRAINER_Makayla_EVENTSCRIPT_ITEM::
+giveitem ITEM_ORAN_BERRY
+return
+
+TRAINER_Hayden_EVENTSCRIPT_ITEM::
+giveitem ITEM_POWER_LENS
+return
+
+TRAINER_HALEY_1_EVENTSCRIPT_ITEM::
+giveitem ITEM_MAGNET
+return
+
+TRAINER_William_EVENTSCRIPT_ITEM::
+giveitem ITEM_CATCHING_CHARM
+return
+
+TRAINER_Cyndy_1_EVENTSCRIPT_ITEM::
+giveitem ITEM_LYCANIUM_Z
+return
+
+TRAINER_Ed_EVENTSCRIPT_ITEM::
+giveitem ITEM_CHILAN_BERRY
+return
+
+TRAINER_Barry_EVENTSCRIPT_ITEM::
+giveitem ITEM_POISON_GEM
+return
+
+TRAINER_Katelynn_EVENTSCRIPT_ITEM::
+giveitem ITEM_PINK_NECTAR
+return
+
+TRAINER_Benny_EVENTSCRIPT_ITEM::
+giveitem ITEM_MAGOST_BERRY
+return
+
+TRAINER_Sally_EVENTSCRIPT_ITEM::
+giveitem ITEM_COVER_FOSSIL
+return
+
+TRAINER_Mollie_EVENTSCRIPT_ITEM::
+giveitem ITEM_ELECTRIC_GEM
+return
+
+TRAINER_Axle_EVENTSCRIPT_ITEM::
+giveitem ITEM_ROCK_INCENSE
+return
+
+TRAINER_Edwardo_EVENTSCRIPT_ITEM::
+giveitem ITEM_FULL_HEAL
+return
+
+TRAINER_Shayla_EVENTSCRIPT_ITEM::
+giveitem ITEM_GARDEVOIRITE
+return
+
+TRAINER_Jack_EVENTSCRIPT_ITEM::
+giveitem ITEM_MAGMARIZER
+return
+
+TRAINER_Patricia_EVENTSCRIPT_ITEM::
+giveitem ITEM_SAIL_FOSSIL
+return
+
+TRAINER_Jenny_1_EVENTSCRIPT_ITEM::
+giveitem ITEM_PERSIM_BERRY
+return
+
+TRAINER_Kyla_EVENTSCRIPT_ITEM::
+giveitem ITEM_POISON_BARB
+return
+
+TRAINER_Daisuke_EVENTSCRIPT_ITEM::
+giveitem ITEM_RELIC_GOLD
+return
+
+TRAINER_Davis_EVENTSCRIPT_ITEM::
+giveitem ITEM_EXP_CANDY_S
+return
+
+TRAINER_Tisha_EVENTSCRIPT_ITEM::
+giveitem ITEM_BURN_HEAL
+return
+
+TRAINER_Charlotte_EVENTSCRIPT_ITEM::
+giveitem ITEM_REPEL
+return
+
+TRAINER_Tasha_EVENTSCRIPT_ITEM::
+giveitem ITEM_SUPER_POTION
+return
+
+TRAINER_Ernest_1_EVENTSCRIPT_ITEM::
+giveitem ITEM_ELIXIR
+return
+
+TRAINER_Allison_EVENTSCRIPT_ITEM::
+giveitem ITEM_MAX_POTION
+return
+
+TRAINER_Julie_EVENTSCRIPT_ITEM::
+giveitem ITEM_FRESH_WATER
+return
+
+TRAINER_Lao_1_EVENTSCRIPT_ITEM::
+giveitem ITEM_REVIVAL_HERB
+return
+
+TRAINER_Humberto_EVENTSCRIPT_ITEM::
+giveitem ITEM_HYPER_POTION
+return
+
+TRAINER_Darrin_EVENTSCRIPT_ITEM::
+giveitem ITEM_METAL_POWDER
+return
+
+TRAINER_Albert_EVENTSCRIPT_ITEM::
+giveitem ITEM_FLUFFY_TAIL
+return
+
+TRAINER_Edgar_EVENTSCRIPT_ITEM::
+giveitem ITEM_PIXIE_PLATE
+return
+
+TRAINER_Allen_EVENTSCRIPT_ITEM::
+giveitem ITEM_ELECTRIUM_Z
+return
+
+TRAINER_Steve_1_EVENTSCRIPT_ITEM::
+giveitem ITEM_TROPIC_MAIL
+return
+
+TRAINER_Missy_EVENTSCRIPT_ITEM::
+giveitem ITEM_SUPER_POTION
+return
+
+TRAINER_Drew_EVENTSCRIPT_ITEM::
+giveitem ITEM_SODA_POP
+return
+
+TRAINER_Gerald_EVENTSCRIPT_ITEM::
+giveitem ITEM_ETHER
+return
+
+TRAINER_Katelyn_1_EVENTSCRIPT_ITEM::
+giveitem ITEM_FULL_INCENSE
+return
+
+TRAINER_Mike_1_EVENTSCRIPT_ITEM::
+giveitem ITEM_UTILITY_UMBRELLA
+return
+
+TRAINER_Colton_EVENTSCRIPT_ITEM::
+giveitem ITEM_HONDEW_BERRY
+return
+
+TRAINER_Alberto_EVENTSCRIPT_ITEM::
+giveitem ITEM_STEEL_GEM
+return
+
+TRAINER_Warren_EVENTSCRIPT_ITEM::
+giveitem ITEM_GARCHOMPITE
+return
+
+TRAINER_Jacki_1_EVENTSCRIPT_ITEM::
+giveitem ITEM_CHOICE_SPECS
+return
+
+TRAINER_Grunt_Magma_Hideout_4_EVENTSCRIPT_ITEM::
+giveitem ITEM_BLUE_FLUTE
+return
+
+TRAINER_Everett_EVENTSCRIPT_ITEM::
+giveitem ITEM_ENERGY_POWDER
+return
+
+TRAINER_Lila_And_Roy_1_EVENTSCRIPT_ITEM::
+giveitem ITEM_SUPER_REPEL
+return
+
+TRAINER_Rose_1_EVENTSCRIPT_ITEM::
+giveitem ITEM_STRAWBERRY_SWEET
+return
+
+TRAINER_Tony_1_EVENTSCRIPT_ITEM::
+giveitem ITEM_MAX_POTION
+return
+
+TRAINER_Dominik_EVENTSCRIPT_ITEM::
+giveitem ITEM_WHITE_FLUTE
+return
+
+TRAINER_Ronald_EVENTSCRIPT_ITEM::
+giveitem ITEM_RASH_MINT
+return
+
+TRAINER_Eddie_EVENTSCRIPT_ITEM::
+giveitem ITEM_SUPER_POTION
+return
+
+TRAINER_Dawson_EVENTSCRIPT_ITEM::
+giveitem ITEM_REVIVAL_HERB
+return
+
+TRAINER_Coby_EVENTSCRIPT_ITEM::
+giveitem ITEM_DESTINY_KNOT
+return
+
+TRAINER_Beck_EVENTSCRIPT_ITEM::
+giveitem ITEM_PLUME_FOSSIL
+return
+
+TRAINER_Berke_EVENTSCRIPT_ITEM::
+giveitem ITEM_HELIX_FOSSIL
+return
+
+TRAINER_Jared_EVENTSCRIPT_ITEM::
+giveitem ITEM_PINAP_BERRY
+return
+
+TRAINER_Georgia_EVENTSCRIPT_ITEM::
+giveitem ITEM_ICE_HEAL
+return
+
+TRAINER_Fabian_EVENTSCRIPT_ITEM::
+giveitem ITEM_BURN_HEAL
+return
+
+TRAINER_Tammy_EVENTSCRIPT_ITEM::
+giveitem ITEM_X_ATTACK
+return
+
+TRAINER_Cory_1_EVENTSCRIPT_ITEM::
+giveitem ITEM_FOCUS_SASH
+return
+
+TRAINER_DARIAN_EVENTSCRIPT_ITEM::
+giveitem ITEM_RELIC_COPPER
+return
+
+TRAINER_Dalton_1_EVENTSCRIPT_ITEM::
+giveitem ITEM_GREEN_SHARD
+return
+
+TRAINER_Brent_EVENTSCRIPT_ITEM::
+giveitem ITEM_BERRY_SWEET
+return
+
+TRAINER_Kent_EVENTSCRIPT_ITEM::
+giveitem ITEM_ICE_GEM
+return
+
+TRAINER_Robert_1_EVENTSCRIPT_ITEM::
+giveitem ITEM_BLACK_APRICORN
+return
+
+TRAINER_Joey_EVENTSCRIPT_ITEM::
+giveitem ITEM_WATMEL_BERRY
+return
+
+TRAINER_Quincy_EVENTSCRIPT_ITEM::
+giveitem ITEM_CHARIZARDITE_X
+return
+
+TRAINER_Andrea_EVENTSCRIPT_ITEM::
+giveitem ITEM_ROCK_MEMORY
+return
+
+TRAINER_Gabrielle_1_EVENTSCRIPT_ITEM::
+giveitem ITEM_BERRY_JUICE
+return
+
+TRAINER_Parker_EVENTSCRIPT_ITEM::
+giveitem ITEM_PSYCHIC_GEM
+return
+
+TRAINER_Nolan_EVENTSCRIPT_ITEM::
+giveitem ITEM_SWEET_HEART
+return
+
+TRAINER_Kyra_EVENTSCRIPT_ITEM::
+giveitem ITEM_CHESTO_BERRY
+return
+
+TRAINER_Grunt_Petalburg_Woods_EVENTSCRIPT_ITEM::
+giveitem ITEM_TINY_MUSHROOM
+return
+
+TRAINER_Grunt_Aqua_Hideout_6_EVENTSCRIPT_ITEM::
+giveitem ITEM_HYPER_POTION
+return
+
+TRAINER_Jaylen_EVENTSCRIPT_ITEM::
+giveitem ITEM_FULL_RESTORE
+return
+
+TRAINER_Edmond_EVENTSCRIPT_ITEM::
+giveitem ITEM_ALORAICHIUM_Z
+return
+
+TRAINER_Mitchell_EVENTSCRIPT_ITEM::
+giveitem ITEM_REVIVE
+return
+
+TRAINER_Vicky_EVENTSCRIPT_ITEM::
+giveitem ITEM_KANGASKHANITE
+return
+
+TRAINER_Catherine_1_EVENTSCRIPT_ITEM::
+giveitem ITEM_YELLOW_FLUTE
+return
+
+TRAINER_Mel_And_Paul_EVENTSCRIPT_ITEM::
+giveitem ITEM_SUPER_POTION
+return
+
+TRAINER_Cristin_1_EVENTSCRIPT_ITEM::
+giveitem ITEM_PROTECTIVE_PADS
+return
+
+TRAINER_Preston_EVENTSCRIPT_ITEM::
+giveitem ITEM_PIDGEOTITE
+return
+
+TRAINER_Travis_EVENTSCRIPT_ITEM::
+giveitem ITEM_LUCARIONITE
+return
+
+TRAINER_Roxanne_1_EVENTSCRIPT_ITEM::
+giveitem ITEM_POISON_MEMORY
+return
+
+TRAINER_Kindra_EVENTSCRIPT_ITEM::
+giveitem ITEM_TIMID_MINT
+return
+
+TRAINER_Marcel_EVENTSCRIPT_ITEM::
+giveitem ITEM_MIRACLE_SEED
+return
+
+TRAINER_Linda_EVENTSCRIPT_ITEM::
+giveitem ITEM_EARTH_PLATE
+return
+
+TRAINER_Brenda_EVENTSCRIPT_ITEM::
+giveitem ITEM_SUPER_POTION
+return
+
+TRAINER_Harrison_EVENTSCRIPT_ITEM::
+giveitem ITEM_SWEET_HEART
+return
+
+TRAINER_Gabby_And_Ty_3_EVENTSCRIPT_ITEM::
+giveitem ITEM_ICE_HEAL
+return
+
+TRAINER_WINSTON_1_EVENTSCRIPT_ITEM::
+giveitem ITEM_BUG_MEMORY
+return
+
+TRAINER_Diana_1_EVENTSCRIPT_ITEM::
+giveitem ITEM_MAX_REVIVE
+return
+
+TRAINER_Tiffany_EVENTSCRIPT_ITEM::
+giveitem ITEM_DOME_FOSSIL
+return
+
+TRAINER_Simon_EVENTSCRIPT_ITEM::
+giveitem ITEM_RED_CARD
+return
+
+TRAINER_Valerie_1_EVENTSCRIPT_ITEM::
+giveitem ITEM_SAFETY_GOGGLES
+return
+
+TRAINER_Keira_EVENTSCRIPT_ITEM::
+giveitem ITEM_YELLOW_APRICORN
+return
+
+TRAINER_Grunt_Weather_Inst_2_EVENTSCRIPT_ITEM::
+giveitem ITEM_BOLD_MINT
+return
+
+TRAINER_Kathleen_EVENTSCRIPT_ITEM::
+giveitem ITEM_IRON
+return
+
+TRAINER_Joseph_EVENTSCRIPT_ITEM::
+giveitem ITEM_WAVE_INCENSE
+return
+
+TRAINER_Flannery_1_EVENTSCRIPT_ITEM::
+giveitem ITEM_SHUCA_BERRY
+return
+
+TRAINER_Dez_And_Luke_EVENTSCRIPT_ITEM::
+giveitem ITEM_FULL_RESTORE
+return
+
+TRAINER_Angelina_EVENTSCRIPT_ITEM::
+giveitem ITEM_MAX_POTION
+return
+
+TRAINER_Steven_EVENTSCRIPT_ITEM::
+giveitem ITEM_MOOMOO_MILK
+return
+
+TRAINER_Justin_EVENTSCRIPT_ITEM::
+giveitem ITEM_PURPLE_NECTAR
+return
+
+TRAINER_Callie_EVENTSCRIPT_ITEM::
+giveitem ITEM_WISHING_PIECE
+return
+
+TRAINER_May_Route_110_Mudkip_EVENTSCRIPT_ITEM::
+giveitem ITEM_SODA_POP
+return
+
+TRAINER_Brooke_1_EVENTSCRIPT_ITEM::
+giveitem ITEM_MANECTITE
+return
+
+TRAINER_Sarah_EVENTSCRIPT_ITEM::
+giveitem ITEM_SHELL_BELL
+return
+
+TRAINER_Austina_EVENTSCRIPT_ITEM::
+giveitem ITEM_SLOWBRONITE
+return
+
+TRAINER_Greg_EVENTSCRIPT_ITEM::
+giveitem ITEM_ROWAP_BERRY
+return
+
+TRAINER_Sebastian_EVENTSCRIPT_ITEM::
+giveitem ITEM_REVIVAL_HERB
+return
+
+TRAINER_Dianne_EVENTSCRIPT_ITEM::
+giveitem ITEM_LURE
+return
+
+TRAINER_Shane_EVENTSCRIPT_ITEM::
+giveitem ITEM_WISE_GLASSES
+return
+
+TRAINER_Wyatt_EVENTSCRIPT_ITEM::
+giveitem ITEM_SUPER_POTION
+return
+
+TRAINER_Grunt_Mt_Pyre_1_EVENTSCRIPT_ITEM::
+giveitem ITEM_OVAL_CHARM
+return
+
+TRAINER_Lola_1_EVENTSCRIPT_ITEM::
+giveitem ITEM_SHED_SHELL
+return
+
+TRAINER_Taylor_EVENTSCRIPT_ITEM::
+giveitem ITEM_PSYCHIUM_Z
+return
+
+TRAINER_Wally_Mauville_EVENTSCRIPT_ITEM::
+giveitem ITEM_NORMAL_GEM
+return
+
+TRAINER_Grunt_Magma_Hideout_13_EVENTSCRIPT_ITEM::
+giveitem ITEM_PRISM_SCALE
+return
+
+TRAINER_Kiyo_EVENTSCRIPT_ITEM::
+giveitem ITEM_HONEY
+return
+
+TRAINER_JOSH_EVENTSCRIPT_ITEM::
+giveitem ITEM_IRON_BALL
+return
+
+TRAINER_Hideo_EVENTSCRIPT_ITEM::
+giveitem ITEM_MIMIKIUM_Z
+return
+
+TRAINER_Nob_1_EVENTSCRIPT_ITEM::
+giveitem ITEM_NANAB_BERRY
+return
+
+TRAINER_Beau_EVENTSCRIPT_ITEM::
+giveitem ITEM_FLYINIUM_Z
+return
+
+TRAINER_BILLY_EVENTSCRIPT_ITEM::
+giveitem ITEM_BELUE_BERRY
+return
+
+TRAINER_Kim_And_Iris_EVENTSCRIPT_ITEM::
+giveitem ITEM_BLACK_SLUDGE
+return
+
+TRAINER_Wayne_EVENTSCRIPT_ITEM::
+giveitem ITEM_MAX_HONEY
+return
+
+TRAINER_Grunt_Seafloor_Cavern_3_EVENTSCRIPT_ITEM::
+giveitem ITEM_HYPER_POTION
+return
+
+TRAINER_Shawn_EVENTSCRIPT_ITEM::
+giveitem ITEM_ELECTRIC_SEED
+return
+
+TRAINER_Miu_And_Yuki_EVENTSCRIPT_ITEM::
+giveitem ITEM_SHINY_CHARM
+return
+
+TRAINER_Charlie_EVENTSCRIPT_ITEM::
+giveitem ITEM_SPOOKY_PLATE
+return
+
+TRAINER_Presley_EVENTSCRIPT_ITEM::
+giveitem ITEM_GOLD_BOTTLE_CAP
+return
+
+TRAINER_Paula_EVENTSCRIPT_ITEM::
+giveitem ITEM_GOOEY_MULCH
+return
+
+TRAINER_Daphne_EVENTSCRIPT_ITEM::
+giveitem ITEM_PINK_SCARF
+return
+
+TRAINER_Benjamin_1_EVENTSCRIPT_ITEM::
+giveitem ITEM_TOXIC_ORB
+return
+
+TRAINER_Grunt_Magma_Hideout_11_EVENTSCRIPT_ITEM::
+giveitem ITEM_GANLON_BERRY
+return
+
+TRAINER_Grunt_Magma_Hideout_16_EVENTSCRIPT_ITEM::
+giveitem ITEM_LEMONADE
+return
+
+TRAINER_Thalia_1_EVENTSCRIPT_ITEM::
+giveitem ITEM_JOLLY_MINT
+return
+
+TRAINER_Lea_And_Jed_EVENTSCRIPT_ITEM::
+giveitem ITEM_MAX_HONEY
+return
+
+TRAINER_Talia_EVENTSCRIPT_ITEM::
+giveitem ITEM_ROOT_FOSSIL
+return
+
+TRAINER_Phillip_EVENTSCRIPT_ITEM::
+giveitem ITEM_FOSSILIZED_DRAKE
+return
+
+TRAINER_Fernando_1_EVENTSCRIPT_ITEM::
+giveitem ITEM_GHOSTIUM_Z
+return
+
+TRAINER_Tyra_And_Ivy_EVENTSCRIPT_ITEM::
+giveitem ITEM_SUPER_POTION
+return
+
+TRAINER_Reyna_EVENTSCRIPT_ITEM::
+giveitem ITEM_YELLOW_SHARD
+return
+
+TRAINER_Sylvia_EVENTSCRIPT_ITEM::
+giveitem ITEM_ELIXIR
+return
+
+TRAINER_Jeff_EVENTSCRIPT_ITEM::
+giveitem ITEM_SHARP_BEAK
+return
+
+TRAINER_Maxie_Magma_Hideout_EVENTSCRIPT_ITEM::
+giveitem ITEM_ASPEAR_BERRY
+return
+
+TRAINER_Grunt_Magma_Hideout_1_EVENTSCRIPT_ITEM::
+giveitem ITEM_ENERGY_ROOT
+return
+
+TRAINER_Dwayne_EVENTSCRIPT_ITEM::
+giveitem ITEM_FRESH_WATER
+return
+
+TRAINER_Doug_EVENTSCRIPT_ITEM::
+giveitem ITEM_KELPSY_BERRY
+return
+
+TRAINER_Phoebe_EVENTSCRIPT_ITEM::
+giveitem ITEM_SWEET_HEART
+return
+
+TRAINER_Wendy_EVENTSCRIPT_ITEM::
+giveitem ITEM_REVIVE
+return
+
+TRAINER_Maura_EVENTSCRIPT_ITEM::
+giveitem ITEM_ELECTIRIZER
+return
+
+TRAINER_Lung_EVENTSCRIPT_ITEM::
+giveitem ITEM_HEAT_ROCK
+return
+
+TRAINER_Alexa_EVENTSCRIPT_ITEM::
+giveitem ITEM_WAVE_MAIL
+return
+
+TRAINER_Grunt_Magma_Hideout_5_EVENTSCRIPT_ITEM::
+giveitem ITEM_MAX_HONEY
+return
+
+TRAINER_Takashi_EVENTSCRIPT_ITEM::
+giveitem ITEM_KASIB_BERRY
+return
+
+TRAINER_Douglas_EVENTSCRIPT_ITEM::
+giveitem ITEM_WHIPPED_DREAM
+return
+
+TRAINER_Jace_EVENTSCRIPT_ITEM::
+giveitem ITEM_STEELIXITE
+return
+
+TRAINER_Blake_EVENTSCRIPT_ITEM::
+giveitem ITEM_STARF_BERRY
+return
+
+TRAINER_Grunt_Rusturf_Tunnel_EVENTSCRIPT_ITEM::
+giveitem ITEM_DYNITE_ORE
+return
+
+TRAINER_Rodney_EVENTSCRIPT_ITEM::
+giveitem ITEM_SOOTHE_BELL
+return
+
+TRAINER_Tiana_EVENTSCRIPT_ITEM::
+giveitem ITEM_MAX_ELIXIR
+return
+
+TRAINER_Jerome_EVENTSCRIPT_ITEM::
+giveitem ITEM_METRONOME
+return
+
+TRAINER_Susie_EVENTSCRIPT_ITEM::
+giveitem ITEM_RELIC_VASE
+return
+
+TRAINER_Lucas_1_EVENTSCRIPT_ITEM::
+giveitem ITEM_STABLE_MULCH
+return
+
+TRAINER_Jocelyn_EVENTSCRIPT_ITEM::
+giveitem ITEM_INSECT_PLATE
+return
+
+TRAINER_Archie_EVENTSCRIPT_ITEM::
+giveitem ITEM_LOPUNNITE
+return
+
+TRAINER_Wattson_1_EVENTSCRIPT_ITEM::
+giveitem ITEM_MISTY_SEED
+return
+
+TRAINER_Hector_EVENTSCRIPT_ITEM::
+giveitem ITEM_DIRE_HIT
+return
+
+TRAINER_Grunt_Seafloor_Cavern_2_EVENTSCRIPT_ITEM::
+giveitem ITEM_ELECTRIC_MEMORY
+return
+
+TRAINER_Bryant_EVENTSCRIPT_ITEM::
+giveitem ITEM_MARSHADIUM_Z
+return
+
+TRAINER_Jaclyn_EVENTSCRIPT_ITEM::
+giveitem ITEM_ENIGMA_BERRY_E_READER
+return
+
+TRAINER_Dylan_1_EVENTSCRIPT_ITEM::
+giveitem ITEM_HASTY_MINT
+return
+
+TRAINER_Timothy_1_EVENTSCRIPT_ITEM::
+giveitem ITEM_GUARD_SPEC
+return
+
+TRAINER_Grunt_Aqua_Hideout_4_EVENTSCRIPT_ITEM::
+giveitem ITEM_RICH_MULCH
+return
+
+TRAINER_Johanna_EVENTSCRIPT_ITEM::
+giveitem ITEM_POWER_BRACER
+return
+
+TRAINER_Samuel_EVENTSCRIPT_ITEM::
+giveitem ITEM_IRON_PLATE
+return
+
+TRAINER_Thomas_EVENTSCRIPT_ITEM::
+giveitem ITEM_GRISEOUS_ORB
+return
+
+TRAINER_Jonathan_EVENTSCRIPT_ITEM::
+giveitem ITEM_LEFTOVERS
+return
+
+TRAINER_Leah_EVENTSCRIPT_ITEM::
+giveitem ITEM_BALM_MUSHROOM
+return
+
+TRAINER_Halle_EVENTSCRIPT_ITEM::
+giveitem ITEM_MOOMOO_MILK
+return
+
+TRAINER_Stan_EVENTSCRIPT_ITEM::
+giveitem ITEM_RAWST_BERRY
+return
+
+TRAINER_Brandi_EVENTSCRIPT_ITEM::
+giveitem ITEM_POTION
+return
+
+TRAINER_Drake_EVENTSCRIPT_ITEM::
+giveitem ITEM_FLYING_GEM
+return
+
+TRAINER_Sienna_EVENTSCRIPT_ITEM::
+giveitem ITEM_EJECT_BUTTON
+return
+
+TRAINER_Grunt_Magma_Hideout_2_EVENTSCRIPT_ITEM::
+giveitem ITEM_SHARPEDONITE
+return
+
+TRAINER_Josue_EVENTSCRIPT_ITEM::
+giveitem ITEM_COLBUR_BERRY
+return
+
+TRAINER_Wally_VR_1_EVENTSCRIPT_ITEM::
+giveitem ITEM_TM_FOCUS_PUNCH
+return
+
+TRAINER_Anthony_EVENTSCRIPT_ITEM::
+giveitem ITEM_MAX_ETHER
+return
+
+TRAINER_Grunt_Mt_Pyre_4_EVENTSCRIPT_ITEM::
+giveitem ITEM_MEDICHAMITE
+return
+
+TRAINER_Herman_EVENTSCRIPT_ITEM::
+giveitem ITEM_POTION
+return
+
+TRAINER_Clark_EVENTSCRIPT_ITEM::
+giveitem ITEM_EXP_CANDY_XL
+return
+
+TRAINER_Shelly_Weather_Institute_EVENTSCRIPT_ITEM::
+giveitem ITEM_TERRAIN_EXTENDER
+return
+
+TRAINER_Elijah_EVENTSCRIPT_ITEM::
+giveitem ITEM_X_SP_ATK
+return
+
+TRAINER_Grunt_Seafloor_Cavern_5_EVENTSCRIPT_ITEM::
+giveitem ITEM_RUSTED_SWORD
+return
+
+TRAINER_Garret_EVENTSCRIPT_ITEM::
+giveitem ITEM_OCCA_BERRY
+return
+
+TRAINER_Dillon_EVENTSCRIPT_ITEM::
+giveitem ITEM_MAX_POTION
+return
+
+TRAINER_Angelica_EVENTSCRIPT_ITEM::
+giveitem ITEM_X_DEFENSE
+return
+
+TRAINER_Spencer_EVENTSCRIPT_ITEM::
+giveitem ITEM_BIG_PEARL
+return
+
+TRAINER_Tate_And_Liza_1_EVENTSCRIPT_ITEM::
+giveitem ITEM_PINK_APRICORN
+return
+
+TRAINER_Isabella_EVENTSCRIPT_ITEM::
+giveitem ITEM_PASSHO_BERRY
+return
+
+TRAINER_Victor_EVENTSCRIPT_ITEM::
+giveitem ITEM_COBA_BERRY
+return
+
+TRAINER_Fredrick_EVENTSCRIPT_ITEM::
+giveitem ITEM_HYPER_POTION
+return
+
+TRAINER_Timmy_EVENTSCRIPT_ITEM::
+giveitem ITEM_STONE_PLATE
+return
+
+TRAINER_Jacob_EVENTSCRIPT_ITEM::
+giveitem ITEM_FLOWER_SWEET
+return
+
+TRAINER_Sophia_EVENTSCRIPT_ITEM::
+giveitem ITEM_KOMMONIUM_Z
+return
+
+TRAINER_Grunt_Weather_Inst_5_EVENTSCRIPT_ITEM::
+giveitem ITEM_FLAME_ORB
+return
+
+TRAINER_Micah_EVENTSCRIPT_ITEM::
+giveitem ITEM_QUALOT_BERRY
+return
+
+TRAINER_Jaiden_EVENTSCRIPT_ITEM::
+giveitem ITEM_MAX_POTION
+return
+
+TRAINER_Hannah_EVENTSCRIPT_ITEM::
+giveitem ITEM_HEAVY_DUTY_BOOTS
+return
+
+TRAINER_Keegan_EVENTSCRIPT_ITEM::
+giveitem ITEM_BIG_NUGGET
+return
+
+TRAINER_Gwen_EVENTSCRIPT_ITEM::
+giveitem ITEM_AGGRONITE
+return
+
+TRAINER_Grunt_Aqua_Hideout_2_EVENTSCRIPT_ITEM::
+giveitem ITEM_SUPER_POTION
+return
+
+TRAINER_Roland_EVENTSCRIPT_ITEM::
+giveitem ITEM_WEPEAR_BERRY
+return
+
+TRAINER_Duncan_EVENTSCRIPT_ITEM::
+giveitem ITEM_LEMONADE
+return
+
+TRAINER_Kira_And_Dan_1_EVENTSCRIPT_ITEM::
+giveitem ITEM_ABSOLITE
+return
+
+TRAINER_Leonel_EVENTSCRIPT_ITEM::
+giveitem ITEM_NEVER_MELT_ICE
+return
+
+TRAINER_Lisa_And_Ray_EVENTSCRIPT_ITEM::
+giveitem ITEM_MYSTIC_WATER
+return
+
+TRAINER_May_Route_119_Mudkip_EVENTSCRIPT_ITEM::
+giveitem ITEM_HYPER_POTION
+return
+
+TRAINER_Imani_EVENTSCRIPT_ITEM::
+giveitem ITEM_FULL_RESTORE
+return
+
+TRAINER_Tara_EVENTSCRIPT_ITEM::
+giveitem ITEM_ORANGE_MAIL
+return
+
+TRAINER_Reli_And_Ian_EVENTSCRIPT_ITEM::
+giveitem ITEM_WIDE_LENS
+return
+
+TRAINER_Jessica_1_EVENTSCRIPT_ITEM::
+giveitem ITEM_ESCAPE_ROPE
+return
+
+TRAINER_GINA_AND_MIA_1_EVENTSCRIPT_ITEM::
+giveitem ITEM_WEAKNESS_POLICY
+return
+
+TRAINER_Laura_EVENTSCRIPT_ITEM::
+giveitem ITEM_PURE_INCENSE
+return
+
+TRAINER_Jerry_1_EVENTSCRIPT_ITEM::
+giveitem ITEM_POKE_DOLL
+return
+
+TRAINER_Aaron_EVENTSCRIPT_ITEM::
+giveitem ITEM_HYPER_POTION
+return
+
+TRAINER_Bernie_1_EVENTSCRIPT_ITEM::
+giveitem ITEM_CASTELIACONE
+return
+
+TRAINER_Grunt_Magma_Hideout_10_EVENTSCRIPT_ITEM::
+giveitem ITEM_BUG_GEM
+return
+
+TRAINER_Derek_EVENTSCRIPT_ITEM::
+giveitem ITEM_PARALYZE_HEAL
+return
+
+TRAINER_Nolen_EVENTSCRIPT_ITEM::
+giveitem ITEM_MAWILITE
+return
+
+TRAINER_Chandler_EVENTSCRIPT_ITEM::
+giveitem ITEM_SUPER_LURE
+return
+
+TRAINER_Conor_EVENTSCRIPT_ITEM::
+giveitem ITEM_MAX_POTION
+return
+
+TRAINER_Owen_EVENTSCRIPT_ITEM::
+giveitem ITEM_POTION
+return
+
+TRAINER_Paxton_EVENTSCRIPT_ITEM::
+giveitem ITEM_DRAGON_GEM
+return
+
+TRAINER_Atsushi_EVENTSCRIPT_ITEM::
+giveitem ITEM_MAX_ETHER
+return
+
+TRAINER_Riley_EVENTSCRIPT_ITEM::
+giveitem ITEM_POKE_DOLL
+return
+
+TRAINER_Isabel_1_EVENTSCRIPT_ITEM::
+giveitem ITEM_X_SP_DEF
+return
+
+TRAINER_Autumn_EVENTSCRIPT_ITEM::
+giveitem ITEM_CLEVER_FEATHER
+return
+
+TRAINER_Kelvin_EVENTSCRIPT_ITEM::
+giveitem ITEM_EXPERT_BELT
+return
+
+TRAINER_Grunt_Magma_Hideout_3_EVENTSCRIPT_ITEM::
+giveitem ITEM_UPGRADE
+return
+
+TRAINER_Lawrence_EVENTSCRIPT_ITEM::
+giveitem ITEM_SHOAL_SHELL
+return
+
+TRAINER_Yasu_EVENTSCRIPT_ITEM::
+giveitem ITEM_WATERIUM_Z
+return
+
+TRAINER_Wade_EVENTSCRIPT_ITEM::
+giveitem ITEM_ICY_ROCK
+return
+
+TRAINER_Naomi_EVENTSCRIPT_ITEM::
+giveitem ITEM_CHOICE_SCARF
+return
+
+TRAINER_Grunt_Seafloor_Cavern_4_EVENTSCRIPT_ITEM::
+giveitem ITEM_SACHET
+return
+
+TRAINER_Dayton_EVENTSCRIPT_ITEM::
+giveitem ITEM_TANGA_BERRY
+return
+
+TRAINER_Matthew_EVENTSCRIPT_ITEM::
+giveitem ITEM_FOSSILIZED_DINO
+return
+
+TRAINER_Hugh_EVENTSCRIPT_ITEM::
+giveitem ITEM_MEADOW_PLATE
+return
+
+TRAINER_John_And_Jay_1_EVENTSCRIPT_ITEM::
+giveitem ITEM_BABIRI_BERRY
+return
+
+TRAINER_Caroline_EVENTSCRIPT_ITEM::
+giveitem ITEM_ABOMASITE
+return
+
+TRAINER_Barny_EVENTSCRIPT_ITEM::
+giveitem ITEM_DUBIOUS_DISC
+return
+
+TRAINER_Hope_EVENTSCRIPT_ITEM::
+giveitem ITEM_LUSTROUS_ORB
+return
+
+TRAINER_Connie_EVENTSCRIPT_ITEM::
+giveitem ITEM_ALTARIANITE
+return
+
+TRAINER_Tabitha_Magma_Hideout_EVENTSCRIPT_ITEM::
+giveitem ITEM_LUNALIUM_Z
+return
+
+TRAINER_Koichi_EVENTSCRIPT_ITEM::
+giveitem ITEM_WHITE_HERB
+return
+
+TRAINER_Grunt_Aqua_Hideout_7_EVENTSCRIPT_ITEM::
+giveitem ITEM_OLD_AMBER
+return
+
+TRAINER_Celina_EVENTSCRIPT_ITEM::
+giveitem ITEM_RIBBON_SWEET
+return
+
+TRAINER_Jennifer_EVENTSCRIPT_ITEM::
+giveitem ITEM_HEALTH_FEATHER
+return
+
+TRAINER_Zander_EVENTSCRIPT_ITEM::
+giveitem ITEM_ENIGMA_BERRY
+return
+
+TRAINER_Robin_EVENTSCRIPT_ITEM::
+giveitem ITEM_LUCKY_PUNCH
+return
+
+TRAINER_Jody_EVENTSCRIPT_ITEM::
+giveitem ITEM_AIR_BALLOON
+return
+
+TRAINER_Tori_And_Tia_EVENTSCRIPT_ITEM::
+giveitem ITEM_SUPER_POTION
+return
+
+TRAINER_Olivia_EVENTSCRIPT_ITEM::
+giveitem ITEM_PSYCHIC_SEED
+return
+
+TRAINER_Maria_1_EVENTSCRIPT_ITEM::
+giveitem ITEM_GUARD_SPEC
+return
+
+TRAINER_Danielle_EVENTSCRIPT_ITEM::
+giveitem ITEM_BLUK_BERRY
+return
+
+TRAINER_Jeffrey_1_EVENTSCRIPT_ITEM::
+giveitem ITEM_TYRANITARITE
+return
+
+TRAINER_Demetrius_EVENTSCRIPT_ITEM::
+giveitem ITEM_GROWTH_MULCH
+return
+
+TRAINER_Nicholas_EVENTSCRIPT_ITEM::
+giveitem ITEM_HEAL_POWDER
+return
+
+TRAINER_Grunt_Magma_Hideout_9_EVENTSCRIPT_ITEM::
+giveitem ITEM_FULL_HEAL
+return
+
+TRAINER_Grunt_Mt_Pyre_3_EVENTSCRIPT_ITEM::
+giveitem ITEM_PRETTY_FEATHER
+return
+
+TRAINER_CINDY_1_EVENTSCRIPT_ITEM::
+giveitem ITEM_CHARTI_BERRY
+return
+
+TRAINER_Colin_EVENTSCRIPT_ITEM::
+giveitem ITEM_LUCK_INCENSE
+return
+
+TRAINER_Mary_EVENTSCRIPT_ITEM::
+giveitem ITEM_LIGHT_CLAY
+return
+
+TRAINER_Alexis_EVENTSCRIPT_ITEM::
+giveitem ITEM_MUSCLE_BAND
+return
+
+TRAINER_Mariela_EVENTSCRIPT_ITEM::
+giveitem ITEM_BERRY_JUICE
+return
+
+TRAINER_Deandre_EVENTSCRIPT_ITEM::
+giveitem ITEM_ENERGY_POWDER
+return
+
+TRAINER_Garrison_EVENTSCRIPT_ITEM::
+giveitem ITEM_THUNDER_STONE
+return
+
+TRAINER_Vivi_EVENTSCRIPT_ITEM::
+giveitem ITEM_RAZZ_BERRY
+return
+
+TRAINER_Paul_EVENTSCRIPT_ITEM::
+giveitem ITEM_LUMIOSE_GALETTE
+return
+
+TRAINER_Alice_EVENTSCRIPT_ITEM::
+giveitem ITEM_HEAL_POWDER
+return
+
+TRAINER_Darcy_EVENTSCRIPT_ITEM::
+giveitem ITEM_MAX_HONEY
+return
+
+TRAINER_Luis_EVENTSCRIPT_ITEM::
+giveitem ITEM_ENERGY_POWDER
+return
+
+TRAINER_Grunt_Mt_Pyre_2_EVENTSCRIPT_ITEM::
+giveitem ITEM_CUSTAP_BERRY
+return
+
+TRAINER_Ethan_1_EVENTSCRIPT_ITEM::
+giveitem ITEM_PARALYZE_HEAL
+return
+
+TRAINER_Rachel_EVENTSCRIPT_ITEM::
+giveitem ITEM_SITRUS_BERRY
+return
+
+TRAINER_Wilton_1_EVENTSCRIPT_ITEM::
+giveitem ITEM_HYPER_POTION
+return
+
+TRAINER_Kirk_EVENTSCRIPT_ITEM::
+giveitem ITEM_CHARIZARDITE_Y
+return
+
+TRAINER_Isobel_EVENTSCRIPT_ITEM::
+giveitem ITEM_FULL_RESTORE
+return
+
+TRAINER_Grunt_Magma_Hideout_15_EVENTSCRIPT_ITEM::
+giveitem ITEM_EXP_CANDY_L
+return
+
+TRAINER_Winona_1_EVENTSCRIPT_ITEM::
+giveitem ITEM_ENERGY_POWDER
+return
+
+TRAINER_Cristian_EVENTSCRIPT_ITEM::
+giveitem ITEM_SACRED_ASH
+return
+
+TRAINER_Edward_EVENTSCRIPT_ITEM::
+giveitem ITEM_ICE_MEMORY
+return
+
+TRAINER_Grunt_Magma_Hideout_7_EVENTSCRIPT_ITEM::
+giveitem ITEM_MAX_POTION
+return
+
+TRAINER_Grunt_Magma_Hideout_6_EVENTSCRIPT_ITEM::
+giveitem ITEM_RAZOR_CLAW
+return
+
+TRAINER_Kayla_EVENTSCRIPT_ITEM::
+giveitem ITEM_POTION
+return
+
+TRAINER_Hudson_EVENTSCRIPT_ITEM::
+giveitem ITEM_SCOPE_LENS
+return
+
+TRAINER_Dale_EVENTSCRIPT_ITEM::
+giveitem ITEM_HEAL_POWDER
+return
+
+TRAINER_Annika_EVENTSCRIPT_ITEM::
+giveitem ITEM_HEAL_POWDER
+return
+
+TRAINER_Katie_EVENTSCRIPT_ITEM::
+giveitem ITEM_GRIP_CLAW
+return
+
+TRAINER_Crissy_EVENTSCRIPT_ITEM::
+giveitem ITEM_POTION
+return
+
+TRAINER_Jose_EVENTSCRIPT_ITEM::
+giveitem ITEM_ADAMANT_ORB
+return
+
+TRAINER_Lenny_EVENTSCRIPT_ITEM::
+giveitem ITEM_COMET_SHARD
+return
+
+TRAINER_Angelo_EVENTSCRIPT_ITEM::
+giveitem ITEM_AWAKENING
+return
+
+TRAINER_Violet_EVENTSCRIPT_ITEM::
+giveitem ITEM_MOOMOO_MILK
+return
+
+TRAINER_Keigo_EVENTSCRIPT_ITEM::
+giveitem ITEM_POTION
+return
+
+TRAINER_Bianca_EVENTSCRIPT_ITEM::
+giveitem ITEM_SWAMPERTITE
+return
+
+TRAINER_Victoria_EVENTSCRIPT_ITEM::
+giveitem ITEM_POTION
+return
+
+TRAINER_Isaiah_1_EVENTSCRIPT_ITEM::
+giveitem ITEM_LEPPA_BERRY
+return
+
+trainer_items::
+ switch VAR_TRAINER_BATTLE_OPPONENT_A
+      case TRAINER_GABBY_AND_TY_2, TRAINER_Gabby_And_Ty_2_EVENTSCRIPT_ITEM
+      case TRAINER_BRAXTON, TRAINER_Braxton_EVENTSCRIPT_ITEM
+      case TRAINER_TYRON, TRAINER_Tyron_EVENTSCRIPT_ITEM
+      case TRAINER_BRENDEN, TRAINER_Brenden_EVENTSCRIPT_ITEM
+      case TRAINER_DEAN, TRAINER_Dean_EVENTSCRIPT_ITEM
+      case TRAINER_CARLEE, TRAINER_Carlee_EVENTSCRIPT_ITEM
+      case TRAINER_VIRGIL, TRAINER_Virgil_EVENTSCRIPT_ITEM
+      case TRAINER_CALE, TRAINER_Cale_EVENTSCRIPT_ITEM
+      case TRAINER_GEORGE, TRAINER_George_EVENTSCRIPT_ITEM
+      case TRAINER_BETH, TRAINER_Beth_EVENTSCRIPT_ITEM
+      case TRAINER_SAMANTHA, TRAINER_Samantha_EVENTSCRIPT_ITEM
+      case TRAINER_MAY_LILYCOVE_MUDKIP, TRAINER_MAY_LILLYCOVE_MUDKIP_EVENTSCRIPT_ITEM
+      case TRAINER_HAILEY, TRAINER_Hailey_EVENTSCRIPT_ITEM
+      case TRAINER_CAMRON, TRAINER_Camron_EVENTSCRIPT_ITEM
+      case TRAINER_GRUNT_AQUA_HIDEOUT_8, TRAINER_Grunt_Aqua_Hideout_8_EVENTSCRIPT_ITEM
+      case TRAINER_ALVARO, TRAINER_Alvaro_EVENTSCRIPT_ITEM
+      case TRAINER_TED, TRAINER_Ted_EVENTSCRIPT_ITEM
+      case TRAINER_ALYSSA, TRAINER_Alyssa_EVENTSCRIPT_ITEM
+      case TRAINER_JACKSON_1, TRAINER_Jackson_1_EVENTSCRIPT_ITEM
+      case TRAINER_MACEY, TRAINER_Macey_EVENTSCRIPT_ITEM
+      case TRAINER_RICHARD, TRAINER_Richard_EVENTSCRIPT_ITEM
+      case TRAINER_TRENT_1, TRAINER_Trent_1_EVENTSCRIPT_ITEM
+      case TRAINER_NORMAN_1, TRAINER_Norman_1_EVENTSCRIPT_ITEM
+      case TRAINER_CHAD, TRAINER_Chad_EVENTSCRIPT_ITEM
+      case TRAINER_GRUNT_AQUA_HIDEOUT_5, TRAINER_Grunt_Aqua_Hideout_5_EVENTSCRIPT_ITEM
+      case TRAINER_GRUNT_MAGMA_HIDEOUT_8, TRAINER_Grunt_Magma_Hideout_8_EVENTSCRIPT_ITEM
+      case TRAINER_PHIL, TRAINER_Phil_EVENTSCRIPT_ITEM
+      case TRAINER_ALEX, TRAINER_Alex_EVENTSCRIPT_ITEM
+      case TRAINER_AISHA, TRAINER_Aisha_EVENTSCRIPT_ITEM
+      case TRAINER_GRACE, TRAINER_Grace_EVENTSCRIPT_ITEM
+      case TRAINER_MARK, TRAINER_Mark_EVENTSCRIPT_ITEM
+      case TRAINER_RICK, TRAINER_Rick_EVENTSCRIPT_ITEM
+      case TRAINER_ALIX, TRAINER_Alix_EVENTSCRIPT_ITEM
+      case TRAINER_RUBEN, TRAINER_Ruben_EVENTSCRIPT_ITEM
+      case TRAINER_CEDRIC, TRAINER_Cedric_EVENTSCRIPT_ITEM
+      case TRAINER_MAY_ROUTE_103_MUDKIP, TRAINER_MAY_ROUTE_103_MUDKIP_EVENTSCRIPT_ITEM
+      case TRAINER_ERIC, TRAINER_Eric_EVENTSCRIPT_ITEM
+      case TRAINER_KAI, TRAINER_Kai_EVENTSCRIPT_ITEM
+      case TRAINER_DAVID, TRAINER_David_EVENTSCRIPT_ITEM
+      case TRAINER_LORENZO, TRAINER_Lorenzo_EVENTSCRIPT_ITEM
+      case TRAINER_IVAN, TRAINER_IVAN_EVENTSCRIPT_ITEM
+      case TRAINER_DECLAN, TRAINER_Declan_EVENTSCRIPT_ITEM
+      case TRAINER_REED, TRAINER_Reed_EVENTSCRIPT_ITEM
+      case TRAINER_LAUREL, TRAINER_Laurel_EVENTSCRIPT_ITEM
+      case TRAINER_WALTER_1, TRAINER_Walter_1_EVENTSCRIPT_ITEM
+      case TRAINER_CLAUDE, TRAINER_Claude_EVENTSCRIPT_ITEM
+      case TRAINER_ANNA_AND_MEG_1, TRAINER_Anna_And_Meg_1_EVENTSCRIPT_ITEM
+      case TRAINER_CARTER, TRAINER_Carter_EVENTSCRIPT_ITEM
+      case TRAINER_CLARENCE, TRAINER_Clarence_EVENTSCRIPT_ITEM
+      case TRAINER_NICOLAS_1, TRAINER_Nicolas_1_EVENTSCRIPT_ITEM
+      case TRAINER_LYDIA_1, TRAINER_Lydia_1_EVENTSCRIPT_ITEM
+      case TRAINER_SHELLY_SEAFLOOR_CAVERN, TRAINER_Shelly_Seafloor_Cavern_EVENTSCRIPT_ITEM
+      case TRAINER_LEROY, TRAINER_Leroy_EVENTSCRIPT_ITEM
+      case TRAINER_LEONARD, TRAINER_Leonard_EVENTSCRIPT_ITEM
+      case TRAINER_JOHNSON, TRAINER_Johnson_EVENTSCRIPT_ITEM
+      case TRAINER_DEBRA, TRAINER_Debra_EVENTSCRIPT_ITEM
+      case TRAINER_YUJI, TRAINER_Yuji_EVENTSCRIPT_ITEM
+      case TRAINER_JENNA, TRAINER_Jenna_EVENTSCRIPT_ITEM
+      case TRAINER_BRANDEN, TRAINER_Branden_EVENTSCRIPT_ITEM
+      case TRAINER_GRUNT_MAGMA_HIDEOUT_14, TRAINER_Grunt_Magma_Hideout_14_EVENTSCRIPT_ITEM
+      case TRAINER_CELIA, TRAINER_Celia_EVENTSCRIPT_ITEM
+      case TRAINER_GRUNT_SEAFLOOR_CAVERN_1, TRAINER_Grunt_Seafloor_Cavern_1_EVENTSCRIPT_ITEM
+      case TRAINER_CAROL, TRAINER_Carol_EVENTSCRIPT_ITEM
+      case TRAINER_RICKY_1, TRAINER_Ricky_1_EVENTSCRIPT_ITEM
+      case TRAINER_BECKY, TRAINER_Becky_EVENTSCRIPT_ITEM
+      case TRAINER_DENISE, TRAINER_Denise_EVENTSCRIPT_ITEM
+      case TRAINER_JAZMYN, TRAINER_Jazmyn_EVENTSCRIPT_ITEM
+      case TRAINER_MARLEY, TRAINER_Marley_EVENTSCRIPT_ITEM
+      case TRAINER_ASHLEY, TRAINER_Ashley_EVENTSCRIPT_ITEM
+      case TRAINER_MATT, TRAINER_Matt_EVENTSCRIPT_ITEM
+      case TRAINER_AURON, TRAINER_Auron_EVENTSCRIPT_ITEM
+      case TRAINER_VANESSA, TRAINER_Vanessa_EVENTSCRIPT_ITEM
+      case TRAINER_ABIGAIL_1, TRAINER_Abigail_1_EVENTSCRIPT_ITEM
+      case TRAINER_MARC, TRAINER_Marc_EVENTSCRIPT_ITEM
+      case TRAINER_RANDALL, TRAINER_Randall_EVENTSCRIPT_ITEM
+      case TRAINER_MYLES, TRAINER_Myles_EVENTSCRIPT_ITEM
+      case TRAINER_CLARISSA, TRAINER_Clarissa_EVENTSCRIPT_ITEM
+      case TRAINER_BETHANY, TRAINER_Bethany_EVENTSCRIPT_ITEM
+      case TRAINER_SHANNON, TRAINER_Shannon_EVENTSCRIPT_ITEM
+      case TRAINER_BRAWLY_1, TRAINER_Brawly_1_EVENTSCRIPT_ITEM
+      case TRAINER_ELI, TRAINER_Eli_EVENTSCRIPT_ITEM
+      case TRAINER_GRUNT_WEATHER_INST_4, TRAINER_Grunt_Weather_Inst_4_EVENTSCRIPT_ITEM
+      case TRAINER_DEVAN, TRAINER_Devan_EVENTSCRIPT_ITEM
+      case TRAINER_HELENE, TRAINER_Helene_EVENTSCRIPT_ITEM
+      case TRAINER_BRYAN, TRAINER_Bryan_EVENTSCRIPT_ITEM
+      case TRAINER_JANI, TRAINER_Jani_EVENTSCRIPT_ITEM
+      case TRAINER_GRUNT_JAGGED_PASS, TRAINER_Grunt_Jagged_Pass_EVENTSCRIPT_ITEM
+      case TRAINER_PAT, TRAINER_Pat_EVENTSCRIPT_ITEM
+      case TRAINER_VITO, TRAINER_Vito_EVENTSCRIPT_ITEM
+      case TRAINER_ALEXIA, TRAINER_Alexia_EVENTSCRIPT_ITEM
+      case TRAINER_FRANKLIN, TRAINER_Franklin_EVENTSCRIPT_ITEM
+      case TRAINER_IRENE, TRAINER_Irene_EVENTSCRIPT_ITEM
+      case TRAINER_LILITH, TRAINER_Lilith_EVENTSCRIPT_ITEM
+      case TRAINER_CHASE, TRAINER_Chase_EVENTSCRIPT_ITEM
+      case TRAINER_JOSHUA, TRAINER_Joshua_EVENTSCRIPT_ITEM
+      case TRAINER_NATE, TRAINER_Nate_EVENTSCRIPT_ITEM
+      case TRAINER_PERRY, TRAINER_Perry_EVENTSCRIPT_ITEM
+      case TRAINER_MELINA, TRAINER_Melina_EVENTSCRIPT_ITEM
+      case TRAINER_GRUNT_WEATHER_INST_3, TRAINER_Grunt_Weather_Inst_3_EVENTSCRIPT_ITEM
+      case TRAINER_MICHELLE, TRAINER_Michelle_EVENTSCRIPT_ITEM
+      case TRAINER_NANCY, TRAINER_Nancy_EVENTSCRIPT_ITEM
+      case TRAINER_CHIP, TRAINER_Chip_EVENTSCRIPT_ITEM
+      case TRAINER_DANA, TRAINER_Dana_EVENTSCRIPT_ITEM
+      case TRAINER_BRIANNA, TRAINER_Brianna_EVENTSCRIPT_ITEM
+      case TRAINER_KATE_AND_JOY, TRAINER_Kate_And_Joy_EVENTSCRIPT_ITEM
+      case TRAINER_GRUNT_MAGMA_HIDEOUT_12, TRAINER_Grunt_Magma_Hideout_12_EVENTSCRIPT_ITEM
+      case TRAINER_PABLO_1, TRAINER_Pablo_1_EVENTSCRIPT_ITEM
+      case TRAINER_FELIX, TRAINER_Felix_EVENTSCRIPT_ITEM
+      case TRAINER_SHARON, TRAINER_Sharon_EVENTSCRIPT_ITEM
+      case TRAINER_JANICE, TRAINER_Janice_EVENTSCRIPT_ITEM
+      case TRAINER_BEN, TRAINER_Ben_EVENTSCRIPT_ITEM
+      case TRAINER_ANDRES_1, TRAINER_Andres_1_EVENTSCRIPT_ITEM
+      case TRAINER_MADELINE_1, TRAINER_Madeline_1_EVENTSCRIPT_ITEM
+      case TRAINER_BEVERLY, TRAINER_Beverly_EVENTSCRIPT_ITEM
+      case TRAINER_BRICE, TRAINER_Brice_EVENTSCRIPT_ITEM
+      case TRAINER_JAMES_1, TRAINER_James_1_EVENTSCRIPT_ITEM
+      case TRAINER_DARIUS, TRAINER_Darius_EVENTSCRIPT_ITEM
+      case TRAINER_VINCENT, TRAINER_Vincent_EVENTSCRIPT_ITEM
+      case TRAINER_HUEY, TRAINER_Huey_EVENTSCRIPT_ITEM
+      case TRAINER_GRUNT_AQUA_HIDEOUT_1, TRAINER_Grunt_Aqua_Hideout_1_EVENTSCRIPT_ITEM
+      case TRAINER_GLACIA, TRAINER_Glacia_EVENTSCRIPT_ITEM
+      case TRAINER_LEONARDO, TRAINER_Leonardo_EVENTSCRIPT_ITEM
+      case TRAINER_TANYA, TRAINER_Tanya_EVENTSCRIPT_ITEM
+      case TRAINER_CHRIS, TRAINER_Chris_EVENTSCRIPT_ITEM
+      case TRAINER_BRIDGET, TRAINER_Bridget_EVENTSCRIPT_ITEM
+      case TRAINER_KARA, TRAINER_Kara_EVENTSCRIPT_ITEM
+      case TRAINER_SOPHIE, TRAINER_Sophie_EVENTSCRIPT_ITEM
+      case TRAINER_DONALD, TRAINER_Donald_EVENTSCRIPT_ITEM
+      case TRAINER_GRUNT_AQUA_HIDEOUT_3, TRAINER_Grunt_Aqua_Hideout_3_EVENTSCRIPT_ITEM
+      case TRAINER_GRUNT_WEATHER_INST_1, TRAINER_Grunt_Weather_Inst_1_EVENTSCRIPT_ITEM
+      case TRAINER_FOSTER, TRAINER_Foster_EVENTSCRIPT_ITEM
+      case TRAINER_SANTIAGO, TRAINER_Santiago_EVENTSCRIPT_ITEM
+      case TRAINER_CAROLINA, TRAINER_Carolina_EVENTSCRIPT_ITEM
+      case TRAINER_JASMINE, TRAINER_Jasmine_EVENTSCRIPT_ITEM
+      case TRAINER_CORA, TRAINER_Cora_EVENTSCRIPT_ITEM
+      case TRAINER_KEVIN, TRAINER_Kevin_EVENTSCRIPT_ITEM
+      case TRAINER_GABBY_AND_TY_1, TRAINER_Gabby_And_Ty_1_EVENTSCRIPT_ITEM
+      case TRAINER_ALAN, TRAINER_Alan_EVENTSCRIPT_ITEM
+      case TRAINER_EDWIN_1, TRAINER_Edwin_1_EVENTSCRIPT_ITEM
+      case TRAINER_LYLE, TRAINER_Lyle_EVENTSCRIPT_ITEM
+      case TRAINER_MARLENE, TRAINER_Marlene_EVENTSCRIPT_ITEM
+      case TRAINER_TOMMY, TRAINER_Tommy_EVENTSCRIPT_ITEM
+      case TRAINER_JULIO, TRAINER_Julio_EVENTSCRIPT_ITEM
+      case TRAINER_FLINT, TRAINER_Flint_EVENTSCRIPT_ITEM
+      case TRAINER_COLE, TRAINER_Cole_EVENTSCRIPT_ITEM
+      case TRAINER_CALVIN_1, TRAINER_Calvin_1_EVENTSCRIPT_ITEM
+      case TRAINER_NIKKI, TRAINER_Nikki_EVENTSCRIPT_ITEM
+      case TRAINER_KALEB, TRAINER_Kaleb_EVENTSCRIPT_ITEM
+      case TRAINER_ELLIOT_1, TRAINER_Elliot_1_EVENTSCRIPT_ITEM
+      case TRAINER_CLIFFORD, TRAINER_Clifford_EVENTSCRIPT_ITEM
+      case TRAINER_GILBERT, TRAINER_Gilbert_EVENTSCRIPT_ITEM
+      case TRAINER_CHESTER, TRAINER_Chester_EVENTSCRIPT_ITEM
+      case TRAINER_HITOSHI, TRAINER_Hitoshi_EVENTSCRIPT_ITEM
+      case TRAINER_LARRY, TRAINER_Larry_EVENTSCRIPT_ITEM
+      case TRAINER_JUAN_1, TRAINER_JUAN_1_EVENTSCRIPT_ITEM
+      case TRAINER_KAREN_1, TRAINER_Karen_1_EVENTSCRIPT_ITEM
+      case TRAINER_SIDNEY, TRAINER_SIDNEY_EVENTSCRIPT_ITEM
+      case TRAINER_ISAAC_1, TRAINER_Isaac_1_EVENTSCRIPT_ITEM
+      case TRAINER_VIVIAN, TRAINER_Vivian_EVENTSCRIPT_ITEM
+      case TRAINER_NED, TRAINER_Ned_EVENTSCRIPT_ITEM
+      case TRAINER_DUSTY_1, TRAINER_Dusty_1_EVENTSCRIPT_ITEM
+      case TRAINER_HEIDI, TRAINER_Heidi_EVENTSCRIPT_ITEM
+      case TRAINER_MARTHA, TRAINER_Martha_EVENTSCRIPT_ITEM
+      case TRAINER_MAKAYLA, TRAINER_Makayla_EVENTSCRIPT_ITEM
+      case TRAINER_HAYDEN, TRAINER_Hayden_EVENTSCRIPT_ITEM
+      case TRAINER_HALEY_1, TRAINER_HALEY_1_EVENTSCRIPT_ITEM
+      case TRAINER_WILLIAM, TRAINER_William_EVENTSCRIPT_ITEM
+      case TRAINER_CYNDY_1, TRAINER_Cyndy_1_EVENTSCRIPT_ITEM
+      case TRAINER_ED, TRAINER_Ed_EVENTSCRIPT_ITEM
+      case TRAINER_BARRY, TRAINER_Barry_EVENTSCRIPT_ITEM
+      case TRAINER_KATELYNN, TRAINER_Katelynn_EVENTSCRIPT_ITEM
+      case TRAINER_BENNY, TRAINER_Benny_EVENTSCRIPT_ITEM
+      case TRAINER_SALLY, TRAINER_Sally_EVENTSCRIPT_ITEM
+      case TRAINER_MOLLIE, TRAINER_Mollie_EVENTSCRIPT_ITEM
+      case TRAINER_AXLE, TRAINER_Axle_EVENTSCRIPT_ITEM
+      case TRAINER_EDWARDO, TRAINER_Edwardo_EVENTSCRIPT_ITEM
+      case TRAINER_SHAYLA, TRAINER_Shayla_EVENTSCRIPT_ITEM
+      case TRAINER_JACK, TRAINER_Jack_EVENTSCRIPT_ITEM
+      case TRAINER_PATRICIA, TRAINER_Patricia_EVENTSCRIPT_ITEM
+      case TRAINER_JENNY_1, TRAINER_Jenny_1_EVENTSCRIPT_ITEM
+      case TRAINER_KYLA, TRAINER_Kyla_EVENTSCRIPT_ITEM
+      case TRAINER_DAISUKE, TRAINER_Daisuke_EVENTSCRIPT_ITEM
+      case TRAINER_DAVIS, TRAINER_Davis_EVENTSCRIPT_ITEM
+      case TRAINER_TISHA, TRAINER_Tisha_EVENTSCRIPT_ITEM
+      case TRAINER_CHARLOTTE, TRAINER_Charlotte_EVENTSCRIPT_ITEM
+      case TRAINER_TASHA, TRAINER_Tasha_EVENTSCRIPT_ITEM
+      case TRAINER_ERNEST_1, TRAINER_Ernest_1_EVENTSCRIPT_ITEM
+      case TRAINER_ALLISON, TRAINER_Allison_EVENTSCRIPT_ITEM
+      case TRAINER_JULIE, TRAINER_Julie_EVENTSCRIPT_ITEM
+      case TRAINER_LAO_1, TRAINER_Lao_1_EVENTSCRIPT_ITEM
+      case TRAINER_HUMBERTO, TRAINER_Humberto_EVENTSCRIPT_ITEM
+      case TRAINER_DARRIN, TRAINER_Darrin_EVENTSCRIPT_ITEM
+      case TRAINER_ALBERT, TRAINER_Albert_EVENTSCRIPT_ITEM
+      case TRAINER_EDGAR, TRAINER_Edgar_EVENTSCRIPT_ITEM
+      case TRAINER_ALLEN, TRAINER_Allen_EVENTSCRIPT_ITEM
+      case TRAINER_STEVE_1, TRAINER_Steve_1_EVENTSCRIPT_ITEM
+      case TRAINER_MISSY, TRAINER_Missy_EVENTSCRIPT_ITEM
+      case TRAINER_DREW, TRAINER_Drew_EVENTSCRIPT_ITEM
+      case TRAINER_GERALD, TRAINER_Gerald_EVENTSCRIPT_ITEM
+      case TRAINER_KATELYN_1, TRAINER_Katelyn_1_EVENTSCRIPT_ITEM
+      case TRAINER_MIKE_1, TRAINER_Mike_1_EVENTSCRIPT_ITEM
+      case TRAINER_COLTON, TRAINER_Colton_EVENTSCRIPT_ITEM
+      case TRAINER_ALBERTO, TRAINER_Alberto_EVENTSCRIPT_ITEM
+      case TRAINER_WARREN, TRAINER_Warren_EVENTSCRIPT_ITEM
+      case TRAINER_JACKI_1, TRAINER_Jacki_1_EVENTSCRIPT_ITEM
+      case TRAINER_GRUNT_MAGMA_HIDEOUT_4, TRAINER_Grunt_Magma_Hideout_4_EVENTSCRIPT_ITEM
+      case TRAINER_EVERETT, TRAINER_Everett_EVENTSCRIPT_ITEM
+      case TRAINER_LILA_AND_ROY_1, TRAINER_Lila_And_Roy_1_EVENTSCRIPT_ITEM
+      case TRAINER_ROSE_1, TRAINER_Rose_1_EVENTSCRIPT_ITEM
+      case TRAINER_TONY_1, TRAINER_Tony_1_EVENTSCRIPT_ITEM
+      case TRAINER_DOMINIK, TRAINER_Dominik_EVENTSCRIPT_ITEM
+      case TRAINER_RONALD, TRAINER_Ronald_EVENTSCRIPT_ITEM
+      case TRAINER_EDDIE, TRAINER_Eddie_EVENTSCRIPT_ITEM
+      case TRAINER_DAWSON, TRAINER_Dawson_EVENTSCRIPT_ITEM
+      case TRAINER_COBY, TRAINER_Coby_EVENTSCRIPT_ITEM
+      case TRAINER_BECK, TRAINER_Beck_EVENTSCRIPT_ITEM
+      case TRAINER_BERKE, TRAINER_Berke_EVENTSCRIPT_ITEM
+      case TRAINER_JARED, TRAINER_Jared_EVENTSCRIPT_ITEM
+      case TRAINER_GEORGIA, TRAINER_Georgia_EVENTSCRIPT_ITEM
+      case TRAINER_FABIAN, TRAINER_Fabian_EVENTSCRIPT_ITEM
+      case TRAINER_TAMMY, TRAINER_Tammy_EVENTSCRIPT_ITEM
+      case TRAINER_CORY_1, TRAINER_Cory_1_EVENTSCRIPT_ITEM
+      case TRAINER_DARIAN, TRAINER_DARIAN_EVENTSCRIPT_ITEM
+      case TRAINER_DALTON_1, TRAINER_Dalton_1_EVENTSCRIPT_ITEM
+      case TRAINER_BRENT, TRAINER_Brent_EVENTSCRIPT_ITEM
+      case TRAINER_KENT, TRAINER_Kent_EVENTSCRIPT_ITEM
+      case TRAINER_ROBERT_1, TRAINER_Robert_1_EVENTSCRIPT_ITEM
+      case TRAINER_JOEY, TRAINER_Joey_EVENTSCRIPT_ITEM
+      case TRAINER_QUINCY, TRAINER_Quincy_EVENTSCRIPT_ITEM
+      case TRAINER_ANDREA, TRAINER_Andrea_EVENTSCRIPT_ITEM
+      case TRAINER_GABRIELLE_1, TRAINER_Gabrielle_1_EVENTSCRIPT_ITEM
+      case TRAINER_PARKER, TRAINER_Parker_EVENTSCRIPT_ITEM
+      case TRAINER_NOLAN, TRAINER_Nolan_EVENTSCRIPT_ITEM
+      case TRAINER_KYRA, TRAINER_Kyra_EVENTSCRIPT_ITEM
+      case TRAINER_GRUNT_PETALBURG_WOODS, TRAINER_Grunt_Petalburg_Woods_EVENTSCRIPT_ITEM
+      case TRAINER_GRUNT_AQUA_HIDEOUT_6, TRAINER_Grunt_Aqua_Hideout_6_EVENTSCRIPT_ITEM
+      case TRAINER_JAYLEN, TRAINER_Jaylen_EVENTSCRIPT_ITEM
+      case TRAINER_EDMOND, TRAINER_Edmond_EVENTSCRIPT_ITEM
+      case TRAINER_MITCHELL, TRAINER_Mitchell_EVENTSCRIPT_ITEM
+      case TRAINER_VICKY, TRAINER_Vicky_EVENTSCRIPT_ITEM
+      case TRAINER_CATHERINE_1, TRAINER_Catherine_1_EVENTSCRIPT_ITEM
+      case TRAINER_MEL_AND_PAUL, TRAINER_Mel_And_Paul_EVENTSCRIPT_ITEM
+      case TRAINER_CRISTIN_1, TRAINER_Cristin_1_EVENTSCRIPT_ITEM
+      case TRAINER_PRESTON, TRAINER_Preston_EVENTSCRIPT_ITEM
+      case TRAINER_TRAVIS, TRAINER_Travis_EVENTSCRIPT_ITEM
+      case TRAINER_ROXANNE_1, TRAINER_Roxanne_1_EVENTSCRIPT_ITEM
+      case TRAINER_KINDRA, TRAINER_Kindra_EVENTSCRIPT_ITEM
+      case TRAINER_MARCEL, TRAINER_Marcel_EVENTSCRIPT_ITEM
+      case TRAINER_LINDA, TRAINER_Linda_EVENTSCRIPT_ITEM
+      case TRAINER_BRENDA, TRAINER_Brenda_EVENTSCRIPT_ITEM
+      case TRAINER_HARRISON, TRAINER_Harrison_EVENTSCRIPT_ITEM
+      case TRAINER_GABBY_AND_TY_3, TRAINER_Gabby_And_Ty_3_EVENTSCRIPT_ITEM
+      case TRAINER_WINSTON_1, TRAINER_WINSTON_1_EVENTSCRIPT_ITEM
+      case TRAINER_DIANA_1, TRAINER_Diana_1_EVENTSCRIPT_ITEM
+      case TRAINER_TIFFANY, TRAINER_Tiffany_EVENTSCRIPT_ITEM
+      case TRAINER_SIMON, TRAINER_Simon_EVENTSCRIPT_ITEM
+      case TRAINER_VALERIE_1, TRAINER_Valerie_1_EVENTSCRIPT_ITEM
+      case TRAINER_KEIRA, TRAINER_Keira_EVENTSCRIPT_ITEM
+      case TRAINER_GRUNT_WEATHER_INST_2, TRAINER_Grunt_Weather_Inst_2_EVENTSCRIPT_ITEM
+      case TRAINER_KATHLEEN, TRAINER_Kathleen_EVENTSCRIPT_ITEM
+      case TRAINER_JOSEPH, TRAINER_Joseph_EVENTSCRIPT_ITEM
+      case TRAINER_FLANNERY_1, TRAINER_Flannery_1_EVENTSCRIPT_ITEM
+      case TRAINER_DEZ_AND_LUKE, TRAINER_Dez_And_Luke_EVENTSCRIPT_ITEM
+      case TRAINER_ANGELINA, TRAINER_Angelina_EVENTSCRIPT_ITEM
+      case TRAINER_STEVEN, TRAINER_Steven_EVENTSCRIPT_ITEM
+      case TRAINER_JUSTIN, TRAINER_Justin_EVENTSCRIPT_ITEM
+      case TRAINER_CALLIE, TRAINER_Callie_EVENTSCRIPT_ITEM
+      case TRAINER_MAY_ROUTE_110_MUDKIP, TRAINER_May_Route_110_Mudkip_EVENTSCRIPT_ITEM
+      case TRAINER_BROOKE_1, TRAINER_Brooke_1_EVENTSCRIPT_ITEM
+      case TRAINER_SARAH, TRAINER_Sarah_EVENTSCRIPT_ITEM
+      case TRAINER_AUSTINA, TRAINER_Austina_EVENTSCRIPT_ITEM
+      case TRAINER_GREG, TRAINER_Greg_EVENTSCRIPT_ITEM
+      case TRAINER_SEBASTIAN, TRAINER_Sebastian_EVENTSCRIPT_ITEM
+      case TRAINER_DIANNE, TRAINER_Dianne_EVENTSCRIPT_ITEM
+      case TRAINER_SHANE, TRAINER_Shane_EVENTSCRIPT_ITEM
+      case TRAINER_WYATT, TRAINER_Wyatt_EVENTSCRIPT_ITEM
+      case TRAINER_GRUNT_MT_PYRE_1, TRAINER_Grunt_Mt_Pyre_1_EVENTSCRIPT_ITEM
+      case TRAINER_LOLA_1, TRAINER_Lola_1_EVENTSCRIPT_ITEM
+      case TRAINER_TAYLOR, TRAINER_Taylor_EVENTSCRIPT_ITEM
+      case TRAINER_WALLY_MAUVILLE, TRAINER_Wally_Mauville_EVENTSCRIPT_ITEM
+      case TRAINER_GRUNT_MAGMA_HIDEOUT_13, TRAINER_Grunt_Magma_Hideout_13_EVENTSCRIPT_ITEM
+      case TRAINER_KIYO, TRAINER_Kiyo_EVENTSCRIPT_ITEM
+      case TRAINER_JOSH, TRAINER_JOSH_EVENTSCRIPT_ITEM
+      case TRAINER_HIDEO, TRAINER_Hideo_EVENTSCRIPT_ITEM
+      case TRAINER_NOB_1, TRAINER_Nob_1_EVENTSCRIPT_ITEM
+      case TRAINER_BEAU, TRAINER_Beau_EVENTSCRIPT_ITEM
+      case TRAINER_BILLY, TRAINER_BILLY_EVENTSCRIPT_ITEM
+      case TRAINER_KIM_AND_IRIS, TRAINER_Kim_And_Iris_EVENTSCRIPT_ITEM
+      case TRAINER_WAYNE, TRAINER_Wayne_EVENTSCRIPT_ITEM
+      case TRAINER_GRUNT_SEAFLOOR_CAVERN_3, TRAINER_Grunt_Seafloor_Cavern_3_EVENTSCRIPT_ITEM
+      case TRAINER_SHAWN, TRAINER_Shawn_EVENTSCRIPT_ITEM
+      case TRAINER_MIU_AND_YUKI, TRAINER_Miu_And_Yuki_EVENTSCRIPT_ITEM
+      case TRAINER_CHARLIE, TRAINER_Charlie_EVENTSCRIPT_ITEM
+      case TRAINER_PRESLEY, TRAINER_Presley_EVENTSCRIPT_ITEM
+      case TRAINER_PAULA, TRAINER_Paula_EVENTSCRIPT_ITEM
+      case TRAINER_DAPHNE, TRAINER_Daphne_EVENTSCRIPT_ITEM
+      case TRAINER_BENJAMIN_1, TRAINER_Benjamin_1_EVENTSCRIPT_ITEM
+      case TRAINER_GRUNT_MAGMA_HIDEOUT_11, TRAINER_Grunt_Magma_Hideout_11_EVENTSCRIPT_ITEM
+      case TRAINER_GRUNT_MAGMA_HIDEOUT_16, TRAINER_Grunt_Magma_Hideout_16_EVENTSCRIPT_ITEM
+      case TRAINER_THALIA_1, TRAINER_Thalia_1_EVENTSCRIPT_ITEM
+      case TRAINER_LEA_AND_JED, TRAINER_Lea_And_Jed_EVENTSCRIPT_ITEM
+      case TRAINER_TALIA, TRAINER_Talia_EVENTSCRIPT_ITEM
+      case TRAINER_PHILLIP, TRAINER_Phillip_EVENTSCRIPT_ITEM
+      case TRAINER_FERNANDO_1, TRAINER_Fernando_1_EVENTSCRIPT_ITEM
+      case TRAINER_TYRA_AND_IVY, TRAINER_Tyra_And_Ivy_EVENTSCRIPT_ITEM
+      case TRAINER_REYNA, TRAINER_Reyna_EVENTSCRIPT_ITEM
+      case TRAINER_SYLVIA, TRAINER_Sylvia_EVENTSCRIPT_ITEM
+      case TRAINER_JEFF, TRAINER_Jeff_EVENTSCRIPT_ITEM
+      case TRAINER_MAXIE_MAGMA_HIDEOUT, TRAINER_Maxie_Magma_Hideout_EVENTSCRIPT_ITEM
+      case TRAINER_GRUNT_MAGMA_HIDEOUT_1, TRAINER_Grunt_Magma_Hideout_1_EVENTSCRIPT_ITEM
+      case TRAINER_DWAYNE, TRAINER_Dwayne_EVENTSCRIPT_ITEM
+      case TRAINER_DOUG, TRAINER_Doug_EVENTSCRIPT_ITEM
+      case TRAINER_PHOEBE, TRAINER_Phoebe_EVENTSCRIPT_ITEM
+      case TRAINER_WENDY, TRAINER_Wendy_EVENTSCRIPT_ITEM
+      case TRAINER_MAURA, TRAINER_Maura_EVENTSCRIPT_ITEM
+      case TRAINER_LUNG, TRAINER_Lung_EVENTSCRIPT_ITEM
+      case TRAINER_ALEXA, TRAINER_Alexa_EVENTSCRIPT_ITEM
+      case TRAINER_GRUNT_MAGMA_HIDEOUT_5, TRAINER_Grunt_Magma_Hideout_5_EVENTSCRIPT_ITEM
+      case TRAINER_TAKASHI, TRAINER_Takashi_EVENTSCRIPT_ITEM
+      case TRAINER_DOUGLAS, TRAINER_Douglas_EVENTSCRIPT_ITEM
+      case TRAINER_JACE, TRAINER_Jace_EVENTSCRIPT_ITEM
+      case TRAINER_BLAKE, TRAINER_Blake_EVENTSCRIPT_ITEM
+      case TRAINER_GRUNT_RUSTURF_TUNNEL, TRAINER_Grunt_Rusturf_Tunnel_EVENTSCRIPT_ITEM
+      case TRAINER_RODNEY, TRAINER_Rodney_EVENTSCRIPT_ITEM
+      case TRAINER_TIANA, TRAINER_Tiana_EVENTSCRIPT_ITEM
+      case TRAINER_JEROME, TRAINER_Jerome_EVENTSCRIPT_ITEM
+      case TRAINER_SUSIE, TRAINER_Susie_EVENTSCRIPT_ITEM
+      case TRAINER_LUCAS_1, TRAINER_Lucas_1_EVENTSCRIPT_ITEM
+      case TRAINER_JOCELYN, TRAINER_Jocelyn_EVENTSCRIPT_ITEM
+      case TRAINER_ARCHIE, TRAINER_Archie_EVENTSCRIPT_ITEM
+      case TRAINER_WATTSON_1, TRAINER_Wattson_1_EVENTSCRIPT_ITEM
+      case TRAINER_HECTOR, TRAINER_Hector_EVENTSCRIPT_ITEM
+      case TRAINER_GRUNT_SEAFLOOR_CAVERN_2, TRAINER_Grunt_Seafloor_Cavern_2_EVENTSCRIPT_ITEM
+      case TRAINER_BRYANT, TRAINER_Bryant_EVENTSCRIPT_ITEM
+      case TRAINER_JACLYN, TRAINER_Jaclyn_EVENTSCRIPT_ITEM
+      case TRAINER_DYLAN_1, TRAINER_Dylan_1_EVENTSCRIPT_ITEM
+      case TRAINER_TIMOTHY_1, TRAINER_Timothy_1_EVENTSCRIPT_ITEM
+      case TRAINER_GRUNT_AQUA_HIDEOUT_4, TRAINER_Grunt_Aqua_Hideout_4_EVENTSCRIPT_ITEM
+      case TRAINER_JOHANNA, TRAINER_Johanna_EVENTSCRIPT_ITEM
+      case TRAINER_SAMUEL, TRAINER_Samuel_EVENTSCRIPT_ITEM
+      case TRAINER_THOMAS, TRAINER_Thomas_EVENTSCRIPT_ITEM
+      case TRAINER_JONATHAN, TRAINER_Jonathan_EVENTSCRIPT_ITEM
+      case TRAINER_LEAH, TRAINER_Leah_EVENTSCRIPT_ITEM
+      case TRAINER_HALLE, TRAINER_Halle_EVENTSCRIPT_ITEM
+      case TRAINER_STAN, TRAINER_Stan_EVENTSCRIPT_ITEM
+      case TRAINER_BRANDI, TRAINER_Brandi_EVENTSCRIPT_ITEM
+      case TRAINER_DRAKE, TRAINER_Drake_EVENTSCRIPT_ITEM
+      case TRAINER_SIENNA, TRAINER_Sienna_EVENTSCRIPT_ITEM
+      case TRAINER_GRUNT_MAGMA_HIDEOUT_2, TRAINER_Grunt_Magma_Hideout_2_EVENTSCRIPT_ITEM
+      case TRAINER_JOSUE, TRAINER_Josue_EVENTSCRIPT_ITEM
+      case TRAINER_WALLY_VR_1, TRAINER_Wally_VR_1_EVENTSCRIPT_ITEM
+      case TRAINER_ANTHONY, TRAINER_Anthony_EVENTSCRIPT_ITEM
+      case TRAINER_GRUNT_MT_PYRE_4, TRAINER_Grunt_Mt_Pyre_4_EVENTSCRIPT_ITEM
+      case TRAINER_HERMAN, TRAINER_Herman_EVENTSCRIPT_ITEM
+      case TRAINER_CLARK, TRAINER_Clark_EVENTSCRIPT_ITEM
+      case TRAINER_SHELLY_WEATHER_INSTITUTE, TRAINER_Shelly_Weather_Institute_EVENTSCRIPT_ITEM
+      case TRAINER_ELIJAH, TRAINER_Elijah_EVENTSCRIPT_ITEM
+      case TRAINER_GRUNT_SEAFLOOR_CAVERN_5, TRAINER_Grunt_Seafloor_Cavern_5_EVENTSCRIPT_ITEM
+      case TRAINER_GARRET, TRAINER_Garret_EVENTSCRIPT_ITEM
+      case TRAINER_DILLON, TRAINER_Dillon_EVENTSCRIPT_ITEM
+      case TRAINER_ANGELICA, TRAINER_Angelica_EVENTSCRIPT_ITEM
+      case TRAINER_SPENCER, TRAINER_Spencer_EVENTSCRIPT_ITEM
+      case TRAINER_TATE_AND_LIZA_1, TRAINER_Tate_And_Liza_1_EVENTSCRIPT_ITEM
+      case TRAINER_ISABELLA, TRAINER_Isabella_EVENTSCRIPT_ITEM
+      case TRAINER_VICTOR, TRAINER_Victor_EVENTSCRIPT_ITEM
+      case TRAINER_FREDRICK, TRAINER_Fredrick_EVENTSCRIPT_ITEM
+      case TRAINER_TIMMY, TRAINER_Timmy_EVENTSCRIPT_ITEM
+      case TRAINER_JACOB, TRAINER_Jacob_EVENTSCRIPT_ITEM
+      case TRAINER_SOPHIA, TRAINER_Sophia_EVENTSCRIPT_ITEM
+      case TRAINER_GRUNT_WEATHER_INST_5, TRAINER_Grunt_Weather_Inst_5_EVENTSCRIPT_ITEM
+      case TRAINER_MICAH, TRAINER_Micah_EVENTSCRIPT_ITEM
+      case TRAINER_JAIDEN, TRAINER_Jaiden_EVENTSCRIPT_ITEM
+      case TRAINER_HANNAH, TRAINER_Hannah_EVENTSCRIPT_ITEM
+      case TRAINER_KEEGAN, TRAINER_Keegan_EVENTSCRIPT_ITEM
+      case TRAINER_GWEN, TRAINER_Gwen_EVENTSCRIPT_ITEM
+      case TRAINER_GRUNT_AQUA_HIDEOUT_2, TRAINER_Grunt_Aqua_Hideout_2_EVENTSCRIPT_ITEM
+      case TRAINER_ROLAND, TRAINER_Roland_EVENTSCRIPT_ITEM
+      case TRAINER_DUNCAN, TRAINER_Duncan_EVENTSCRIPT_ITEM
+      case TRAINER_KIRA_AND_DAN_1, TRAINER_Kira_And_Dan_1_EVENTSCRIPT_ITEM
+      case TRAINER_LEONEL, TRAINER_Leonel_EVENTSCRIPT_ITEM
+      case TRAINER_LISA_AND_RAY, TRAINER_Lisa_And_Ray_EVENTSCRIPT_ITEM
+      case TRAINER_MAY_ROUTE_119_MUDKIP, TRAINER_May_Route_119_Mudkip_EVENTSCRIPT_ITEM
+      case TRAINER_IMANI, TRAINER_Imani_EVENTSCRIPT_ITEM
+      case TRAINER_TARA, TRAINER_Tara_EVENTSCRIPT_ITEM
+      case TRAINER_RELI_AND_IAN, TRAINER_Reli_And_Ian_EVENTSCRIPT_ITEM
+      case TRAINER_JESSICA_1, TRAINER_Jessica_1_EVENTSCRIPT_ITEM
+      case TRAINER_GINA_AND_MIA_1, TRAINER_GINA_AND_MIA_1_EVENTSCRIPT_ITEM
+      case TRAINER_LAURA, TRAINER_Laura_EVENTSCRIPT_ITEM
+      case TRAINER_JERRY_1, TRAINER_Jerry_1_EVENTSCRIPT_ITEM
+      case TRAINER_AARON, TRAINER_Aaron_EVENTSCRIPT_ITEM
+      case TRAINER_BERNIE_1, TRAINER_Bernie_1_EVENTSCRIPT_ITEM
+      case TRAINER_GRUNT_MAGMA_HIDEOUT_10, TRAINER_Grunt_Magma_Hideout_10_EVENTSCRIPT_ITEM
+      case TRAINER_DEREK, TRAINER_Derek_EVENTSCRIPT_ITEM
+      case TRAINER_NOLEN, TRAINER_Nolen_EVENTSCRIPT_ITEM
+      case TRAINER_CHANDLER, TRAINER_Chandler_EVENTSCRIPT_ITEM
+      case TRAINER_CONOR, TRAINER_Conor_EVENTSCRIPT_ITEM
+      case TRAINER_OWEN, TRAINER_Owen_EVENTSCRIPT_ITEM
+      case TRAINER_PAXTON, TRAINER_Paxton_EVENTSCRIPT_ITEM
+      case TRAINER_ATSUSHI, TRAINER_Atsushi_EVENTSCRIPT_ITEM
+      case TRAINER_RILEY, TRAINER_Riley_EVENTSCRIPT_ITEM
+      case TRAINER_ISABEL_1, TRAINER_Isabel_1_EVENTSCRIPT_ITEM
+      case TRAINER_AUTUMN, TRAINER_Autumn_EVENTSCRIPT_ITEM
+      case TRAINER_KELVIN, TRAINER_Kelvin_EVENTSCRIPT_ITEM
+      case TRAINER_GRUNT_MAGMA_HIDEOUT_3, TRAINER_Grunt_Magma_Hideout_3_EVENTSCRIPT_ITEM
+      case TRAINER_LAWRENCE, TRAINER_Lawrence_EVENTSCRIPT_ITEM
+      case TRAINER_YASU, TRAINER_Yasu_EVENTSCRIPT_ITEM
+      case TRAINER_WADE, TRAINER_Wade_EVENTSCRIPT_ITEM
+      case TRAINER_NAOMI, TRAINER_Naomi_EVENTSCRIPT_ITEM
+      case TRAINER_GRUNT_SEAFLOOR_CAVERN_4, TRAINER_Grunt_Seafloor_Cavern_4_EVENTSCRIPT_ITEM
+      case TRAINER_DAYTON, TRAINER_Dayton_EVENTSCRIPT_ITEM
+      case TRAINER_MATTHEW, TRAINER_Matthew_EVENTSCRIPT_ITEM
+      case TRAINER_HUGH, TRAINER_Hugh_EVENTSCRIPT_ITEM
+      case TRAINER_JOHN_AND_JAY_1, TRAINER_John_And_Jay_1_EVENTSCRIPT_ITEM
+      case TRAINER_CAROLINE, TRAINER_Caroline_EVENTSCRIPT_ITEM
+      case TRAINER_BARNY, TRAINER_Barny_EVENTSCRIPT_ITEM
+      case TRAINER_HOPE, TRAINER_Hope_EVENTSCRIPT_ITEM
+      case TRAINER_CONNIE, TRAINER_Connie_EVENTSCRIPT_ITEM
+      case TRAINER_TABITHA_MAGMA_HIDEOUT, TRAINER_Tabitha_Magma_Hideout_EVENTSCRIPT_ITEM
+      case TRAINER_KOICHI, TRAINER_Koichi_EVENTSCRIPT_ITEM
+      case TRAINER_GRUNT_AQUA_HIDEOUT_7, TRAINER_Grunt_Aqua_Hideout_7_EVENTSCRIPT_ITEM
+      case TRAINER_CELINA, TRAINER_Celina_EVENTSCRIPT_ITEM
+      case TRAINER_JENNIFER, TRAINER_Jennifer_EVENTSCRIPT_ITEM
+      case TRAINER_ZANDER, TRAINER_Zander_EVENTSCRIPT_ITEM
+      case TRAINER_ROBIN, TRAINER_Robin_EVENTSCRIPT_ITEM
+      case TRAINER_JODY, TRAINER_Jody_EVENTSCRIPT_ITEM
+      case TRAINER_TORI_AND_TIA, TRAINER_Tori_And_Tia_EVENTSCRIPT_ITEM
+      case TRAINER_OLIVIA, TRAINER_Olivia_EVENTSCRIPT_ITEM
+      case TRAINER_MARIA_1, TRAINER_Maria_1_EVENTSCRIPT_ITEM
+      case TRAINER_DANIELLE, TRAINER_Danielle_EVENTSCRIPT_ITEM
+      case TRAINER_JEFFREY_1, TRAINER_Jeffrey_1_EVENTSCRIPT_ITEM
+      case TRAINER_DEMETRIUS, TRAINER_Demetrius_EVENTSCRIPT_ITEM
+      case TRAINER_NICHOLAS, TRAINER_Nicholas_EVENTSCRIPT_ITEM
+      case TRAINER_GRUNT_MAGMA_HIDEOUT_9, TRAINER_Grunt_Magma_Hideout_9_EVENTSCRIPT_ITEM
+      case TRAINER_GRUNT_MT_PYRE_3, TRAINER_Grunt_Mt_Pyre_3_EVENTSCRIPT_ITEM
+      case TRAINER_CINDY_1, TRAINER_CINDY_1_EVENTSCRIPT_ITEM
+      case TRAINER_COLIN, TRAINER_Colin_EVENTSCRIPT_ITEM
+      case TRAINER_MARY, TRAINER_Mary_EVENTSCRIPT_ITEM
+      case TRAINER_ALEXIS, TRAINER_Alexis_EVENTSCRIPT_ITEM
+      case TRAINER_MARIELA, TRAINER_Mariela_EVENTSCRIPT_ITEM
+      case TRAINER_DEANDRE, TRAINER_Deandre_EVENTSCRIPT_ITEM
+      case TRAINER_GARRISON, TRAINER_Garrison_EVENTSCRIPT_ITEM
+      case TRAINER_VIVI, TRAINER_Vivi_EVENTSCRIPT_ITEM
+      case TRAINER_PAUL, TRAINER_Paul_EVENTSCRIPT_ITEM
+      case TRAINER_ALICE, TRAINER_Alice_EVENTSCRIPT_ITEM
+      case TRAINER_DARCY, TRAINER_Darcy_EVENTSCRIPT_ITEM
+      case TRAINER_LUIS, TRAINER_Luis_EVENTSCRIPT_ITEM
+      case TRAINER_GRUNT_MT_PYRE_2, TRAINER_Grunt_Mt_Pyre_2_EVENTSCRIPT_ITEM
+      case TRAINER_ETHAN_1, TRAINER_Ethan_1_EVENTSCRIPT_ITEM
+      case TRAINER_RACHEL, TRAINER_Rachel_EVENTSCRIPT_ITEM
+      case TRAINER_WILTON_1, TRAINER_Wilton_1_EVENTSCRIPT_ITEM
+      case TRAINER_KIRK, TRAINER_Kirk_EVENTSCRIPT_ITEM
+      case TRAINER_ISOBEL, TRAINER_Isobel_EVENTSCRIPT_ITEM
+      case TRAINER_GRUNT_MAGMA_HIDEOUT_15, TRAINER_Grunt_Magma_Hideout_15_EVENTSCRIPT_ITEM
+      case TRAINER_WINONA_1, TRAINER_Winona_1_EVENTSCRIPT_ITEM
+      case TRAINER_CRISTIAN, TRAINER_Cristian_EVENTSCRIPT_ITEM
+      case TRAINER_EDWARD, TRAINER_Edward_EVENTSCRIPT_ITEM
+      case TRAINER_GRUNT_MAGMA_HIDEOUT_7, TRAINER_Grunt_Magma_Hideout_7_EVENTSCRIPT_ITEM
+      case TRAINER_GRUNT_MAGMA_HIDEOUT_6, TRAINER_Grunt_Magma_Hideout_6_EVENTSCRIPT_ITEM
+      case TRAINER_KAYLA, TRAINER_Kayla_EVENTSCRIPT_ITEM
+      case TRAINER_HUDSON, TRAINER_Hudson_EVENTSCRIPT_ITEM
+      case TRAINER_DALE, TRAINER_Dale_EVENTSCRIPT_ITEM
+      case TRAINER_ANNIKA, TRAINER_Annika_EVENTSCRIPT_ITEM
+      case TRAINER_KATIE, TRAINER_Katie_EVENTSCRIPT_ITEM
+      case TRAINER_CRISSY, TRAINER_Crissy_EVENTSCRIPT_ITEM
+      case TRAINER_JOSE, TRAINER_Jose_EVENTSCRIPT_ITEM
+      case TRAINER_LENNY, TRAINER_Lenny_EVENTSCRIPT_ITEM
+      case TRAINER_ANGELO, TRAINER_Angelo_EVENTSCRIPT_ITEM
+      case TRAINER_VIOLET, TRAINER_Violet_EVENTSCRIPT_ITEM
+      case TRAINER_KEIGO, TRAINER_Keigo_EVENTSCRIPT_ITEM
+      case TRAINER_BIANCA, TRAINER_Bianca_EVENTSCRIPT_ITEM
+      case TRAINER_VICTORIA, TRAINER_Victoria_EVENTSCRIPT_ITEM
+      case TRAINER_ISAIAH_1, TRAINER_Isaiah_1_EVENTSCRIPT_ITEM
+    case TRAINER_BRENDAN_ROUTE_103_MUDKIP, TRAINER_MAY_ROUTE_103_MUDKIP_EVENTSCRIPT_ITEM
+    case TRAINER_BRENDAN_ROUTE_110_MUDKIP, TRAINER_May_Route_110_Mudkip_EVENTSCRIPT_ITEM
+    case TRAINER_BRENDAN_ROUTE_119_MUDKIP, TRAINER_May_Route_119_Mudkip_EVENTSCRIPT_ITEM
+    case TRAINER_BRENDAN_ROUTE_103_TREECKO, TRAINER_MAY_ROUTE_103_MUDKIP_EVENTSCRIPT_ITEM
+    case TRAINER_BRENDAN_ROUTE_110_TREECKO, TRAINER_May_Route_110_Mudkip_EVENTSCRIPT_ITEM
+    case TRAINER_BRENDAN_ROUTE_119_TREECKO, TRAINER_May_Route_119_Mudkip_EVENTSCRIPT_ITEM
+    case TRAINER_BRENDAN_ROUTE_103_TORCHIC, TRAINER_MAY_ROUTE_103_MUDKIP_EVENTSCRIPT_ITEM
+    case TRAINER_BRENDAN_ROUTE_110_TORCHIC, TRAINER_May_Route_110_Mudkip_EVENTSCRIPT_ITEM
+    case TRAINER_BRENDAN_ROUTE_119_TORCHIC, TRAINER_May_Route_119_Mudkip_EVENTSCRIPT_ITEM
+    case TRAINER_BRENDAN_ROUTE_103_MUDKIP, TRAINER_MAY_ROUTE_103_MUDKIP_EVENTSCRIPT_ITEM
+    case TRAINER_MAY_ROUTE_103_TREECKO, TRAINER_MAY_ROUTE_103_MUDKIP_EVENTSCRIPT_ITEM
+    case TRAINER_MAY_ROUTE_110_TREECKO, TRAINER_May_Route_110_Mudkip_EVENTSCRIPT_ITEM
+    case TRAINER_MAY_ROUTE_119_TREECKO, TRAINER_May_Route_119_Mudkip_EVENTSCRIPT_ITEM
+    case TRAINER_MAY_ROUTE_103_TORCHIC, TRAINER_MAY_ROUTE_103_MUDKIP_EVENTSCRIPT_ITEM
+    case TRAINER_MAY_ROUTE_110_TORCHIC, TRAINER_May_Route_110_Mudkip_EVENTSCRIPT_ITEM
+    case TRAINER_MAY_ROUTE_119_TORCHIC, TRAINER_May_Route_119_Mudkip_EVENTSCRIPT_ITEM
+    case TRAINER_BRENDAN_LILYCOVE_MUDKIP, TRAINER_MAY_LILLYCOVE_MUDKIP_EVENTSCRIPT_ITEM
+    case TRAINER_BRENDAN_LILYCOVE_TREECKO, TRAINER_MAY_LILLYCOVE_MUDKIP_EVENTSCRIPT_ITEM
+    case TRAINER_BRENDAN_LILYCOVE_TORCHIC, TRAINER_MAY_LILLYCOVE_MUDKIP_EVENTSCRIPT_ITEM
+    case TRAINER_MAY_LILYCOVE_TREECKO, TRAINER_MAY_LILLYCOVE_MUDKIP_EVENTSCRIPT_ITEM
+    case TRAINER_MAY_LILYCOVE_TORCHIC, TRAINER_MAY_LILLYCOVE_MUDKIP_EVENTSCRIPT_ITEM
+    return
+  return

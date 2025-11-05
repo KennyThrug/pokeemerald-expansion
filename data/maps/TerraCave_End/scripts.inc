@@ -22,32 +22,6 @@ TerraCave_End_EventScript_ShowGroudon::
 	setvar VAR_TEMP_1, 1
 	return
 
-TerraCave_End_EventScript_Groudon::
-	lockall
-	applymovement LOCALID_PLAYER, Common_Movement_FaceUp
-	waitmovement 0
-	applymovement LOCALID_TERRA_CAVE_GROUDON, TerraCave_End_Movement_GroudonApproach
-	waitmovement 0
-	waitse
-	playmoncry SPECIES_GROUDON, CRY_MODE_ENCOUNTER
-	delay 40
-	waitmoncry
-	setvar VAR_LAST_TALKED, LOCALID_TERRA_CAVE_GROUDON
-	setwildbattle SPECIES_GROUDON, 70
-	setflag FLAG_SYS_CTRL_OBJ_DELETE
-	special BattleSetup_StartLegendaryBattle
-	waitstate
-	clearflag FLAG_SYS_CTRL_OBJ_DELETE
-	setvar VAR_TEMP_1, 0
-	specialvar VAR_RESULT, GetBattleOutcome
-	goto_if_eq VAR_RESULT, B_OUTCOME_WON, TerraCave_End_EventScript_DefeatedGroudon
-	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, TerraCave_End_EventScript_RanFromGroudon
-	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, TerraCave_End_EventScript_RanFromGroudon
-	setvar VAR_SHOULD_END_ABNORMAL_WEATHER, 1
-	setflag FLAG_DEFEATED_GROUDON
-	releaseall
-	end
-
 TerraCave_End_EventScript_DefeatedGroudon::
 	setvar VAR_SHOULD_END_ABNORMAL_WEATHER, 1
 	setflag FLAG_DEFEATED_GROUDON
@@ -69,4 +43,3 @@ TerraCave_End_Movement_GroudonApproach:
 	delay_16
 	walk_down_affine
 	step_end
-
