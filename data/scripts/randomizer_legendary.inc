@@ -2,10 +2,10 @@ AncientTomb_EventScript_Registeel::
         lock
         faceplayer
         waitse
-        playmoncry SPECIES_ARCEUS, CRY_MODE_ENCOUNTER
+        playmoncry SPECIES_COSMOG, CRY_MODE_ENCOUNTER
         delay 40
         waitmoncry
-        setwildbattle SPECIES_ARCEUS, 40
+        setwildbattle SPECIES_COSMOG, 40
         setflag FLAG_SYS_CTRL_OBJ_DELETE
         special StartRegiBattle
         waitstate
@@ -30,11 +30,11 @@ AncientTomb_EventScript_Registeel::
         applymovement LOCALID_BIRTH_ISLAND_DEOXYS, BirthIsland_Exterior_Movement_DeoxysApproach
         waitmovement 0
         waitse
-        playmoncry SPECIES_ZAPDOS, CRY_MODE_ENCOUNTER
+        playmoncry SPECIES_TING_LU, CRY_MODE_ENCOUNTER
         delay 40
         waitmoncry
         setvar VAR_LAST_TALKED, LOCALID_BIRTH_ISLAND_DEOXYS
-        seteventmon SPECIES_ZAPDOS, 30
+        seteventmon SPECIES_TING_LU, 30
         setflag FLAG_SYS_CTRL_OBJ_DELETE
         special BattleSetup_StartLegendaryBattle
         waitstate
@@ -51,10 +51,10 @@ AncientTomb_EventScript_Registeel::
         lock
         faceplayer
         waitse
-        playmoncry SPECIES_ZARUDE, CRY_MODE_ENCOUNTER
+        playmoncry SPECIES_THUNDURUS, CRY_MODE_ENCOUNTER
         delay 40
         waitmoncry
-        setwildbattle SPECIES_ZARUDE, 40
+        setwildbattle SPECIES_THUNDURUS, 40
         setflag FLAG_SYS_CTRL_OBJ_DELETE
         special StartRegiBattle
         waitstate
@@ -76,7 +76,7 @@ AncientTomb_EventScript_Registeel::
         special SetMewAboveGrass
         message FarawayIsland_Interior_Text_Mew
         waitse
-        playmoncry SPECIES_MANAPHY, CRY_MODE_ENCOUNTER
+        playmoncry SPECIES_TAPU_LELE, CRY_MODE_ENCOUNTER
         call_if_eq VAR_FACING, DIR_NORTH, FarawayIsland_Interior_EventScript_FoundMewNorth
         call_if_eq VAR_FACING, DIR_SOUTH, FarawayIsland_Interior_EventScript_FoundMewSouth
         call_if_eq VAR_FACING, DIR_WEST, FarawayIsland_Interior_EventScript_FoundMewWest
@@ -84,7 +84,7 @@ AncientTomb_EventScript_Registeel::
         special DestroyMewEmergingGrassSprite
         delay 40
         waitmoncry
-        seteventmon SPECIES_MANAPHY, 30
+        seteventmon SPECIES_TAPU_LELE, 30
         setflag FLAG_SYS_CTRL_OBJ_DELETE
         special BattleSetup_StartLegendaryBattle
         waitstate
@@ -102,10 +102,10 @@ AncientTomb_EventScript_Registeel::
         lock
         faceplayer
         waitse
-        playmoncry SPECIES_HO_OH, CRY_MODE_ENCOUNTER
+        playmoncry SPECIES_REGIROCK, CRY_MODE_ENCOUNTER
         delay 40
         waitmoncry
-        setwildbattle SPECIES_HO_OH, 40
+        setwildbattle SPECIES_REGIROCK, 40
         setflag FLAG_SYS_CTRL_OBJ_DELETE
         special StartRegiBattle
         waitstate
@@ -125,11 +125,11 @@ AncientTomb_EventScript_Registeel::
         applymovement LOCALID_MARINE_CAVE_KYOGRE, MarineCave_End_Movement_KyogreApproach
         waitmovement 0
         waitse
-        playmoncry SPECIES_RAYQUAZA_MEGA, CRY_MODE_ENCOUNTER
+        playmoncry SPECIES_YVELTAL, CRY_MODE_ENCOUNTER
         delay 40
         waitmoncry
         setvar VAR_LAST_TALKED, LOCALID_MARINE_CAVE_KYOGRE
-        setwildbattle SPECIES_RAYQUAZA_MEGA, 70
+        setwildbattle SPECIES_YVELTAL, 70
         setflag FLAG_SYS_CTRL_OBJ_DELETE
         special BattleSetup_StartLegendaryBattle
         waitstate
@@ -158,7 +158,7 @@ AncientTomb_EventScript_Registeel::
         setweather WEATHER_NONE
         doweather
         waitse
-        playmoncry SPECIES_LANDORUS, CRY_MODE_ENCOUNTER
+        playmoncry SPECIES_MANAPHY, CRY_MODE_ENCOUNTER
         delay 30
         waitmoncry
         delay 60
@@ -169,7 +169,7 @@ AncientTomb_EventScript_Registeel::
         applymovement LOCALID_NAVEL_ROCK_HO_OH, NavelRock_Top_Movement_HoOhApproach
         waitmovement 0
         special RemoveCameraObject
-        seteventmon SPECIES_LANDORUS, 70
+        seteventmon SPECIES_MANAPHY, 70
         setflag FLAG_SYS_CTRL_OBJ_DELETE
         special BattleSetup_StartLegendaryBattle
         waitstate
@@ -186,10 +186,10 @@ AncientTomb_EventScript_Registeel::
 SkyPillar_Top_EventScript_Rayquaza::
 	lockall
 	waitse
-	playmoncry SPECIES_YVELTAL, CRY_MODE_ENCOUNTER
+	playmoncry SPECIES_MUNKIDORI, CRY_MODE_ENCOUNTER
 	delay 40
 	waitmoncry
-	setwildbattle SPECIES_YVELTAL, 70
+	setwildbattle SPECIES_MUNKIDORI, 70
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 	special BattleSetup_StartLegendaryBattle
 	waitstate
@@ -209,11 +209,11 @@ TerraCave_End_EventScript_Groudon::
 	applymovement LOCALID_TERRA_CAVE_GROUDON, TerraCave_End_Movement_GroudonApproach
 	waitmovement 0
 	waitse
-	playmoncry SPECIES_XERNEAS, CRY_MODE_ENCOUNTER
+	playmoncry SPECIES_TAPU_BULU, CRY_MODE_ENCOUNTER
 	delay 40
 	waitmoncry
 	setvar VAR_LAST_TALKED, LOCALID_TERRA_CAVE_GROUDON
-	setwildbattle SPECIES_XERNEAS, 70
+	setwildbattle SPECIES_TAPU_BULU, 70
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 	special BattleSetup_StartLegendaryBattle
 	waitstate
